@@ -1,0 +1,305 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+main {
+    width: 80vw;
+    height: 100vh;
+    margin: 5% 0;
+
+}
+
+section {
+    margin: 3% 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:checked {
+    color: #fff;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+
+
+}
+
+#banner_img {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+}
+
+.banner_img {
+    width: 80vw;
+}
+
+#banner>img {
+    max-width: 80vw;
+
+}
+
+
+.bi-chevron-left {
+    left: 124px;
+    border-radius: 0 50% 50% 0;
+}
+
+.bi-chevron-right {
+    right: 124px;
+    border-radius: 50% 0 0 50%;
+}
+
+.seta {
+    position: absolute;
+    z-index: 10;
+    background-color: #b1a6a6;
+    filter: invert(1);
+    height: 25px;
+    align-items: center;
+    display: flex;
+    margin: auto 0;
+
+}
+
+.seta:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+
+}
+
+.seta_products {
+    opacity: .3;
+    top: 470px;
+}
+
+
+.containerProducts {
+    display: flex;
+
+}
+
+#products_img {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.containerNovos {
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerNovos>img {
+    width: 150px;
+}
+
+.avaliacao {
+    display: flex;
+    width: 170px;
+
+}
+
+.avaliacao>img {
+    width: 73px;
+}
+
+.avaliacao>span {
+    font-size: .8rem;
+}
+
+.descricao {
+    margin-top: 5%;
+    justify-content: center;
+    display: flex;
+    font-size: .9rem;
+    align-items: center;
+
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.precoAntigo {
+    margin: 2% 0;
+    text-decoration: line-through;
+}
+
+.precoAtual {
+    font-size: 1.2rem;
+}
+
+#container {
+    display: flex;
+
+
+}
+
+.capa_products {
+    display: flex;
+    justify-content: end;
+}
+
+.capa_products>img {
+    height: 233px;
+}
+
+.destaque {
+    position: relative;
+    z-index: 10;
+    bottom: 130px;
+    height: 120px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.destaque a {
+    font-weight: 100;
+    font-size: .6rem;
+}
+
+#marcas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#marcas li {
+    list-style: none;
+}
+
+#marcas img {
+    width: 80px;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details_div {
+
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 2% 0;
+    padding-left: 3%;
+}
+
+.details_div picture {
+    margin: 0 1%;
+    width: 150px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2%;
+
+}
+
+.details_img {
+    width: 150px;
+}
+
+.details_p {
+    margin: 2% 0;
+    font-weight: 500;
+}
+
+data {
+    color: #b1a6a6;
+    font-size: .8rem;
+}
+
+#citacao {
+    background-color: #e1dede;
+    padding: 5% 15%;
+}
+
+#citacao p {
+    width: 100%;
+    justify-content: end;
+}
+
+blockquote {
+    display: flex;
+    align-items: center;
+}
+
+blockquote span {
+    margin-right: 2%;
+    font-size: 5rem;
+}
+
+#citacao button {
+    background-color: #e1dede;
+    border-radius: 20px;
+    width: 30%;
+    height: 29px;
+    color: blue;
+    border: blue solid 2px;
+}
+
+
+#footer_citacao {
+    display: flex;
+    margin: 3% 0;
+    justify-content: space-between;
+}
+
+#footer_citacao ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer_citacao li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #978d8d;
+    list-style-type: none;
+    margin: 1%;
+}
+
+#footer_citacao li:hover {
+    border: 1px solid blue;
+}
+
+#footer_citacao li:nth-child(1) {
+    background-color: blue;
+}
+
+.name_citacao {
+    display: flex;
+
+}
+
+#container_beneficios {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#container_beneficios div {
+    width: 20%;
+}
