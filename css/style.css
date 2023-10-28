@@ -51,17 +51,17 @@ a:checked {
 
 
 .bi-chevron-left {
-    left: 124px;
     border-radius: 0 50% 50% 0;
+    left: 15px;
 }
 
 .bi-chevron-right {
-    right: 124px;
+    right: 15px;
     border-radius: 50% 0 0 50%;
 }
 
 .seta {
-    position: absolute;
+    position: relative;
     z-index: 10;
     background-color: #b1a6a6;
     filter: invert(1);
@@ -79,18 +79,25 @@ a:checked {
 }
 
 .seta_products {
+    position: static;
     opacity: .3;
-    top: 470px;
 }
 
+#marca {
+    display: flex;
+    justify-content: center;
+}
 
 .containerProducts {
     display: flex;
-
+    width: 90%;
+    justify-content: space-around;
 }
 
 #products_img {
+    width: 90%;
     display: flex;
+    justify-content: space-around;
     overflow-x: hidden;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -105,6 +112,7 @@ a:checked {
 
 .containerNovos>img {
     width: 150px;
+    height: 120px;
 }
 
 .avaliacao {
@@ -154,6 +162,7 @@ figcaption {
 .capa_products {
     display: flex;
     justify-content: end;
+    margin-right: 2%;
 }
 
 .capa_products>img {
@@ -236,9 +245,31 @@ data {
 }
 
 #citacao p {
-    width: 100%;
-    justify-content: end;
+    width: 70vw;
+    margin-left: 10%;
+
+    align-items: self-end;
+
 }
+
+#citacao_p {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+#citacao_p div {
+    width: 50vw;
+    display: flex;
+    padding: 0 5%;
+    justify-content: space-between;
+}
+
+.name_citacao {
+    display: flex;
+}
+
 
 blockquote {
     display: flex;
@@ -247,6 +278,7 @@ blockquote {
 
 blockquote span {
     margin-right: 2%;
+    margin-top: -80px;
     font-size: 5rem;
 }
 
@@ -257,6 +289,22 @@ blockquote span {
     height: 29px;
     color: blue;
     border: blue solid 2px;
+    border-top: blue solid 1px;
+    border-right: blue solid 1px;
+}
+
+#citacao button:hover {
+    filter: sepia(.2);
+    cursor: pointer;
+    border: blue solid 1px;
+    border-top: none;
+    border-right: none;
+}
+
+#citacao button:active {
+    filter: brightness(1);
+    border: none;
+    border: #fff dotted 1px;
 }
 
 
@@ -288,10 +336,6 @@ blockquote span {
     background-color: blue;
 }
 
-.name_citacao {
-    display: flex;
-
-}
 
 #container_beneficios {
     display: flex;
