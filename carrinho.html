@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+     <!-- Area antes do Cabeçalho  -->
+
+    <nav>
+        <div id="cabecalho">
+            <div id="icones-sociais">
+                <a href="https://www.facebook.com">
+                    <img src="./_img/_logos/fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="./_img/_logos/insta.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </nav>  
+
+     <!-- Fim do primeiro cabeçalho  -->
+
+    <header>
+        <nav>
+            <img src="/_img/_logos/logo-shop-cabecalho.png" alt="Logo">
+            <ul>
+                <li><a href="#">Notebooks</a></li>
+                <li><a href="#">Desktops</a></li>
+                <li><a href="#">Redes</a></li>
+                <li><a href="#">Impressoras</a></li>
+                <li><a href="#">Gamer</a></li>
+                <li><a href="#">Outros Produtos</a></li>
+            </ul>
+            <button><a href="#">Ofertas</a></button>
+        </nav>
+    </header> 
+    <hr>
+
+    <main>
+        <nav class="#">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <p>></p>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+        <h1>Carrinho de Compras</h1>
+        <section class="carrinho-item">
+            <p>Item</p>
+            <p>Preço</p>
+            <p>Qtd</p>
+            <p>Subtotal</p>
+        </section>
+        <hr>
+
+        <!-- Inicio da descrição e Preço do produto -->
+
+        <section class="descricao-dos-produtos">
+            <picture>
+                <img class="imagem-produto" src="https://via.placeholder.com/120x120" alt="Imagem do Produto">
+            </picture>
+            <figcaption>
+                <span class="descricao"><a href="#" onclick="">MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard e Mouse com 3 anos de garantia</a></span>
+                <h6>R$ 4.349,00</h6>
+                <input type="number" id="quantidade" min="1" max="100"  value="1">
+                <h6>R$ 13.047,00</h6>
+                <button class="botao-remover-item">X</button>
+            </figcaption>
+        </section>
+
+        <!-- Fim da Descrição e Preço do produto -->
+
+        <!-- Inicio do Resumo da Compra, Envio e Cupom -->
+
+        <section id="bloco" class="fundo-azul">
+            <div id="conteudo">
+                <h3 class="titulo-resumo-compra">Resumo da Compra</h3>
+                <div class="taxa-envio">
+                    <p>Taxa Estimada de Envio</p>
+                    <button id="botao-taxa-envio">↓</button>
+                </div>
+            </div>
+            <form>
+                <p>Insira o seu destino para obter uma estimativa de envio</p>
+                <label for="pais">Selecione o país de destino *</label>
+                    <select id="pais">
+                        <option value="brasil">Brasil</option>
+                        <option value="eua">Estados Unidos</option>
+                        <option value="canada">Canadá</option>
+                    </select>
+            </form>
+            <form action="">
+                <label for="">Estado/Cidade *</label>
+                <input type="text" placeholder="Estado - Cidade" required>
+            </form>
+            <form action="">
+                <label for="">CEP *</label>
+                <input type="number" placeholder="CEP" required>
+            </form>
+            <div class="opcao-entrega">
+                <p>Taxa Padrão</p>
+                <input type="radio" name="opcao-entrega">
+                <label for="entrega-destino">Preço pode variar de acordo com o Item/Destino</label>
+                <p>Retirar na loja</p>
+                <input type="radio" name="opcao-entrega" value="casa">
+                <label for="entrega-em-casa">Rua JavaScript, 123 - Bairro HTML - SP</label>
+            </div>
+            <div class="Cupom">
+                <h4>Cupom de Desconto</h4>
+                <input type="text" placeholder="Cupom de Desconto" method="post">
+            </div>
+            <button class="aplicar-desconto">
+                Aplicar Desconto
+            </button>
+            <h3>Subtotal R$<span id="subtotal"> 13,047.00</span></h3>
+            <h3>Envio R$<span id="envio"> 21.00</span></h3>
+            <p>Preço pode variar de acordo com o Item/Destino</p>
+            <h3>Taxa R$<span id="taxa"> 21.00</span></h3>
+            <h3>Preço Total     R$ 13,068.00</h3>
+            <button class="botao-pagamento">
+                Ir para Pagamento
+            </button>
+            <button class="botao-pagamento-paypal">
+                Pagamento paypal
+            </button>
+            <button class="alterar-endereco">
+                Alterar endereço de entrega
+            </button>
+        </section>
+        <script src="js/main.js"></script>
+        <!-- Fim do Resumo da Compra -->  
+
+    </main>
+    
+    <!-- Inicio de footer da página -->
+
+    <footer>
+        <div>
+            <p>Inscreva-se em nossa Newsletter.</p>
+            <p>Seja o primeiro a saber das últimas ofertas.</p>
+            <input type="email" name="" id="" placeholder="Seu Email">
+            <button>Inscreva-se</button>
+        </div>
+        <div>
+            <ul>
+                <li>Informação</li>
+                <li><a href="">Sobre nós</a></li>
+                <li><a href="">Política de Privacidade</a></li>
+                <li><a href="">Procurar</a></li>
+                <li><a href="">Termos</a></li>
+                <li><a href="">Encomendas e Devoluções</a></li>
+                <li><a href="">Contate-nos</a></li>
+                <li><a href="">Busca Avançada</a></li>
+                <li><a href="">Assinatura Newsletter</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Peças para PC</li>
+                <li><a href="">CPU</a></li>
+                <li><a href="">Discos rigidos (internos)</a></li>
+                <li><a href="">Placas Gráficas</a></li>
+                <li><a href="">Teclados/Mouses</a></li>
+                <li><a href="">Gabinete/Fontes de Alimentação/Resfriamento</a></li>
+                <li><a href="">Memoria RAM</a></li>
+                <li><a href="">Programas</a></li>
+                <li><a href="">Alto-falantes/Fones de ouvido</a></li>
+                <li><a href="">Placas mãe</a></li>
+        </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Desktop PCs</li>
+                <li><a href="">Computadores personalizados</a></li>
+                <li><a href="">Servidores</a></li>
+                <li><a href="">PCs multifuncionais</a></li>
+                <li><a href="">MSI</a></li>
+                <li><a href="">Computadore HP/Compaq</a></li>
+                <li><a href="">PCs ASUS</a></li>
+                <li><a href="">PCs técnicos</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Notebooks</li>
+                <li><a href="">Peças para Notebooks</a></li>
+                <li><a href="">Tablets e Pads</a></li>
+                <li><a href="">Netbooks</a></li>
+                <li><a href="">Notebooks Gamers</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Sobre nós:</li>
+                <li>Deividson - <a href="">LinkedIn</a></li>
+                <li>Devison - <a href="">LinkedIn</a></li>
+                <li>Diego - <a href="">LinkedIn</a></li>
+                <li>Emerson - <a href="">LinkedIn</a></li>
+                <li>Gabriel - <a href="">LinkedIn</a></li>
+                <li>@Escola da Nuvem</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div>
+            <img src="_img/_logos/logo-facebook.png" alt="Facebook">
+            <img src="_img/_logos/logo-instagram.png" alt="Instagram">
+            <img src="_img/_logos/cartao-pagamento-americanexpress.png" alt="American Express">
+            <img src="_img/_logos/cartao-pagamento-discover.png" alt="Discover">
+            <img src="_img/_logos/cartao-pagamento-maestro.png" alt="Maestro">
+            <img src="_img/_logos/cartao-pagamento-paypal.png" alt="PayPal">
+            <img src="_img/_logos/cartao-pagamento-visa.png" alt="Visa">
+        </div>
+        <p>Copyright&copy;2023</p>
+    </footer>
+    
+
+
+</body>
+</html>
