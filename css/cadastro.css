@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+main div {
+    background-color: lightgray;
+    padding: 1%;
+    border-radius: 10px;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+#Cadastro input, #Cadastro label {
+    display: flex;
+    flex-direction: column;
+}
+#Cadastro input, #Cadastro select {
+    margin-bottom: 20px;
+    height: 30px;
+    width: 90%;
+}
