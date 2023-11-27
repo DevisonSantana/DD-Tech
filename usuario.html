@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menuLateral.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li class="menuLateral" value="0" id="menuLateral1"> Olá Fulano</li>
+                <li class="menuLateral" value="1">Pedidos</li>
+                <li class="menuLateral" value="2">Favoritos</li>
+                <li class="menuLateral" value="3">Seu Cadastro</li>
+                <li class="menuLateral" value="4">Endereços</li>
+                <li class="menuLateral" value="5">Cartões</li>
+                <li class="menuLateral" value="6">Perguntas Frequentes</li>
+                <li class="menuLateral" value="7">Privacidade</li>
+                <li class="menuLateral" value="8">Preferencias de E-mail e Mensagens</li>
+            </ul>
+        </nav>
+        <!--Page Inicial-->
+        <section id="sectionInicial">
+
+            <h3>Feedbacks, Sugestões ou comentários: </h3>
+            <div class="comentario">
+                <textarea name="" id="" cols="80" rows="5"></textarea>
+                <button id="comentar" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Procurar Produtos</button>
+
+                <div class="containerProducts">
+
+
+                    <picture class="containerNovos">
+                        <img src="_img/produtos/note1.png" alt="">
+                        <figcaption>
+                            <div class="avaliacao">
+                                <img src="_img/estrelas4.png" alt="4 estrelas">
+                                <span>Reviews (4)</span>
+                            </div>
+                            <p class="descricao">
+                                EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                            </p>
+                            <em class="precoAntigo">R$ 499.00</em>
+                            <h6 class="precoAtual">R$ 499.00</h6>
+                        </figcaption>
+                    </picture>
+
+                    <picture class="containerNovos">
+                        <img src="_img/produtos/note2.png" alt="">
+                        <figcaption>
+                            <div class="avaliacao">
+                                <img src="_img/estrelas4.png" alt="4 estrelas">
+                                <span>Reviews (4)</span>
+                            </div>
+                            <p class="descricao">
+                                EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                            </p>
+                            <em class="precoAntigo">R$ 499.00</em>
+                            <h6 class="precoAtual">R$ 499.00</h6>
+                        </figcaption>
+                    </picture>
+
+                    <picture class="containerNovos">
+                        <img src="_img/produtos/note3.png" alt="">
+                        <figcaption>
+                            <div class="avaliacao">
+                                <img src="_img/estrelas4.png" alt="4 estrelas">
+                                <span>Reviews (4)</span>
+                            </div>
+                            <p class="descricao">
+                                EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                            </p>
+                            <em class="precoAntigo">R$ 499.00</em>
+                            <h6 class="precoAtual">R$ 499.00</h6>
+                        </figcaption>
+                    </picture>
+
+                    <picture class="containerNovos">
+                        <img src="_img/produtos/note4.png" alt="">
+                        <figcaption>
+                            <div class="avaliacao">
+                                <img src="_img/estrelas4.png" alt="4 estrelas">
+                                <span>Reviews (4)</span>
+                            </div>
+                            <p class="descricao">
+                                EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                            </p>
+                            <em class="precoAntigo">R$ 499.00</em>
+                            <h6 class="precoAtual">R$ 499.00</h6>
+                        </figcaption>
+                    </picture>
+
+                    <picture class="containerNovos">
+                        <img src="_img/produtos/note5.png" alt="">
+                        <figcaption>
+                            <div class="avaliacao">
+                                <img src="_img/estrelas4.png" alt="4 estrelas">
+                                <span>Reviews (4)</span>
+                            </div>
+                            <p class="descricao">
+                                EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                            </p>
+                            <em class="precoAntigo">R$ 499.00</em>
+                            <h6 class="precoAtual">R$ 499.00</h6>
+                        </figcaption>
+                    </picture>
+                </div>
+
+        </section>
+
+
+        <!--Page Pedidos-->
+        <section id="sectionPedidos">
+
+            <h3>Últimos Pedidos</h3>
+            <div id="pedidos">
+                <div id="cardProdutos">
+                    <picture class="ultimosPedidos">
+                        <img src="_img/produtos/desktop1.png" alt="">
+                        <p class="descricao">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                        </p>
+                        <h6 class="precoAtual">R$ 499.00</h6>
+                        <div class="botoes">
+                            <button type="button" class="button" name="0" value="0">Avaliar</button>
+                            <button type="button" class="button" name="0" value="1">Acompanhar</button>
+                            <button type="button" class="button" name="0" value="2">Troca ou devolução</button>
+                        </div>
+                    </picture>
+                </div>
+                <div id="cardProdutos">
+                    <picture class="ultimosPedidos">
+                        <img src="_img/produtos/desktop1.png" alt="">
+                        <p class="descricao">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                        </p>
+                        <h6 class="precoAtual">R$ 499.00</h6>
+                        <div class="botoes">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Avaliar</button>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Acompanhar</button>
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Troca ou devolução</button>
+                        </div>
+                    </picture>
+                </div>
+                <div id="cardProdutos">
+                    <picture class="ultimosPedidos">
+                        <img src="_img/produtos/desktop1.png" alt="">
+                        <p class="descricao">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                        </p>
+                        <h6 class="precoAtual">R$ 499.00</h6>
+                        <div class="botoes">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Avaliar</button>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Acompanhar</button>
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Troca ou devolução</button>
+                        </div>
+                    </picture>
+                </div>
+            </div>
+            <button id="carregarMaisProdutos" class=" bg-light">Carregar</button>
+            <button id="procurarProdutos" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Procurar Produtos</button>
+
+            <div class="containerProducts">
+
+
+                <picture class="containerNovos">
+                    <img src="_img/produtos/note1.png" alt="">
+                    <figcaption>
+                        <div class="avaliacao">
+                            <img src="_img/estrelas4.png" alt="4 estrelas">
+                            <span>Reviews (4)</span>
+                        </div>
+                        <p class="descricao">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                        </p>
+                        <em class="precoAntigo">R$ 499.00</em>
+                        <h6 class="precoAtual">R$ 499.00</h6>
+                    </figcaption>
+                </picture>
+
+                <picture class="containerNovos">
+                    <img src="_img/produtos/note2.png" alt="">
+                    <figcaption>
+                        <div class="avaliacao">
+                            <img src="_img/estrelas4.png" alt="4 estrelas">
+                            <span>Reviews (4)</span>
+                        </div>
+                        <p class="descricao">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                        </p>
+                        <em class="precoAntigo">R$ 499.00</em>
+                        <h6 class="precoAtual">R$ 499.00</h6>
+                    </figcaption>
+                </picture>
+
+                <picture class="containerNovos">
+                    <img src="_img/produtos/note3.png" alt="">
+                    <figcaption>
+                        <div class="avaliacao">
+                            <img src="_img/estrelas4.png" alt="4 estrelas">
+                            <span>Reviews (4)</span>
+                        </div>
+                        <p class="descricao">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                        </p>
+                        <em class="precoAntigo">R$ 499.00</em>
+                        <h6 class="precoAtual">R$ 499.00</h6>
+                    </figcaption>
+                </picture>
+
+                <picture class="containerNovos">
+                    <img src="_img/produtos/note4.png" alt="">
+                    <figcaption>
+                        <div class="avaliacao">
+                            <img src="_img/estrelas4.png" alt="4 estrelas">
+                            <span>Reviews (4)</span>
+                        </div>
+                        <p class="descricao">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                        </p>
+                        <em class="precoAntigo">R$ 499.00</em>
+                        <h6 class="precoAtual">R$ 499.00</h6>
+                    </figcaption>
+                </picture>
+
+                <picture class="containerNovos">
+                    <img src="_img/produtos/note5.png" alt="">
+                    <figcaption>
+                        <div class="avaliacao">
+                            <img src="_img/estrelas4.png" alt="4 estrelas">
+                            <span>Reviews (4)</span>
+                        </div>
+                        <p class="descricao">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+                        </p>
+                        <em class="precoAntigo">R$ 499.00</em>
+                        <h6 class="precoAtual">R$ 499.00</h6>
+                    </figcaption>
+                </picture>
+            </div>
+
+        </section>
+    </main>
+
+    <!--Modal-->
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="atributs" id="atributs">
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/usuario .js" defer></script>
+</body>
+
+</html>

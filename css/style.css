@@ -1,0 +1,61 @@
+ /* Menu princiapl */
+ 
+ #MenuPrincipal ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#MenuPrincipal a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Menu de caminho */
+
+#MenuPath ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+#MenuPath ul li {
+    margin: 1%;
+}
+
+ /* Area de rodape */
+
+ #Rodape {
+    background-color: black;
+}
+#Rodape a {
+    text-decoration: none;
+    color: lightgray;
+}
+#BlocoNavegacao {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 1%;
+} 
+#BlocoNavegacao ul {
+    list-style: none;
+}
+#redesEpagamentos {
+    background-color: white;
+    border-style: dashed;
+    border-width: 1px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.redeSocial, .cartaoPagamento {
+    display: flex;
+}
+.redeSocial img, .cartaoPagamento img {
+    height: 15px;
+    width: auto;
+    margin: 2%;
+}

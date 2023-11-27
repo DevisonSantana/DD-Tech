@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Finalização de compras</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cadastro.css">
 </head>
 <body>
     <!--Area de cabeçalho-->
@@ -32,64 +31,55 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <img src="" alt=">">
-                <li><a href="login.html">Cadastro</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <img src="" alt=">">
+                <li><a href="checkout.html">Finalizar Compra</a></li>
             </ul>
         </nav>
     </header>
-    <!--Bloco main da cadastro-->
+    <h2>Resumo da compra</h2>
+    <h3>Taxas Estimadas de Enviou</h3>
+    <h5>Insira o seu destino para obter uma estimativa de Enviou</h5>
+    <form>
+        <label for="pais">País</label>
+        <select id="pais" name="pais">
+            <option value="Brasil" >Brasil</option>
+            <option value="EUA">Estados Unidos</option>
+            <option value="Rússia">Rússia</option>
+            <option value="Canadá">Canadá</option>
+            <option value="India:">India</option>
+            <option value="Indonésia">Indonesia</option>
+        </select>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required>
+
+        <label for="cupom">cupom</label>
+        <input type="text" id="cupom" name="cupom">
+        <button type="button">"Aplicar cupom"</button>
+
+        <button type="submit">Finalizar compra</button>
+        <button type="submit">Ir para pagamento</button>
+        <button type="submit">Pagar com Paypal</button>
+        <button type="submit">Alterar endereço de entrega</button>
+    </form>
     <main>
-        <div>
-            <h1>Cadastro</h1>
-            <!--Area de cadastro para criação de conta-->
-            <form action="" id="Cadastro">
-                <label for="">Email *</label>
-                <input type="email" name="" id="" placeholder="Ex.: ddtech@email.com" required>
-                
-                <hr>
+        <h2>Carinho de compra</h2>
+        <h3>item</h3>
+        <hr>
+        <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/271830/PC-Gamer-Completo-F-cil-I7-16GB-GTX-1050TI-4GB-1TB-Windows-10-Preto-Monitor-21-5-Polegadas-Kit-Gamer-Teclado-Mouse-E-Headset-Fonte-500W_1686167918_gg.jpg" alt="Um setup gamer">
+        <button type="submit">Continuar comprando</button>
+        <button type="submit">Esvaziar carrinho</button>
+        <button type="submit"> Atualizar carrinho</button>
+        
+        
 
-                <label for="">Nome *</label>
-                <input type="text" name="" id="" placeholder="Ex.: José" required>
-
-                <label for="Sobrenome">Sobrenome *</label>
-                <input type="text" name="" id="" placeholder="Ex.: Dias dos Santos" required>
-
-                <hr>
-
-                <label for="">CPF *</label>
-                <input type="number" name="" id="" placeholder="Ex.: 01234567899" required>
-
-                <label for="">Endereço *</label>
-                <input type="text" name="" id="" placeholder="Ex.: Rua JavaScript, 123 - Bairro HTML - SP" required>
-
-                <label for="">Cidade *</label>
-                <input type="text" name="" id="" placeholder="Ex.: São Paulo" required>
-                
-                <label for="">Estado *</label>
-                <select name="" id="" required>
-                    <option value="">São Paulo</option>
-                    <option value="">Minas Gerais</option>
-                    <option value="">Bahia</option>
-                    <option value="">Pará</option>
-                    <option value="">Pernambuco</option>
-                </select>
-
-                <label for="">CEP *</label>
-                <input type="text" name="" id="" placeholder="Ex.: 12345678" required>
-
-                <label for="">País *</label>
-                <select name="" id="" required>
-                    <option value="">Brasil</option>
-                </select>
-
-                <label for="">Celular *</label>
-                <input type="tel" name="" id="" placeholder="Ex.: +55 (35)91234-5678" required>
-
-                <button type="submit">Criar Conta</button>
-
-                <hr>
-
-            </form>
-        </div>
     </main>
 
     <!--Inicio de footer-->
@@ -181,5 +171,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>

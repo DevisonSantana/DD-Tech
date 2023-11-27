@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="css/carrinho.css">
+</head>
+<body>
+     <!-- Area antes do Cabeçalho  -->
+
+    <nav>
+        <div id="cabecalho">
+            <div id="icones-sociais">
+                <a href="https://www.facebook.com">
+                    <img src="./_img/_logos/fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="./_img/_logos/insta.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </nav>  
+
+     <!-- Fim do primeiro cabeçalho  -->
+
+    <header>
+        <nav class="header">
+            <img src="/_img/_logos/logo-shop-cabecalho.png" alt="Logo">
+            <ul>
+                <li><a href="#">Notebooks</a></li>
+                <li><a href="#">Desktops</a></li>
+                <li><a href="#">Redes</a></li>
+                <li><a href="#">Impressoras</a></li>
+                <li><a href="#">Gamer</a></li>
+                <li><a href="#">Outros Produtos</a></li>
+            </ul>
+            <button><a href="#">Ofertas</a></button>
+            <ul class="nav-items">
+                <li><a href="#"><img src="./_img/lupa.png" alt="Lupa"></i></a></li>
+                <li><a href="#"><img src="/_img/carrinho.png" alt="Carrinho de Compras"></a></li>
+                <li><a href="#"><img src="/_img/foto_perfil.png" alt="Foto de Perfil"></a></li>
+            </ul>
+        </nav>
+    </header> 
+    <hr>
+
+    <!-- Navegação -->
+    <!-- Inicio da descrição e Preço do produto -->
+    <main>
+        <section>
+            <nav>
+                <span><a href="index.html"></a>Início</span>
+                <span>›</span>
+                <span><a href="carrinho.html"></a>Carrinho</span>
+            </nav>
+            <h2 class="carrinho">Carrinho de compras</h2>
+            <table class="tabela-items">
+                <thead>
+                    <tr class="thead">
+                        <th>Item</th>
+                        <th></th>
+                        <th>Preço</th>
+                        <th>Qtd</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tproduto">
+                        <td> <img src="https://via.placeholder.com/120x120" alt="Imagem do produto"> </td>
+                        <td><a href="#"></a>MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard e Mouse com 3 anos de garantia</td>
+                        <td>R$ 4.349,00</td>
+                        <td>
+                            <input type="number" id="quantidade" min="1" max="100"  value="1">
+                        </td>
+                        <td>R$ 13.047,00</td>
+                        <td>
+                            <button class="table-btn">X</button>
+                            <button class="table-btn"><img src="_img/icons_pencil.png"></button>
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+            <section class="section-btn">
+                <div>
+                    <button type="button">Continuar compra</button>
+                    <button type="button">Esvaziar carrinho</button>
+                </div>
+                <div>
+                    <button type="button">Atualizar</button>
+                </div>
+            </section>
+        </section>
+
+        <!-- Fim da Descrição e Preço do produto -->
+
+        <!-- Inicio do Resumo da Compra, Envio e Cupom -->
+
+        <section id="bloco" class="fundo-azul">
+            <div id="conteudo">
+                <h3 class="titulo-resumo-compra">Resumo da Compra</h3>
+                <div class="taxa-envio">
+                    <p>Taxa Estimada de Envio</p>
+                </div>
+            </div>
+            <form>
+                <p id="form-resumo">Insira o seu destino para obter uma estimativa de envio</p>
+                <label for="pais">Selecione o país de destino *</label>
+                    <select id="pais">
+                        <option value="brasil">Brasil</option>
+                        <option value="eua">Estados Unidos</option>
+                        <option value="canada">Canadá</option>
+                    </select>
+                    <label for="">Estado/Cidade *</label>
+                    <input type="text" required>
+                    <label for="">CEP *</label>
+                    <input type="number" required>        
+                <div class="opcao-entrega">
+                    <p>Taxa Padrão</p>
+                    <div>
+                        <input type="radio" name="opcao-entrega">
+                        <label for="entrega-destino">Preço pode variar de acordo com o Item/Destino</label>
+                    </div>
+                    <p>Retirar na loja</p>
+                    <div>
+                        <input type="radio" name="opcao-entrega" value="casa">
+                        <label for="entrega-em-casa">Rua JavaScript, 123 - Bairro HTML - SP</label>
+                    </div>
+                </div>
+                <div class="Cupom">
+                    <h4>Cupom de Desconto</h4>
+                    <input type="text" placeholder="Cupom de Desconto" method="post">
+                </div>
+                <button class="aplicar-desconto">
+                    Aplicar Desconto
+                </button>
+                <h4>Subtotal R$<span id="subtotal"> 13,047.00</span></h4>
+                <h4>Envio R$<span id="envio"> 21.00</span></h4>
+                <p>Preço pode variar de acordo com o Item/Destino</p>
+                <h4>Taxa R$<span id="taxa"> 21.00</span></h4>
+                <h4>Preço Total   R$ 13,068.00</h4>
+                <button class="botao-pagamento">
+                    Ir para Pagamento
+                </button>
+            </form>
+            <button class="botao-pagamento-paypal">
+                Pagamento com <img src="_img/_logos/cartao-pagamento-paypal.png">
+            </button>
+            <button class="alterar-endereco">
+                Alterar endereço de entrega
+            </button>
+        </section>
+        <script src="js/main.js"></script>
+        <!-- Fim do Resumo da Compra -->  
+
+    </main>
+    
+    <!-- Inicio de footer da página -->
+
+    <footer>
+        
+    </footer>
+    
+
+
+</body>
+</html>
