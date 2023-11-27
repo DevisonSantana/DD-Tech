@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'poppins'; */
+}
+
+#cabecalho {
+    width: 100%;
+    height: 44px;
+    background: #020202;
+    position: relative;
+}
+
+#icones-sociais {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#icones-sociais a {
+    margin-right: 20px;
+}
+
+#icones-sociais img {
+    height: 30px; 
+    width: auto;
+    padding: 5px;
+}
+
+/* Header inicial vem até aqui */
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.header img {
+    max-width: 100px; 
+    margin-right: 200px; 
+}
+
+.header ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 10px;
+    display: flex;
+}
+  
+.header li {
+    margin-right: 30px; 
+}
+
+.header li img {
+    margin: 0;
+}
+  
+.header button {
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border: 3px solid #007bff;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 150px 0 100px;
+}
+  
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+  
+.nav-items li {
+    margin-right: 20px;
+}
+  
+.nav img {
+    max-width: 30px; 
+}
+
+
+/* Fim do Header */
+
+main {
+    padding: 10px 8%;
+    display: flex;
+    gap: 20px;
+}
+
+/* main section:first-child {
+    width: 70%;
+} */
+
+
+.carrinho {
+    padding: 20px 0 30px 0;
+}
+
+.tabela-items {
+    border-collapse: collapse;
+
+}
+
+.tproduto {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    padding: 25px 0;
+    /* display: table-cell; */
+}
+
+.table-btn{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.table-btn img {
+    width: 70%; 
+}
+
+.tabela-items td, 
+table.tabela-items th {
+    padding: 10px 20px;
+}
+
+.section-btn {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-btn button {
+    padding: 5px;
+    border-radius: 50px;
+    width: 200px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0);
+}
+
+.section-btn button:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+    
+}
+
+.section-btn div:first-child button:first-child {
+    background-color: #fff;
+    color: #757575;
+    border: 1px solid #ccc;
+}
+
+/* Painel lateral */
+
+#conteudo {
+    margin: 0;
+}
+
+.fundo-azul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #F5F7FF;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.fundo-azul form, 
+.fundo-azul div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opcao-entrega div {
+    flex-direction: row;
+    color: #000 !important; 
+}
+
+#form-resumo {
+    font-size: .8rem;
+    color: #757575;
+}
+
+form input, form select {
+    height: 30px;
+}
+
+.fundo-azul button {
+    padding: 5px;
+    border-radius: 50px;
+    width: 200px;
+}
+
+.aplicar-desconto {
+    background-color: transparent !important;
+    color: #0156ff;
+    border: 2px solid #0156ff;
+    box-shadow: none;
+}
+
+.botao-pagamento {
+    background-color: #0156ff;
+    color: #fff;
+    border: #0156ff;
+}
+
+.botao-pagamento-paypal {
+    background-color: #FFB800;
+    border: #FFB800;
+}
+
+.botao-pagamento-paypal img {
+    width: 50px;
+    margin-top: 5px;
+}
+
+.alterar-endereco {
+    background-color: transparent !important;
+    border: 2px solid #727272;
+    color: #929090;
+}
+
+
+
+
