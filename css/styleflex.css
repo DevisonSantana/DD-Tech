@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'Roboto';
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5%;
+    margin: 1% 0;
+    align-items: center;
+}
+
+.header img {
+    height: 4%;
+    width: auto;
+}
+
+.nav-menu, .nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-menu {
+    gap: 3rem;
+}
+
+.nav-items {
+    gap: 2rem;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.nav-items button {
+    width: 8rem;
+    height: 2rem;
+    background-color: white;
+    border: 2px solid #0156ff;
+    border-radius: 2rem;
+}
+
+.nav-items button a {
+    text-decoration: none;
+    color: #0156ff;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.spn-blue {
+    color: #0156ff;
+}
+.nav-path a {
+    text-decoration: none;
+    color: black;
+}
+.nav-path {
+    margin: .5% 10%;
+}
+
+/* Footer */
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 0 10%;
+    color: white;
+}
+
+#footer div a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-start ul {
+    list-style: none;
+}
+.redes-sociais img, .cartoes img{
+    width: 1.6rem;
+    height: auto;
+}
+
+.footer-start {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.div-news input {
+    width: 30rem;
+}
+
+.div-news h3 {
+    font-size: 2rem;
+}
+
+.div-news button {
+    width: 10rem;
+    height: 2rem;
+    background-color: #0156ff;
+    color: white;
+    border-radius: 2rem;
+    border: transparent;
+}

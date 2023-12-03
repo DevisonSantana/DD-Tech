@@ -4,54 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleflex.css">
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js" defer></script>
 </head>
 <body>
+    <!--Area de cabeçalho-->
     <header>
-        <nav id="MenuPrincipal">
-            <ul>
-                <img src="_img/_logos/logo-shop-cabecalho.png" alt="Logo Shop">
-                <li><a href="">Notebooks</a></li>
-                <li><a href="">Desktops</a></li>
-                <li><a href="">Redes</a></li>
-                <li><a href="">Impressoras</a></li>
-                <li><a href="">Gamer</a></li>
-                <li><a href="">Outros Produtos</a></li>
-                <button><a href="">Ofertas</a></button>
-                <img src="" alt="search">
-                <img src="" alt="shop cart">
-                <a href="usuario.html"><img src="" alt="user"></a>
+        <nav class="header">
+            <ul class="nav-menu">
+                <img src="./_img/_logos/logo-shop-cabecalho.png" alt="Logo">
+                <li><a href="#">Notebooks</a></li>
+                <li><a href="#">Desktops</a></li>
+                <li><a href="#">Redes</a></li>
+                <li><a href="#">Impressoras</a></li>
+                <li><a href="#">Gamer</a></li>
+                <li><a href="#">Outros Produtos</a></li>
             </ul>
-        </nav>
-
-        <hr>
-
-        <nav id="MenuPath">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <img src="" alt=">">
-                <li><a href="login.html">Login</a></li>
+            <ul class="nav-items">
+                <li><button><a href="#">Ofertas</a></button></li>
+                <li><a href="#"><img src="./_img/lupa.png" alt="Lupa"></i></a></li>
+                <li><a href="#"><img src="./_img/carrinho.png" alt="Carrinho de Compras"></a></li>
+                <li><a href="#"><img src="./_img/foto_perfil.png" alt="Foto de Perfil"></a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div id="MenuLogin">
-            <h1>Login</h1>
-            <hr>
-            <form action="">
-                <label for="">Email *</label>
-                <input type="email" name="" id="" placeholder="Email" required>
-                <label for="">Senha *</label>
-                <input type="password" name="" id="" placeholder="Senha" required>
-                <div>
-                    <button type="submit"><a href="usuario.html">Entrar</a></button>
-                    <button type=""><a href="cadastro.html">Criar conta</a></button>
-                </div>
-                <p><a href="">Esqueci minha senha?</a></p>
-            </form>
-        </div>
+        <hr>
+
+    <nav class="nav-path">
+        <span><a href="index.html">Início</a></span>
+        <span class="spn-blue">›</span>
+        <span><a href="login.html">Login</a></span>
+    </nav>
+
+    <main id="menu-login">
+        <h1>Login</h1>
+
+        <hr>
+
+        <form action="" id="formulario">
+            <label for="email-input">Email<span class="spn-red">*</span></label>
+            <input type="email" name="email" id="email-input" placeholder="Email">
+            <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+
+            <label for="senha-input">Senha<span class="spn-red">*</span></label>
+            <input type="password" name="senha" id="senha-input" placeholder="Senha">
+            <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
+
+            <div class="btn">
+                <button type="submit" class="btn-submit"><a href="usuario.html" id="link-user">Entrar</a></button>
+                <button type="" class="btn-criar-conta"><a href="cadastro.html">Criar conta</a></button>
+            </div>
+            <p><a href="" class="forgot-pwd">Esqueci minha senha?</a></p>
+        </form>
     </main>
 </body>
 </html>

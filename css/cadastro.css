@@ -1,21 +1,60 @@
-main {
-    display: flex;
-    justify-content: center;
-}
 main div {
-    background-color: lightgray;
-    padding: 1%;
-    border-radius: 10px;
-    width: 80%;
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7%;
+    margin: 1%;
 }
 
-#Cadastro input, #Cadastro label {
+main div button {
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    border: 2px solid #0156ff;
+    border-radius: 2rem;
+}
+
+main div button a {
+    text-decoration: none;
+    color: #0156ff;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+input, select {
+    height: 2.5rem;
+}
+
+#formulario {
     display: flex;
     flex-direction: column;
+    gap: .5rem;
+    width: 60%;
+    height: auto;
+    padding-left: 3%;
+    font-weight: bolder;
 }
-#Cadastro input, #Cadastro select {
-    margin-bottom: 20px;
-    height: 30px;
-    width: 90%;
+
+#btn-criar-conta {
+    width: 10rem;
+    height: 2rem;
+    background-color: #0156ff;
+    color: white;
+    border-radius: 2rem;
+    border: transparent;
+}
+
+/* Estilizização dinaminca */
+
+.spn-red {
+    color: red;
+}
+
+.helper-text {
+    display: none;
+    color: darkred;
+    font-style: italic;
+}
+
+.visible {
+    display: block;
 }
