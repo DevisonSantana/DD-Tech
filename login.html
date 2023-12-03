@@ -4,44 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/styleflex.css">
     <link rel="stylesheet" href="css/login.css">
     <script src="js/login.js" defer></script>
 </head>
 <body>
-    <!--Area de cabeçalho-->
-    <header>
-        <nav class="header">
-            <ul class="nav-menu">
-                <img src="./_img/_logos/logo-shop-cabecalho.png" alt="Logo">
-                <li><a href="#">Notebooks</a></li>
-                <li><a href="#">Desktops</a></li>
-                <li><a href="#">Redes</a></li>
-                <li><a href="#">Impressoras</a></li>
-                <li><a href="#">Gamer</a></li>
-                <li><a href="#">Outros Produtos</a></li>
-            </ul>
-            <ul class="nav-items">
-                <li><button><a href="#">Ofertas</a></button></li>
-                <li><a href="#"><img src="./_img/lupa.png" alt="Lupa"></i></a></li>
-                <li><a href="#"><img src="./_img/carrinho.png" alt="Carrinho de Compras"></a></li>
-                <li><a href="#"><img src="./_img/foto_perfil.png" alt="Foto de Perfil"></a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Area antes do Cabeçalho  -->
 
-        <hr>
+<nav id="cabecalho">
+      
+    <div id="icones-sociais">
+        <a href="https://www.facebook.com">
+            <img src="./_img/_logos/logo-facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="./_img/_logos/insta.png" alt="Instagram">
+        </a>
+    </div>
 
-    <nav class="nav-path">
-        <span><a href="index.html">Início</a></span>
-        <span class="spn-blue">›</span>
-        <span><a href="login.html">Login</a></span>
-    </nav>
+</nav>  
 
+<!-- Fim do primeiro cabeçalho  -->
+
+<header>
+<nav class="header">
+    <img src="_img/_logos/logo-shop-cabecalho.png" alt="Logo">
+    <ul>
+        <li><a href="#">Notebooks</a></li>
+        <li><a href="#">Desktops</a></li>
+        <li><a href="#">Redes</a></li>
+        <li><a href="#">Impressoras</a></li>
+        <li><a href="#">Gamer</a></li>
+        <li><a href="#">Outros Produtos</a></li>
+    </ul>
+    
+    <ul class="nav-items">
+        <li><button><a href="#">Ofertas</a></button></li>
+        <li><a href="#"><img src="./_img/lupa.png" alt="Lupa"></i></a></li>
+        <li><a href="#"><img src="./_img/carrinho.png" alt="Carrinho de Compras"></a></li>
+        <li><a href="#"><img src="./_img/foto_perfil.png" alt="Foto de Perfil"></a></li>
+    </ul>
+</nav>
+</header> 
+<hr>
+
+<nav id="navegacao">
+    <span><a href="index.html"></a>Início</span>
+    <span>›</span>
+    <span><a href="carrinho.html"></a>Carrinho</span>
+</nav>
     <main id="menu-login">
+       
         <h1>Login</h1>
 
-        <hr>
+        
 
         <form action="" id="formulario">
             <label for="email-input">Email<span class="spn-red">*</span></label>
