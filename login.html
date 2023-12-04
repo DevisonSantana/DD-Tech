@@ -4,54 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/login.css">
     <script src="js/login.js" defer></script>
+    <script src="js/menu.js" defer></script>
 </head>
 <body>
-<!-- Area antes do Cabeçalho  -->
 
-<nav id="cabecalho">
-      
-    <div id="icones-sociais">
-        <a href="https://www.facebook.com">
-            <img src="./_img/_logos/logo-facebook.png" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com">
-            <img src="./_img/_logos/insta.png" alt="Instagram">
-        </a>
-    </div>
+    <!-- Inicio do Cabeçalho  -->
 
-</nav>  
+    <header>
+        <div id="icones-sociais">
+            <a href="https://www.facebook.com">
+                <img src="img/logos/logo-facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="img/logos/insta.png" alt="Instagram">
+            </a>
+        </div>
+        <nav class="header">
+            <img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo">
+            <ul id="parte2">
+                <li><a href="#">Notebooks</a></li>
+                <li><a href="#">Desktops</a></li>
+                <li><a href="#">Redes</a></li>
+                <li><a href="#">Impressoras</a></li>
+                <li><a href="#">Gamer</a></li>
+                <li><a href="#">Outros Produtos</a></li>
+            </ul>
+            
+            <ul class="nav-items">
+                <li><button><a href="#">Ofertas</a></button></li>
+                <li><a href="#"><img src="img/lupa.png" alt="Lupa"></i></a></li>
+                <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
+                <li><a href="usuario.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
+            </ul>
+            <div id="divHamburguer"><img src="img/Menu32.png" alt=""></div>
+        </nav>
+        <ul id="parte22">
+            <li><a href="#">Notebooks</a></li>
+            <li><a href="#">Desktops</a></li>
+            <li><a href="#">Redes</a></li>
+            <li><a href="#">Impressoras</a></li>
+            <li><a href="#">Gamer</a></li>
+            <li><a href="#">Outros Produtos</a></li>
+        </ul>
+    </header>
 
-<!-- Fim do primeiro cabeçalho  -->
-
-<header>
-<nav class="header">
-    <img src="_img/_logos/logo-shop-cabecalho.png" alt="Logo">
-    <ul>
-        <li><a href="#">Notebooks</a></li>
-        <li><a href="#">Desktops</a></li>
-        <li><a href="#">Redes</a></li>
-        <li><a href="#">Impressoras</a></li>
-        <li><a href="#">Gamer</a></li>
-        <li><a href="#">Outros Produtos</a></li>
-    </ul>
-    
-    <ul class="nav-items">
-        <li><button><a href="#">Ofertas</a></button></li>
-        <li><a href="#"><img src="./_img/lupa.png" alt="Lupa"></i></a></li>
-        <li><a href="#"><img src="./_img/carrinho.png" alt="Carrinho de Compras"></a></li>
-        <li><a href="#"><img src="./_img/foto_perfil.png" alt="Foto de Perfil"></a></li>
-    </ul>
-</nav>
-</header> 
-<hr>
-
-<nav id="navegacao">
-    <span><a href="index.html"></a>Início</span>
+    <nav id="navegacao">
+    <span><a href="index.html">Início</a></span>
     <span>›</span>
-    <span><a href="carrinho.html"></a>Carrinho</span>
+    <span><a href="carrinho.html">Carrinho</a></span>
 </nav>
+
+
+<!-- Fim do Header -->
     <main id="menu-login">
        
         <h1>Login</h1>

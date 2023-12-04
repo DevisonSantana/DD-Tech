@@ -6,66 +6,7 @@ body {
     width: 100%;
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    width: -webkit-fill-available;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
-}
-header img{
-    max-width: 20px;
-}
-#icones-sociais{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    background-color: black;
-    padding-right: 3%;
-    width: 100%;
-}
-#icones-sociais img{
-    max-width: 21px;
-}
 
-.header{
-    display: flex;
-    margin-top: 1%;
-    width: ;
-    justify-content: space-around;
-}
-#parte1{
-    width: 10%;
-    margin: 0 5%;
-}
-#parte2{
-    width: 60%;
-}
-.header ul{
-    display: flex;
-  
-
-}
-.header a{
-    color: black;
-}
-.header li{
-    list-style-type: none;
-    margin: 0 9px;
-}
-.header button {
-    background-color: #fff;
-    color: #007bff;
-    border: 1px solid #007bff;
-    border-radius: 15px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: .6rem;
-}
-#navegacao{
-
-    margin: 3% 0% 0 8%;
-}
 
 main {
     width: 80vw;
@@ -121,7 +62,9 @@ a:checked {
     
     margin-left: -16px;
 }
-
+.bi img{
+    width: 15px;
+}
 .seta {
     
     z-index: 10;
@@ -167,6 +110,7 @@ a:checked {
 }
 .containerProc{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     zoom: .7;
     margin: 2% 0;
@@ -291,14 +235,14 @@ max-width: 50%;
 }
 
 .details_div picture {
+    zoom: .9;
     margin: 0 1%;
     width: 150px;
-    height: 330px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 2%;
-
 }
 
 .details_img {
@@ -306,8 +250,9 @@ max-width: 50%;
 }
 
 .details_p {
-    margin: 2% 0;
+    margin: 5% 0;
     font-weight: 500;
+    font-size: small;
 }
 
 data {
@@ -404,22 +349,15 @@ blockquote span {
 button[name=products]{
     display: none;
 }
-
-@media screen and (max-width: 700px) {
-header{
-font-size: .7rem;
+@media screen and (max-width: 890px) {
+.containerProc{
+    justify-content: start;
 }
-.header li{
-    margin: 0 5px;
 }
 
-@media screen and (max-width: 600px) {
-#parte1{
-margin: 0 2%;
-}
-header{
-zoom: .8;
-}
+@media screen and (max-width: 720px) {
+    
+   
 
     button[name=products]{
         display: block;
@@ -459,50 +397,41 @@ zoom: .8;
         justify-content: space-around;
         bottom: 100px;
     }
-  #marcas{
-    border: #978d8d double 3px;
-    box-shadow: #978d8d 1px 1px 1px 4px;
-  }
+    #marcas{
+        border: #978d8d double 3px;
+        box-shadow: #978d8d 1px 1px 1px 4px;
+    }
+    #details{ 
+        justify-content: center;
+    }
+    #details h2{
+        margin: 10% 0;
+    }
+    .details_div{
+        justify-content: center;
+    }
+    .details_div picture:not(:first-child){
+        display: none;
+    }
+    .details_div picture{
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        justify-content: start;
+    }
+    .details_p{
+        width: 100%;
+    }
+    #citacao button{
+        font-size: .5rem;
+    }
 
+    #container_beneficios{
+        flex-direction: column;
+        align-items: center;
+    }
 
-
-  #details{ 
-    justify-content: center;
-  }
-  #details h2{
-    margin: 10% 0;
-  }
-  .details_div{
-    justify-content: center;
-  }
-  .details_div picture:not(:first-child){
-    display: none;
-  }
-  .details_div picture{
-    width: 100%;
-    height: fit-content;
-    align-items: center;
-    justify-content: start;
-  }
-  .details_p{
-    width: 100%;
-  }
-
-  
-#citacao button{
-    font-size: .5rem;
-}
-
-  #container_beneficios{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #container_beneficios div{
-    width: 100%;
-  }
-}
-@media screen and (max-width: 400px) {
-header{
-zoom: .6;
+    #container_beneficios div{
+        width: 100%;
+    }
 }

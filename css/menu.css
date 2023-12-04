@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', 'Roboto';
+}
+
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+header img{
+    max-width: 20px;
+}
+
+#icones-sociais{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: black;
+    padding-right: 3%;
+    width: 100%;
+}
+#icones-sociais img{
+    max-width: 21px;
+}
+
+.header{
+    display: flex;
+    margin-top: 1%;
+    width: 100%;
+    scale: .8;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header ul{
+    display: flex;
+  
+
+}
+.header a{
+    color: black;
+}
+.header li{
+    list-style-type: none;
+    margin: 0 9px;
+}
+.header button {
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .6rem;
+}
+#navegacao{
+
+    margin: 3% 0% 0 8%;
+}
+.nav-path {
+    margin: 2% 0 0 10%;
+}
+
+.spn-blue {
+    font-weight: bolder;
+    color: #0156ff;
+}
+
+#cabecalho {
+    grid-area: area11;
+    display: grid;
+    grid-template-areas:
+    "div1 div2 div3 div4 div5 div6";
+    height: 44px;
+    background: #020202;
+    position: relative;
+}
+
+#icones-sociais {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 2%;
+    grid-area: div5;
+}
+
+#icones-sociais a {
+    margin-right: 20px;
+}
+
+#icones-sociais img {
+    height: 30px; 
+    width: auto;
+    padding: 5px;
+}
+
+/* Header inicial vem até aqui */
+
+.header {
+    display: flex;
+    justify-content: ;
+    align-items: s;
+    zoom: .;
+}
+
+.header img {
+    max-width: 100px;
+    margin-right: 200px;
+}
+
+.header ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 10px;
+    display: flex;
+}
+
+.header li {
+    margin-right: 30px; 
+}
+
+.header li img {
+    margin: 0;
+}
+
+.header button {
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border: 3px solid #007bff;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 150px 0 100px;
+}
+
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nav-items li {
+    margin-right: 20px;
+}
+
+.nav-items button {
+    height: 28px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav img {
+    max-width: 30px; 
+}
+
+#parte1{
+    width: 10%;
+    margin: 0 5%;
+}
+#parte22 a{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#parte22{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 15;
+    right: 1px;
+    top: 113px;
+    /* width: 1px; */
+    background-color: #000;
+    /* height: 1px; */
+}
+#parte22 li{
+    list-style-type: none;
+    margin: 20px;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: #fff dotted 1px;
+    transition: all 2s;
+    
+}
+#divHamburguer{
+    display: none;
+}
+
+#navegacao a{
+    color: #000;
+}
+
+
+@media screen and (max-width: 950px) {
+    header{
+    font-size: .7rem;
+    }
+    .header li{
+        margin: 0 4px;
+    }
+}
+@media screen and (max-width: 720px) {
+    
+    #parte1{
+    margin: 0 2%;
+    }
+    #parte2{
+        width: fit-content;
+    }
+    .header{
+        justify-content: space-around;
+    }
+ 
+
+    @media screen and (max-width: 600px) {
+        .header{
+            justify-content: space-between;
+        }
+        .header img {
+            margin-right: 50px;
+        }
+        #parte1{
+            margin: 0 5%;
+        }
+        #parte2{
+            display: none;
+        }
+        #parte22{
+            display: none;
+        }
+        #divHamburguer{
+            display: block;
+        }
+    
+    }
+    @media screen and (max-width: 400px) {
+        header{
+        zoom: .5;
+        }
+        .header li {
+            margin: 0 5px;
+        }
+    }
+    @media screen and (max-width: 350px) {
+        header{
+        zoom: .4;
+        }
+        .header li {
+            margin: 0 4px;
+        }
+    }
+
+

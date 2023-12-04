@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap" rel="stylesheet">
     <title>Ecommerce</title>
 </head>
 
@@ -20,14 +21,14 @@
     <header>
         <div id="icones-sociais">
             <a href="https://www.facebook.com">
-                <img src="../_img/_logos/logo-facebook.png" alt="Facebook">
+                <img src="img/logos/logo-facebook.png" alt="Facebook">
             </a>
             <a href="https://www.instagram.com">
-                <img src="../_img/_logos/logo-instagram.png" alt="Instagram">
+                <img src="img/logos/insta.png" alt="Instagram">
             </a>
         </div>
         <nav class="header">
-            <img id="parte1" src="../_img/_logos/logo-shop-cabecalho.png" alt="Logo">
+            <img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo">
             <ul id="parte2">
                 <li><a href="#">Notebooks</a></li>
                 <li><a href="#">Desktops</a></li>
@@ -39,36 +40,45 @@
             
             <ul class="nav-items">
                 <li><button><a href="#">Ofertas</a></button></li>
-                <li><a href="#"><img src="../_img/lupa.png" alt="Lupa"></i></a></li>
-                <li><a href="#"><img src="../_img/carrinho.png" alt="Carrinho de Compras"></a></li>
-                <li><a href="#"><img src="../_img/foto_perfil.png" alt="Foto de Perfil"></a></li>
+                <li><a href="#"><img src="img/lupa.png" alt="Lupa"></i></a></li>
+                <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
+                <li><a href="login.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
             </ul>
+            <div id="divHamburguer"><img src="img/Menu32.png" alt=""></div>
         </nav>
+        <ul id="parte22">
+            <li><a href="#">Notebooks</a></li>
+            <li><a href="#">Desktops</a></li>
+            <li><a href="#">Redes</a></li>
+            <li><a href="#">Impressoras</a></li>
+            <li><a href="#">Gamer</a></li>
+            <li><a href="#">Outros Produtos</a></li>
+        </ul>
     </header>
 
     <nav id="navegacao">
-    <span><a href="index.html"></a>Início</span>
+    <span><a href="index.html">Início</a></span>
     <span>›</span>
-    <span><a href="carrinho.html"></a>Carrinho</span>
+    <span><a href="carrinho.html">Carrinho</a></span>
 </nav>
 
 
-<!-- <embed src="./menu/menu.html" type="text/html"> -->
+<!-- Fim do Header -->
 
     <main>
         
         <section id="banner">
             <div>
-                <i class="bi bi-chevron-left seta " onclick="LeftBanner()"></i>
+                <i class="bi bi-chevron-left seta " onclick="LeftBanner()"><img  src="img/left.png" alt=""></i>
 
             </div>
             <div id="banner_img">
-                <img src="_img/banner1.png" alt="banner" srcset="" class="banner_img">
-                <img src="_img/banner1.png" alt="banner" srcset="" class="banner_img">
-                <img src="_img/banner1.png" alt="banner" srcset="" class="banner_img">
+                <img src="img/banner1.png" alt="banner" srcset="" class="banner_img">
+                <img src="img/banner1.png" alt="banner" srcset="" class="banner_img">
+                <img src="img/banner1.png" alt="banner" srcset="" class="banner_img">
             </div>
             <div>
-                <i class="bi bi-chevron-right seta" onclick="RightBanner()"></i>
+                <i class="bi bi-chevron-right seta" onclick="RightBanner()"><img  src="img/right.png" alt=""></i>
 
             </div>
         </section>
@@ -77,14 +87,14 @@
             <h2>Novos Produtos</h2>
             <div class="containerProducts">
                 <div>
-                    <i class="bi bi-chevron-left seta seta_products" onclick="LeftNovos()"></i>
+                    <i class="bi bi-chevron-left seta seta_products" onclick="LeftNovos()"><img  src="img/left.png" alt=""></i>
                 </div>
                 <div id="products_img">
                     <picture class="containerNovos">
-                        <img src="_img//Ex_diplay.png" alt="">
+                        <img src="img//Ex_diplay.png" alt="">
                         <figcaption>
                             <div class="avaliacao">
-                                <img src="_img//estrelas4.png" alt="4 estrelas">
+                                <img src="img//estrelas4.png" alt="4 estrelas">
                                 <span>Reviews (4)</span>
                             </div>
                             <p class="descricao">
@@ -96,10 +106,10 @@
                     </picture>
 
                     <picture class="containerNovos">
-                        <img src="_img//Ex_diplay.png" alt="">
+                        <img src="img//Ex_diplay.png" alt="">
                         <figcaption>
                             <div class="avaliacao">
-                                <img src="_img//estrelas4.png" alt="4 estrelas">
+                                <img src="img//estrelas4.png" alt="4 estrelas">
                                 <span>Reviews (4)</span>
                             </div>
                             <p class="descricao">
@@ -111,10 +121,10 @@
                     </picture>
 
                     <picture class="containerNovos">
-                        <img src="_img//Ex_diplay.png" alt="">
+                        <img src="img//Ex_diplay.png" alt="">
                         <figcaption>
                             <div class="avaliacao">
-                                <img src="_img//estrelas4.png" alt="4 estrelas">
+                                <img src="img//estrelas4.png" alt="4 estrelas">
                                 <span>Reviews (4)</span>
                             </div>
                             <p class="descricao">
@@ -126,10 +136,10 @@
                     </picture>
 
                     <picture class="containerNovos">
-                        <img src="_img//Ex_diplay.png" alt="">
+                        <img src="img//Ex_diplay.png" alt="">
                         <figcaption>
                             <div class="avaliacao">
-                                <img src="_img//estrelas4.png" alt="4 estrelas">
+                                <img src="img//estrelas4.png" alt="4 estrelas">
                                 <span>Reviews (4)</span>
                             </div>
                             <p class="descricao">
@@ -141,10 +151,10 @@
                     </picture>
 
                     <picture class="containerNovos">
-                        <img src="_img//Ex_diplay.png" alt="">
+                        <img src="img//Ex_diplay.png" alt="">
                         <figcaption>
                             <div class="avaliacao">
-                                <img src="_img//estrelas4.png" alt="4 estrelas">
+                                <img src="img//estrelas4.png" alt="4 estrelas">
                                 <span>Reviews (4)</span>
                             </div>
                             <p class="descricao">
@@ -156,10 +166,10 @@
                     </picture>
 
                     <picture class="containerNovos">
-                        <img src="_img//Ex_diplay.png" alt="">
+                        <img src="img//Ex_diplay.png" alt="">
                         <figcaption>
                             <div class="avaliacao">
-                                <img src="_img//estrelas4.png" alt="4 estrelas">
+                                <img src="img//estrelas4.png" alt="4 estrelas">
                                 <span>Reviews (4)</span>
                             </div>
                             <p class="descricao">
@@ -171,10 +181,10 @@
                     </picture>
 
                     <picture class="containerNovos">
-                        <img src="_img//Ex_diplay.png" alt="">
+                        <img src="img//Ex_diplay.png" alt="">
                         <figcaption>
                             <div class="avaliacao">
-                                <img src="_img//estrelas4.png" alt="4 estrelas">
+                                <img src="img//estrelas4.png" alt="4 estrelas">
                                 <span>Reviews (4)</span>
                             </div>
                             <p class="descricao">
@@ -186,20 +196,20 @@
                     </picture>
                 </div>
                 <div>
-                    <i class="bi bi-chevron-right seta seta_products" onclick="RightNovos()"></i>
+                    <i class="bi bi-chevron-right seta seta_products" onclick="RightNovos()"><img  src="img/right.png" alt=""></i>
                 </div>
             </div>
         </section>
 
         <section id="marcaZip">
-            <img src="_img//_logos/zip.png" alt="">
+            <img src="img//logos/zip.png" alt="">
         </section>
 
         <section id="container_Produtos">
 
             <div class="containerProc">
                 <picture class="capa_products">
-                    <img src="_img//personalize_pc.png" alt="">
+                    <img src="img//personalize_pc.png" alt="">
                     <div class="destaque">
                         <h4>Personalize <br> Seu Pc</h4>
                         <a href="">Ver todos os <br> Produtos</a>
@@ -207,10 +217,10 @@
                 </picture>
 
                 <picture class="containerNovos" id="1">
-                    <img src="_img//_produtos/charlie.png" alt="">
+                    <img src="img//produtos/charlie.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -222,10 +232,10 @@
                 </picture>
 
                 <picture class="containerNovos" id="2">
-                    <img src="_img//_produtos/bravo.png" alt="">
+                    <img src="img//produtos/bravo.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -237,10 +247,10 @@
                 </picture>
 
                 <picture class="containerNovos" id="3">
-                    <img src="_img//_produtos/alpha.png" alt="">
+                    <img src="img//produtos/alpha.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -252,10 +262,10 @@
                 </picture>
 
                 <picture class="containerNovos" id="4">
-                    <img src="_img//_produtos/zulu.png" alt="">
+                    <img src="img//produtos/zulu.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img/estrelas4.png" alt="4 estrelas">
+                            <img src="img/estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -267,10 +277,10 @@
                 </picture>
 
                 <picture class="containerNovos" id="5">
-                    <img src="_img//_produtos/delta.png" alt="">
+                    <img src="img//produtos/delta.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -287,7 +297,7 @@
 
             <div class="containerProc">
                 <picture class="capa_products">
-                    <img src="_img//_details/notebooks.png" alt="">
+                    <img src="img//details/notebooks.png" alt="">
                     <div class="destaque">
                         <h4>Notebooks</h4>
                         <a href=""></a>
@@ -295,10 +305,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/note1.png" alt="">
+                    <img src="img//produtos/note1.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -310,10 +320,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/note2.png" alt="">
+                    <img src="img//produtos/note2.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -325,10 +335,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/note3.png" alt="">
+                    <img src="img//produtos/note3.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -340,10 +350,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/note4.png" alt="">
+                    <img src="img//produtos/note4.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -355,10 +365,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/note5.png" alt="">
+                    <img src="img//produtos/note5.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -375,7 +385,7 @@
 
             <div class="containerProc">
                 <picture class="capa_products">
-                    <img src="_img//_details/desktops.png" alt="">
+                    <img src="img//details/desktops.png" alt="">
                     <div class="destaque">
                         <h4>Desktops</h4>
                         <a href="">Ver todos os <br> Produtos</a>
@@ -383,10 +393,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/desktop1.png" alt="">
+                    <img src="img//produtos/desktop1.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -398,10 +408,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/desktop2.png" alt="">
+                    <img src="img//produtos/desktop2.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -413,10 +423,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/desktop3.png" alt="">
+                    <img src="img//produtos/desktop3.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -428,10 +438,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/desktop4.png" alt="">
+                    <img src="img//produtos/desktop4.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -443,10 +453,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/desktop5.png" alt="">
+                    <img src="img//produtos/desktop5.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -463,7 +473,7 @@
 
             <div class="containerProc">
                 <picture class="capa_products">
-                    <img src="_img//_details/monitores.png" alt="">
+                    <img src="img//details/monitores.png" alt="">
                     <div class="destaque">
                         <h4>Monitores <br> Gamers</h4>
                         <a href="">Ver todos os <br> Produtos</a>
@@ -471,10 +481,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/msi1.png" alt="">
+                    <img src="img//produtos/msi1.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -486,10 +496,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/msi2.png" alt="">
+                    <img src="img//produtos/msi2.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -501,10 +511,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/msi3.png" alt="">
+                    <img src="img//produtos/msi3.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -516,10 +526,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/msi4.png" alt="">
+                    <img src="img//produtos/msi4.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -531,10 +541,10 @@
                 </picture>
 
                 <picture class="containerNovos">
-                    <img src="_img//_produtos/msi5.png" alt="">
+                    <img src="img//produtos/msi5.png" alt="">
                     <figcaption>
                         <div class="avaliacao">
-                            <img src="_img//estrelas4.png" alt="4 estrelas">
+                            <img src="img//estrelas4.png" alt="4 estrelas">
                             <span>Reviews (4)</span>
                         </div>
                         <p class="descricao">
@@ -551,20 +561,20 @@
         </section>
         
         <ul id="marcas">
-            <li><img src="_img//_logos/adata.png" alt=""></li>
-            <li><img src="_img//_logos/gigabyte.png" alt=""></li>
-            <li><img src="_img//_logos/hewlett.png" alt=""></li>
-            <li><img src="_img//_logos/msi.png" alt=""></li>
-            <li><img src="_img//_logos/razer.png" alt=""></li>
-            <li><img src="_img//_logos/Roccat.png" alt=""></li>
-            <li><img src="_img//_logos/thermaltake.png" alt=""></li>
+            <li><img src="img//logos/adata.png" alt=""></li>
+            <li><img src="img//logos/gigabyte.png" alt=""></li>
+            <li><img src="img//logos/hewlett.png" alt=""></li>
+            <li><img src="img//logos/msi.png" alt=""></li>
+            <li><img src="img//logos/razer.png" alt=""></li>
+            <li><img src="img//logos/Roccat.png" alt=""></li>
+            <li><img src="img//logos/thermaltake.png" alt=""></li>
         </ul>
 
         <section id="details">
             <h2>Siga-nos no Instagram para notícias, ofertas e muito mais</h2>
             <div class="details_div">
                 <picture>
-                    <img src="_img//_details/note_hp.png" alt="" class="details_img">
+                    <img src="img//details/note_hp.png" alt="" class="details_img">
                     <p class="details_p">
                         Se você comprou recentemente um PC desktop ou laptop, considere adicionar periféricos para
                         aprimorar a configuração do seu escritório doméstico, seu equipamento de jogos ou seu espaço de
@@ -574,7 +584,7 @@
                 </picture>
 
                 <picture>
-                    <img src="_img//_details/pc_mesa.png" alt="" class="details_img">
+                    <img src="img//details/pc_mesa.png" alt="" class="details_img">
                     <p class="details_p">
                         Como jogador, o som superior conta muito. Você precisa ouvir os inimigos na ponta dos pés atrás
                         de você para um ataque furtivo ou uma ligeira mudança na música atmosférica sinalizando um novo
@@ -584,7 +594,7 @@
                 </picture>
 
                 <picture>
-                    <img src="_img//_details/pc2.png" alt="" class="details_img">
+                    <img src="img//details/pc2.png" alt="" class="details_img">
                     <p class="details_p">
                         Se você comprou recentemente um PC desktop ou laptop, considere adicionar periféricos para
                         aprimorar a configuração do seu escritório doméstico, seu equipamento de jogos ou seu espaço de
@@ -594,7 +604,7 @@
                 </picture>
 
                 <picture>
-                    <img src="_img//_details/pc3.png" alt="" class="details_img">
+                    <img src="img//details/pc3.png" alt="" class="details_img">
                     <p class="details_p">
                         Como jogador, o som superior conta muito. Você precisa ouvir os inimigos na ponta dos pés atrás
                         de você para um ataque furtivo ou uma ligeira mudança na música atmosférica sinalizando um novo
@@ -604,7 +614,7 @@
                 </picture>
 
                 <picture>
-                    <img src="_img//_details/mouse.png" alt="" class="details_img">
+                    <img src="img//details/mouse.png" alt="" class="details_img">
                     <p class="details_p">
                         Se você comprou recentemente um PC desktop ou laptop, considere adicionar periféricos para
                         aprimorar a configuração do seu escritório doméstico, seu equipamento de jogos ou seu espaço de
@@ -614,7 +624,7 @@
                 </picture>
 
                 <picture>
-                    <img src="_img//_details/teclado.png" alt="" class="details_img">
+                    <img src="img//details/teclado.png" alt="" class="details_img">
                     <p class="details_p">
                         Como jogador, o som superior conta muito. Você precisa ouvir os inimigos na ponta dos pés atrás
                         de você para um ataque furtivo ou uma ligeira mudança na música atmosférica sinalizando um novo
@@ -624,7 +634,7 @@
                 </picture>
 
                 <picture>
-                    <img src="_img//_details/pc_gamer.png" alt="" class="details_img">
+                    <img src="img//details/pc_gamer.png" alt="" class="details_img">
                     <p class="details_p">
                         Se você comprou recentemente um PC desktop ou laptop, considere adicionar periféricos para
                         aprimorar a configuração do seu escritório doméstico, seu equipamento de jogos ou seu espaço de
@@ -634,7 +644,7 @@
                 </picture>
 
                 <picture>
-                    <img src="_img//_details/note_alto.png" alt="" class="details_img">
+                    <img src="img//details/note_alto.png" alt="" class="details_img">
                     <p class="details_p">
                         Como jogador, o som superior conta muito. Você precisa ouvir os inimigos na ponta dos pés atrás
                         de você para um ataque furtivo ou uma ligeira mudança na música atmosférica sinalizando um novo
@@ -644,7 +654,7 @@
                 </picture>
 
                 <picture>
-                    <img src="_img//_details/pc_rgb.png" alt="" class="details_img">
+                    <img src="img//details/pc_rgb.png" alt="" class="details_img">
                     <p class="details_p">
                         Se você comprou recentemente um PC desktop ou laptop, considere adicionar periféricos para
                         aprimorar a configuração do seu escritório doméstico, seu equipamento de jogos ou seu espaço de
@@ -710,21 +720,21 @@
 
         <section id="container_beneficios">
             <div>
-                <img src="_img//garantia.png" alt="">
+                <img src="img//garantia.png" alt="">
                 <h1>Garantia</h1>
                 <p>
                     Até 3 anos de garantia no local disponível para sua tranquilidade.
                 </p>
             </div>
             <div>
-                <img src="_img//facilidade.png" alt="">
+                <img src="img//facilidade.png" alt="">
                 <h1>Facilidades</h1>
                 <p>
                     Com grandes descontos, entrega gratuita
                 </p>
             </div>
             <div>
-                <img src="_img//economias.png" alt="">
+                <img src="img//economias.png" alt="">
                 <h1>Economias incriveis</h1>
                 <p>
                     Até 70% de desconto em novos produtos, você pode ter certeza do melhor preço.
@@ -733,6 +743,8 @@
         </section>
     </main>
     <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+
 </body>
 
 </html>

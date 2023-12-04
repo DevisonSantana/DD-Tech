@@ -8,28 +8,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/menu.js" defer></script>
     <script src=""></script>
     </head>
 <body>
-     <!-- Area antes do Cabeçalho  -->
+      <!-- Inicio do Cabeçalho  -->
 
-    <nav id="cabecalho">
-            <div id="icones-sociais">
-                <a href="https://www.facebook.com">
-                    <img src="./_img/_logos/fb.png" alt="Facebook">
-                </a>
-                <a href="https://www.instagram.com">
-                    <img src="./_img/_logos/insta.png" alt="Instagram">
-                </a>
-            </div> 
-    </nav>  
-
-     <!-- Fim do primeiro cabeçalho  -->
-
-    <header>
+      <header>
+        <div id="icones-sociais">
+            <a href="https://www.facebook.com">
+                <img src="img/logos/logo-facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="img/logos/insta.png" alt="Instagram">
+            </a>
+        </div>
         <nav class="header">
-            <img src="/_img/_logos/logo-shop-cabecalho.png" alt="Logo">
-            <ul>
+            <img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo">
+            <ul id="parte2">
                 <li><a href="#">Notebooks</a></li>
                 <li><a href="#">Desktops</a></li>
                 <li><a href="#">Redes</a></li>
@@ -37,25 +34,39 @@
                 <li><a href="#">Gamer</a></li>
                 <li><a href="#">Outros Produtos</a></li>
             </ul>
+            
             <ul class="nav-items">
                 <li><button><a href="#">Ofertas</a></button></li>
-                <li><a href="#"><img src="./_img/lupa.png" alt="Lupa"></i></a></li>
-                <li><a href="#"><img src="/_img/carrinho.png" alt="Carrinho de Compras"></a></li>
-                <li><a href="#"><img src="/_img/foto_perfil.png" alt="Foto de Perfil"></a></li>
+                <li><a href="#"><img src="img/lupa.png" alt="Lupa"></i></a></li>
+                <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
+                <li><a href="usuario.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
             </ul>
+            <div id="divHamburguer"><img src="img/Menu32.png" alt=""></div>
         </nav>
-    </header> 
-    <hr>
+        <ul id="parte22">
+            <li><a href="#">Notebooks</a></li>
+            <li><a href="#">Desktops</a></li>
+            <li><a href="#">Redes</a></li>
+            <li><a href="#">Impressoras</a></li>
+            <li><a href="#">Gamer</a></li>
+            <li><a href="#">Outros Produtos</a></li>
+        </ul>
+    </header>
 
-    <!-- Navegação -->
+    <nav id="navegacao">
+    <span><a href="index.html">Início</a></span>
+    <span>›</span>
+    <span><a href="carrinho.html">Carrinho</a></span>
+</nav>
+
+
+<!-- Fim do Header -->
+
+
     <!-- Inicio da descrição e Preço do produto -->
     <main>
         <section>
-            <nav>
-                <span><a href="index.html"></a>Início</span>
-                <span>›</span>
-                <span><a href="carrinho.html"></a>Carrinho</span>
-            </nav>
+           
             <h2 class="carrinho">Carrinho de compras</h2>
             <table class="tabela-items">
                 <thead>
@@ -70,7 +81,7 @@
                 </thead>
                 <tbody>
                     <tr class="tproduto">
-                        <td> <img src="./_img/Ex_diplay5.png" alt="Imagem do produto" class="table-img"> </td>
+                        <td> <img src="img/Ex_diplay5.png" alt="Imagem do produto" class="table-img"> </td>
                         <td><a href="#"></a>MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard e Mouse com 3 anos de garantia</td>
                         <td>R$ 4.349,00</td>
                         <td>
@@ -79,7 +90,7 @@
                         <td>R$ 13.047,00</td>
                         <td>
                             <button class="table-btn">X</button>
-                            <button class="table-btn"><img src="_img/icons_pencil.png"></button>
+                            <button class="table-btn"><img src="img/icons_pencil.png"></button>
                         </td>
                     </tr> 
                 </tbody>
@@ -147,7 +158,7 @@
                 </button>
             </form>
             <button class="botao-pagamento-paypal">
-                <a href="">Pagamento com <img src="_img/_logos/cartao-pagamento-paypal.png"></a>
+                <a href="">Pagamento com <img src="img/logos/cartao-pagamento-paypal.png"></a>
             </button>
             <button class="alterar-endereco">
                 <a href="">Alterar endereço de entrega</a> 

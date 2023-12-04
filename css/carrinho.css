@@ -5,124 +5,7 @@
     font-family: 'poppins', 'Roboto';
 }
 
-body{
-    display: grid;
-    grid-template-areas:
-    "area11"
-    "area21"
-    "area31";
-}
 
-header {
-    grid-area: area21;
-}
-
-main {
-    padding: 10px 8%;
-    display: flex;
-    gap: 20px;
-    grid-area: area31;
-}
-
-#cabecalho {
-    grid-area: area11;
-    display: grid;
-    grid-template-areas:
-    "div1 div2 div3 div4 div5 div6";
-    height: 44px;
-    background: #020202;
-    position: relative;  
-}
-
-#icones-sociais {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin-right: 2%;
-    grid-area: div5;
-}
-
-#icones-sociais a {
-    margin-right: 20px;
-}
-
-#icones-sociais img {
-    height: 30px; 
-    width: auto;
-    padding: 5px;
-}
-
-/* Header inicial vem até aqui */
-
-
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.header img {
-    max-width: 100px; 
-    margin-right: 200px; 
-}
-
-.header ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 10px;
-    display: flex;
-}
-  
-.header li {
-    margin-right: 30px; 
-}
-
-.header li img {
-    margin: 0;
-}
-  
-.header button {
-    background-color: #fff;
-    color: #007bff;
-    padding: 10px 20px;
-    border: 3px solid #007bff;
-    border-radius: 15px;
-    text-decoration: none;
-    cursor: pointer;
-    margin-left: 150px 0 100px;
-}
-  
-.header a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-.nav-items {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-}
-  
-.nav-items li {
-    margin-right: 20px;
-}
-  
-.nav img {
-    max-width: 30px; 
-}
-
-
-/* Fim do Header */
-
-
-
-/* main section:first-child {
-    width: 70%;
-} */
 
 
 .carrinho {
@@ -162,6 +45,7 @@ table.tabela-items th {
 .section-btn {
     margin: 20px 0;
     display: flex;
+    width: auto;
     justify-content: space-between;
 }
 
@@ -291,4 +175,11 @@ form input, form select {
     .header{
         zoom: .5;
     }*/
+  }
+  @media screen and (max-width: 768px) {
+    .tabela-items{
+        zoom: .6;
+    }
+    .section-btn {
+        zoom: .9;
   }
