@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/menu.css">
     <script src="js/menu.js" defer></script>
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/checkout.css">
 </head>
 <body>
     <!-- Area antes do Cabeçalho  -->
@@ -59,51 +60,93 @@
         <span><a href="checkout.html">Finalizar Compras</a></span>
     </nav>
 
-    </header>
-    <h2>Resumo da compra</h2>
-    <h3>Taxas Estimadas de Enviou</h3>
-    <h5>Insira o seu destino para obter uma estimativa de Enviou</h5>
-    <form>
-        <label for="pais">País</label>
-        <select id="pais" name="pais">
-            <option value="Brasil" >Brasil</option>
-            <option value="EUA">Estados Unidos</option>
-            <option value="Rússia">Rússia</option>
-            <option value="Canadá">Canadá</option>
-            <option value="India:">India</option>
-            <option value="Indonésia">Indonesia</option>
-        </select>
+    <!-- INICIO DE CONTEUDO DA PAGINA -->
 
-        <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade" required>
+    <div class="caixa">
+    <div class="inicio">
+    <h2 class="primeiro">Resumo da compra</h2>
+    <br>
+    <h3 id="segundo">Taxas Estimadas de Enviou</h3>
+    
+    <h4>Insira o seu destino para obter uma estimativa de Enviou</h4>
+    <h4 id="cupom">Cupom de desconto</h4>
+    <hr>
+    </div>
+    
+    <div id="subtotal">
+    <p>Subtotal    </p>
+    <p>R$ 18.00,00</p>
+    </div>
+    <div>
+        <div id="envio">
+            <p>Envio   </p>
+        
+            <p>R$ 120.00</p>
+    </div>
+    <p id="local">Preço pode variar de acordo com o Item/Destino</p>
+    
+    <div id="taxa">
+    <p>Taxa</p>
+    <p>R$ 150.00</p>
+    </div>
+    <div id="total1">
+    <p id="total2">Preço Total</p>
+    <p>18.200,00</p>
+    </div>
 
-        <label for="estado">Estado:</label>
-        <input type="text" id="estado" name="estado" required>
+    <div id="menu">
+    <button type="submit" class="button" id="botao1">Continuar compra</button>
+    <button type="submit" class="button" id="botao2">Pagamento com PayPal</button>
+    <button type="submit" class="button" id="botao3"> Alterar endereço de entrega</button>
+    </div>
+    </div>
 
-        <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" required>
-
-        <label for="cupom">cupom</label>
-        <input type="text" id="cupom" name="cupom">
-        <button type="button">"Aplicar cupom"</button>
-
-        <button type="submit">Finalizar compra</button>
-        <button type="submit">Ir para pagamento</button>
-        <button type="submit">Pagar com Paypal</button>
-        <button type="submit">Alterar endereço de entrega</button>
-    </form>
+    </div>
+    
     <main>
-        <h2>Carinho de compra</h2>
-        <h3>item</h3>
+        <h1>Carinho de compra</h1>
+        <div id="uniao">
+        <h5>Item</h5>
+        <h5>Preço</h5>
+        <h5>Qtd</h5>
+        <h5>Subtotal</h5>
+        </div>
         <hr>
-        <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/271830/PC-Gamer-Completo-F-cil-I7-16GB-GTX-1050TI-4GB-1TB-Windows-10-Preto-Monitor-21-5-Polegadas-Kit-Gamer-Teclado-Mouse-E-Headset-Fonte-500W_1686167918_gg.jpg" alt="Um setup gamer">
-        <button type="submit">Continuar comprando</button>
-        <button type="submit">Esvaziar carrinho</button>
-        <button type="submit"> Atualizar carrinho</button>
+        <div class="lista">
+        <p><img src="_img/png-transparent-megaport-pc-game-.png">PC game completo</p>
+        <p>8.00,00</p>
+        <div class="quantity-container">
+            <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+            <span class="quantity-display" id="quantity">1</span>
+            <button class="quantity-button" onclick="increaseQuantity()">+</button>
+        </div>
+        <p>8.000,00</p>
+        </div>
+        <hr>
+        <div id="lista2">
+            <p><img src="_img/PC-Gamer-Completo-F-.jpg">PC game completo</p>
+            <p>10.00,00</p>
+            <div class="quantity-container">
+                <button class="quantity-button" onclick="decreaseQuantity()">-</button>
+                <span class="quantity-display" id="quantity">1</span>
+                <button class="quantity-button" onclick="increaseQuantity()">+</button>
+            </div>
+            <p>10.00,00</p>
+            </div>
+            <br>
+            <br>
+            <hr>
         
-        
-
+            <button type="submit" id="atualizar"> atualizar carrinho</button>
+            <div id="opcoes">
+            
+            
+            <button type="submit" id="comprando">Continuar comprando</button>
+            
+            <button type="submit" id="esvaziar"> Esvaziar carrinho</button>
+        </div>
     </main>
+
     <!--Inicio de footer-->
 
     <footer id="footer">
@@ -197,7 +240,6 @@
             <span class="copyright">Copyright&copy;2023</span>
             </div>
         </div>
-    </footer>    
-
+    </footer>
 </body>
 </html>

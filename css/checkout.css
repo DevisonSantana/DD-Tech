@@ -1,0 +1,321 @@
+ /* Menu princiapl */
+ 
+ #MenuPrincipal ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#MenuPrincipal a {
+    text-decoration: none;
+    color:black;
+}
+
+/* Menu de caminho */
+
+#MenuPath ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+#MenuPath ul li {
+    margin: 1%;
+}
+
+ /* Area de rodape */
+
+ #Rodape {
+    background-color: black;
+    padding: 50px;
+}
+#Rodape a {
+    text-decoration: none;
+    color: lightgray;
+}
+#BlocoNavegacao {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 1%;
+} 
+#BlocoNavegacao ul {
+    list-style: none;
+}
+#redesEpagamentos {
+    background-color: white;
+    border-style: dashed;
+    border-width: 1px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.redeSocial, .cartaoPagamento {
+    display: flex;
+}
+.redeSocial img, .cartaoPagamento img {
+    height: 15px;
+    width: auto;
+    margin: 2%;
+}
+h1{
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    right: 50px;
+
+}
+h2{
+    display: flex;
+    
+
+}
+h3{
+    display: flex;
+
+
+}
+h4{
+    display: flex;
+    justify-content: left;
+    color: grey;
+    width: 250px;;
+    
+
+
+   
+
+
+}
+#cupom{
+    color: black;
+}
+#subtotal{
+    
+    margin: -20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#envio{
+    display: flex;
+    justify-content: space-between;
+    margin: -20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px
+    
+    
+    
+}
+#total1{
+    display: flex;
+    
+    margin: -20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px
+}   
+
+#local{
+    display: flex;
+    justify-content: space-between;
+    right: 100px;
+    margin: -15px;
+    padding: 5px;
+    width: 250px;
+    height: 50px;
+    color: grey;
+}
+.caixa{
+    display: flex;
+    background-color:rgba(247, 243, 243, 0.902);
+    padding: 50px;
+    
+    flex-direction: column;
+    width: 200px;
+    float: right;
+    text-align: left;
+    right: 10px;
+    color: black;
+    margin: 3px;;
+
+
+
+}
+.button{
+    position:relative;
+    right: 40px;
+    display: flex;
+    justify-content:center;
+    flex-direction:column-reverse;
+    align-items:center;
+    background-color: yellow;
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    right: 10px;
+    border-radius: 30px;
+    
+}#botao1{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    color:white;
+    
+}
+#botao2{
+    
+    align-content:center;
+}
+#botao3{
+    background-color: rgb(192, 190, 190);
+    color: grey;
+
+}
+.primeiro{
+    margin: 3;
+    padding: 0px;
+    font-weight:bold;
+}
+    
+
+#segundo{
+    display: flex;
+    margin: 0;
+    font-size: 100%;
+
+}
+#me{
+    background-color: brown;
+    font-size: 20px;
+}
+#oferta{
+    position:relative;
+    right: -10px;
+    left: -10px;
+    display: flex;
+    justify-content:center;
+    flex-direction:column-reverse;
+    align-items:center;
+    background-color:white;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+#comprando{
+    position:relative;
+    right: -10px;
+    left: -10px;
+    display: flex;
+    justify-content:center;
+    flex-direction:column-reverse;
+    align-items:center;
+    background-color:white;
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    float: right;
+    width: 20%;
+}
+#esvaziar{
+    position:relative;
+    right: -10px;
+    left: -10px;
+    display: flex;
+    justify-content:center;
+    flex-direction:column-reverse;
+    align-items:center;
+    color: white;    
+    
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    width: 20%;
+}
+
+
+ #opcoes{
+    color: black;
+    display: flex;
+    align-items:center;
+
+    margin: 15px;
+    
+    padding: 0px;
+    border-radius: 30px;
+  
+}
+#atualizar{
+    float:right;
+    width: 20%;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+
+}
+#taxa{
+    display: flex;
+    margin: -20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px
+    
+}
+
+.inicio{
+    margin: -20px;
+    height: 300px;
+    width: 200px;
+    padding: 3px
+}
+#uniao{
+    display: flex;
+    justify-content:space-between;
+    font-size: 120%;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.lista{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+#lista2{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quantity-display {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+}
