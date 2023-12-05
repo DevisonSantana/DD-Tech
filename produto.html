@@ -4,36 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/menu.js" defer></script>
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
+    <!-- Area antes do Cabeçalho  -->
     <header>
-        <nav id="MenuPrincipal">
-            <ul>
-                <img src="_img/_logos/logo-shop-cabecalho.png" alt="Logo Shop">
-                <li><a href="">Notebooks</a></li>
-                <li><a href="">Desktops</a></li>
-                <li><a href="">Redes</a></li>
-                <li><a href="">Impressoras</a></li>
-                <li><a href="">Gamer</a></li>
-                <li><a href="">Outros Produtos</a></li>
-                <button><a href="">Ofertas</a></button>
-                <img src="" alt="search">
-                <img src="" alt="shop cart">
-                <a href="login.html"><img src="" alt="user"></a>
+        <div id="icones-sociais">
+            <a href="https://www.facebook.com">
+                <img src="img/logos/logo-facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="img/logos/insta.png" alt="Instagram">
+            </a>
+        </div>
+    <!-- Area de cabeçalho -->
+        <nav class="header">
+            <img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo">
+            <ul id="parte2">
+                <li><a href="#">Notebooks</a></li>
+                <li><a href="#">Desktops</a></li>
+                <li><a href="#">Redes</a></li>
+                <li><a href="#">Impressoras</a></li>
+                <li><a href="#">Gamer</a></li>
+                <li><a href="#">Outros Produtos</a></li>
             </ul>
-        </nav>
-
-        <hr>
-
-        <nav id="MenuPath">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <img src="" alt=">">
-                <li><a href="produto.html">Produto</a></li>
+            
+            <ul class="nav-items">
+                <li><button><a href="#">Ofertas</a></button></li>
+                <li><a href="#"><img src="img/lupa.png" alt="Lupa"></i></a></li>
+                <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
+                <li><a href="login.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
             </ul>
+            <div id="divHamburguer"><img src="img/Menu32.png" alt=""></div>
         </nav>
+        <ul id="parte22">
+            <li><a href="#">Notebooks</a></li>
+            <li><a href="#">Desktops</a></li>
+            <li><a href="#">Redes</a></li>
+            <li><a href="#">Impressoras</a></li>
+            <li><a href="#">Gamer</a></li>
+            <li><a href="#">Outros Produtos</a></li>
+        </ul>
     </header>
+    <!-- Fim do cabeçalho -->
+
+    <!-- Mostra caminho da pagina -->
+    <nav id="navegacao">
+        <span><a href="index.html">Início</a></span>
+        <span>›</span>
+        <span><a href="produto.html">Produto</a></span>
+    </nav>
 
     <h1>Notebook Inspiron 15</h1>
     <p>O mais novo notebook da Dell</p>
@@ -60,19 +82,24 @@
       </p>
     </div>
   
-    <!--Inicio de footer-->
+       <!--Inicio de footer-->
 
-    <footer id="Rodape">
-        <div id="BlocoNavegacao">
+       <footer id="footer">
+        <div class="div-news">
             <div>
-                <p>Inscreva-se em nossa Newsletter.</p>
+                <h3>Inscreva-se em nossa Newsletter.</h3>
                 <p>Seja o primeiro a saber das últimas ofertas.</p>
+            </div>
+            <div>
                 <input type="email" name="" id="" placeholder="Seu Email">
                 <button>Inscreva-se</button>
             </div>
+        </div>
+
+        <div class="footer-start">
             <div>
+                <h4>Informação</h4>
                 <ul>
-                    <li>Informação</li>
                     <li><a href="">Sobre nós</a></li>
                     <li><a href="">Política de Privacidade</a></li>
                     <li><a href="">Procurar</a></li>
@@ -84,8 +111,8 @@
                 </ul>
             </div>
             <div>
+                <h4>Peças para Pc</h4>
                 <ul>
-                    <li>Peças para PC</li>
                     <li><a href="">CPU</a></li>
                     <li><a href="">Discos rigidos (internos)</a></li>
                     <li><a href="">Placas Gráficas</a></li>
@@ -95,11 +122,11 @@
                     <li><a href="">Programas</a></li>
                     <li><a href="">Alto-falantes/Fones de ouvido</a></li>
                     <li><a href="">Placas mãe</a></li>
-            </ul>
+                </ul>
             </div>
             <div>
+                <h4>Desktop PCs</h4>
                 <ul>
-                    <li>Desktop PCs</li>
                     <li><a href="">Computadores personalizados</a></li>
                     <li><a href="">Servidores</a></li>
                     <li><a href="">PCs multifuncionais</a></li>
@@ -110,8 +137,8 @@
                 </ul>
             </div>
             <div>
+                <h4>Notebooks</h4>
                 <ul>
-                    <li>Notebooks</li>
                     <li><a href="">Peças para Notebooks</a></li>
                     <li><a href="">Tablets e Pads</a></li>
                     <li><a href="">Netbooks</a></li>
@@ -119,11 +146,10 @@
                 </ul>
             </div>
             <div>
+                <h4>Sobre nós:</h4>
                 <ul>
-                    <li>Sobre nós:</li>
                     <li>Deividson - <a href="">LinkedIn</a></li>
                     <li>Devison - <a href="">LinkedIn</a></li>
-                    <li>Diego - <a href="">LinkedIn</a></li>
                     <li>Emerson - <a href="">LinkedIn</a></li>
                     <li>Gabriel - <a href="">LinkedIn</a></li>
                 </ul>
@@ -131,13 +157,14 @@
         </div>
 
         <hr>
-        <div id="redesEpagamentos">
-            <div class="redeSocial">
+
+        <div class="footer-end">
+            <div class="redes-sociais">
                 <img src="_img/_logos/logo-facebook.png" alt="Facebook">
                 <img src="_img/_logos/logo-instagram.png" alt="Instagram">
             </div>
 
-            <div class="cartaoPagamento">
+            <div class="cartoes">
                 <img src="_img/_logos/cartao-pagamento-americanexpress.png" alt="American Express">
                 <img src="_img/_logos/cartao-pagamento-discover.png" alt="Discover">
                 <img src="_img/_logos/cartao-pagamento-maestro.png" alt="Maestro">
@@ -148,6 +175,7 @@
             <span class="copyright">Copyright&copy;2023</span>
             </div>
         </div>
-    </footer>
+    </footer>    
+
 </body>
 </html>
