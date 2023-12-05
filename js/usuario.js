@@ -6,7 +6,17 @@ var section = [...document.getElementsByTagName("section")]
 
 var indiceMenu;
 
+let btnCart = document.querySelector('.btnCart')
 
+
+//mostrar dados do cartao
+btnCart.addEventListener('click', ()=>{
+    let btndados = document.querySelector('.cartoesCadastrados .divColum')
+    console.log(btndados)
+
+    btndados.style.display = 'flex'
+    btnCart.style.display = 'none'
+})
 
 
 //funcao para ocultar todos os sections
@@ -23,12 +33,11 @@ menuLateral.map((element) => {
 
 function ocultarSection() {
     section.forEach(element => {
-        let nav = document.getElementById('nav');
+        
         let apaImg = document.getElementById('imgRigth');
 
         element.style.display = 'none'
 
-        nav.style.transform = 'translateX(-100px)';
         apaImg.style.display = 'flex'
 
     });
@@ -37,7 +46,6 @@ function ocultarSection() {
 function ativarDisplay(indice) {
     section[indice].style.display = 'flex'
 }
-console.log(section[0])
 
 
 
@@ -96,13 +104,3 @@ function avaliar() {
 
 
 
-function onDragStart(event) {
-    event
-      .dataTransfer
-      .setData('text/plain', event.target.id);
-  
-    event
-      .currentTarget
-      .style
-      .backgroundColor = 'yellow';
-  }

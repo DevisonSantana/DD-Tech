@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/menu.js" defer></script>
-    <script src=""></script>
+    <script src="js/carrinho.js" defer></script>
     </head>
 <body>
     <!-- Area antes do Cabeçalho  -->
@@ -38,7 +38,11 @@
             
             <ul class="nav-items">
                 <li><button><a href="#">Ofertas</a></button></li>
-                <li><a href="#"><img src="img/lupa.png" alt="Lupa"></i></a></li>
+                <li><a href="#"><img src="img/lupa.png" alt="Lupa" id="lupa"></i></a></li>
+                <div id="divLupa">
+                    <input type="text" name="inputLupa" id="inputLupa" placeholder="Qual produto você precisa">
+                    <img src="img/exit.png" alt="" id="exitLupa">
+                </div>
                 <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
                 <li><a href="login.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
             </ul>
@@ -152,12 +156,12 @@
                 <p>Preço pode variar de acordo com o Item/Destino</p>
                 <h4>Taxa R$<span id="taxa"> 21.00</span></h4>
                 <h4>Preço Total   R$ 13,068.00</h4>
-                <button class="botao-pagamento">
+                <button  class="botao-pagamento">
                     Ir para Pagamento
                 </button>
             </form>
             <button class="botao-pagamento-paypal">
-                <a href="">Pagamento com <img src="img/logos/cartao-pagamento-paypal.png"></a>
+                <a href="checkout.html">Pagamento com <img src="img/logos/cartao-pagamento-paypal.png"></a>
             </button>
             <button class="alterar-endereco">
                 <a href="">Alterar endereço de entrega</a> 

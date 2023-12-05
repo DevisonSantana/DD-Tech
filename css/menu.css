@@ -8,13 +8,13 @@
 
 
 
-/*body{
+body{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-content: center;
     flex-wrap: wrap;
     width: 100%;
-}*/
+}
 
 header{
     display: flex;
@@ -22,6 +22,7 @@ header{
     width: -webkit-fill-available;
     border-bottom: 1px solid black;
     padding-bottom: 10px;
+    
 }
 header img{
     max-width: 20px;
@@ -98,7 +99,6 @@ header img{
     align-items: center;
     justify-content: end;
     margin-right: 2%;
-    grid-area: div5;
 }
 
 #icones-sociais a {
@@ -106,8 +106,8 @@ header img{
 }
 
 #icones-sociais img {
-    height: 30px; 
-    width: auto;
+    margin-top: 5px;
+    scale: 1.8;
     padding: 5px;
 }
 
@@ -115,9 +115,7 @@ header img{
 
 .header {
     display: flex;
-    justify-content: 0;
-    align-items: s;
-    zoom: 0;
+    
 }
 
 .header img {
@@ -216,6 +214,38 @@ header img{
 }
 
 
+/* lupa */
+#divLupa{
+    display: none;
+    position: absolute;
+    width: 190px;
+    z-index: 10;
+    margin-top: 45px;
+    right: 1px;
+    zoom: 2.5;    
+    border: #000 solid 1px;
+    box-shadow: 2px 4px 4px #000;
+    font-size: .5rem;
+    background-color: #fff;
+    align-items: center;
+}
+#inputLupa{
+    padding: 1%;
+    border: none;
+    margin-right: 2px;
+    width: 230px;
+}
+#inputLupa::placeholder{
+    font-size: .7rem;
+}
+#exitLupa{
+    
+height: 15px;
+}
+#exitLupa:hover{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 950px) {
     header{
     font-size: .7rem;
@@ -235,9 +265,10 @@ header img{
     .header{
         justify-content: space-around;
     }
+ 
 }
-
     @media screen and (max-width: 600px) {
+        
         .header{
             justify-content: space-between;
         }
@@ -265,6 +296,26 @@ header img{
         .header li {
             margin: 0 5px;
         }
+        #divLupa{
+            width: fit-content;
+        }
+        #inputLupa{
+            zoom: .8;
+           
+        }
+        #exitLupa{
+            position: absolute;
+            right: -45px;
+        }
+            
+        
+        .nav-items{
+            zoom: 1.7;
+        }
+        #divHamburguer{
+            zoom: 1.4;
+        }
+        
     }
     @media screen and (max-width: 350px) {
         header{

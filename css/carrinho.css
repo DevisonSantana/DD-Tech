@@ -5,7 +5,11 @@
     font-family: 'poppins', 'Roboto';
 }
 
-
+main{
+    display: flex;
+    gap: 3%;
+    padding: 5%;
+}
 
 
 .carrinho {
@@ -156,25 +160,13 @@ form input, form select {
     zoom: .7;
 }
 
-@media screen and (max-width: 820px) {
- /*   nav{
-        zoom: .6;
-    }
-    
-    .header{
-        zoom: .6;
-    }
-  }*/
-}
+
 @media screen and (max-width: 768px) {
     main{
       flex-direction: column;
     }
     
-    /*
-    .header{
-        zoom: .5;
-    }*/
+   
   }
   @media screen and (max-width: 768px) {
     .tabela-items{
@@ -183,4 +175,13 @@ form input, form select {
     .section-btn {
         zoom: .9;
   }
+}
+@media screen and (max-width: 400px) {
+main, footer{
+    padding: 1px;
+    zoom: .8;
+}
+.carrinho{
+    margin-left: 5%;
+}
 }

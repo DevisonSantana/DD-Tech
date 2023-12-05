@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/usuario.css">
     <script src="js/draggable.js" defer></script>
     <script src="js/usuario.js" defer></script>
+    <script src="js/menu.js" defer></script>
     <title>Perfil</title>
 </head>
 
@@ -17,10 +18,10 @@
 
     <header>
         <div id="icones-sociais">
-            <a href="https://www.facebook.com">
-                <img src="img/logos/logo-facebook.png" alt="Facebook">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="img/logos/logo-facebook.png"  alt="Facebook">
             </a>
-            <a href="https://www.instagram.com">
+            <a href="https://www.instagram.com" target="_blank"> 
                 <img src="img/logos/insta.png" alt="Instagram">
             </a>
         </div>
@@ -37,7 +38,11 @@
             
             <ul class="nav-items">
                 <li><button><a href="#">Ofertas</a></button></li>
-                <li><a href="#"><img src="img/lupa.png" alt="Lupa"></i></a></li>
+                <li><a href="#"><img src="img/lupa.png" alt="Lupa" id="lupa"></i></a></li>
+                <div id="divLupa">
+                    <input type="text" name="inputLupa" id="inputLupa" placeholder="Qual produto você precisa">
+                    <img src="img/exit.png" alt="" id="exitLupa">
+                </div>
                 <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
                 <li><a href="usuario.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
             </ul>
@@ -81,7 +86,7 @@
                 </ul>
             </div>
                 <div id="columns">
-                <div class="column" ><img id="img" src="img/left.png" onclick="moverMenuLateral()" alt=""></div>
+                <div class="column" ><img id="img" src="img/exit.png" onclick="moverMenuLateral()" alt=""></div>
               </div>    
         </nav>
         <!--Page Inicial-->
@@ -91,8 +96,7 @@
             <h3>Feedbacks, Sugestões ou comentários: </h3>
             <div class="comentario">
                 <textarea name="" id="" cols="80" rows="5"></textarea>
-                <button id="comentar" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">Procurar Produtos</button>
+                <button id="comentar" type="button" class="btnComentar">Procurar Produtos</button>
         </section>
 
       <!--Page Pedidos-->
@@ -283,8 +287,11 @@
         
             <fieldset class="cartoesCadastrados">
                 <legend>Cartao final <span class="spanCartao">0789</span></legend>
-            <button type="button" class="btnCart"  value="1">Mostrar Dados</button>
-            <input type="password" name="senhacartao" id="1" placeholder="digite a senha para visualizar">
+            <button type="button" class="btnCart"  value="1" >Mostrar Dados</button>
+            <div class="divColum">
+                <input type="password" name="senhacartao" class="inpVisualizar" id="1" placeholder="digite a senha para visualizar">
+                <button id="btndados">Mostrar</button>
+            </div>
                 <div class="divCart">
                 <label>Número</label>
                 <input type="number" placeholder="1234567890123456" disabled>

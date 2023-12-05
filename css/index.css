@@ -10,7 +10,6 @@ body {
 
 main {
     width: 80vw;
-    height: 100vh;
     margin: 5% auto;
 
 }
@@ -244,6 +243,16 @@ max-width: 50%;
     justify-content: space-between;
     margin-bottom: 2%;
 }
+.details_div figure {
+    zoom: .9;
+    margin: 0 1%;
+    width: 150px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
 
 .details_img {
     width: 150px;
@@ -434,4 +443,7 @@ button[name=products]{
     #container_beneficios div{
         width: 100%;
     }
+}
+#footer{
+    order: 4;
 }

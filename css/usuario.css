@@ -1,12 +1,20 @@
 main{
     display: flex;
-    width: 100%;   
+    width: 100%;
+    gap: 100px;
+    /* justify-content: space-evenly; */
+}
+button{
+    background-color: #fff;
+    /* border-radius: 10px; */
+    padding: 2px;
+    box-shadow: 2px 2px 2px #000;
+}
+button:hover{
+    cursor: pointer;
+    filter: brightness(.9);
 }
 
-
-main{
-    gap: 30px;
-}
 section{
     display: flex;
     flex-direction: column;
@@ -64,7 +72,6 @@ h5{
 
 #sectionInicial, #secaoPrincipal{
     background-color: #b1b1b1;
-    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,9 +80,12 @@ h5{
 }
 #secaoPrincipal{
     margin-right: 5%;
+    width: 60% !important;
+}
+#sectionInicial{
+    zoom: .6;
 }
 .comentario{
-    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,6 +95,10 @@ h5{
 .comentario textarea{
     width: 100%;
     margin-top: 2;
+    font-size: 2rem;
+}
+.btnComentar{
+    zoom: 2.5;
 }
 
 
@@ -150,7 +164,7 @@ h5{
 #sectionCadastro{
     display: none;
     /* padding: 0 5%; */
-    width: 80%;
+    width: 60%;
     flex-direction: column;
     align-items: start;
 }
@@ -195,13 +209,13 @@ fieldset{
 /*Secao endereco*/
 #sectionEndereco{
 display: none;
+width: fit-content;
+zoom: .9;
 }
 .enderecosCadastrados{
     display: flex;
     flex-direction: column;
     align-items: center;
-    zoom: .7;
-    width: 105%;
 
 }
 .enderecosCadastrados label{
@@ -231,12 +245,13 @@ display: none;
 }
 .cartoesCadastrados{
     border: 1px dotted #fff;
-    width: 100%;
+    width: 300px;
+    height: 100px;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     gap: 11px;
     font-size: 1.1rem;
-
 }
 
 .cartoesCadastrados label{
@@ -249,6 +264,17 @@ display: none;
 
 .divCart{
     display: none;
+}
+.cartoesCadastrados .divColum {
+    display: none;
+    gap: 10px;
+}
+.inpVisualizar::placeholder{
+    font-size: .7rem;
+}
+#btndados{
+    width: fit-content;
+    margin: auto;
 }
 
 /*Secao Perguntas Frequentes*/
@@ -278,9 +304,11 @@ display: none;
     display: none;
 }
 .btnDetalhesPesq{
-    border: none;
-    background-color: #b1b1b1;
-    text-decoration: underline;
+    border: none !important;
+    background-color: #b1b1b1 !important;
+    text-decoration: underline !important;
+    border-radius: none;
+    box-shadow: none;
 }
 
 
@@ -358,12 +386,16 @@ input[type=range]{
 
 #columns{
     display: none;
+    justify-content: start;
+
 }
 #aparecer{
     background-color: #b1b1b1;
+    position: absolute;
     margin-top: 35px;
+    left: 1px;
     height: 30px;
-    display: flex;
+    display: none;
     align-items: center;
     transition: all 1s;
 }
@@ -372,10 +404,29 @@ input[type=range]{
     width: 30px;
     height: 50%;
 }
+
 #imgRigth{
     display: none;
 }
+
+
+
+@media screen and (max-width: 900px) {
+#sectionEndereco{
+    zoom: .6;
+}
+
+.containerProducts {
+    zoom: .6;
+}
+}
+
+
 @media screen and (max-width: 630px) {
+    #aparecer{
+        display: flex;
+    }
+    
     #imgRigth{
         display: flex;
     }
@@ -383,7 +434,7 @@ input[type=range]{
     #nav{
         position: relative;
         z-index: 100;
-        left: -401px;
+        left: -551px;
         height: 550px;
     }
     #columns{
@@ -398,14 +449,24 @@ input[type=range]{
     .column img{
         width: 50px;
         height: 200%;
+        justify-content: start;
+
     }
     
     #columns{
+        justify-content: start;
         display: flex;
         flex-direction: column;
     }
+    #img{
+        width: 30px !important;
+        height: 30px;
+        margin: 5px;
+        margin-left: 10px;
+        border: #000 solid 1px;
+    }
     nav{
-        /* transform: translateX(-135px); */
+         /* transform: translateX(-100px); */
         transition: all 1s;
     }
     .containerProducts {
@@ -416,13 +477,11 @@ input[type=range]{
     #formCadastro{
         margin-left: -30px;
     }
-    .divRow{
-        /* flex-wrap: wrap; */
-    }
+
     #secaoPrincipal{
         position: absolute;
-        left: 60px;
-        top: 32%;
+        left: 100px;
+         top: 32%; 
         background-color: #fff;
     }
     #sectionInicial{
@@ -452,15 +511,19 @@ input[type=range]{
         margin-top: 20px;
 
     }
+    .cartoesCadastrados .divColum {
+        width: fit-content;
+    }
     
     .lblPrivac{
         width: fit-content;
     }
 }
 
+
 @media screen and (max-width: 522px){
     nav{
-        /* transform: translateX(-120px); */
+       
         transition: all 1s;
     }
     .containerProducts picture{

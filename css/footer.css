@@ -39,6 +39,8 @@
 
 .footer-start {
     display: flex;
+    height: fit-content;
+    padding-bottom: 5%;
     flex-wrap: wrap;
     margin-top: 3%;
     justify-content: space-between;
@@ -82,4 +84,15 @@
 .footer-end img {
     width: 1rem;
     height: auto;
+}
+@media screen and (max-width: 600px) {
+    .div-news input{
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .div-news input{
+        zoom: .7;
+    }
 }
