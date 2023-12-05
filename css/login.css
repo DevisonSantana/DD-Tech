@@ -8,14 +8,16 @@
 
 
 
-
+body {
+    display: block;
+}
 
 #menu-login {
     background-color: #F5F7FF;
-    width: fit-content;
-    height: 100%;
+    width: 80%;
+    height: auto;
     padding: 1rem;
-    margin: 0 auto;
+    margin: 2% auto;
     border-radius: 1rem;
 }
 
