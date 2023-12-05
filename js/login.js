@@ -10,6 +10,7 @@ emailInput.addEventListener('change', function(e){
         emailInput.classList.add('error')
         emailInput.classList.remove('correct')
         emailHelper.classList.add('visible')
+        emailHelper.innerHTML = "Email inválido."
     }
 })
 let senhaInput = document.getElementById('senha-input')
@@ -20,6 +21,7 @@ function senha(e){
             senhaInput.classList.add('error')
             senhaInput.classList.remove('correct')
             senhaHelper.classList.add('visible')
+            senhaHelper.innerText = "Senha incorreta."
         } else {
             senhaInput.classList.add('correct')
             senhaInput.classList.remove('error')
@@ -29,4 +31,14 @@ function senha(e){
 senhaInput.addEventListener('focus', senha)
 senhaInput.addEventListener('blur', senha)
 
-let form = document.getElementById('formulario')
+// let btn = document.querySelectorAll('.btn-submit')
+
+
+// console.log(btn)
+
+
+// btn.forEach(element => {
+//     element.addEventListener('mouseover', ()=>{
+//         element.style.backgroundColor = "red"
+//     })
+// })

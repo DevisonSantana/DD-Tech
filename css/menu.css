@@ -74,6 +74,10 @@ header img{
 
     margin: 3% 0% 0 8%;
 }
+#navegacao a {
+    text-decoration: none;
+    color: #020202;
+}
 .nav-path {
     margin: 2% 0 0 10%;
 }
