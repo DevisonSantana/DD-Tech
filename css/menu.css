@@ -8,13 +8,13 @@
 
 
 
-body{
+/*body{
     display: flex;
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
     width: 100%;
-}
+}*/
 
 header{
     display: flex;
@@ -115,9 +115,9 @@ header img{
 
 .header {
     display: flex;
-    justify-content: ;
+    justify-content: 0;
     align-items: s;
-    zoom: .;
+    zoom: 0;
 }
 
 .header img {
