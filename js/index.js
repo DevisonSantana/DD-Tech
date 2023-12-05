@@ -11,7 +11,7 @@ let picture = document.querySelectorAll('picture')
 
 picture.forEach(element => {
     element.addEventListener('click', () =>{
-        window.location.href = "/produto.html"
+        window.location.href = "https://devisonsantana.github.io/DD-Tech/produto.html"
     })
 });
 
