@@ -1,0 +1,80 @@
+#footer {
+    background-color: black;
+    padding: 2.5% 10%;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+/* Newsletter */
+
+.div-news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div-news div h3 {
+    margin: 5% 0 5% 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.div-news input {
+    color: white;
+    width: 30rem;
+    background-color: black;
+    border: 2px solid white;
+    padding: .5rem;
+}
+.div-news button {
+    color: white;
+    width: 8rem;
+    height: 2.2rem;
+    border-radius: 1.5rem;
+    border: transparent;
+    margin: 3px;
+    background-color: #0156ff;
+}
+
+/* Inicio de Footer */
+
+.footer-start {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    justify-content: space-between;
+    gap: .5rem;
+}
+.footer-start div {
+    font-size: .8rem;
+    height: 15rem;
+    width: auto;
+    display: flex;
+    flex-flow: wrap column;
+}
+.footer-start h4 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.5)
+}
+.footer-start ul {
+    list-style: none;
+}
+.footer-start a {
+    text-decoration: none;
+    font-weight: lighters;
+    color: rgba(255, 255, 255, 0.9);   
+}
+
+/* Final do Footer */
+
+.footer-end {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .6rem;
+    color:rgba(255, 255, 255, 0.5);
+    font-size: .7rem;
+    gap: 4rem;
+}
+.footer-end img {
+    width: 3%;
+    height: 3%;
+}
