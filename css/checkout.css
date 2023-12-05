@@ -85,9 +85,8 @@ h4{
     position:absolute;
     right:200px;
     transform: translate(48%, 50%);
-    padding: 30px;
+    padding: 40px;
     top: -30px;
-    
     margin: -50px;
     width: 300px;
     
@@ -274,4 +273,10 @@ h4{
     font-size: 16px;
     border: 1px solid #ccc;
     margin: 0 5px;
+}
+@media screen and (max-width: 1080px) {
+    #main{
+        zoom: .3;
+    }
+    
 }
