@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.side-bar {
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: auto;
+}
+.side-bar img {
+    width: 15rem;
+}
+.main-content {
+    background-color: #F5F7FF;
+    padding: 2rem;
+    width: 40rem;
+    height: auto;    
+}
+.info-produto ul {
+    list-style: none;
+}
+.titulo-produto,
+.info-produto,
+descricao-produto {
+    display: flex;
+    flex-flow: wrap column;
+    margin: 1rem 0 1rem 0;
+    gap: .5rem;
+}
