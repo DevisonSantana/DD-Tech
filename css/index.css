@@ -271,29 +271,37 @@ data {
 
 #citacao {
     background-color: #e1dede;
-    padding: 5% 15%;
+    padding: 5% 10%;
 }
 
 #citacao p {
 
-    width: 270px;
-    justify-content: end;
+width: 271px;
+justify-content: end;
 }
 #citacao_p{
     display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    margin-right: 100px;
+    justify-content: center;
 }
-#citacao_p div{
-    margin-left: 5%;
-    margin-right: 300px;
+.citacao_div{
+    margin: auto;
+    width: 100%;
+    transition: all 2s ease-in-out;
 }
+
+.citacao_div:not(:first-child){
+    display: none;
+}
+#btnComentar:hover{
+    cursor: pointer;
+}
+
 
 blockquote {
     display: flex;
-    align-items: center;
+    align-items: start;
+    margin-top: 5%;
+    justify-content: center;
 }
 
 blockquote span {
@@ -305,7 +313,7 @@ blockquote span {
     background-color: #e1dede;
     border-radius: 20px;
     width: 30%;
-    height: 29px;
+    height: fit-content;
     color: blue;
     border: blue solid 2px;
 }
@@ -342,7 +350,7 @@ blockquote span {
 
 .name_citacao {
     display: flex;
-
+    height: fit-content;
 }
 
 #container_beneficios {
@@ -357,12 +365,14 @@ blockquote span {
 }
 button[name=products]{
     display: none;
+
 }
+
 @media screen and (max-width: 890px) {
 .containerProc{
     justify-content: start;
 }
-}
+
 
 @media screen and (max-width: 720px) {
     
@@ -444,6 +454,27 @@ button[name=products]{
         width: 100%;
     }
 }
-#footer{
-    order: 4;
 }
+
+@media screen and (max-width: 400px) {
+    #citacao p{
+        margin-top: 15%;
+       zoom: .8;
+    }
+}
+
+@media screen and (min-width: 1500px){
+.seta_products{
+    display: none;
+}
+#novosProdutos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#novosProdutos h2{
+    width: 100%;
+    text-align: start;
+}
+} 
+
