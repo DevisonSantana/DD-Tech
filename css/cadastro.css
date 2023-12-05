@@ -65,3 +65,15 @@ input, select {
 .visible {
     display: block;
 }
+
+.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+
+.correct {
+    border: solid 2px #206620;
+    background-color: #BBCCBB;
+    color: #206620;
+}

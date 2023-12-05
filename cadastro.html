@@ -8,6 +8,7 @@
     <script src="js/menu.js" defer></script>
     <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="css/footer.css">
+    <script src="js/cadastro.js" defer></script>
 </head>
 <body>
     <!-- Area antes do Cabeçalho  -->
@@ -58,9 +59,9 @@
     <!-- Mostra caminho da pagina -->
     <nav id="navegacao">
         <span><a href="index.html">Início</a></span>
-        <span>›</span>
+        <span class="spn-blue">›</span>
         <span><a href="login.html">Login</a></span>
-        <span>›</span>
+        <span class="spn-blue">›</span>
         <span><a href="cadastro.html">Cadastro</a></span>
     </nav>
 
@@ -77,32 +78,40 @@
             
         <form action="" id="formulario">
             <label for="email-input">Email<span class="spn-red">*</span></label>
-            <input type="email" name="email" id="email-input" placeholder="Ex.: ddtech@email.com" required>
-            <p class="helper-text">Mensagem de ajuda</p>
+            <input type="email" name="email" id="email-input" required>
+            <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+
+            <label for="senha-input" class="senha-input">Senha<span class="spn-red">*</span></label>
+            <input type="password" name="senha" id="senha-input" required>
+            <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
+
+            <label for="confirma-senha" class="confirma-senha">Confirmar senha<span class="spn-red">*</span></label>
+            <input type="password" name="confirma-senha" id="confirma-senha-input" required>
+            <p id="confirma-senha-helper" class="helper-text">Mensagem de ajuda</p>
 
             <hr>
 
             <label for="name-input">Nome<span class="spn-red">*</span></label>
             <input type="text" name="nome" id="name-input" placeholder="Ex.: José" required>
-            <p class="helper-text">Mensagem de ajuda</p>
+            <p id="name-helper" class="helper-text">Mensagem de ajuda</p>
 
             <label for="sobrenome-input">Sobrenome<span class="spn-red">*</span></label>
             <input type="text" name="sobrenome" id="sobrenome-input" placeholder="Ex.: Dias dos Santos" required>
-            <p class="helper-text">Mensagem de ajuda</p>
+            <p id="sobrenome-helper" class="helper-text">Mensagem de ajuda</p>
 
             <hr>
 
             <label for="cpf-input">CPF<span class="spn-red">*</span></label>
             <input type="number" name="cpf" id="cpf-input" placeholder="Ex.: 01234567899" required>
-            <p class="helper-text">Mensagem de ajuda</p>
+            <p id="cpf-helper" class="helper-text">Mensagem de ajuda</p>
 
             <label for="endereco-input">Endereço<span class="spn-red">*</span></label>
             <input type="text" name="endereco" id="endereco-input" placeholder="Ex.: Rua JavaScript, 123 - Bairro HTML - SP" required>
-            <p class="helper-text">Mensagem de ajuda</p>
+            <p id="endereco-helper" class="helper-text">Mensagem de ajuda</p>
 
             <label for="cidade-input">Cidade<span class="spn-red">*</span></label>
             <input type="text" name="cidade" id="cidade-input" placeholder="Ex.: São Paulo" required>
-            <p class="helper-text">Mensagem de ajuda</p>
+            <p id="cidade-helper" class="helper-text">Mensagem de ajuda</p>
 
             <label for="estado-input">Estado<span class="spn-red">*</span></label>
             <select name="estado" id="estado-input" required>
