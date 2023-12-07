@@ -1,3 +1,9 @@
+// BOTÃO DE RETORNO PARA LOGIN
+let btnLogin = document.querySelector('main div button')
+btnLogin.addEventListener('click', ()=>{
+    window.location.href = 'login.html'
+})
+
 // EMAIL INPUT
 let emailInput = document.getElementById('email-input')
 let emailHelper = document.getElementById('email-helper')

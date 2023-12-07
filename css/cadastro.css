@@ -1,9 +1,11 @@
 body {
     display: block;
 }
+
 main {
     margin-top: 2%;
 }
+
 main div {
     display: flex;
     align-items: center;
@@ -17,13 +19,16 @@ main div button {
     background-color: white;
     border: 2px solid #0156ff;
     border-radius: 2rem;
-}
-
-main div button a {
-    text-decoration: none;
+    cursor: pointer;
     color: #0156ff;
     font-weight: bolder;
     font-size: 1.5rem;
+    text-shadow: .2px .2px .8px black;
+}
+
+main div button:hover {
+    filter: brightness(1.1);
+    box-shadow: 1px 1px 3px black;
 }
 
 input, select {
@@ -48,6 +53,13 @@ input, select {
     color: white;
     border-radius: 2rem;
     border: transparent;
+    cursor: pointer;
+    margin-bottom: .8%;
+}
+
+#btn-criar-conta:hover {
+    filter: brightness(1.1);
+    box-shadow: 1px 1px 3px black;
 }
 
 /* Estilizização dinaminca */

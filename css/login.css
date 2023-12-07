@@ -47,8 +47,7 @@ label {
     color: red;
 }
 
-.btn a {
-    text-decoration: none;
+.btn button {
     color: white;
 }
 .btn-submit, .btn-criar-conta {
@@ -60,10 +59,11 @@ label {
     padding: 5px;
     margin: 4px;
     font-weight: bolder;
+    cursor: pointer;
 }
 .btn-submit:hover, .btn-criar-conta:hover {
-    filter: brightness(1.3);
-    box-shadow: 2px 2px 2px blue;
+    filter: brightness(1.1);
+    box-shadow: 1px 1px 3px black;
 }
 
 /* Estilização dinamica */
