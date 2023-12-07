@@ -26,11 +26,13 @@ function senha(e){
             senhaInput.classList.add('error')
             senhaInput.classList.remove('correct')
             senhaHelper.classList.add('visible')
-            senhaHelper.innerText = "Senha incorreta."
+            senhaHelper.innerText = "Senha deve conter mais do que 4 caracteres."
+
         } else {
             senhaInput.classList.add('correct')
             senhaInput.classList.remove('error')
             senhaHelper.classList.remove('visible')
+            
         }
     }
 
@@ -38,7 +40,7 @@ senhaInput.addEventListener('focus', senha)
 
 senhaInput.addEventListener('blur', senha)
 
-let cadastro = document.querySelector('.btn-criar-conta')
+let cadastro = document.querySelector('#btn-criar-conta')
 
 cadastro.addEventListener('click', (e)=>{
     
@@ -51,24 +53,33 @@ cadastro.addEventListener('click', (e)=>{
 
 let usuario = [
     {
-        email: "devison@email.com",
+        user: "devison",
+        email: "devison@proz.com",
         senha: "admin"
     },
     {
-        email: "emerson@email.com",
+        user: "emerson",
+        email: "emerson@proz.com",
         senha: "admin"
     },
     {
-        email: "deividson@email.com",
+        user: "deividson",
+        email: "deividson@proz.com",
         senha: "admin"
     },
     {
-        email: "gabriel@email.com",
+        user: "gabriel",
+        email: "gabriel@proz.com",
         senha: "admin"
+    },
+    {
+        user: "alvaro",
+        email: "alvinhu@proz.com",
+        senha: "nota10"
     }
 ]
 
-let submit = document.querySelector('.btn-submit')
+let submit = document.querySelector('#btn-submit')
 
 submit.addEventListener('click', function(e){
 
@@ -101,5 +112,59 @@ submit.addEventListener('click', function(e){
             senhaInput.classList.remove('correct')
 
         }
+    }
+})
+
+// MOSTRANDO RECUPERAÇÃO DE SENHA
+let esqueciSenha = document.querySelector('.forgot-pwd')
+let blocoEsqueciSenha = document.getElementById('menu-esqueci-senha')
+
+esqueciSenha.addEventListener('click', ()=>{
+    blocoEsqueciSenha.classList.toggle('not-visible')
+    
+})
+
+console.log(esqueciSenha)
+console.log(blocoEsqueciSenha)
+
+// ESQUECI MINHA SENHA
+let showUsers = document.getElementsByClassName('spn-blue')
+let listaUsers = document.getElementById('lista-users')
+
+showUsers[1].addEventListener('click', ()=>{
+    listaUsers.classList.toggle('not-visible')
+    listaUsers.classList.toggle('visible')
+})
+
+
+// RECUPERAÇÃO DE SENHA
+let forgotSenhaInput = document.getElementById('forgot-pass-input')
+let forgotSenhaHelper = document.getElementById('forgot-pass-helper')
+let btnForgotPass = document.getElementById('btn-forgot-pass')
+
+
+btnForgotPass.addEventListener('click', (e)=>{
+
+    e.preventDefault()
+
+    for(i = 0; i < usuario.length; i++){
+        let valid = false
+        if (usuario[i].user == forgotSenhaInput.value){
+            valid = true
+            forgotSenhaHelper.innerText = `Email: ${usuario[i].email}
+            Senha: ${usuario[i].senha}`
+            forgotSenhaHelper.classList.add('forgot-pass-style')
+            forgotSenhaHelper.classList.remove('helper-text')
+            forgotSenhaHelper.classList.remove('visible')
+            break
+        }
+
+        if(valid == false){
+            forgotSenhaHelper.classList.add('helper-text')
+            forgotSenhaHelper.classList.remove('forgot-pass-style')
+            forgotSenhaHelper.classList.add('visible')
+            forgotSenhaHelper.innerText = "Usuario não encontrado, tente novamente."
+        }
+
     }
 })

@@ -62,6 +62,7 @@
     </nav>
 
     <main id="menu-login">
+
         <h1>Login</h1>
         
         <form action="" id="formulario">
@@ -74,11 +75,35 @@
             <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
 
             <div class="btn">
-                <button type="submit" class="btn-submit">Entrar</button>
-                <button class="btn-criar-conta">Criar conta</button>
+                <button id="btn-submit">Entrar</button>
+                <button id="btn-criar-conta">Criar conta</button>
             </div>
-            <p><a href="" class="forgot-pwd">Esqueci minha senha?</a></p>
+            <p class="forgot-pwd">Esqueci minha senha?</p>
         </form>
+        
     </main>
+
+    <div id="menu-esqueci-senha" class="not-visible">
+        
+        <form action="" id="forgot-pass">
+            <label for="forgot-pass-input">Digite seu <span class="spn-blue">Username</span></label>
+
+            <ul id="lista-users" class="not-visible">
+                <li>devison</li>
+                <li>emerson</li>
+                <li>deividson</li>
+                <li>gabriel</li>
+                <li>alvaro</li>
+            </ul>
+            
+            <input type="text" name="esqueci-senha" id="forgot-pass-input" autocomplete="off">
+
+            <div class="btn">
+                <button id="btn-forgot-pass">Recuperar senha</button>
+            </div>
+            <p id="forgot-pass-helper" class="helper-text">Mensagem de ajuda</p>
+        </form>
+        
+    </div>
 </body>
 </html>
