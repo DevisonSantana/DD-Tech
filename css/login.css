@@ -12,16 +12,20 @@ body {
     display: block;
 }
 
-#menu-login {
+#menu-login, #menu-esqueci-senha {
     background-color: #F5F7FF;
-    width: 80%;
+    width: 40rem;
     height: auto;
     padding: 1rem;
     margin: 2% auto;
     border-radius: 1rem;
 }
 
-#formulario {
+/* @media screen {
+    
+} */
+
+#formulario, #forgot-pass {
     display: flex;
     flex-flow: wrap column;
     padding: 1rem 2.5rem;
@@ -40,7 +44,12 @@ label {
 
 .forgot-pwd {
     color: #007bff;
-    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.forgot-pwd:hover {
+    text-decoration: underline;
 }
 
 .spn-red {
@@ -50,7 +59,8 @@ label {
 .btn button {
     color: white;
 }
-.btn-submit, .btn-criar-conta {
+
+#btn-submit, #btn-criar-conta, #btn-forgot-pass {
     height: auto;
     width: 40%;
     background-color: #0156ff;
@@ -61,9 +71,37 @@ label {
     font-weight: bolder;
     cursor: pointer;
 }
-.btn-submit:hover, .btn-criar-conta:hover {
+
+#btn-submit:hover, #btn-criar-conta:hover, #btn-forgot-pass:hover {
     filter: brightness(1.1);
     box-shadow: 1px 1px 3px black;
+}
+
+#menu-esqueci-senha #forgot-pass .spn-blue {
+    cursor: pointer;
+    width: fit-content;
+    
+}
+
+#menu-esqueci-senha #forgot-pass .spn-blue:hover {
+    text-decoration: underline;
+    text-shadow: .4px .4px .2px black;
+}
+
+#lista-users {
+    list-style-type: none;
+    background-color: #0156ff;
+    width: fit-content;
+    padding: .5rem;
+    border: transparent;
+    border-radius: 1rem;
+    position: relative;
+    left: 1%;
+}
+
+#lista-users li {
+    color: white;
+    font-weight: bolder;
 }
 
 /* Estilização dinamica */
@@ -80,6 +118,16 @@ label {
 
 .visible {
     display: block;
+}
+
+.not-visible {
+    display: none;
+}
+
+.forgot-pass-style {
+    display: block;
+    color: green;
+    font-style: italic;
 }
 
 .error {
