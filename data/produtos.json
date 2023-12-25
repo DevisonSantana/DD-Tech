@@ -2,7 +2,7 @@
     "produtos": [
 
 {
-    "nome": "",
+    "nome": "tablet",
     "categoria": "tablet",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -80,7 +80,7 @@
     ]
 },
 {
-    "nome": "",
+    "nome": "notebook1",
     "categoria": "notebook",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -93,7 +93,7 @@
     ]
 },
 {
-    "nome": "",
+    "nome": "notebook2",
     "categoria": "notebook",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -106,7 +106,7 @@
     ]
 },
 {
-    "nome": "",
+    "nome": "notebook3",
     "categoria": "notebook",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -119,7 +119,7 @@
     ]
 },
 {
-    "nome": "",
+    "nome": "notebook4",
     "categoria": "notebook",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -132,7 +132,7 @@
     ]
 },
 {
-    "nome": "",
+    "nome": "notebook5",
     "categoria": "notebook",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -145,7 +145,7 @@
     ]
 },
 {
-    "nome": "",
+    "nome": "desktop1",
     "categoria": "desktops",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -158,7 +158,7 @@
     ]
 },
 {
-    "nome": "",
+    "nome": "desktop2",
     "categoria": "desktops",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -171,7 +171,7 @@
     ]
 },
 {
-    "nome": "",
+    "nome": "desktop3",
     "categoria": "desktops",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -184,7 +184,7 @@
     ]
 },
 {
-    "nome": "",
+    "nome": "desktop4",
     "categoria": "desktops",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -197,7 +197,7 @@
     ]
 },
 {
-    "nome": "",
+    "nome": "desktop5",
     "categoria": "desktops",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -210,7 +210,7 @@
     ]
 },
 {
-    "nome": "msi",
+    "nome": "msi1",
     "categoria": "monitores",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -223,7 +223,7 @@
     ]
 },
 {
-    "nome": "msi",
+    "nome": "msi2",
     "categoria": "monitores",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -236,7 +236,7 @@
     ]
 },
 {
-    "nome": "msi",
+    "nome": "msi3",
     "categoria": "monitores",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -249,7 +249,7 @@
     ]
 },
 {
-    "nome": "msi",
+    "nome": "msi4",
     "categoria": "monitores",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
@@ -262,7 +262,7 @@
     ]
 },
 {
-    "nome": "msi",
+    "nome": "msi5",
     "categoria": "monitores",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
