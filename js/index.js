@@ -22,7 +22,6 @@ btnComentar.addEventListener('click', () =>{
         window.location.href = "produto.html"
     })
 //pegar o tamanho do banner
-var x = banner_img.clientWidth
 var cont_p = 1
 var num = 1
 var cont = 0
@@ -37,6 +36,8 @@ setInterval(RolagemComentarioAutomatico, 5000)
 
 function rolagemAutomatico() {
     let banner_img = document.getElementById("banner_img");
+    let x = banner_img.clientWidth
+
     banner_img.scrollLeft += x
     cont++
     if (cont === 3) {
@@ -48,12 +49,15 @@ function rolagemAutomatico() {
 // rolar banner
 function LeftBanner() {
     var banner_img = document.getElementById("banner_img");
+    let x = banner_img.clientWidth
+
     banner_img.scrollLeft += -x
 
 }
 
 function RightBanner() {
     var banner_img = document.getElementById("banner_img");
+    let x = banner_img.clientWidth
 
     banner_img.scrollLeft += x
 
