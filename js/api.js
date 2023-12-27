@@ -1,3 +1,4 @@
+sessionStorage.removeItem("nomeProduto") //removendo sessionStorage e houver
 // Recuperar o arquivo Json com os produtos
 async function fetchProfileData() {
     const url = 'https://raw.githubusercontent.com/DevisonSantana/DD-Tech/main/data/produtos.json';
@@ -38,8 +39,8 @@ dadosProdutos.map(res =>{
                 var avaliacao = "img//estrelas4.png"
             }
             let picture = `
-            <picture class="containerNovos">
-                        <img src="${res.imagem[0]}" alt="novo produto">
+            <picture class="containerNovos" id="${res.nome}" onclick="AcessarProdutoPage(id)">
+                        <img src="${res.imagem[0]}" alt="novo produto" >
                         <figcaption>
                             <div class="avaliacao">
                                 <img src="${avaliacao}" alt="${res.avaliacao} estrelas">
@@ -63,7 +64,7 @@ if(res.categoria.toLowerCase() === 'personalize'){
             var avaliacao = "img//estrelas4.png"
         }
         let picture = `
-        <picture class="containerNovos" id=${cont}>
+        <picture class="containerNovos"  id="${res.nome}" onclick="AcessarProdutoPage(id)">
                     <img src="${res.imagem[0]}" alt="novo produto">
                     <figcaption>
                         <div class="avaliacao">
@@ -79,6 +80,8 @@ if(res.categoria.toLowerCase() === 'personalize'){
                 </picture>
         `
         containerPeronalize.innerHTML += picture
+
+
     }
 
     if(res.categoria.toLowerCase() === 'notebook'){
@@ -86,7 +89,7 @@ if(res.categoria.toLowerCase() === 'personalize'){
                 var avaliacao = "img//estrelas4.png"
             }
             let picture = `
-            <picture class="containerNovos" id=${cont}>
+            <picture class="containerNovos" id="${res.nome}" onclick="AcessarProdutoPage(id)">
                         <img src="${res.imagem[0]}" alt="novo produto">
                         <figcaption>
                             <div class="avaliacao">
@@ -109,7 +112,7 @@ if(res.categoria.toLowerCase() === 'personalize'){
                     var avaliacao = "img//estrelas4.png"
                 }
                 let picture = `
-                <picture class="containerNovos" id=${cont}>
+                <picture class="containerNovos" id="${res.nome}" onclick="AcessarProdutoPage(id)">
                             <img src="${res.imagem[0]}" alt="novo produto">
                             <figcaption>
                                 <div class="avaliacao">
@@ -132,7 +135,7 @@ if(res.categoria.toLowerCase() === 'personalize'){
                         var avaliacao = "img//estrelas4.png"
                     }
                     let picture = `
-                    <picture class="containerNovos" id=${cont}>
+                    <picture class="containerNovos" id="${res.nome}" onclick="AcessarProdutoPage(id)">
                                 <img src="${res.imagem[0]}" alt="novo produto">
                                 <figcaption>
                                     <div class="avaliacao">
@@ -153,6 +156,14 @@ if(res.categoria.toLowerCase() === 'personalize'){
     
 })
 
+}
+
+// funcao para ir para a pagina de produtos passando o produto clicado
+
+function AcessarProdutoPage(produtoEspecifico){
+console.log(produtoEspecifico)
+sessionStorage.setItem("nomeProduto", produtoEspecifico)
+window.location.href = `produto.html`
 }
 
 
@@ -179,9 +190,19 @@ function CarregarMarcas(dadosMarcas){
 }
 
 // Inserção dinamicamente dos comentarios
-
+let citacao_div = document.querySelector('#citacao_p')
 function CarregarComentarios(dadosComentaros){
-
+   for(let cont = 0; cont < dadosComentaros.length; cont++){
+    citacao_div.innerHTML += `
+    <div class="citacao_div">
+    <p>
+        ${dadosComentaros[cont].comentario}
+    </p>
+    <p class="name_citacao">
+        ${dadosComentaros[cont].autor}
+    </p>
+    `
+   }
 }
 
 // Chama a função para buscar os dados da api e pasar por parametro para as demais funcoes
