@@ -75,6 +75,7 @@ main{
 #divQuantidade input{
     width: 20px;
     text-align: center;
+    padding: 2px;
 }
 
 .descricao-produto{
