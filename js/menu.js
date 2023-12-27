@@ -43,10 +43,10 @@ let itemProntoParaUso;
 let itensR = localStorage.getItem("itemCarrinho")
 if(itensR){
     itemProntoParaUso = JSON.parse(itensR)
-}
-if(itemProntoParaUso.length > 0){
-    carrinhoQtdade.innerText = itemProntoParaUso.length
-    carrinhoQtdade.style.display = 'block'
+    if(itemProntoParaUso.length > 0){
+        carrinhoQtdade.innerText = itemProntoParaUso.length
+        carrinhoQtdade.style.display = 'block'
+    }
 }
 
 
