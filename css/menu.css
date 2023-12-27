@@ -22,7 +22,6 @@ header{
     width: -webkit-fill-available;
     border-bottom: 1px solid black;
     padding-bottom: 10px;
-    
 }
 header img{
     max-width: 20px;
@@ -226,7 +225,7 @@ header img{
     z-index: 10;
     margin-top: 45px;
     right: 1px;
-    zoom: 2.5;    
+    zoom: 1.5;
     border: #000 solid 1px;
     box-shadow: 2px 4px 4px #000;
     font-size: .5rem;
@@ -240,7 +239,7 @@ header img{
     width: 230px;
 }
 #inputLupa::placeholder{
-    font-size: .7rem;
+    font-size: .5rem;
 }
 #exitLupa{
     
@@ -250,12 +249,51 @@ height: 15px;
     cursor: pointer;
 }
 
+#carrinhoQtdade{
+    
+    text-align: center;
+    display: none;
+    width: 20px;
+    height: 20px;
+    padding: 0%;
+    border-radius: 50%;
+    border: 1px solid black;
+    
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+#containerEncontrados{
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+.containerProdutoEncontrado {
+    max-width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    zoom: .6;
+    margin: 0px 50px;
+}
+.containerProdutoEncontrado>img {
+    max-width: 150px;
+}
+#buscados{
+    display: flex;
+    justify-content: center;
+}
 @media screen and (max-width: 950px) {
     header{
     font-size: .7rem;
     }
     .header li{
         margin: 0 4px;
+    }
+    #carrinhoQtdade{
+        padding: 3px;
     }
 }
 @media screen and (max-width: 720px) {

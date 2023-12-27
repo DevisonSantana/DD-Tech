@@ -6,7 +6,7 @@ main{
 }
 
 #details{
-    width: 90%;
+    /* width: 90%; */
     padding: 2% 5%;
     margin: auto;
     display: flex;
@@ -16,6 +16,7 @@ main{
     background-image: linear-gradient(175deg, #e3e3e3 80%, #fff);
     padding: 4% 5%;
     margin-right: 10%;
+    width: 8;
 }
 #details li{
     list-style-type: disclosure-closed;
@@ -62,12 +63,58 @@ main{
     
 }
 
+#divQuantidade{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+#divQuantidade button{
+    width: 20px;
+}
+#divQuantidade input{
+    width: 20px;
+    text-align: center;
+}
+
 .descricao-produto{
     width: 100%;
 }
 
 .descricao-produto p{
     margin: 1%;
+}
+#AdicionarCarrinho{
+    display: flex;
+    gap: 5%;
+    font-size: .6rem;
+    justify-content: center;
+    margin-top: 3%;
+}
+#btnComprar{
+    background-color: rgb(81, 81, 182);
+    color: #fff;
+    
+
+}
+#btnAdicionar{
+    background-color: rgb(33 151 41);
+    color: #fff;
+    font-size: .6rem;
+    
+}
+.btn{
+    font-weight: bolder;
+    width: 150px;
+    height: 50px;
+    padding: 2%;
+    border-radius: 10px 0 0 0;
+    border: none;
+}
+.btn:hover{
+    filter: brightness(1.05);
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 900px){

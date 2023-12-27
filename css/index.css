@@ -10,8 +10,7 @@ body {
 
 main {
     width: 80vw;
-    margin: 5% auto;
-
+    margin: 2% auto;
 }
 
 section {
@@ -272,6 +271,7 @@ data {
 #citacao {
     background-color: #e1dede;
     padding: 5% 10%;
+    height: 2;
 }
 
 #citacao p {
@@ -282,10 +282,12 @@ justify-content: end;
 #citacao_p{
     display: flex;
     justify-content: center;
+    height: 300px;
 }
 .citacao_div{
-    margin: auto;
+   
     width: 100%;
+    height: 5;
     transition: all 2s ease-in-out;
 }
 
@@ -306,6 +308,7 @@ blockquote {
 
 blockquote span {
     margin-right: 2%;
+    margin-top: -35px;
     font-size: 5rem;
 }
 
