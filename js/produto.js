@@ -87,10 +87,7 @@ let item = []
 let itensRecuperados = localStorage.getItem("itemCarrinho")
 if (itensRecuperados) {
     Item = JSON.parse(itensRecuperados);
-} else {
-    // Se não houver nenhum item recuperado, cria um novo objeto
-    Item = new ItemFunction("", 0);
-}
+} 
 
 let  btncomprar = document.getElementById('btnComprar')
 let btnAdicionar = document.getElementById('btnAdicionar')

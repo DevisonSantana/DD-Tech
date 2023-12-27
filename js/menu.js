@@ -39,9 +39,11 @@ exitLupa.addEventListener('click', ()=>{
 
 // Carrinho
 let carrinhoQtdade = document.getElementById('carrinhoQtdade')
-
+let itemProntoParaUso;
 let itensR = localStorage.getItem("itemCarrinho")
-let itemProntoParaUso = JSON.parse(itensR)
+if(itensR){
+    itemProntoParaUso = JSON.parse(itensR)
+}
 if(itemProntoParaUso.length > 0){
     carrinhoQtdade.innerText = itemProntoParaUso.length
     carrinhoQtdade.style.display = 'block'
