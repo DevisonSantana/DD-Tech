@@ -56,9 +56,11 @@
         <li><a href="#">Outros Produtos</a></li>
     </ul>
     <div id="buscados">
+        <button type="button" class="verMaisProcurados" id="verMenos"><img  src="img/left.png" alt=""></button>
         <div id="containerEncontrados">
-    
+            
         </div>
+        <button type="button" class="verMaisProcurados" id="verMais"><img  src="img/right.png" alt=""></button>
     </div>
 </header>
 
@@ -91,7 +93,7 @@
             </div>
             <div id="divQuantidade">
                 <button type="button">-</button>
-                <input type="number" value="1" step="1" id="inputQuantidade">
+                <input type="number" value="1" step="1" min="1" id="inputQuantidade">
                 <button type="button">+</button>
             </div>
             <div id="AdicionarCarrinho">
