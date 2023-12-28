@@ -113,7 +113,7 @@ function Comentario(num) {
             Comentario1.style.backgroundColor = "#978d8d"
             Comentario2.style.backgroundColor = "#978d8d"
             Comentario3.style.backgroundColor = "blue"
-            num++
+            
         }
 
     }

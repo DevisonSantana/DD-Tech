@@ -43,18 +43,57 @@ let itemProntoParaUso;
 let itensR = localStorage.getItem("itemCarrinho")
 if(itensR){
     itemProntoParaUso = JSON.parse(itensR)
-    if(itemProntoParaUso){
+    if(itemProntoParaUso){ //estava com .length
         carrinhoQtdade.innerText = itemProntoParaUso.length
         carrinhoQtdade.style.display = 'block'
     }
 }
 
-
-
+//busca de produto pelo cabecalho
+let itensCabecalho = [... document.querySelectorAll('#parte2 > li')]
+let itensCabecalhoMobile = [... document.querySelectorAll('#parte22 > li')]
+itensCabecalho.map((res) =>{
+    res.addEventListener('click', (evt) =>{
+        if(evt.target.innerText.toLowerCase() == 'outros'){
+            procurarProduto('outros')
+        }
+        else if(evt.target.innerText.toLowerCase() == 'notebooks'){
+            procurarProduto('note')
+        }
+        else if(evt.target.innerText.toLowerCase() == 'desktops'){
+            procurarProduto('desktops')
+        }
+        else{
+            procurarProduto(evt.target.innerText.toLowerCase())
+        }
+    })
+})
+itensCabecalhoMobile.map((res) =>{
+    res.addEventListener('click', (evt) =>{
+        if(evt.target.innerText.toLowerCase() == 'outros'){
+            procurarProduto('outros')
+        }
+        else if(evt.target.innerText.toLowerCase() == 'notebooks'){
+            procurarProduto('note')
+        }
+        else if(evt.target.innerText.toLowerCase() == 'desktops'){
+            procurarProduto('desktops')
+        }
+        else{
+            procurarProduto(evt.target.innerText.toLowerCase())
+        }
+    })
+})
+// buscar ofertas
+function buscaOferats(){
+    procurarProduto('oferta')
+}
 
 // busca de produtos pela lupa
 let produtoProcurado = document.getElementById('inputLupa')
 let containerEncontrados = document.getElementById('containerEncontrados')
+let verMaisProcurados = [...document.getElementsByClassName('verMaisProcurados')]
+
 produtoProcurado.addEventListener('keyup', produtoBuscado)
 function produtoBuscado(produto){
 produtoDigitado = produtoProcurado.value
@@ -63,13 +102,14 @@ if(produtoDigitado != ''){
 }
 else{
     containerEncontrados.innerHTML = ''
+    verMaisProcurados[0].style.display = 'none'
+    verMaisProcurados[1].style.display = 'none'
+    }
 }
-}
-
 function carregarDinamicamenteEncontrados(produto){
-    for(let cont = 0; cont < 5; cont++){
+    for(let cont = 0; cont < produto.length; cont++){
          containerEncontrados.innerHTML += `
-        <picture class="containerProdutoEncontrado">
+        <picture class="containerProdutoEncontrado"  id="${produto[cont].nome}" onclick="AcessarProdutoPage(id)">
         <img src="${produto[cont].imagem[0]}" alt="">
         <figcaption>
         <div class="avaliacao">
@@ -83,12 +123,24 @@ function carregarDinamicamenteEncontrados(produto){
         <h6 class="precoAtual">R$ ${produto[cont].precoAtual}</h6>
         </figcaption>
         </picture>
-        `
-        console.log(containerEncontrados)
-        
+        `        
     }
+   verMaisProcurados[1].style.display = 'flex'
 }
 
+// mover procurados
+verMaisProcurados.map((res) =>{
+    res.addEventListener('click', () =>{
+        console.log(containerEncontrados.scrollLeft)
+        if(res.id == 'verMais'){
+            containerEncontrados.scrollLeft += 170
+            verMaisProcurados[0].style.display = 'flex'
+        }
+        else if(res.id == 'verMenos'){
+            containerEncontrados.scrollLeft += -170
+        }
+    })
+})
 
 async function fetchProfileData() {
     const url = 'https://raw.githubusercontent.com/DevisonSantana/DD-Tech/main/data/produtos.json';
@@ -106,9 +158,24 @@ async function procurarProduto(nomeProduto) {
     
     let produtosEncontrados = produto.filter(produto => produto.nome.toLowerCase().includes(nomeProduto.toLowerCase()) || produto.descricao.toLowerCase().includes(nomeProduto.toLowerCase()) || produto.categoria.toLowerCase().includes(nomeProduto.toLowerCase()));
 
-    if(produtosEncontrados.length > 0)
-    containerEncontrados.innerHTML = ''
-
+    if(produtosEncontrados.length > 0){
+        containerEncontrados.innerHTML = ''
         carregarDinamicamenteEncontrados(produtosEncontrados)
-        
+    }
+    else{
+        containerEncontrados.innerHTML = `
+            <p>Produto não encontrado</p>
+    `
+    verMaisProcurados[0].style.display = 'none'
+    verMaisProcurados[1].style.display = 'none'
+    }
+
 }
+
+// funcao para ir para a pagina de produtos passando o produto clicado
+
+function AcessarProdutoPage(produtoEspecifico){
+    console.log(produtoEspecifico)
+    sessionStorage.setItem("nomeProduto", produtoEspecifico)
+    window.location.href = `produto.html`
+    }

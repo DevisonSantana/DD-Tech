@@ -86,8 +86,9 @@ let item = []
 
 let itensRecuperados = localStorage.getItem("itemCarrinho")
 if (itensRecuperados) {
-    Item = JSON.parse(itensRecuperados);
+    item = JSON.parse(itensRecuperados);
 } 
+
 
 let  btncomprar = document.getElementById('btnComprar')
 let btnAdicionar = document.getElementById('btnAdicionar')
@@ -96,7 +97,6 @@ btncomprar.addEventListener('click', () =>{
     //item.none = produtoEspec.nome
     //localStorage.setItem("itemCompra", item)
 })
-
 btnAdicionar.addEventListener('click', () =>{
     const novo1 = {Nome: produtoEspec.nome, QtdadeItem: 5}
     item.push(novo1) 
@@ -105,5 +105,8 @@ btnAdicionar.addEventListener('click', () =>{
     localStorage.setItem("itemCarrinho", jsonAux)
     let itensRecuper = localStorage.getItem("itemCarrinho")
     let itemProntoParaUso = JSON.parse(itensRecuper)
-    let carrinhoQtdade = document.getElementById('carrinhoQtdade').innerText = item.length
+    let carrinhoQtdade = document.getElementById('carrinhoQtdade')
+    carrinhoQtdade.innerText = item.length
+    carrinhoQtdade.style.display = 'block'
+    console.log(item)
 })
