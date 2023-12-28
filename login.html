@@ -10,48 +10,66 @@
     <script src="js/menu.js" defer></script>
 </head>
 <body>
-    <!-- Area antes do Cabeçalho  -->
-    <header>
-        <div id="icones-sociais">
-            <a href="https://www.facebook.com">
-                <img src="img/logos/logo-facebook.png" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com">
-                <img src="img/logos/insta.png" alt="Instagram">
-            </a>
-        </div>
-    <!-- Area de cabeçalho -->
-        <nav class="header">
-            <img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo">
-            <ul id="parte2">
-                <li><a href="#">Notebooks</a></li>
-                <li><a href="#">Desktops</a></li>
-                <li><a href="#">Redes</a></li>
-                <li><a href="#">Impressoras</a></li>
-                <li><a href="#">Gamer</a></li>
-                <li><a href="#">Outros Produtos</a></li>
-            </ul>
-            
-            <ul class="nav-items">
-                <li><button><a href="#">Ofertas</a></button></li>
-                <li><a href="#"><img src="img/lupa.png" alt="Lupa" id="lupa"></i></a></li>
-                <div id="divLupa">
-                    <input type="text" name="inputLupa" id="inputLupa" placeholder="Qual produto você precisa">
-                    <img src="img/exit.png" alt="" id="exitLupa">
-                </div>                <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
-                <li><a href="login.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
-            </ul>
-            <div id="divHamburguer"><img src="img/Menu32.png" alt=""></div>
-        </nav>
-        <ul id="parte22">
-            <li><a href="#">Notebooks</a></li>
-            <li><a href="#">Desktops</a></li>
-            <li><a href="#">Redes</a></li>
-            <li><a href="#">Impressoras</a></li>
-            <li><a href="#">Gamer</a></li>
-            <li><a href="#">Outros Produtos</a></li>
+   <!-- Inicio do Cabeçalho  -->
+
+<header>
+    <div id="icones-sociais">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="img/logos/logo-facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="img/logos/insta.png" alt="Instagram">
+        </a>
+    </div>
+    <nav class="header">
+        <img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo">
+        <ul id="parte2">
+            <li>Notebooks</li>
+            <li>Desktops</li>
+            <li>Redes</li>
+            <li>Impressoras</li>
+            <li>Gamer</li>
+            <li>Outros Produtos</li>
         </ul>
-    </header>
+        
+        <ul class="nav-items">
+            <li><button onclick="buscaOferats()">Ofertas</button></li>
+            <li><a href="#"><img src="img/lupa.png" alt="Lupa" id="lupa"></i></a></li>
+            <div id="divLupa">
+                <input type="text" name="inputLupa" id="inputLupa" placeholder="Qual produto você precisa">
+                <img src="img/exit.png" alt="" id="exitLupa">
+            </div>
+            <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
+            <div id="carrinhoQtdade">0</div>
+            <li><a href="usuario.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
+        </ul>
+        <div id="divHamburguer"><img src="img/Menu32.png" alt=""></div>
+    </nav>
+    <ul id="parte22">
+        <li><a href="#">Notebooks</a></li>
+        <li><a href="#">Desktops</a></li>
+        <li><a href="#">Redes</a></li>
+        <li><a href="#">Impressoras</a></li>
+        <li><a href="#">Gamer</a></li>
+        <li><a href="#">Outros Produtos</a></li>
+    </ul>
+    <div id="buscados">
+        <button type="button" class="verMaisProcurados" id="verMenos"><img  src="img/left.png" alt=""></button>
+        <div id="containerEncontrados">
+            
+        </div>
+        <button type="button" class="verMaisProcurados" id="verMais"><img  src="img/right.png" alt=""></button>
+    </div>
+</header>
+    
+    <div id="buscados">
+        <button type="button" class="verMaisProcurados" id="verMenos"><img  src="img/left.png" alt=""></button>
+        <div id="containerEncontrados">
+            
+        </div>
+        <button type="button" class="verMaisProcurados" id="verMais"><img  src="img/right.png" alt=""></button>
+    </div>
+</header>
     <!-- Fim do cabeçalho -->
 
     <!-- Mostra caminho da pagina -->
@@ -105,5 +123,7 @@
         </form>
         
     </div>
+    <script src="js/produtoModel.js"></script>
+
 </body>
 </html>
