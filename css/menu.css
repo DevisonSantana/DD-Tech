@@ -217,7 +217,18 @@ header img{
 #navegacao a{
     color: #000;
 }
-
+.verMaisProcurados img{
+    height: 30px;
+    margin: 10%;
+}
+#verMais img{
+    height: 35px ;
+    opacity: .6 !important;
+    margin-left: 15px;
+}
+.verMaisProcurados img:hover{
+    height: 50px !important;
+}
 
 /* lupa */
 #divLupa{
@@ -264,7 +275,7 @@ height: 15px;
 }
 #containerEncontrados{
     display: flex;
-    width: 70%;
+    width: 57%;
     overflow-x: hidden;
     overflow-y: hidden;
     scroll-behavior: smooth;
