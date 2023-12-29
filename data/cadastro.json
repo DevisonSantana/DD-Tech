@@ -90,5 +90,43 @@
             "cep": "192.198.100-22",
             "pais": "brasil"
         }
+    ],
+    "cartoes": [
+        {
+            "id": 1,
+            "usuario": 5,
+            "numeroCartao": "8945547867349045",
+            "nomeCartao": "ALVINHU JS",
+            "bandeira": "visa",
+            "validade": "03/27",
+            "digitoSeguranca": "123" 
+        },
+        {
+            "id": 2,
+            "usuario": 5,
+            "numeroCartao": "1784389546730912",
+            "nomeCartao": "ALVINHU JS",
+            "bandeira": "dinners",
+            "validade": "05/24",
+            "digitoSeguranca": "144" 
+        },
+        {
+            "id": 3,
+            "usuario": 3,
+            "numeroCartao": "8945547867349045",
+            "nomeCartao": "DEIVIDSON COELHO",
+            "bandeira": "mastercard",
+            "validade": "03/26",
+            "digitoSeguranca": "431" 
+        },
+        {
+            "id": 4,
+            "usuario": 3,
+            "numeroCartao": "1784389546730912",
+            "nomeCartao": "DEIVIDSON COELHO",
+            "bandeira": "visa",
+            "validade": "05/25",
+            "digitoSeguranca": "123" 
+        }
     ]
 }
