@@ -1,0 +1,46 @@
+{
+    "vendas": [
+        {
+            "cliente": 5,
+            "produto": 7,
+            "precoOroginal": "2300.00",
+            "precoVenda": "1999.00",
+            "data": "29/12/2023",
+            "hora": "14:20",
+            "codigoRastreio": "br7374789946633b",
+            "tipoDeEnvio": "correio",
+            "statusEntrega": "entregue",
+            "dataEntrega": "07/01/2024",
+            "horaEntrega": "09:30",
+            "status": "ok"
+        },
+        {
+            "cliente": 5,
+            "produto": "inspiron 15",
+            "precoOroginal": "2300.00",
+            "precoVenda": "1999.00",
+            "data": "29/12/2023",
+            "hora": "14:20",
+            "codigoRastreio": "br7374789946633b",
+            "tipoDeEnvio": "correio",
+            "statusEntrega": "entregue",
+            "dataEntrega": "07/01/2024",
+            "horaEntrega": "09:30",
+            "status": "ok"
+        },
+        {
+            "cliente": 5,
+            "produto": 7,
+            "precoOroginal": "2300.00",
+            "precoVenda": "1999.00",
+            "data": "29/12/2023",
+            "hora": "14:20",
+            "codigoRastreio": "br7374789946633b",
+            "tipoDeEnvio": "correio",
+            "statusEntrega": "entregue",
+            "dataEntrega": "07/01/2024",
+            "horaEntrega": "09:30",
+            "status": "ok"
+        }
+    ]
+}
