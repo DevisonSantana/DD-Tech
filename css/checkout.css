@@ -1,4 +1,7 @@
-
+body{
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 h1
 {
@@ -113,7 +116,7 @@ h5{
     top: -62px;
     margin: -50px;
     width: 294px;
-    height: 649px;
+    height: 642px
     
     
 
@@ -148,15 +151,18 @@ h5{
     justify-content: center;
     background-color: blue;
     color:white;
+    width: 112%;
     
 }
 #botao2{
     
     align-content:center;
+    width: 112%;
 }
 #botao3{
     background-color: rgb(192, 190, 190);
     color: grey;
+    width: 112%;
 
 }
 .primeiro{
@@ -170,8 +176,8 @@ h5{
 }
 #menu{
     
-    margin-top: 35px;
-    margin-left: 25px;
+    margin-top: 20px;
+    margin: 2;
 }
     
 
@@ -270,6 +276,10 @@ h5{
     justify-content: space-between;
     padding: 10px
     
+}
+#tabela1{
+    align-items: center;
+    display: flex;
 }
 
 .inicio{
