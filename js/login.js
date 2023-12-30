@@ -42,7 +42,6 @@ senhaInput.addEventListener('focus', senha)
 
 senhaInput.addEventListener('blur', senha)
 
-// ENCAMINHAR PARA PAGINA CADASTRO
 let cadastro = document.querySelector('#btn-criar-conta')
 
 cadastro.addEventListener('click', (e)=>{
@@ -52,119 +51,97 @@ cadastro.addEventListener('click', (e)=>{
 
 })
 
-// TENTANDO VALIDAR OS TREM AQUI
-
-let usuario = [
-    {
-        user: "devison",
-        email: "devison@proz.com",
-        senha: "admin"
-    },
-    {
-        user: "emerson",
-        email: "emerson@proz.com",
-        senha: "admin"
-    },
-    {
-        user: "deividson",
-        email: "deividson@proz.com",
-        senha: "admin"
-    },
-    {
-        user: "gabriel",
-        email: "gabriel@proz.com",
-        senha: "admin"
-    },
-    {
-        user: "alvaro",
-        email: "alvinhu@proz.com",
-        senha: "nota10"
-    }
-]
-
-let submit = document.querySelector('#btn-submit')
-
-submit.addEventListener('click', function(e){
-    e.preventDefault()
-    for (let i = 0; i < usuario.length; i++){
-        let valid = false
-        if (usuario[i].email == emailInput.value && usuario[i].senha == senhaInput.value){
-            valid = true
-            window.location.href = 'usuario.html'
-            emailInput.classList.add('correct')
-            emailInput.classList.remove('error')
-            emailHelper.classList.remove('visible')
-            senhaInput.classList.add('correct')
-            senhaInput.classList.remove('error')
-            senhaHelper.classList.remove('visible')
-            break
-        }
-
-        if(valid == false){
-            emailInput.classList.add('error')
-            emailInput.classList.remove('correct')
-            emailHelper.classList.add('visible')
-            emailHelper.innerHTML = "Email ou senha incorretos, tente novamente."
-            senhaInput.classList.add('error')
-            senhaInput.classList.remove('correct')
-        }
-
-    }
-})
-
-// MOSTRANDO RECUPERAÇÃO DE SENHA
-let esqueciSenha = document.querySelector('.forgot-pwd')
-let blocoEsqueciSenha = document.getElementById('menu-esqueci-senha')
-
-esqueciSenha.addEventListener('click', ()=>{
-    blocoEsqueciSenha.classList.toggle('not-visible')
-    
-})
-
-// ESQUECI MINHA SENHA
-let showUsers = document.getElementsByClassName('spn-blue')
-let listaUsers = document.getElementById('lista-users')
-
-
-for(let i = 0; i < usuario.length; i++){
-    let li = document.createElement('li')
-    li.innerHTML = usuario[i].user
-    listaUsers.appendChild(li)
+// recebe cadastros do banco
+async function fetchProfileDataCadastro() {
+    const url = 'https://raw.githubusercontent.com/DevisonSantana/DD-Tech/main/data/cadastro.json';
+    const response = await fetch(url)
+    const profileData = await response.json()
+    return profileData
 }
+(async()=>{
+    let usuario = await fetchProfileDataCadastro()
+    let submit = document.querySelector('#btn-submit')
 
-showUsers[1].addEventListener('click', ()=>{
-    listaUsers.classList.toggle('not-visible')
-    listaUsers.classList.toggle('visible')
-})
+    submit.addEventListener('click', function(e){
+        e.preventDefault()
+        for (let i = 0; i < usuario.cadastro.length; i++){
+            let valid = false
+            if (usuario.cadastro[i].email == emailInput.value && usuario.cadastro[i].senha == senhaInput.value){
+                valid = true
+                window.location.href = 'usuario.html'
+                emailInput.classList.add('correct')
+                emailInput.classList.remove('error')
+                emailHelper.classList.remove('visible')
+                senhaInput.classList.add('correct')
+                senhaInput.classList.remove('error')
+                senhaHelper.classList.remove('visible')
+                break
+            }
 
+            if(valid == false){
+                emailInput.classList.add('error')
+                emailInput.classList.remove('correct')
+                emailHelper.classList.add('visible')
+                emailHelper.innerHTML = "Email ou senha incorretos, tente novamente."
+                senhaInput.classList.add('error')
+                senhaInput.classList.remove('correct')
+            }
 
-// RECUPERAÇÃO DE SENHA
-let forgotSenhaInput = document.getElementById('forgot-pass-input')
-let forgotSenhaHelper = document.getElementById('forgot-pass-helper')
-let btnForgotPass = document.getElementById('btn-forgot-pass')
-
-
-btnForgotPass.addEventListener('click', (e)=>{
-    e.preventDefault()
-    for(i = 0; i < usuario.length; i++){
-        let valid = false
-
-        if (usuario[i].user == forgotSenhaInput.value){
-            valid = true
-            forgotSenhaHelper.innerText = `Email: ${usuario[i].email}
-            Senha: ${usuario[i].senha}`
-            forgotSenhaHelper.classList.add('forgot-pass-style')
-            forgotSenhaHelper.classList.remove('helper-text')
-            forgotSenhaHelper.classList.remove('visible')
-            break
         }
+    })
+    // MOSTRANDO RECUPERAÇÃO DE SENHA
+    let esqueciSenha = document.querySelector('.forgot-pwd')
+    let blocoEsqueciSenha = document.getElementById('menu-esqueci-senha')
+    esqueciSenha.addEventListener('click', ()=>{
+        blocoEsqueciSenha.classList.toggle('not-visible')
+        
+    })
 
-        if(valid == false){
-            forgotSenhaHelper.classList.add('helper-text')
-            forgotSenhaHelper.classList.remove('forgot-pass-style')
-            forgotSenhaHelper.classList.add('visible')
-            forgotSenhaHelper.innerText = "Usuario não encontrado, tente novamente."
-        }
+    // ESQUECI MINHA SENHA
+    let showUsers = document.getElementsByClassName('spn-blue')
+    let listaUsers = document.getElementById('lista-users')
 
+
+    for(let i = 0; i < usuario.cadastro.length; i++){
+        let li = document.createElement('li')
+        li.innerHTML = usuario.cadastro[i].nomeSocial
+        listaUsers.appendChild(li)
     }
-})
+
+    showUsers[1].addEventListener('click', ()=>{
+        listaUsers.classList.toggle('not-visible')
+        listaUsers.classList.toggle('visible')
+    })
+
+
+    // RECUPERAÇÃO DE SENHA
+    let forgotSenhaInput = document.getElementById('forgot-pass-input')
+    let forgotSenhaHelper = document.getElementById('forgot-pass-helper')
+    let btnForgotPass = document.getElementById('btn-forgot-pass')
+
+    btnForgotPass.addEventListener('click', (e)=>{
+        e.preventDefault()
+        for(i = 0; i < usuario.cadastro.length; i++){
+            let valid = false
+
+            if (usuario.cadastro[i].nomeSocial == forgotSenhaInput.value){
+                valid = true
+                forgotSenhaHelper.innerText = 
+                `Email: ${usuario.cadastro[i].email}
+                Senha: ${usuario.cadastro[i].senha}`
+                forgotSenhaHelper.classList.add('forgot-pass-style')
+                forgotSenhaHelper.classList.remove('helper-text')
+                forgotSenhaHelper.classList.remove('visible')
+                break
+            }
+
+            if(valid == false){
+                forgotSenhaHelper.classList.add('helper-text')
+                forgotSenhaHelper.classList.remove('forgot-pass-style')
+                forgotSenhaHelper.classList.add('visible')
+                forgotSenhaHelper.innerText = "Usuario não encontrado, tente novamente."
+            }
+
+        }
+    })
+})()

@@ -1,0 +1,132 @@
+{
+    "cadastro": [
+        {
+            "id": 1,
+            "nome": "Devison",
+            "sobrenome": "Santana",
+            "nomeSocial": "Sr. Git",
+            "email": "devison@proz.com",
+            "senha": "admin",
+            "cpf": "00123456789",
+            "telefone": "71994120000",
+            "logradouro": "rua javascript",
+            "numero": "01",
+            "complemento": "mansão",
+            "bairro": "html",
+            "cidade": "bahia",
+            "estado": "ba",
+            "cep": "192.198.100-22",
+            "pais": "brasil"
+        },
+        {
+            "id": 2,
+            "nome": "Emerson",
+            "sobrenome": "Penelli",
+            "nomeSocial": "O Cara",
+            "email": "emerson@proz.com",
+            "senha": "admin",
+            "cpf": "01234567891",
+            "telefone": "11974256345",
+            "logradouro": "rua javascript",
+            "numero": "01",
+            "complemento": "mansão",
+            "bairro": "html",
+            "cidade": "sao paulo",
+            "estado": "sp",
+            "cep": "192.198.100-22",
+            "pais": "brasil"
+        },
+        {
+            "id": 3,
+            "nome": "Deividson",
+            "sobrenome": "Coelho",
+            "nomeSocial": "C# Pai",
+            "email": "deividson@proz.com",
+            "senha": "admin",
+            "cpf": "01234567891",
+            "telefone": "31973451092",
+            "logradouro": "rua javascript",
+            "numero": "01",
+            "complemento": "mansão",
+            "bairro": "html",
+            "cidade": "barao de cocais",
+            "estado": "mg",
+            "cep": "192.198.100-22",
+            "pais": "brasil"
+        },
+        {
+            "id": 4,
+            "nome": "Gabriel",
+            "sobrenome": "Hacker",
+            "nomeSocial": "Hacker Etico",
+            "email": "gabriel@proz.com",
+            "senha": "admin",
+            "cpf": "01234567890",
+            "telefone": "31976382634",
+            "logradouro": "rua javascript",
+            "numero": "01",
+            "complemento": "mansão",
+            "bairro": "html",
+            "cidade": "hackerlandia",
+            "estado": "mg",
+            "cep": "192.198.100-22",
+            "pais": "brasil"
+        },
+        {
+            "id": 5,
+            "nome": "Alvaro",
+            "sobrenome": "Santos do Js",
+            "nomeSocial": "Alvinhu",
+            "email": "alvinhu@proz.com",
+            "senha": "nota10",
+            "cpf": "01234567891",
+            "telefone": "35978304672",
+            "logradouro": "rua javascript",
+            "numero": "01",
+            "complemento": "mansão",
+            "bairro": "html",
+            "cidade": "roças novas",
+            "estado": "mg",
+            "cep": "192.198.100-22",
+            "pais": "brasil"
+        }
+    ],
+    "cartoes": [
+        {
+            "id": 1,
+            "usuario": 5,
+            "numeroCartao": "8945547867349045",
+            "nomeCartao": "ALVINHU JS",
+            "bandeira": "visa",
+            "validade": "03/27",
+            "digitoSeguranca": "123" 
+        },
+        {
+            "id": 2,
+            "usuario": 5,
+            "numeroCartao": "1784389546730912",
+            "nomeCartao": "ALVINHU JS",
+            "bandeira": "dinners",
+            "validade": "05/24",
+            "digitoSeguranca": "144" 
+        },
+        {
+            "id": 3,
+            "usuario": 3,
+            "numeroCartao": "8945547867349045",
+            "nomeCartao": "DEIVIDSON COELHO",
+            "bandeira": "mastercard",
+            "validade": "03/26",
+            "digitoSeguranca": "431" 
+        },
+        {
+            "id": 4,
+            "usuario": 3,
+            "numeroCartao": "1784389546730912",
+            "nomeCartao": "DEIVIDSON COELHO",
+            "bandeira": "visa",
+            "validade": "05/25",
+            "digitoSeguranca": "123" 
+        }
+    ]
+}

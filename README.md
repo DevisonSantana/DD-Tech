@@ -44,6 +44,5 @@ A cada fim de Sprint daremos ```git merge``` para a entrega de projeto, desse je
 
 - Deividson
 - Devison
-- Diego
 - Emerson
 - Gabriel

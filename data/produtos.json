@@ -1,0 +1,405 @@
+{
+    "produtos": [
+
+{
+    "id": 1,
+    "nome": "tablet",
+    "categoria": "tablet",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//Ex_diplay.png",
+        "img//Ex_diplay.png",
+        "img//Ex_diplay.png"
+    ]
+},
+{
+    "id": 2,
+    "nome": "Charlie",
+    "categoria": "personalize",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/charlie.png",
+        "img//produtos/charlie.png",
+        "img//produtos/charlie.png"
+    ]
+},
+{
+    "id": 3,
+    "nome": "Bravo",
+    "categoria": "personalize",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/bravo.png",
+        "img//produtos/bravo.png",
+        "img//produtos/bravo.png"
+    ]
+},
+{
+    "id": 4,
+    "nome": "Alpha",
+    "categoria": "personalize",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/alpha.png",
+        "img//produtos/alpha.png",
+        "img//produtos/alpha.png"
+    ]
+},
+{
+    "id": 5,
+    "nome": "Zulu",
+    "categoria": "personalize",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/zulu.png",
+        "img//produtos/zulu.png",
+        "img//produtos/zulu.png"
+    ]
+},
+{
+    "id": 6,
+    "nome": "Delta",
+    "categoria": "personalize",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/delta.png",
+        "img//produtos/delta.png",
+        "img//produtos/delta.png"
+    ]
+},
+{
+    "id": 7,
+    "nome": "inspiron 15",
+    "categoria": "notebook",
+    "descricao": "Desfrute de um desempenho ágil, porém silencioso, com processadores Intel® Core™ de 11ª geração combinados com SSD PCIe. Conte também com configurações disponíveis com placa de vídeo integrada Intel® Iris Xe. Beneficie-se das teclas grandes e de um touchpad espaçoso que facilita a navegação do conteúdo. O software ComfortView é uma solução com certificação TUV Rheinland que reduz as emissões de luz azul prejudicial para proporcional conforto visual durante tempos longos de visualização. Além disso, as elegantes bordas estreitas em três lados incluem uma tela Full HD opcional.",
+    "avaliacao": 5,
+    "preco": "2300.00",
+    "precoAtual": "1999.00",
+    "informacoes": [
+        "Processador - 12ª geração Intel® Core™ i3-1215U",
+        "Memória 8GB DDR4",
+        "Armazenamento SSD de 256GB PCIe NVMe M.2",
+        "Tela 15.6” Full HD (1920X1080)",
+        "Sistema operacional Windows 11 Home"
+    ],
+    "imagem": [
+        "img//produtos/dell1.jpg",
+        "img//produtos/dell2.jpg",
+        "img//produtos/dell3.jpg",
+        "img//produtos/dell4.jpg",
+        "img//produtos/dell5.jpg",
+        "img//produtos/dell6.jpg",
+        "img//produtos/dell7.jpg"
+    ]
+},
+{
+    "id": 8,
+    "nome": "notebook1",
+    "categoria": "notebook",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/note1.png",
+        "img//produtos/note1.png",
+        "img//produtos/note1.png"
+    ]
+},
+{
+    "id": 9,
+    "nome": "notebook2",
+    "categoria": "notebook",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/note2.png",
+        "img//produtos/note2.png",
+        "img//produtos/note2.png"
+    ]
+},
+{
+    "id": 10,
+    "nome": "notebook3",
+    "categoria": "notebook",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/note3.png",
+        "img//produtos/note3.png",
+        "img//produtos/note3.png"
+    ]
+},
+{
+    "id": 11,
+    "nome": "notebook4",
+    "categoria": "notebook",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/note4.png",
+        "img//produtos/note4.png",
+        "img//produtos/note4.png"
+    ]
+},
+{
+    "id": 12,
+    "nome": "notebook5",
+    "categoria": "notebook",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/note5.png",
+        "img//produtos/note5.png",
+        "img//produtos/note5.png"
+    ]
+},
+{
+    "id": 13,
+    "nome": "desktop1",
+    "categoria": "desktops",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/desktop1.png",
+        "img//produtos/desktop1.png",
+        "img//produtos/desktop1.png"
+    ]
+},
+{
+    "id": 14,
+    "nome": "desktop2",
+    "categoria": "desktops",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/desktop2.png",
+        "img//produtos/desktop2.png",
+        "img//produtos/desktop2.png"
+    ]
+},
+{
+    "id": 15,
+    "nome": "desktop3",
+    "categoria": "desktops",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/desktop3.png",
+        "img//produtos/desktop3.png",
+        "img//produtos/desktop3.png"
+    ]
+},
+{
+    "id": 16,
+    "nome": "desktop4",
+    "categoria": "desktops",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/desktop4.png",
+        "img//produtos/desktop4.png",
+        "img//produtos/desktop4.png"
+    ]
+},
+{
+    "id": 17,
+    "nome": "desktop5",
+    "categoria": "desktops",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/desktop5.png",
+        "img//produtos/desktop5.png",
+        "img//produtos/desktop5.png"
+    ]
+},
+{
+    "id": 18,
+    "nome": "msi1",
+    "categoria": "monitores",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/msi1.png",
+        "img//produtos/msi1.png",
+        "img//produtos/msi1.png"
+    ]
+},
+{
+    "id": 19,
+    "nome": "msi2",
+    "categoria": "monitores",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/msi2.png",
+        "img//produtos/msi2.png",
+        "img//produtos/msi2.png"
+    ]
+},
+{
+    "id": 20,
+    "nome": "msi3",
+    "categoria": "monitores",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/msi3.png",
+        "img//produtos/msi3.png",
+        "img//produtos/msi3.png"
+    ]
+},
+{
+    "id": 21,
+    "nome": "msi4",
+    "categoria": "monitores",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/msi4.png",
+        "img//produtos/msi4.png",
+        "img//produtos/msi4.png"
+    ]
+},
+{ "id": 22,
+    "nome": "msi5",
+    "categoria": "monitores",
+    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "avaliacao": 4,
+    "preco": "499.00",
+    "precoAtual": "499.00",
+    "imagem": [
+        "img//produtos/msi5.png",
+        "img//produtos/msi5.png",
+        "img//produtos/msi5.png"
+    ]
+}
+],
+"banner": [
+    {
+        "id": 1,
+        "nome": "Banner1",
+        "categoria": "banner",
+        "imagem": "img/banner1.png"
+    },
+    {
+        "id": 2,
+        "nome": "Banner1",
+        "categoria": "banner",
+        "imagem": "img/banner1.png"
+    },
+    {
+        "id": 3,
+        "nome": "Banner1",
+        "categoria": "banner",
+        "imagem": "img/banner1.png"
+    }
+],
+"marcas": [
+    {
+        "id": 1,
+        "nome": "Zip",
+        "imagem": "img//logos/zip.png"
+    },
+    {
+        "id": 2,
+        "nome": "Adata",
+        "imagem": "img//logos/adata.png"
+    },
+    {
+        "id": 3,
+        "nome": "gigabyte",
+        "imagem": "img//logos/gigabyte.png"
+    },
+    {
+        "id": 4,
+        "nome": "hewlett",
+        "imagem": "img//logos/hewlett.png"
+    },
+    {
+        "id": 5,
+        "nome": "msi",
+        "imagem": "img//logos/msi.png"
+    },
+    {
+        "id": 6,
+        "nome": "razer",
+        "imagem": "img//logos/razer.png"
+    },
+    {
+        "id": 7,
+        "nome": "Roccat",
+        "imagem": "img//logos/Roccat.png"
+    },
+    {
+        "id": 8,
+        "nome": "thermaltake",
+        "imagem": "img//logos/thermaltake.png"
+    }
+],
+"comentarios":[
+    {
+        "id": 1,
+        "autor": "Tama Brown",
+        "comentario": "Meu primeiro pedido chegou hoje em perfeitas condições. Desde o momento em que enviei a dúvida sobre o item até a realização da compra, passando pelo envio e agora pela entrega, suaempresa, Tecs, manteve contato. Um ótimo serviço. Estou ansioso para comprar em seu site no futuro e recomendo fortemente.",
+        "data": "30/11/2023"
+    },
+    {
+        "id": 2,
+        "autor": "Lorem Ipssum",
+        "comentario": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis et perspiciatis beatae ullam eos odit rem sapiente molestias. Impedit alias incidunt soluta expedita ut praesentium consequatur. Nostrum, doloribus qui?",
+        "data": "23/12/2023"
+    },
+    {
+        "id": 3,
+        "autor": "Mussum Ipssum",
+        "comentario": "Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Paisis, filhis, espiritis santis. Aenean aliquam molestie leo, vitae iaculis nisl. Atirei o pau no gatis, per gatis num morreus.",
+        "data": "15/12/2023"
+    }
+]
+}

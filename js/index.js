@@ -1,9 +1,6 @@
 
-var banner_img = document.getElementById("banner_img");
-img = document.getElementsByClassName("banner_img");
-var products_img = document.getElementById("products_img");
+//var products_img = document.getElementById("products_img");
 var citacao_p = document.getElementById("citacao_p");
-var citacao_div = document.querySelectorAll(".citacao_div");
 var Comentario1 = document.getElementById("Comentario1");
 var Comentario2 = document.getElementById("Comentario2");
 var Comentario3 = document.getElementById("Comentario3");
@@ -13,22 +10,18 @@ var btnComentar = document.getElementById("btnComentar");
 
 //link para produto.html
 
-picture.forEach(element => {
-    element.addEventListener('click', () =>{
-        window.location.href = "produto.html"
-    })
-});
+//picture.forEach(element => {
+//    element.addEventListener('click', () =>{
+//        window.location.href = "produto.html"
+//    })
+//});
 
 //botao para comentar
 
 btnComentar.addEventListener('click', () =>{
         window.location.href = "produto.html"
     })
-
 //pegar o tamanho do banner
-var p = citacao_div.clientWidth *  2
-var x = banner_img.clientWidth
-console.log(p)
 var cont_p = 1
 var num = 1
 var cont = 0
@@ -42,6 +35,9 @@ setInterval(RolagemComentarioAutomatico, 5000)
 
 
 function rolagemAutomatico() {
+    let banner_img = document.getElementById("banner_img");
+    let x = banner_img.clientWidth
+
     banner_img.scrollLeft += x
     cont++
     if (cont === 3) {
@@ -52,12 +48,16 @@ function rolagemAutomatico() {
 
 // rolar banner
 function LeftBanner() {
+    var banner_img = document.getElementById("banner_img");
+    let x = banner_img.clientWidth
 
     banner_img.scrollLeft += -x
 
 }
 
 function RightBanner() {
+    var banner_img = document.getElementById("banner_img");
+    let x = banner_img.clientWidth
 
     banner_img.scrollLeft += x
 
@@ -85,6 +85,8 @@ function RolagemComentarioAutomatico() {
 
 //rolagem do comentarios
 function Comentario(num) {
+    var citacao_div = document.querySelectorAll(".citacao_div");
+
     if(num === 1) {
         citacao_div[0].style.display = 'block'
         citacao_div[1].style.display = 'none'
@@ -111,7 +113,7 @@ function Comentario(num) {
             Comentario1.style.backgroundColor = "#978d8d"
             Comentario2.style.backgroundColor = "#978d8d"
             Comentario3.style.backgroundColor = "blue"
-            num++
+            
         }
 
     }

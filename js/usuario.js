@@ -78,29 +78,142 @@ function MudarDisplayAtributs() {
 
 listAtributs.addEventListener("click", (e) => {
 
-    if (e.target.nodeName == 'DIV' || e.target.nodeName == 'h1' || e.target.nodeName == "textarea" || e.target.nodeName == "IMG") console.log("clicou no filho")
+    if (e.target.nodeName == 'DIV' || e.target.nodeName == 'H2' || e.target.nodeName == "TEXTAREA" || e.target.nodeName == "IMG" || e.target.nodeName == "BUTTON"){}
     else MudarDisplayAtributs()
+    
 
 })
 
 function passarAtributs(numAtributo) {
-    var atributos = avaliar()
+    if(numAtributo == 0) var atributos = avaliar();
+    else if(numAtributo == 1) var atributos = acompanhar()
+    else if(numAtributo == 2) var atributos = trocaDevolucao()
     listAtributs.innerHTML = atributos
-    console.log(atributos)
+    
 }
 
 function avaliar() {
     const div = `
-   <div id="listAtributs" class="atributos" >
-   <h2>Atributos</h2>
-   <textarea name="comenarioAdd" id="comenarioAdd" cols="70" rows="4"></textarea>
-   <img src="Images/estrelas4.png" alt="">
+   <section id="listAtributs" class="atributos" >
+   <div id="avaliarModal">
+   <h2>Avaliar</h2>
+   <textarea name="comenarioAdd" id="comenarioAdd" cols="70" rows="4" placeholder="Comentário"></textarea>
+   <div>
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   </div>
    <button type="button">Enviar</button>
-    </div>  `
+   </div>
+    </section>  `
 
     return div
 }
 
+function acompanhar() {
+    const div = `
+   <section id="listAtributs" class="atributos" >
+   <div id="avaliarModal">
+   <h2>Acompanhar</h2>
+   <textarea name="comenarioAdd" id="comenarioAdd" cols="70" rows="4" placeholder="Comentário"></textarea>
+   <div>
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   </div>
+   <button type="button">Enviar</button>
+   </div>
+    </section>  `
 
+    return div
+}
+function trocaDevolucao() {
+    const div = `
+   <section id="listAtributs" class="atributos" >
+   <div id="avaliarModal">
+   <h2>Troca ou Devolução</h2>
+   <textarea name="comenarioAdd" id="comenarioAdd" cols="70" rows="4" placeholder="Comentário"></textarea>
+   <div>
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   </div>
+   <button type="button">Enviar</button>
+   </div>
+    </section>  `
 
+    return div
+}
 
+// recebe os dados do usuario que vem do banco de dados e inseri na pagina
+let vendas = [];
+
+let nomeUser = document.getElementById('nomeUser')
+let cardProdutos = document.getElementById('cardProdutos')
+
+function carregarUsuario(usuario, produtoRecuperado){
+    console.log(vendas) 
+    nomeUser.innerText = usuario.nomeSocial
+    for(let i= 0; i< produtoRecuperado.length; i++){
+        cardProdutos.innerHTML += `
+    <picture class="ultimosPedidos">
+    <p class="descricaoPedidos">
+        ${produtoRecuperado[i].nome}
+    </p>
+    <img src="${produtoRecuperado[i].imagem[1]}" alt="${produtoRecuperado[i].nome}">
+    <p class="descricaoPedidos">
+        ${vendas[i].data}
+    </p>
+    <h6 class="precoAtual">R$ ${vendas[i].precoVenda} </h6>
+    <div class="botoes">
+        <button type="button" class="button" name="0" value="0">Avaliar</button>
+        <button type="button" class="button" name="0" value="1">Acompanhar</button>
+        <button type="button" class="button" name="0" value="2">Troca ou devolução</button>
+    </div>
+</picture>
+    `      
+}
+}
+// recebe cadastros do banco
+async function fetchProfileDataCadastro() {
+    const url = 'https://raw.githubusercontent.com/DevisonSantana/DD-Tech/main/data/cadastro.json';
+    const response = await fetch(url)
+    const profileData = await response.json()
+    return profileData
+}
+//recebe vendas do banco
+async function fetchProfileDataVendas() {
+    const url = 'https://raw.githubusercontent.com/DevisonSantana/DD-Tech/main/data/vendas.json';
+    const response = await fetch(url)
+    const profileData = await response.json()
+    return profileData
+}
+// Recuperar o arquivo Json com os produtos
+async function fetchProfileDataProdutos() {
+    const url = 'https://raw.githubusercontent.com/DevisonSantana/DD-Tech/main/data/produtos.json';
+    const response = await fetch(url)
+    const profileData = await response.json()
+    return profileData
+}
+(async () => {
+    const profileDataCadastro = await fetchProfileDataCadastro()
+    const profileDataVendas = await fetchProfileDataVendas()
+    const profileDataProdutos = await fetchProfileDataProdutos()
+    let produtoRecuperado = [];
+    profileDataVendas.vendas.map((res) => {
+        if(res.cliente == profileDataCadastro.cadastro[4].id){
+            vendas.push(res)
+            profileDataProdutos.produtos.map((prod) =>{
+                if(prod.id == res.produto)
+                produtoRecuperado.push(prod)
+            })  
+        }
+    })
+    carregarUsuario(profileDataCadastro.cadastro[2], produtoRecuperado)
+})()

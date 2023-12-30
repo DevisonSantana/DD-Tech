@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/produto.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/produto.js" defer></script>
     <script src="js/menu.js" defer></script>
+    <script src="js/produtoModel.js"></script>
 </head>
 <body>
 <!-- Inicio do Cabeçalho  -->
@@ -41,6 +45,7 @@
                 <img src="img/exit.png" alt="" id="exitLupa">
             </div>
             <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
+            <div id="carrinhoQtdade">0</div>
             <li><a href="usuario.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
         </ul>
         <div id="divHamburguer"><img src="img/Menu32.png" alt=""></div>
@@ -53,12 +58,20 @@
         <li><a href="#">Gamer</a></li>
         <li><a href="#">Outros Produtos</a></li>
     </ul>
+    <div id="buscados">
+        <button type="button" class="verMaisProcurados" id="verMenos"><img  src="img/left.png" alt=""></button>
+        <div id="containerEncontrados">
+            
+        </div>
+        <button type="button" class="verMaisProcurados" id="verMais"><img  src="img/right.png" alt=""></button>
+    </div>
 </header>
 
 <nav id="navegacao">
 <span><a href="index.html">Início</a></span>
-<span>›</span>
+<span class="spn-blue">›</span>
 <span><a href="produto.html">Produto</a></span>
+
 </nav>
 
 
@@ -66,7 +79,7 @@
 
 <main>
 
-    <h1>Notebook Inspiron 15</h1>
+    <h1 id="titulo">Notebook Inspiron 15</h1>
     <div id="details">
         <div>
             <ul>
@@ -80,6 +93,15 @@
             <div id="preco">
                 <em>R$ 2300,00</em>
                 <h2>R$ 1999,00</h2>
+            </div>
+            <div id="divQuantidade">
+                <button type="button">-</button>
+                <input type="number" value="1" step="1" min="1" id="inputQuantidade">
+                <button type="button">+</button>
+            </div>
+            <div id="AdicionarCarrinho">
+                <button id="btnComprar" class="btn">COMPRAR</button>
+                <button id="btnAdicionar" class="btn">ADICIONAR AO CARRINHO</button>
             </div>
         </div>
         <div id="imgPai">
