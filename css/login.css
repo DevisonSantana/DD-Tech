@@ -6,8 +6,6 @@
     font-family: 'poppins', 'Roboto';
 }
 
-
-
 body {
     display: block;
 }
@@ -20,10 +18,6 @@ body {
     margin: 2% auto;
     border-radius: 1rem;
 }
-
-/* @media screen {
-    
-} */
 
 #formulario, #forgot-pass {
     display: flex;
@@ -139,4 +133,58 @@ label {
     border: solid 2px #206620;
     background-color: #BBCCBB;
     color: #206620;
+}
+
+/* Media querys */
+
+@media screen and (max-width: 650px) {
+    #menu-login, #menu-esqueci-senha {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    #menu-login, #menu-esqueci-senha {
+        width: 20rem;
+    }
+    #btn-submit, #btn-criar-conta, #btn-forgot-pass {
+        font-size: 10px;
+    }
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #menu-login, #menu-esqueci-senha {
+        width:15rem;
+    }
+    #formulario, #forgot-pass {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 255px) {
+    #menu-login, #menu-esqueci-senha {
+        width:10rem;
+        font-size: 10px;
+    }
+    #btn-submit, #btn-criar-conta, #btn-forgot-pass {
+        font-size: 7px;
+    }
+    input {
+        height: 1.5rem;
+        width: 8rem;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 220px) {
+    #menu-login, #menu-esqueci-senha {
+        font-size: 8px;
+    }
+    #navegacao {
+        font-size: 10px;
+    }
 }
