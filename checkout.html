@@ -124,7 +124,8 @@
 
     <div id="menu">
     <button type="submit" class="button" id="botao1">Continuar compra</button>
-    <button type="submit" class="button" id="botao2">Pagamento com PayPal</button>
+    <button type="submit" class="button" id="botao2">
+        <a href="checkout.html">Pagamento com <img src="img/logos/cartao-pagamento-paypal.png"></a></button>
     <button type="submit" class="button" id="botao3"> Alterar endereço de entrega</button>
     </div>
     </div>
@@ -136,13 +137,16 @@
         <h1>Checkout de compra</h1>
         <div id="uniao">
         <h5>Item</h5>
-        <h5>Preço</h5>
-        <h5>Qtd</h5>
-        <h5>Subtotal</h5>
+        
+        <h5 class="preco">Preço</h5>
+        <h5 class="qtd">Qtd</h5>
+        <h5 class="subtt">Subtotal</h5>
+        
         </div>
         <hr>
         <div class="lista">
-        <p><img src="img/png-transparent-megaport-pc-game-.png">PC game completo</p>
+        <p><img src="img/Ex_diplay5.png" alt="Imagem do produto" class="imagem1">
+        <p id="text1">MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard e Mouse com 3 anos de garantia</p>
         <p>8.00,00</p>
         <div class="quantity-container">
             <button class="quantity-button" onclick="decreaseQuantity()">-</button>
@@ -153,7 +157,8 @@
         </div>
         <hr>
         <div id="lista2">
-            <p><img src="img/PC-Gamer-Completo-F-.jpg">PC game completo</p>
+            <p><img src="img/Ex_diplay4.png" alt="Imagem do produto" class="imagem2"></p>
+            <p id="text2">MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 home, Gaming Keyboard and Mouse 3 years Warranty</p>
             <p>10.00,00</p>
             <div class="quantity-container">
                 <button class="quantity-button" onclick="decreaseQuantity()">-</button>
