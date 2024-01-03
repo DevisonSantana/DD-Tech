@@ -158,25 +158,28 @@ let nomeUser = document.getElementById('nomeUser')
 let cardProdutos = document.getElementById('cardProdutos')
 
 function carregarUsuario(usuario, produtoRecuperado){
-    console.log(vendas) 
     nomeUser.innerText = usuario.nomeSocial
     for(let i= 0; i< produtoRecuperado.length; i++){
         cardProdutos.innerHTML += `
-    <picture class="ultimosPedidos">
-    <p class="descricaoPedidos">
-        ${produtoRecuperado[i].nome}
-    </p>
-    <img src="${produtoRecuperado[i].imagem[1]}" alt="${produtoRecuperado[i].nome}">
-    <p class="descricaoPedidos">
-        ${vendas[i].data}
-    </p>
-    <h6 class="precoAtual">R$ ${vendas[i].precoVenda} </h6>
-    <div class="botoes">
-        <button type="button" class="button" name="0" value="0">Avaliar</button>
-        <button type="button" class="button" name="0" value="1">Acompanhar</button>
-        <button type="button" class="button" name="0" value="2">Troca ou devolução</button>
-    </div>
-</picture>
+        <table class="ultimosPedidos">
+        <tr>
+            <td class="descricaoPedidos">
+            ${produtoRecuperado[i].nome}
+            </td>
+            <td>
+            <img src="${produtoRecuperado[i].imagem[1]}" alt="${produtoRecuperado[i].nome}">
+            </td>
+            <td class="descricaoPedidos">
+            ${vendas[i].data}
+            </td>
+            <td class="precoAtual">${parseFloat(vendas[i].precoVenda).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </td>
+            <td class="botoes">
+            <button type="button" class="button" name="0" value="0">Avaliar</button>
+            <button type="button" class="button" name="0" value="1">Acompanhar</button>
+            <button type="button" class="button" name="0" value="2">Troca ou devolução</button>
+            </td>
+        </tr>
+        </table>
     `      
 }
 }

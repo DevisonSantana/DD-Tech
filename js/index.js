@@ -7,23 +7,12 @@ var Comentario3 = document.getElementById("Comentario3");
 let picture = document.querySelectorAll('picture')
 var btnComentar = document.getElementById("btnComentar");
 
-
-//link para produto.html
-
-//picture.forEach(element => {
-//    element.addEventListener('click', () =>{
-//        window.location.href = "produto.html"
-//    })
-//});
-
-//botao para comentar
-
 btnComentar.addEventListener('click', () =>{
         window.location.href = "produto.html"
     })
 //pegar o tamanho do banner
 var cont_p = 1
-var num = 1
+var num = 0
 var cont = 0
 
 // chamar a rolagem automatica do banner
@@ -50,17 +39,13 @@ function rolagemAutomatico() {
 function LeftBanner() {
     var banner_img = document.getElementById("banner_img");
     let x = banner_img.clientWidth
-
     banner_img.scrollLeft += -x
-
 }
 
 function RightBanner() {
     var banner_img = document.getElementById("banner_img");
     let x = banner_img.clientWidth
-
     banner_img.scrollLeft += x
-
 }
 
 //rolar secao de produtos
@@ -74,12 +59,11 @@ function RightNovos() {
 }
 
 function RolagemComentarioAutomatico() {
-   
-    Comentario(num + 1)
     num++
     if (num > 3) {
-        num = 0
+        num = 1
     }
+    Comentario(num + 1)
 }
 
 
@@ -96,7 +80,6 @@ function Comentario(num) {
         Comentario3.style.backgroundColor = "#978d8d"
     }
     else if (num === 2) {
-        
             citacao_div[0].style.display = 'none'
             citacao_div[1].style.display = 'block'
             citacao_div[2].style.display = 'none'
@@ -105,7 +88,6 @@ function Comentario(num) {
             Comentario3.style.backgroundColor = "#978d8d"
             
     }
-        
         else if (num == 3) {
             citacao_div[0].style.display = 'none'
             citacao_div[1].style.display = 'none'
@@ -113,12 +95,8 @@ function Comentario(num) {
             Comentario1.style.backgroundColor = "#978d8d"
             Comentario2.style.backgroundColor = "#978d8d"
             Comentario3.style.backgroundColor = "blue"
-            
         }
-
     }
-   
-
 
 function VoltarComentario1() {
     citacao_div[0].style.display = 'block'

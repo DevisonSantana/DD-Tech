@@ -6,15 +6,18 @@ let descricaoProduto = document.querySelector('.descricao-produto p')
 
 
 // mudança de imagem ao clicar na miniatura
+function addClick(){
+    let imgmMini = document.querySelectorAll('.imgmMini')
+    console.log(imgmMini)
+    imgmMini.forEach(element => {
+        element.addEventListener('click', (event)=>{
+            console.log(event.target)
+            let imgBig = document.getElementById('imgBig')
+            imgBig.setAttribute('src', `${event.target.src}`)
+        })
+    });
+    }
 
-let imgmMini = document.querySelectorAll('.imgmMini')
-
-imgmMini.forEach(element => {
-    element.addEventListener('click', (event)=>{
-        let imgBig = document.getElementById('imgBig')
-        imgBig.setAttribute('src', `${event.target.src}`)
-    })
-});
 
 // produto inserido dinamicamente
 function produtoDinamico(produtoEspecifico){
@@ -33,6 +36,8 @@ function produtoDinamico(produtoEspecifico){
     `
 
     descricaoProduto.innerText = produtoEspecifico.descricao
+    // adicionar click para mudar imagem pai
+    addClick()
 }
 
 
@@ -110,3 +115,4 @@ btnAdicionar.addEventListener('click', () =>{
     carrinhoQtdade.style.display = 'block'
     console.log(item)
 })
+
