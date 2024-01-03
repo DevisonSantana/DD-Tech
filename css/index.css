@@ -279,7 +279,7 @@ data {
 #citacao {
     background-color: #e1dede;
     padding: 5% 10%;
-    height: 2;
+    height: fit-content;
 }
 
 #citacao p {
