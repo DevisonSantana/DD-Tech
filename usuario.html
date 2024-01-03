@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/usuario.css">
     <script src="js/draggable.js" defer></script>
     <script src="js/usuario.js" defer></script>
-    <script src="js/menu.js" defer></script>
     <title>Perfil</title>
 </head>
 
@@ -66,16 +65,12 @@
             
         </div>
         <button type="button" class="verMaisProcurados" id="verMais"><img  src="img/right.png" alt=""></button>
+        <button type="button" id="btnSairProcurados">x</button>
+
     </div>
 </header>
     
-    <div id="buscados">
-        <button type="button" class="verMaisProcurados" id="verMenos"><img  src="img/left.png" alt=""></button>
-        <div id="containerEncontrados">
-            
-        </div>
-        <button type="button" class="verMaisProcurados" id="verMais"><img  src="img/right.png" alt=""></button>
-    </div>
+    
 </header>
 
     <nav id="navegacao">
@@ -121,12 +116,15 @@
 
       <!--Page Pedidos-->
        
+
+
+
         <section id="sectionPedidos">
 
             <h3>Últimos Pedidos</h3>
             <div id="pedidos">
                 <div id="cardProdutos">
-                  
+                   
                 </div>
                 <div id="cardProdutos">
                     
@@ -494,6 +492,8 @@
     <section class="atributs" id="atributs">
     </section>
     <script src="js/produtoModel.js"></script>
+    <script src="js/menu.js" defer></script>
+
 </body>
 
 </html>
