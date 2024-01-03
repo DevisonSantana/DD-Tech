@@ -34,8 +34,8 @@ main{
 }
 #imgFilho{
     display: flex;
-    margin-top: 2%;
-
+    margin-top: 12%;
+    z-index: 100;
 }
 .imgmMini{
     max-width: 100px !important;

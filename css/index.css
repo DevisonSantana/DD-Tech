@@ -105,13 +105,18 @@ a:checked {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .containerProc{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     flex-wrap: wrap;
     zoom: .7;
     margin: 2% 0;
+}
+.containerNovos:hover{
+    cursor: pointer;
 }
 
 .containerProc .containerNovos:not(:first-child){
@@ -119,8 +124,11 @@ a:checked {
 }
 .containerNovos>img {
     width: 150px;
+    opacity: .9;
 }
-
+.containerNovos>img:hover{
+    opacity: 1;
+}
 .avaliacao {
     display: flex;
     width: 170px;
