@@ -63,7 +63,7 @@ function RolagemComentarioAutomatico() {
     if (num > 3) {
         num = 1
     }
-    Comentario(num + 1)
+    Comentario(num)
 }
 
 
