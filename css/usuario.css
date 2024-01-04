@@ -188,6 +188,13 @@ h5{
 }
 .divRow{
     display: flex;
+    align-items: center;
+    gap: 1%;
+}
+.divRow .divRow{
+    display: flex;
+    align-items: center;
+    gap: 4%;
 }
 .divColum{
     display: flex;
@@ -249,11 +256,13 @@ zoom: .9;
 /*Secao cartoes*/
 #sectionCartoes{
     display: none;
+    width: 90%;
+    align-items: center;
+
 }
 .cartoesCadastrados{
+    width: 50%;
     border: 1px dotted #fff;
-    width: 300px;
-    height: 100px;
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -262,15 +271,17 @@ zoom: .9;
 }
 
 .cartoesCadastrados label{
+    display: inline-block;
+    width: 80px;
     margin: 0 2%;
 }
 .btnCart, .cartoesCadastrados input[type=password]{
-    width: 50%;
     margin: auto;
 }
 
 .divCart{
-    display: none;
+    margin-right: 200px;
+    width: 100%;
 }
 .cartoesCadastrados .divColum {
     display: none;
