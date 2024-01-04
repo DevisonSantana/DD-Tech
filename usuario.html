@@ -161,59 +161,53 @@
                 <legend>Dados da conta</legend>
             <label for="">E-mail</label>
             <div class="divRow">
-                <input type="email" placeholder="deividson@gmail.com" disabled>
+                <input type="email" id="emailCadastrado" placeholder="deividson@gmail.com" disabled>
                 <span class="span">alterar</span>
             </div>
             <div class="divRow">
-                <input type="checkbox" name="receber" id="receber" checked>
-                <span>receber receber e-mails promocionais</span>
+                <input type="checkbox" name="receberEmails" id="receberEmails" checked>
+                <span>Receber e-mails promocionais</span>
             </div>
-            <div >
-                <input  type="password" placeholder="*******" disabled>
-                <span class="span">alterar</span>
-            </div>
-
+            <label for="senha">Senha</label>
             <div class="divRow">
-                <input type="email" placeholder="deividson@gmail.com" disabled>
+                <input  type="password" id="senhaCadastrada" placeholder="*******" disabled>
                 <span class="span">alterar</span>
             </div>
             </fieldset>
 
             <fieldset  class="divColum">
                 <legend>Dados pessoais</legend>
-            
 
             <label for="nome">Nome completo:</label>
             <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Deividson Omedio Moreira Coelho">
 
             <label for="nome">como gostaria que a gente te chamasse? (opcional)</label>
-            <input type="text" name="nome" id="nome" placeholder="Deividson">
+            <input type="text" name="nomeSocial" id="nomeSocial" placeholder="Deividson">
             </fieldset>
 
             <fieldset class="divColum">
                 <legend>Gênero</legend>
                 <div class="divRow">
-                    <input type="radio" name="genero" id="feminino" >
-                    <label for="feminino" class="lblGenero">feminino</label>
+                    <input type="radio" name="genero" value="feminino" id="feminino" >
+                    <label for="feminino" class="lblGenero"> Feminino</label>
                 
-                    <input type="radio" name="genero" id="masculino">
-                    <label for="" class="lblGenero">masculino</label> 
+                    <input type="radio" name="genero" value="masculino" id="masculino">
+                    <label for="" class="lblGenero">Masculino</label> 
                     <div class="divRow">
-                        <input type="radio" name="genero" id="nãoInformar" >
-                        <label for="nãoinformar" class="lblGenero">não informar</label>
-
+                        <input type="radio" name="genero" value="generoOutros" id="generoOutros" >
+                        <label for="Outros" class="lblGenero">Outro</label>
                     </div>
                 </div>
             
             
             <label for="nascimento">Data de nascimento</label>
-            <input type="text" placeholder="04/04/1990">
+            <input type="text" id="dataNascimentoCadastrada" placeholder="31962738465">
 
             <label for="cpf">CPF</label>
-            <input type="text" placeholder="091#########">
+            <input type="text" id="cpfCadastrado" placeholder="091#########">
 
             <label for="telefone">Telefone</label>
-            <input type="text" placeholder="04/04/1990">
+            <input type="number" id="telefoneCadastrado" placeholder="04/04/1990">
         </fieldset>
     </form>
 </section>
@@ -227,30 +221,30 @@
                 <legend>Casa</legend>
             <div class="divEnd">
                 <label>Logradouro</label>
-                <input type="text" placeholder="Rua das aboboras" disabled>
+                <input type="text" id="logradouroCadastrado" placeholder="Rua das aboboras" disabled>
                 <label>Número</label>
-                <input type="number" placeholder="37" disabled >
+                <input type="number" id="numeroCadstrado" placeholder="37" disabled >
             </div>
             <div class="divEnd">
                 <label>Bairro</label>
-                <input type="number" placeholder="São Jorge" disabled >
+                <input type="text" id="bairroCadastrado" placeholder="São Jorge" disabled >
                 <label>Cidade</label>
-                <input type="text" placeholder="Rondonopolis" disabled >
+                <input type="text" id="cidadeCadastrada" placeholder="Rondonopolis" disabled >
             </div>
            
             <div class="divEnd">
 
                 <label>CEP</label>
-                <input type="text" placeholder="78700050" disabled >
+                <input type="text" id="cepCadastrado" placeholder="78700050" disabled >
            
                 <label>Estado</label>
-                <input type="text" placeholder="MT" disabled >
+                <input type="text" id="estadoCadastrado" placeholder="MT" disabled >
             
                 
             </div>
             <div class="divEnd">
                 <label>País</label>
-                <input type="text" placeholder="Brasil" disabled >
+                <input type="text" id="paisCadastrado" placeholder="Brasil" disabled >
             </div>
             <div class="divAlterarEndereco">
                 <button class="btnAlterar">Alterar</button>
@@ -258,42 +252,24 @@
             </fieldset>
     </div>
     <div id="divNovoEnd">
-        <button type="button" id="novoEnd">Novo Endereço</button>
+        <button type="button" id="novoEnd">Novo Endereço para Entrega</button>
     </div>
 </section>
 
 <!--Cartoes-->
 <section id="sectionCartoes">
 <h4>Cartôes</h4>
-    <div class="divColum">
         
             <fieldset class="cartoesCadastrados">
-                <legend>Cartao final <span class="spanCartao">0789</span></legend>
+                <legend>Acesso ao cartão <span class="spanCartao"></span></legend>
             <button type="button" class="btnCart"  value="1" >Mostrar Dados</button>
             <div class="divColum">
-                <input type="password" name="senhacartao" class="inpVisualizar" id="1" placeholder="digite a senha para visualizar">
+                <input type="password" name="senhacartao" class="inpVisualizar" id="senhacartao" placeholder="digite a senha para visualizar">
                 <button id="btndados">Mostrar</button>
             </div>
-                <div class="divCart">
-                <label>Número</label>
-                <input type="number" placeholder="1234567890123456" disabled>
-                <label>Bandeira</label>
-                <select name="" id="">
-                    <option value="" selected disabled>--Selecione</option>
-                    <option value="visa">Visa</option>
-                    <option value="mastercard">Mastercard</option>
-                    <option value="dinner">Dinner</option>
-                </select>
-            </div>
-            <div class="divCart">
-                <label>Validade</label>
-                <input type="text" placeholder="03/27" disabled >
-                <label>Nome</label>
-                <input type="text" placeholder="Deividson Coelho" disabled >
-            </div>
-
+                
+            </fieldset>
         
-    </div>
 </section>
 
 <!--Perguntas Frequentes-->
