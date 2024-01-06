@@ -30,7 +30,7 @@ let containerDesktop = document.getElementById('containerDesktop')
 let containerMonitores = document.getElementById('containerMonitores')
 
 function carregarProdutos(dadosProdutos){
-
+    let contagem = 1
 // Carregar secao de novos
 dadosProdutos.map(res =>{
     if(res.categoria.toLowerCase() === 'tablet'){
@@ -85,10 +85,14 @@ if(res.categoria.toLowerCase() === 'personalize'){
     }
 
     if(res.categoria.toLowerCase() === 'notebook'){
-        if(res.avaliacao == 4){
+        
+        if(res.avaliacao == 4 || res.avaliacao == 5){
                 var avaliacao = "img//estrelas4.png"
             }
-            let picture = `
+            
+
+            let picture =
+             `
             <picture class="containerNovos" id="${res.nome}" onclick="AcessarProdutoPage(id)">
                         <img src="${res.imagem[0]}" alt="novo produto">
                         <figcaption>
@@ -97,14 +101,18 @@ if(res.categoria.toLowerCase() === 'personalize'){
                                 <span>Reviews (${res.avaliacao})</span>
                             </div>
                             <p class="descricao">
-                                ${res.descricao}
+                                ${res.descricao.substr(0, 80)}...
                             </p>
                             <em class="precoAntigo">R$ ${res.preco}</em>
                             <h6 class="precoAtual">R$ ${res.precoAtual}</h6>
                         </figcaption>
                     </picture>
-            `
-            containerNote.innerHTML += picture
+            `;
+            
+            if(contagem <= 5){
+                containerNote.innerHTML += picture
+                contagem++
+            }
         }
 
         if(res.categoria.toLowerCase() === 'desktops'){

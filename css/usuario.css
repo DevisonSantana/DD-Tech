@@ -6,9 +6,7 @@ main{
 }
 button{
     background-color: #fff;
-    /* border-radius: 10px; */
     padding: 2px;
-    box-shadow: 2px 2px 2px #000;
 }
 button:hover{
     cursor: pointer;
@@ -90,11 +88,11 @@ h5{
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-top: 2;
+    margin-top: 20px;
 }
 .comentario textarea{
     width: 100%;
-    margin-top: 2;
+    margin-top: 20px;
     font-size: 2rem;
 }
 .btnComentar{
@@ -120,27 +118,37 @@ h5{
 }
 
 
+
+
 #cardProdutos{
     display: flex;
     flex-direction: column;
     background-color: #dbdfde;
 }
 .ultimosPedidos{
-    display: flex;
-    height: 100px;
-    padding: 1%;
-    align-items: center;
-    justify-content: space-between;
+    height: fit-content;
     border: solid 2px #fff;
+    padding-top: 1%;
 }
+
 .ultimosPedidos img{
-    height: 100%;
+    width: 90px;
+
+}
+.descricaoPedidos{
+    width: 20%;
 }
 
 .botoes{
     display: flex;
     flex-direction: column;
     gap: 3px;
+    width: 120%;
+    padding-right: 20%;
+    zoom: .8;
+}
+.botoes:last-child{
+    font-size: .8rem;
 }
 .procurarPedido{
     width: fit-content;
@@ -180,6 +188,13 @@ h5{
 }
 .divRow{
     display: flex;
+    align-items: center;
+    gap: 1%;
+}
+.divRow .divRow{
+    display: flex;
+    align-items: center;
+    gap: 4%;
 }
 .divColum{
     display: flex;
@@ -241,11 +256,13 @@ zoom: .9;
 /*Secao cartoes*/
 #sectionCartoes{
     display: none;
+    width: 90%;
+    align-items: center;
+
 }
 .cartoesCadastrados{
+    width: 50%;
     border: 1px dotted #fff;
-    width: 300px;
-    height: 100px;
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -254,15 +271,17 @@ zoom: .9;
 }
 
 .cartoesCadastrados label{
+    display: inline-block;
+    width: 80px;
     margin: 0 2%;
 }
 .btnCart, .cartoesCadastrados input[type=password]{
-    width: 50%;
     margin: auto;
 }
 
 .divCart{
-    display: none;
+    margin-right: 200px;
+    width: 100%;
 }
 .cartoesCadastrados .divColum {
     display: none;
@@ -454,6 +473,24 @@ textarea{
 .containerProducts {
     zoom: .6;
 }
+.ultimosPedidos{
+    font-size: .8rem;
+    background-color: #fff;
+    border: 1px solid;
+    padding: 0 3%;
+
+}
+.ultimosPedidos{
+    font-size: .5rem;
+}
+.ultimosPedidos img{
+    width: 60px;
+
+}
+.button{
+    width: 110%;
+    font-size: .6rem;
+}
 }
 
 
@@ -505,9 +542,7 @@ textarea{
         transition: all 1s;
     }
     .containerProducts {
-        zoom: .6;
-
-
+        zoom: .8;
     }
     #formCadastro{
         margin-left: -30px;
@@ -553,6 +588,11 @@ textarea{
     .lblPrivac{
         width: fit-content;
     }
+    .ultimosPedidos{
+      
+        
+    
+    }
 }
 
 
@@ -563,7 +603,9 @@ textarea{
     }
     .containerProducts picture{
         flex-wrap: wrap;
-        zoom: 1.5;
+    }
+    .containerProducts {
+        zoom: .6;
     }
 }
 @media screen and (max-width: 522px){
@@ -571,6 +613,24 @@ textarea{
         /* transform: translateX(-100px); */
         transition: all 1s;
     }
+    .ultimosPedidos img{
+        zoom: .6;
+    }
+    .button{
+        zoom: .8;
+    }
 }
 
-
+@media screen and (max-width: 401px){
+    .ultimosPedidos{
+        zoom: .8;
+        margin-left: -11%;
+        font-size: .4;
+    }
+    
+    .containerProducts{
+        zoom: .6;
+        margin-left: -10%;
+    }
+    
+}

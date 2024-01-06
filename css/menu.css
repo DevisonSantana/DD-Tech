@@ -306,8 +306,12 @@ height: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: end;
     zoom: .6;
     margin: 0px 50px;
+}
+.containerProdutoEncontrado:hover{
+    cursor: pointer;
 }
 .containerProdutoEncontrado>img {
     max-width: 150px;
@@ -331,6 +335,22 @@ height: 15px;
     filter: brightness(1.1);
     cursor: pointer;
     background-color: #dad7d7 ;
+}
+#btnSairProcurados{
+    display: none;
+    align-items: start;
+    height: fit-content;
+    padding: 3px;
+    width: 25px;
+    justify-content: center;
+    font-size: larger;
+    border: none;
+    background-color: #dad7d7;
+}
+#btnSairProcurados:hover{
+    border: 1px solid rgba(65, 63, 63, 0.39);
+    box-shadow: 1px 1px 1px #000 ;
+    cursor: pointer;
 }
 @media screen and (max-width: 950px) {
     header{
