@@ -26,6 +26,7 @@ divHamburguer.addEventListener('click', ()=>{
 lupa.addEventListener('click', ()=>{
     if(inputLupa.style.display === 'none' || inputLupa.style.display === ''){
         inputLupa.style.display = 'flex'
+        inputLupa.focus();
     }
     else if(inputLupa.style.display === 'flex'){
         inputLupa.style.display = 'none'
@@ -34,6 +35,7 @@ lupa.addEventListener('click', ()=>{
      
 exitLupa.addEventListener('click', ()=>{
     inputLupa.style.display = 'none'
+    
 })
 
 
@@ -43,8 +45,12 @@ let itemProntoParaUso;
 let itensR = localStorage.getItem("itemCarrinho")
 if(itensR){
     itemProntoParaUso = JSON.parse(itensR)
+    let quantidade = 0;
     if(itemProntoParaUso){ //estava com .length
-        carrinhoQtdade.innerText = itemProntoParaUso.length
+        itemProntoParaUso.map((res) => {
+            quantidade += parseInt(res.QtdadeItem)
+        })
+        carrinhoQtdade.innerText = quantidade
         carrinhoQtdade.style.display = 'block'
     }
 }
@@ -93,6 +99,7 @@ function buscaOferats(){
 let produtoProcurado = document.getElementById('inputLupa')
 let containerEncontrados = document.getElementById('containerEncontrados')
 let verMaisProcurados = [...document.getElementsByClassName('verMaisProcurados')]
+let btnSairProcurados = document.getElementById('btnSairProcurados')
 
 produtoProcurado.addEventListener('keyup', produtoBuscado)
 function produtoBuscado(produto){
@@ -108,6 +115,12 @@ else{
 }
 function carregarDinamicamenteEncontrados(produto){
     for(let cont = 0; cont < produto.length; cont++){
+        let descricao;
+        if(produto[cont].descricao.length > 75){
+            descricao = produto[cont].descricao.substr(0, 75) + '...'
+            }else{
+            descricao = produto[cont].descricao
+        }
          containerEncontrados.innerHTML += `
         <picture class="containerProdutoEncontrado"  id="${produto[cont].nome}" onclick="AcessarProdutoPage(id)">
         <img src="${produto[cont].imagem[0]}" alt="">
@@ -117,7 +130,7 @@ function carregarDinamicamenteEncontrados(produto){
         <span>Reviews (4)</span>
         </div>
         <p class="descricao">
-        ${produto[cont].descricao}
+        ${descricao}
         </p>
         <em class="precoAntigo">R$ ${produto[cont].preco}</em>
         <h6 class="precoAtual">R$ ${produto[cont].precoAtual}</h6>
@@ -125,7 +138,9 @@ function carregarDinamicamenteEncontrados(produto){
         </picture>
         `        
     }
+    sairProcurados() 
    verMaisProcurados[1].style.display = 'flex'
+   btnSairProcurados.style.display = 'flex'
 }
 
 // mover procurados
@@ -142,6 +157,16 @@ verMaisProcurados.map((res) =>{
     })
 })
 
+// sair procurados
+function sairProcurados(){
+    btnSairProcurados.addEventListener('click', () => {
+        containerEncontrados.innerHTML = ''
+        verMaisProcurados[0].style.display = 'none'
+        verMaisProcurados[1].style.display = 'none'
+        btnSairProcurados.style.display = 'none'
+        inputLupa.style.display = 'none'
+    })
+}
 async function fetchProfileData() {
     const url = 'https://raw.githubusercontent.com/DevisonSantana/DD-Tech/main/data/produtos.json';
     const response = await fetch(url)

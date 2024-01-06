@@ -5,6 +5,24 @@ main{
     margin: 5%;
 }
 
+
+#favoritar{
+    margin-left: 90% !important;
+    width: 10%;
+    background-image: none !important;
+    padding: 0;
+    margin: 0;
+    text-align: end;
+    font-size: xx-large;
+}
+#favoritar:hover{
+    color: red;
+    filter: brightness(.9);
+    cursor: pointer;
+}
+.favoritado{
+    color: red;
+}
 #details{
     /* width: 90%; */
     padding: 2% 5%;
@@ -34,8 +52,8 @@ main{
 }
 #imgFilho{
     display: flex;
-    margin-top: 2%;
-
+    margin-top: 12%;
+    z-index: 100;
 }
 .imgmMini{
     max-width: 100px !important;

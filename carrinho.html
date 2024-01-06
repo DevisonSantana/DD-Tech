@@ -63,16 +63,12 @@
             
         </div>
         <button type="button" class="verMaisProcurados" id="verMais"><img  src="img/right.png" alt=""></button>
+        <button type="button" id="btnSairProcurados">x</button>
+
     </div>
 </header>
     
-    <div id="buscados">
-        <button type="button" class="verMaisProcurados" id="verMenos"><img  src="img/left.png" alt=""></button>
-        <div id="containerEncontrados">
-            
-        </div>
-        <button type="button" class="verMaisProcurados" id="verMais"><img  src="img/right.png" alt=""></button>
-    </div>
+
 </header>
     <!-- Fim do cabeçalho -->
 
@@ -85,7 +81,7 @@
 
     <!-- Inicio da descrição e Preço do produto -->
     <main>
-        <section>
+        <section id="primeiraSection">
            
             <h2 class="carrinho">Carrinho de compras</h2>
             <table class="tabela-items">
@@ -99,29 +95,28 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="bodyTabela">
                     <tr class="tproduto">
-                        <td> <img src="img/Ex_diplay5.png" alt="Imagem do produto" class="table-img"> </td>
-                        <td><a href="#"></a>MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard e Mouse com 3 anos de garantia</td>
-                        <td>R$ 4.349,00</td>
-                        <td>
-                            <input type="number" id="quantidade" min="1" max="100"  value="1">
-                        </td>
-                        <td>R$ 13.047,00</td>
-                        <td>
-                            <button class="table-btn">X</button>
-                            <button class="table-btn"><img src="img/icons_pencil.png"></button>
-                        </td>
+                        <td> <img src="https://via.placeholder.com/360x360" alt="$placeholder" class="table-img"> </td>
+                    <td>Você não tem produtos no carrinho</td>
+                    <td>0</td>
+                    <td>
+                        <input type="number" id="quantidade" min="1" max="100"  value="0">
+                    </td>
+                    <td>0</td>
+                    <td>
+                        <button class="table-btn">X</button>
+                    </td>
                     </tr> 
                 </tbody>
             </table>
             <section class="section-btn">
                 <div>
-                    <button type="button">Continuar compra</button>
-                    <button type="button">Esvaziar carrinho</button>
+                    <button type="button"><a href="index.html">Continuar comprando</a></button>
+                    <button type="button" id="btnEsvaziarCarrinho">Esvaziar carrinho</button>
                 </div>
                 <div>
-                    <button type="button">Atualizar</button>
+                    <button type="button" onclick="atualizarCarrinho()">Atualizar</button>
                 </div>
             </section>
         </section>
@@ -163,16 +158,16 @@
                 </div>
                 <div class="Cupom">
                     <h4>Cupom de Desconto</h4>
-                    <input type="text" placeholder="Cupom de Desconto" method="post">
+                    <input id="cupomDesconto"  type="text" placeholder="Cupom de Desconto" method="post">
+                    <button type="button" id="aplicarDesconto" class="aplicar-desconto" >
+                        Aplicar Desconto
+                    </button>
                 </div>
-                <button class="aplicar-desconto">
-                    Aplicar Desconto
-                </button>
-                <h4>Subtotal R$<span id="subtotal"> 13,047.00</span></h4>
+                <h4>Subtotal <span id="subtotal"> 13,047.00</span></h4>
                 <h4>Envio R$<span id="envio"> 21.00</span></h4>
                 <p>Preço pode variar de acordo com o Item/Destino</p>
                 <h4>Taxa R$<span id="taxa"> 21.00</span></h4>
-                <h4>Preço Total   R$ 13,068.00</h4>
+                <h4 id="precoTotal">Preço Total   R$ 13,068.00</h4>
                 <button  class="botao-pagamento">
                     Ir para Pagamento
                 </button>

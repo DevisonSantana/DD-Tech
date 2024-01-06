@@ -1,22 +1,52 @@
 // mudar a secçao ao clicar no menu lateral
-
 var menuLateral = [...document.getElementsByClassName("menuLateral")]
-
 var section = [...document.getElementsByTagName("section")]
-
 var indiceMenu;
-
 let btnCart = document.querySelector('.btnCart')
+let btndados = document.querySelector('#btndados')
+let dadosSensiveisCartao = document.getElementById('dadosSensiveisCartao')
+let cartao = document.getElementById('cartao')
 
 
 //mostrar dados do cartao
+function carregarCartao(usuario, cartoes){
 btnCart.addEventListener('click', ()=>{
     let btndados = document.querySelector('.cartoesCadastrados .divColum')
-    console.log(btndados)
-
     btndados.style.display = 'flex'
     btnCart.style.display = 'none'
 })
+btndados.addEventListener('click', () => {
+    let senhacartao = document.getElementById('senhacartao').value
+    console.log(senhacartao)
+        if(senhacartao ==  usuario.senha){
+            console.log()
+               cartao.innerHTML = ''
+               cartoes.map((res) => {
+                cartao.innerHTML += `
+                <fieldset class="cartoesCadastrados">
+                <legend>Cartao final <span class="spanCartao">${res.numeroCartao.substr(12,15)}</span></legend>
+                <div class="divCart" id="dadosSensiveisCartao">
+                <label>Número</label>
+                <input type="number" placeholder="${res.numeroCartao}" disabled>
+                <label>Bandeira</label>
+                <input type="text" placeholder="${res.bandeira}" disabled>
+            </div>
+            <div class="divCart">
+                <label>Validade</label>
+                <input type="text" placeholder="${res.validade}" disabled >
+                <label>Nome</label>
+                <input type="text" placeholder="${res.nomeCartao}" disabled >
+            </div>
+            <div><button class="alterarDadosCartao" id="${res.id}" onclick="alterarDadosCartao()">Alterar Dados</button><button class="alterarDadosCartao" id="${res.id}" onclick="confirmarAlteração(id)">Confirmar Alteração</button><button class="alterarDadosCartao" id="${res.id}" onclick="cancelarAlteração()">Cancelar</button></div>
+            </fieldset>
+            `
+
+
+            })
+        }
+    })
+
+}
 
 
 //funcao para ocultar todos os sections
@@ -158,28 +188,63 @@ let nomeUser = document.getElementById('nomeUser')
 let cardProdutos = document.getElementById('cardProdutos')
 
 function carregarUsuario(usuario, produtoRecuperado){
-    console.log(vendas) 
     nomeUser.innerText = usuario.nomeSocial
     for(let i= 0; i< produtoRecuperado.length; i++){
         cardProdutos.innerHTML += `
-    <picture class="ultimosPedidos">
-    <p class="descricaoPedidos">
-        ${produtoRecuperado[i].nome}
-    </p>
-    <img src="${produtoRecuperado[i].imagem[1]}" alt="${produtoRecuperado[i].nome}">
-    <p class="descricaoPedidos">
-        ${vendas[i].data}
-    </p>
-    <h6 class="precoAtual">R$ ${vendas[i].precoVenda} </h6>
-    <div class="botoes">
-        <button type="button" class="button" name="0" value="0">Avaliar</button>
-        <button type="button" class="button" name="0" value="1">Acompanhar</button>
-        <button type="button" class="button" name="0" value="2">Troca ou devolução</button>
-    </div>
-</picture>
+        <table class="ultimosPedidos">
+        <tr>
+            <td class="descricaoPedidos">
+            ${produtoRecuperado[i].nome}
+            </td>
+            <td>
+            <img src="${produtoRecuperado[i].imagem[1]}" alt="${produtoRecuperado[i].nome}">
+            </td>
+            <td class="descricaoPedidos">
+            ${vendas[i].data}
+            </td>
+            <td class="precoAtual">${parseFloat(vendas[i].precoVenda).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </td>
+            <td class="botoes">
+            <button type="button" class="button" name="0" value="0">Avaliar</button>
+            <button type="button" class="button" name="0" value="1">Acompanhar</button>
+            <button type="button" class="button" name="0" value="2">Troca ou devolução</button>
+            </td>
+        </tr>
+        </table>
     `      
 }
 }
+
+//carregar endereço dinamicamente
+function carregarEnderecoCadastrado(dados){
+    let emailCadastrado = document.getElementById('emailCadastrado').placeholder = dados.email
+    let receberEmails = document.getElementById('receberEmails')
+    let senhaCadastrada = document.getElementById('senhaCadastrada')
+    let nomeCompleto = document.getElementById('nomeCompleto').placeholder = `${dados.nome} ${dados.sobrenome}`
+    let nomeSocial = document.getElementById('nomeSocial').placeholder = dados.nomeSocial
+    let generoCadastrado = document.getElementsByName('genero')
+    if(dados.genero === 'feminino')
+        generoCadastrado[0].checked = true
+    else if(dados.genero === 'masculino')
+            generoCadastrado[1].checked = true
+    else
+        generoCadastrado[2].checked = true
+    
+    let dataNascimentoCadastrada = document.getElementById('dataNascimentoCadastrada').placeholder = dados.dataNascimento
+    let cpfCadastrado = document.getElementById('cpfCadastrado').placeholder = dados.cpf.substr(0, 3) + '########'
+    let telefoneCadastrado = document.getElementById('telefoneCadastrado').placeholder = dados.telefone
+    let logradouroCadastrado = document.getElementById('logradouroCadastrado').placeholder = dados.logradouro
+    let numeroCadstrado = document.getElementById('numeroCadstrado').placeholder = dados.numero
+    let bairroCadastrado = document.getElementById('bairroCadastrado').placeholder = dados.bairro
+    let cidadeCadastrada = document.getElementById('cidadeCadastrada').placeholder = dados.cidade
+    let cepCadastrado = document.getElementById('cepCadastrado').placeholder = dados.cep
+    let estadoCadastrado = document.getElementById('estadoCadastrado').placeholder = dados.estado
+    let paisCadastrado = document.getElementById('paisCadastrado').placeholder = dados.pais
+
+
+}
+
+
+
 // recebe cadastros do banco
 async function fetchProfileDataCadastro() {
     const url = 'https://raw.githubusercontent.com/DevisonSantana/DD-Tech/main/data/cadastro.json';
@@ -216,4 +281,11 @@ async function fetchProfileDataProdutos() {
         }
     })
     carregarUsuario(profileDataCadastro.cadastro[2], produtoRecuperado)
+    carregarEnderecoCadastrado(profileDataCadastro.cadastro[2])
+    let cartoesUsuario = [];
+    profileDataCadastro.cartoes.map((res) => {
+        if(res.usuario == profileDataCadastro.cadastro[2].id)
+            cartoesUsuario.push(res)
+    })
+    carregarCartao(profileDataCadastro.cadastro[2], cartoesUsuario)
 })()
