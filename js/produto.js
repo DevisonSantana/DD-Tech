@@ -8,10 +8,8 @@ let descricaoProduto = document.querySelector('.descricao-produto p')
 // mudança de imagem ao clicar na miniatura
 function addClick(){
     let imgmMini = document.querySelectorAll('.imgmMini')
-    console.log(imgmMini)
     imgmMini.forEach(element => {
         element.addEventListener('click', (event)=>{
-            console.log(event.target)
             let imgBig = document.getElementById('imgBig')
             imgBig.setAttribute('src', `${event.target.src}`)
         })
@@ -21,6 +19,7 @@ function addClick(){
 
 // produto inserido dinamicamente
 function produtoDinamico(produtoEspecifico){
+    
     titulo.innerText = produtoEspecifico.nome.charAt(0).toUpperCase() + produtoEspecifico.nome.slice(1)
     preco.innerHTML = `
     <em>${produtoEspecifico.preco}</em>
@@ -103,7 +102,7 @@ btncomprar.addEventListener('click', () =>{
     //localStorage.setItem("itemCompra", item)
 })
 btnAdicionar.addEventListener('click', () =>{
-    const novo1 = {Nome: produtoEspec.nome, QtdadeItem: 5}
+    const novo1 = {Nome: produtoEspec.nome, QtdadeItem: inputQuantidade.value}
     item.push(novo1) 
     let jsonAux = JSON.stringify(item)
     localStorage.clear("itemCarrinho")
@@ -111,8 +110,12 @@ btnAdicionar.addEventListener('click', () =>{
     let itensRecuper = localStorage.getItem("itemCarrinho")
     let itemProntoParaUso = JSON.parse(itensRecuper)
     let carrinhoQtdade = document.getElementById('carrinhoQtdade')
-    carrinhoQtdade.innerText = item.length
+    let quantidade = 0;
+    if(itemProntoParaUso){ //estava com .length
+    item.map((res) => {
+        quantidade += parseInt(res.QtdadeItem)
+    })}
+    carrinhoQtdade.innerText = quantidade
     carrinhoQtdade.style.display = 'block'
-    console.log(item)
 })
 

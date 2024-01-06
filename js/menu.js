@@ -45,8 +45,12 @@ let itemProntoParaUso;
 let itensR = localStorage.getItem("itemCarrinho")
 if(itensR){
     itemProntoParaUso = JSON.parse(itensR)
+    let quantidade = 0;
     if(itemProntoParaUso){ //estava com .length
-        carrinhoQtdade.innerText = itemProntoParaUso.length
+        itemProntoParaUso.map((res) => {
+            quantidade += parseInt(res.QtdadeItem)
+        })
+        carrinhoQtdade.innerText = quantidade
         carrinhoQtdade.style.display = 'block'
     }
 }
