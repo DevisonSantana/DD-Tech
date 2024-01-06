@@ -35,6 +35,12 @@ h4{
 
 
 }
+#container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
 h5{
     margin-left: 15px;
 }
@@ -109,14 +115,10 @@ h5{
 }
 .caixa{
     background-color: rgb(238, 233, 233);
-    position: absolute;
-    right: 200px;
-    transform: translate(48%, 50%);
     padding: 40px;
-    top: -62px;
-    margin: -50px;
-    width: 294px;
-    height: 642px
+    width: fit-content;
+    height: fit-content;
+
     
     
 
@@ -125,9 +127,8 @@ h5{
 #main{
     background-color: white;
     margin: 45px;
-    width: 1022px;
+    width: 50%;
     padding: 52px;
-    margin-left: 65px;
    
    
 
@@ -330,9 +331,13 @@ h5{
     border: 1px solid #ccc;
     margin: 0 5px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 600px) {
     #main{
         zoom: .3;
+
+    }
+    #container{
+        flex-direction: column;
     }
     
 }
