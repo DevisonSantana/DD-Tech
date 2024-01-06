@@ -149,9 +149,7 @@ header img{
     display: flex;
 }
 
-.header li {
-    margin-right: 30px; 
-}
+
 
 .header li img {
     margin: 0;
