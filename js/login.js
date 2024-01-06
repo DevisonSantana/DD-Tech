@@ -67,8 +67,17 @@ async function fetchProfileDataCadastro() {
         for (let i = 0; i < usuario.cadastro.length; i++){
             let valid = false
             if (usuario.cadastro[i].email == emailInput.value && usuario.cadastro[i].senha == senhaInput.value){
+                
                 valid = true
-                window.location.href = 'usuario.html'
+                const secretKey = "your_secret_key";
+                const header = { alg: "HS256", typ: "JWT" };
+                const payload = { sub: usuario.cadastro[i].email, username: usuario.cadastro[i].nome }; //trocar o user.id 
+                
+                const token = KJUR.jws.JWS.sign("HS256", JSON.stringify(header), JSON.stringify(payload), secretKey);
+                sessionStorage.setItem('token', token)
+                console.log(token);
+
+                // window.location.href = 'usuario.html'
                 emailInput.classList.add('correct')
                 emailInput.classList.remove('error')
                 emailHelper.classList.remove('visible')
