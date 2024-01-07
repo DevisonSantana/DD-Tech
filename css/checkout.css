@@ -8,7 +8,7 @@ h1
     width: 320px;
     height: 50px;
     margin: 58px;
-    margin-top: -41px;
+    margin-top: -25px;
     margin-left: -1px;
     font-size: 29px;
 }
@@ -37,8 +37,10 @@ h4{
 }
 #container{
     display: flex;
-    width: 90%;
+    width: 83%;
     justify-content: space-around;
+    margin-left: 36px;
+    padding: 63px;
     
 }
 h5{
@@ -92,6 +94,8 @@ h5{
     
 }
 #navegacao{
+    padding-left: 191px;
+    
     
 }
 .imagem1{
@@ -120,22 +124,24 @@ h5{
     background-color: rgb(238, 233, 233);
     padding: 40px;
     width: fit-content;
-    height: 92%;
-
-    
-    
-
-
+    height: 102%;
+    margin-right: 271px;
 }
+
+    
+    
+
+
+
 #main{
     background-color: white;
-    margin: 45px;
-    width: 1147px;
-    padding: 52px;
+    margin-left: 102px;
+    width: 1008px;
+    padding: 21px;
+}
    
    
 
-}
 .button{
     position:relative;
     right: 40px;
@@ -179,9 +185,8 @@ h5{
     
 }
 #menu {
-    margin-left: -376px;
-    margin-top: 424px;
-   
+    margin-left: -593px;
+    margin-top: 435px
 }
 
     
@@ -347,3 +352,23 @@ h5{
     }
     
 }
+.button-container {
+    display: flex;
+  }
+  
+  .arrow-button {
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .up {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  
+  .down {
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  }

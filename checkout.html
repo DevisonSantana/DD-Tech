@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/checkout.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
+    <script src="js/checkout.js" defer></script>
 </head>
 <body>
     <!-- Inicio do Cabeçalho -->
@@ -101,12 +102,19 @@
                         <td id="tabela1">8.000,00</td>
                         <td>
                             <div class="quantity-container">
-                                <button id="btn-subtrair-01">-</button>
-                                <input type="number" id="quantidade" min="1" max="99" value="1">
-                                <button id="btn-adicionar-01">+</button>
+
+                                <div class="button-container">
+                                    <input type="number" id="quantidade" min="1" max="99" value="1">
+                                    <button class="arrow-button up" id="adicionar"></button>
+                                    <button class="arrow-button down" id="subtrair"></button>
+
+                                  </div>
+                                
+                                
+                                
                             </div>
                         </td>
-                        <td>8.000,00</td>
+                        <td id="soma">8.000,00</td>
                     </tr>
                     <!-- Repita essa estrutura para cada produto -->
                     <tr>
@@ -119,9 +127,15 @@
                         <td id="tabela1">10.000,00</td>
                         <td>
                             <div class="quantity-container">
-                                <button id="btn-subtrair-02">-</button>
-                                <input type="number" id="quantidade" min="1" max="100" value="1">
-                                <button id="btn-adicionar-02">+</button>
+
+                                <div class="button-container">
+                                    <input type="number" id="quantidade" min="1" max="100" value="1">
+                                    <button class="arrow-button up"></button>
+                                    <button class="arrow-button down"></button>
+                                  </div>
+                                
+                                
+                                
                             </div>
                         </td>
                         <td id="tabela1">10.000,00</td>
