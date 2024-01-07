@@ -33,11 +33,11 @@ h4{
 
    
 
-
+   
 }
 #container{
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-around;
     
 }
@@ -105,6 +105,7 @@ h5{
     height: 100px;
     width: 400px;
     margin-top: 15px;
+    padding: 25px;
 
 }
 #text2{
@@ -112,12 +113,14 @@ h5{
     height: 100px;
     width: 400px;
     margin-top: 15px;
+    padding: 25px;
+    text-align: center;
 }
 .caixa{
     background-color: rgb(238, 233, 233);
     padding: 40px;
     width: fit-content;
-    height: fit-content;
+    height: 92%;
 
     
     
@@ -127,7 +130,7 @@ h5{
 #main{
     background-color: white;
     margin: 45px;
-    width: 50%;
+    width: 1147px;
     padding: 52px;
    
    
@@ -175,11 +178,12 @@ h5{
     
     
 }
-#menu{
-    
-    margin-top: 20px;
-    margin: 2;
+#menu {
+    margin-left: -376px;
+    margin-top: 424px;
+   
 }
+
     
 
 #segundo{
@@ -279,8 +283,10 @@ h5{
     
 }
 #tabela1{
-    align-items: center;
-    display: flex;
+    justify-content: center;
+    box-sizing: 800;
+    width: 400px;
+    text-align: center;
 }
 
 .inicio{

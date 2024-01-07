@@ -12,71 +12,60 @@
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    <!-- Inicio do Cabeçalho  -->
-
-<header>
-    <div id="icones-sociais">
-        <a href="https://www.facebook.com" target="_blank">
-            <img src="img/logos/logo-facebook.png" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-            <img src="img/logos/insta.png" alt="Instagram">
-        </a>
-    </div>
-    <nav class="header">
-        <img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo">
-        <ul id="parte2">
-            <li>Notebooks</li>
-            <li>Desktops</li>
-            <li>Redes</li>
-            <li>Impressoras</li>
-            <li>Gamer</li>
-            <li>Outros Produtos</li>
+    <!-- Inicio do Cabeçalho -->
+    <header>
+        <div id="icones-sociais">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="img/logos/logo-facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="img/logos/insta.png" alt="Instagram">
+            </a>
+        </div>
+        <nav class="header">
+            <img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo">
+            <ul id="parte2">
+                <li>Notebooks</li>
+                <li>Desktops</li>
+                <li>Redes</li>
+                <li>Impressoras</li>
+                <li>Gamer</li>
+                <li>Outros Produtos</li>
+            </ul>
+            
+            <ul class="nav-items">
+                <li><button onclick="buscaOferats()">Ofertas</button></li>
+                <li><a href="#"><img src="img/lupa.png" alt="Lupa" id="lupa"></a></li>
+                <div id="divLupa">
+                    <input type="text" name="inputLupa" id="inputLupa" placeholder="Qual produto você precisa">
+                    <img src="img/exit.png" alt="" id="exitLupa">
+                </div>
+                <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
+                <div id="carrinhoQtdade">0</div>
+                <li><a href="usuario.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
+            </ul>
+            <div id="divHamburguer"><img src="img/Menu32.png" alt=""></div>
+        </nav>
+        <ul id="parte22">
+            <li><a href="#">Notebooks</a></li>
+            <li><a href="#">Desktops</a></li>
+            <li><a href="#">Redes</a></li>
+            <li><a href="#">Impressoras</a></li>
+            <li><a href="#">Gamer</a></li>
+            <li><a href="#">Outros Produtos</a></li>
         </ul>
-        
-        <ul class="nav-items">
-            <li><button onclick="buscaOferats()">Ofertas</button></li>
-            <li><a href="#"><img src="img/lupa.png" alt="Lupa" id="lupa"></i></a></li>
-            <div id="divLupa">
-                <input type="text" name="inputLupa" id="inputLupa" placeholder="Qual produto você precisa">
-                <img src="img/exit.png" alt="" id="exitLupa">
+        <div id="buscados">
+            <button type="button" class="verMaisProcurados" id="verMenos"><img  src="img/left.png" alt=""></button>
+            <div id="containerEncontrados">
+                
             </div>
-            <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
-            <div id="carrinhoQtdade">0</div>
-            <li><a href="usuario.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
-        </ul>
-        <div id="divHamburguer"><img src="img/Menu32.png" alt=""></div>
-    </nav>
-    <ul id="parte22">
-        <li><a href="#">Notebooks</a></li>
-        <li><a href="#">Desktops</a></li>
-        <li><a href="#">Redes</a></li>
-        <li><a href="#">Impressoras</a></li>
-        <li><a href="#">Gamer</a></li>
-        <li><a href="#">Outros Produtos</a></li>
-    </ul>
-    <div id="buscados">
-        <button type="button" class="verMaisProcurados" id="verMenos"><img  src="img/left.png" alt=""></button>
-        <div id="containerEncontrados">
-            
+            <button type="button" class="verMaisProcurados" id="verMais"><img  src="img/right.png" alt=""></button>
         </div>
-        <button type="button" class="verMaisProcurados" id="verMais"><img  src="img/right.png" alt=""></button>
-    </div>
-</header>
+    </header>
     
-    <div id="buscados">
-        <button type="button" class="verMaisProcurados" id="verMenos"><img  src="img/left.png" alt=""></button>
-        <div id="containerEncontrados">
-            
-        </div>
-        <button type="button" class="verMaisProcurados" id="verMais"><img  src="img/right.png" alt=""></button>
-        <button type="button" id="btnSairProcurados">x</button>
-
-    </div>
-</header>
     <!-- Fim do cabeçalho -->
 
-    <!-- Mostra caminho da pagina -->
+    <!-- Mostra caminho da página -->
     <nav id="navegacao">
         <span><a href="index.html">Início</a></span>
         <span class="spn-blue">›</span>
@@ -85,106 +74,113 @@
         <span><a href="">Finalizar Compra</a></span>
     </nav>
     
-
-    
     <br>
     <div id="container">
-    
-    <main id="main">
-        <h1>Checkout de compra</h1>
-        <div id="uniao">
-        <h5>Item</h5>
+        <main id="main">
+            <h1>Checkout de compra</h1>
         
-        <h5 class="preco">Preço</h5>
-        <h5 class="qtd">Qtd</h5>
-        <h5 class="subtt">Subtotal</h5>
+            <table>
+                <thead id="foco">
+                    <tr>
+                        <th>Item</th>
+                        <th>Preço</th>
+                        <th>Qtd</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="tabela1">
+                        <td>
+                            <div class="lista">
+                                <img src="img/Ex_diplay5.png" alt="Imagem do produto" class="imagem1">
+                                <p id="text1">MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard e Mouse com 3 anos de garantia</p>
+                            </div>
+                        </td>
+                        <hr>
+                        <br>
+                        <td id="tabela1">8.000,00</td>
+                        <td>
+                            <div class="quantity-container">
+                                <button id="btn-subtrair-01">-</button>
+                                <input type="number" id="quantidade" min="1" max="99" value="1">
+                                <button id="btn-adicionar-01">+</button>
+                            </div>
+                        </td>
+                        <td>8.000,00</td>
+                    </tr>
+                    <!-- Repita essa estrutura para cada produto -->
+                    <tr>
+                        <td>
+                            <div class="lista">
+                                <img src="img/Ex_diplay4.png" alt="Imagem do produto" class="imagem2">
+                                <p id="text2">MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 home, Gaming Keyboard and Mouse 3 years Warranty</p>
+                            </div>
+                        </td>
+                        <td id="tabela1">10.000,00</td>
+                        <td>
+                            <div class="quantity-container">
+                                <button id="btn-subtrair-02">-</button>
+                                <input type="number" id="quantidade" min="1" max="100" value="1">
+                                <button id="btn-adicionar-02">+</button>
+                            </div>
+                        </td>
+                        <td id="tabela1">10.000,00</td>
+                    </tr>
+                </tbody>
+            </table>
         
-        </div>
-        <hr>
-        <div class="lista">
-        <p><img src="img/Ex_diplay5.png" alt="Imagem do produto" class="imagem1">
-        <p id="text1">MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard e Mouse com 3 anos de garantia</p>
-        <p id="tabela1">8.00,00</p>
-        <div class="quantity-container">
-            <input type="number" id="quantidade" min="1" max="99"  value="1">
-        </div>
-        <p id="tabela1">8.000,00</p>
-        </div>
-        <hr>
-        <div id="lista2">
-            <p><img src="img/Ex_diplay4.png" alt="Imagem do produto" class="imagem2"></p>
-            <p id="text2">MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 home, Gaming Keyboard and Mouse 3 years Warranty</p>
-            <p id="tabela1">10.00,00</p>
-            <div class="quantity-container">
-                <input type="number" id="quantidade" min="1" max="100"  value="1">
-            </div>
-            <p id="tabela1">10.00,00</p>
-            </div>
             <hr>
-            <button type="submit" id="atualizar"> atualizar carrinho</button>
+            <button type="submit" id="atualizar">Atualizar carrinho</button>
             <div id="opcoes">
-            
-            
-            <button type="submit" id="comprando">Continuar comprando</button>
-            
-            <button type="submit" id="esvaziar"> Esvaziar carrinho</button>
-        </div>
-        
+                <button type="submit" id="comprando">Continuar comprando</button>
+                <button type="submit" id="esvaziar">Esvaziar carrinho</button>
+            </div>
+        </main>
 
-        
-
-    </main>
-    
-    <div class="caixa">
-    <div class="inicio">
-        <h2 class="primeiro">Resumo da compra</h2>
-        <br>
-        <h3 id="segundo">Taxas Estimadas de Enviou</h3>
-        
-        <h4>Insira o seu destino para obter uma estimativa de Enviou</h4>
-        <h4 id="cupom">Cupom de desconto</h4>
-        <hr>
-        <br>
-        <br>
-        </div>
-        
-        <div id="subtotal1">
-        <div id="subtotal">
-        <p>Subtotal    </p>
-        <p>R$ 18.00,00</p>
-        </div>
-        <div>
-            <div id="envio">
-                <p>Envio   </p>
+        <div class="caixa">
+            <div class="inicio">
+                <h2 class="primeiro">Resumo da compra</h2>
+                <br>
+                <h3 id="segundo">Taxas Estimadas de Envio</h3>
+                
+                <h4>Insira o seu destino para obter uma estimativa de Envio</h4>
+                <h4 id="cupom">Cupom de desconto</h4>
+                <hr>
+                <br>
+                <br>
+            </div>
             
-                <p>R$ 120.00</p>
+            <div id="subtotal1">
+                <div id="subtotal">
+                    <p>Subtotal</p>
+                    <p>R$ 18.00,00</p>
+                </div>
+                <div>
+                    <div id="envio">
+                        <p>Envio</p>
+                        <p>R$ 120.00</p>
+                    </div>
+                    <p id="local">Preço pode variar de acordo com o Item/Destino</p>
+                    
+                    <div id="taxa">
+                        <p>Taxa</p>
+                        <p>R$ 150.00</p>
+                    </div>
+                    <div id="total1">
+                        <p id="total2">Preço Total</p>
+                        <p>18.200,00</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p id="local">Preço pode variar de acordo com o Item/Destino</p>
-        
-        <div id="taxa">
-        <p>Taxa</p>
-        <p>R$ 150.00</p>
-        </div>
-        <div id="total1">
-        <p id="total2">Preço Total</p>
-        <p>18.200,00</p>
-        </div>
-        </div>
-        
-    
-        
-    
+
         <div id="menu">
-        <button type="submit" class="button" id="botao1">Continuar compra</button>
-        <button type="submit" class="button" id="botao2">
-            <a href="checkout.html">Pagamento com <img src="img/logos/cartao-pagamento-paypal.png"></a></button>
-        <button type="submit" class="button" id="botao3"> Alterar endereço de entrega</button>
-        </div>
-        </div>
-    
+            <button type="submit" class="button" id="botao1">Continuar compra</button>
+            <button type="submit" class="button" id="botao2">
+                <a href="checkout.html">Pagamento com <img src="img/logos/cartao-pagamento-paypal.png"></a></button>
+            <button type="submit" class="button" id="botao3"> Alterar endereço de entrega</button>
         </div>
     </div>
-    
     <!--Inicio de footer-->
 
     <footer id="footer">
@@ -276,11 +272,9 @@
             </div>
 
             <span class="copyright">Copyright&copy;2023</span>
-            </div>
         </div>
     </footer>
     <script src="js/produtoModel.js"></script>
     <script src="js/menu.js" defer></script>
-
 </body>
 </html>
