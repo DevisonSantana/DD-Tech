@@ -10,8 +10,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//Ex_diplay.png",
-        "img//Ex_diplay.png",
         "img//Ex_diplay.png"
     ]
 },
@@ -24,8 +22,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/charlie.png",
-        "img//produtos/charlie.png",
         "img//produtos/charlie.png"
     ]
 },
@@ -38,8 +34,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/bravo.png",
-        "img//produtos/bravo.png",
         "img//produtos/bravo.png"
     ]
 },
@@ -52,8 +46,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/alpha.png",
-        "img//produtos/alpha.png",
         "img//produtos/alpha.png"
     ]
 },
@@ -66,8 +58,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/zulu.png",
-        "img//produtos/zulu.png",
         "img//produtos/zulu.png"
     ]
 },
@@ -80,8 +70,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/delta.png",
-        "img//produtos/delta.png",
         "img//produtos/delta.png"
     ]
 },
@@ -119,8 +107,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/note1.png",
-        "img//produtos/note1.png",
         "img//produtos/note1.png"
     ]
 },
@@ -133,8 +119,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/note2.png",
-        "img//produtos/note2.png",
         "img//produtos/note2.png"
     ]
 },
@@ -147,8 +131,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/note3.png",
-        "img//produtos/note3.png",
         "img//produtos/note3.png"
     ]
 },
@@ -161,8 +143,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/note4.png",
-        "img//produtos/note4.png",
         "img//produtos/note4.png"
     ]
 },
@@ -175,8 +155,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/note5.png",
-        "img//produtos/note5.png",
         "img//produtos/note5.png"
     ]
 },
@@ -189,8 +167,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/desktop1.png",
-        "img//produtos/desktop1.png",
         "img//produtos/desktop1.png"
     ]
 },
@@ -203,10 +179,7 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/desktop2.png",
-        "img//produtos/desktop2.png",
         "img//produtos/desktop2.png"
-    ]
 },
 {
     "id": 15,
@@ -217,8 +190,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/desktop3.png",
-        "img//produtos/desktop3.png",
         "img//produtos/desktop3.png"
     ]
 },
@@ -231,8 +202,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/desktop4.png",
-        "img//produtos/desktop4.png",
         "img//produtos/desktop4.png"
     ]
 },
@@ -245,8 +214,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/desktop5.png",
-        "img//produtos/desktop5.png",
         "img//produtos/desktop5.png"
     ]
 },
@@ -259,8 +226,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/msi1.png",
-        "img//produtos/msi1.png",
         "img//produtos/msi1.png"
     ]
 },
@@ -273,8 +238,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/msi2.png",
-        "img//produtos/msi2.png",
         "img//produtos/msi2.png"
     ]
 },
@@ -287,8 +250,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/msi3.png",
-        "img//produtos/msi3.png",
         "img//produtos/msi3.png"
     ]
 },
@@ -301,8 +262,6 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/msi4.png",
-        "img//produtos/msi4.png",
         "img//produtos/msi4.png"
     ]
 },
@@ -314,9 +273,427 @@
     "preco": "499.00",
     "precoAtual": "499.00",
     "imagem": [
-        "img//produtos/msi5.png",
-        "img//produtos/msi5.png",
         "img//produtos/msi5.png"
+    ]
+},
+{ "id": 23,
+    "nome": "cabo de rede",
+    "categoria": "redes",
+    "descricao": "CABO DE REDE MD9, CAT5, 30M, AZUL, 7236",
+    "informacoes": [
+        "Marca: MD9",
+        "Modelo: 7236",
+        "Comprimento do cabo: 30 metros",
+        "Cor: Azul",
+        "Cabo: Transmissão de dados em rede com velocidades 10/100 MBps/s",
+        "Compatibilidade: Computadores, Notebooks, switches, Keystones em Caixas de Sobrepor, roteadores Emenda RJ45, HUBs, Adaptadores RJ45 e Modem.",
+        "RJ45: O padrão Registered jack (RJ) especifica o RJ45 como um conector físico e seus cabos de rede. Tal padrão é utilizado para a conexão de informações entre computadores para uma rede."
+    ],
+    "avaliacao": 4,
+    "preco": "77.99",
+    "precoAtual": "65.90",
+    "imagem": [
+        "img//produtos/caboRede1.jpg"
+    ]
+},
+{ "id": 24,
+    "nome": "GIGABIT",
+    "categoria": "redes",
+    "descricao": "GIGABIT USB 3.0, UE300",
+    "informacoes": [
+        "Marca: Tp-Link",
+        "Modelo: UE300",
+        "Dimensões: 71 x 26 x 16.2mm",
+        "Interface de Saída: 1 x Porta RJ45 Ethernet 10/100/1000Mbps",
+        "Interface de Entrada: 1 x Porta USB 3.0",
+        "Chipset: RTL8153",
+        "Sistemas Suportados: Windows XP/Vista/7/8/8.1, Mac OS X 10.5/10.6/10.7/10.8/10.9/10.10/ ou sistema baseado em Linux"
+    ],
+    "avaliacao": 4,
+    "preco": "129.00",
+    "precoAtual": "109.00",
+    "imagem": [
+        "img//produtos/gigabit1.jpg",
+        "img//produtos/gigabit2.jpg",
+        "img//produtos/gigabit3.jpg"
+    ]
+},
+{ "id": 25,
+    "nome": "placa de rede",
+    "categoria": "redes",
+    "descricao": "PLACA DE REDE TP-LINK GIGABIT PCI EXPRESS 10/100/1000MBPS, TG-3468",
+    "informacoes": [
+        "Marca: TP-Link",
+        "Modelo: TG-3468",
+        "Padrões e Protocolos: IEEE 802.3, 802.3u, 802.3ab, 802.3x, 802.1q, 802.1p, CSMA/CD, TCP/IP",
+        "Interface: 32-bit PCIe <br> 1 x Porta 1   0/100/1000Mbps RJ45",
+        "Mídia de Rede: 10BASE-T: UTP categoria 3, 4, 5 por cabo (máximo 100m) <br> EIA/TIA-568 100Ω STP (máximo 100m)",
+        "100BASE-TX: UTP categoria 5, 5e cabo (máximo 100m) <br> EIA/TIA-568 100Ω STP (máximo 100m)",
+        "1000Base-T: UTP categoria 5, 5e cabo (máximo 100m)",
+        "LED: Status",
+        "Padrões Wireless: IEEE802.3, IEEE802.3u, IEEE802.3ab, IEEE802.3x",
+        "Taxa de Dados: 10/100/1000Mbps para modo Half-Duplex <br> 20/200/2000Mbps para modo Full-Duplex",
+        "Indicador LED: 1000Mbps Link/Act, 100Mbps Link/Act, 10Mbps Link/Act",
+        "Controle de Fluxo: Controle de Fluxo IEEE 802.3x (Full-Duplex)",
+        "Certificação: CE, FCC, RoHS",
+        "Requerimentos do Sistema: Windows 7(32/64bits),Windows Vista(32/64 bits),Window XP(32/64bits)",
+        "Ambiente: Temperatura de Operação: 0 C ~ 40 C (32 ~ 104 ºF)",
+        "Temperatura de armazenamento: -40 C ~ 70 C (-40 ~ 158 ºF)",
+        "Umidade de Operação: 10% ~ 90% sem condensação",
+        "Umidade de armazenamento: 5% ~ 90% sem condensação",
+        "Dimensões: 78.5 x 120.8 x 21.5 mm"
+    ],
+    "avaliacao": 4,
+    "preco": "129.00",
+    "precoAtual": "109.00",
+    "imagem": [
+        "img//produtos/placaDeRede1.jpg"
+    ]
+},
+{ "id": 26,
+    "nome": "cadeira Gamer",
+    "categoria": "gamer",
+    "descricao": "CADEIRA GAMER TGT HERON, PRETA, TGT-HR-BL01",
+    "informacoes": [
+        "Marca: TGT",
+        "Modelo: TGT-HR-BL01",
+        "Encosto: Reclinável",
+        "Rodas: PU 50 mm",
+        "Tipo de espuma: Encosto: Laminada <br> Assento: Moldada",
+        "Densidade da espuma: Encosto: 24 kg/m³ <br> Assento: 40 kg/m³",
+        "Apoio de braço: Fixo",
+        "Base: Aço, 320 mm",
+        "Acabamento: Couro PU e tecido",
+        "Mecânismo: Reclinável",
+        "Bloqueio reclinável: Sim",
+        "Ajuste de Altura: 118-128 cm",
+        "Material da armação: Ferro",
+        "Classe de elevação de gás: Classe 4",
+        "Ângulo do encosto: 90-135°",
+        "Peso máximo suportado: 120 kg",
+        "Altura máxima do usuário: 180 cm",
+        "Largura do encosto superior: 50 cm",
+        "Distância entre os braços: 62 cm",
+        "Largura do encosto inferior: 42 cm",
+        "Medidas do assento (Largura x Profundidade): 50 x 48 cm",
+        "Altura do encosto: 80 cm",
+        "Altura do assento ajustável: 46-56 cm",
+        "Altura do assento do chão: 46 cm",
+        "Dimensões da cadeira (HxWxD): 128 x 60 x 48 cm",
+        "Conteúdo da embalagem: 1 x Cadeira (Necessita Montagem) <br> 1 x Kit de chave e parafusos <br> 1 x Manual de montagem"
+    ],
+    "avaliacao": 4,
+    "preco": "470.00",
+    "precoAtual": "399.00",
+    "imagem": [
+        "img//produtos/cadeiraGamer1.jpg",
+        "img//produtos/cadeiraGamer2.jpg",
+        "img//produtos/cadeiraGamer3.jpg"
+    ]
+},
+{ "id": 27,
+    "nome": "Pc Mancer Gamer Frey V",
+    "categoria": "gamer",
+    "descricao": "COMPUTADOR MANCER GAMER FREY V, AMD RYZEN 5 5600G, 16GB DDR4, SSD 480GB + CADEIRA GAMER + MONITOR 24 + KIT PERIFÉRICOS",
+    "informacoes": [
+        "Processador: 1 x Processador AMD Ryzen 5 5600G, 6-Core, 12-Threads, 3.9GHz (4.4GHz Turbo), Cache 19MB, AM4, 100-100000252BOX",
+        "Placa Mãe: 1 x Placa Mae Pichau Alphard A520M-P, DDR4, Socket AM4, Chipset AMD A520, PCH-ALPDA520M-P",
+        "Memória: 2 x Memoria Mancer Dantalion Z, 8GB (1x8GB), DDR4, 3200MHz, C16, MCR-DTLZ-8GB",
+        "Armazenamento: 1 x SSD Mancer Reaper RF, 480GB, 2.5, Sata III 6GB/s, Leitura 500MB/s, Gravacao 450MB/s, MCR-RPRF-480GB",
+        "Fonte: 1 x Fonte Mancer Thunder 400W, 80 Plus Bronze, MCR-THR400-BL01-OEM",
+        "Gabinete: 1 x Gabinete Gamer TGT Flare, RGB, Lateral de Vidro, Preto, TGT-FLR-BK01",
+        "Cabo HDMI: 1 x Cabo HDMI Pichau 1.8m, 5001-1A",
+        "Cabo de Força: 1 x Cabo de Força Pichau 1.2m, 3 Pinos, Vermelho, PG-PWC-RD01",
+        "Monitor: 1 x Monitor Gamer TGT Altay T3H, 24 Pol. VA, FHD, 1ms, 165Hz, Freesync, HDMI/DP, TGT-ATT3H-BL01",
+        "Cadeira Gamer: 1 x Cadeira Gamer TGT Heron TX Tecido, Preto e Cinza, TGT-HRTX-FB02",
+        "Kit Periféricos: 1 x Combo Gamer Mancer ORC 4x1, Teclado ABNT2, Mouse 3600DPI, Mousepad Pequeno, Headset Drivers 50mm, Rainbow, MRC-ORC-RBW01"
+    ],
+    "avaliacao": 4,
+    "preco": "3946.90",
+    "precoAtual": "3354.75",
+    "imagem": [
+        "img//produtos/mancer1.jpg",
+        "img//produtos/mancer2.jpg",
+        "img//produtos/mancer3.jpg"
+    ]
+},
+{ "id": 28,
+    "nome": "Microfone Gamer",
+    "categoria": "gamer",
+    "descricao": "MICROFONE GAMER MULTI WARRIOR OLIER, PH255",
+    "informacoes": [
+        "Marca: Multi",
+        "Modelo: PH255",
+        "Voltagem: 5V",
+        "Impedância: 2.2k ohms",
+        "Frequência: 100 - 10 Khz",
+        "Sensibilidade: 21dB +- 5dB",
+        "Corrente Máxima: 100 mA",
+        "Conexão: USB-A",
+        "Comprimento do Cabo: 1.5m",
+        "Iluminação: Azul",
+        "Conexão do Microfone: USB",
+        "Cor Principal: Preto",
+        "Som: Estéreo"
+    ],
+    "avaliacao": 4,
+    "preco": "44, 99",
+    "precoAtual": "37.90",
+    "imagem": [
+        "img//produtos/microfoneGamer1.jpg",
+        "img//produtos/microfoneGamer2.jpg",
+        "img//produtos/microfoneGamer3.jpg"
+    ]
+},
+{ "id": 35,
+    "nome": "Mesa Gamer",
+    "categoria": "gamer",
+    "descricao": "MESA GAMER MANCER BEHOLDER, 136CM, RGB, PRETO, MCR-BHR-RGB",
+    "informacoes": [
+        "Marca: Mancer",
+        "Modelo: MCR-BHR-RGB",
+        "Material: MDF e Melamina, Plástico, Metal, Vidro temperado",
+        "Dimensões: 136 x 60 x 75 cm",
+        "Tamanho do tampo da mesa: 135 x 60 x 1,8 cm",
+        "Peso suportado: 75 Kg",
+        "Altura: 75 cm",
+        "Iluminação ambiente: Luz de LED em modo breathing com gradiente multicolorido",
+        "Cor: Preto e Preto fosco",
+        "Notas: *Acompanha suporte para copo e headset."
+    ],
+    "avaliacao": 4,
+    "preco": "1058.81",
+    "precoAtual": "899.99",
+    "imagem": [
+        "img//produtos/mesaGamer1.jpg",
+        "img//produtos/mesaGamer2.jpg",
+        "img//produtos/mesaGamer3.jpg"
+    ]
+},
+{ "id": 29,
+    "nome": "Hp Smart Tank 581",
+    "categoria": "impressoras",
+    "descricao": "IMPRESSORA MULTIFUNCIONAL HP SMART TANK 581, WIRELESS, WI-FI, PRETA, 4A8D5A-AK4",
+    "informacoes": [
+        "Tipo de impressora: Multifuncional",
+        "Tipo de impressão: Cor",
+        "Com Wi-Fi: Sim",
+        "Tecnologia da impressão: Tanque de Tinta",
+        "Funções da impressora: Impressão. cópia. digitalização"
+    ],
+    "avaliacao": 4,
+    "preco": "1117.63",
+    "precoAtual": "949.99",
+    "imagem": [
+        "img//produtos/hpSmart1.jpg",
+        "img//produtos/hpSmart2.jpg",
+        "img//produtos/hpSmart3.jpg"
+    ]
+},
+{ "id": 30,
+    "nome": "Impressora Brother",
+    "categoria": "impressoras",
+    "descricao": "IMPRESSORA BROTHER MULTIFUNCIONAL LASER MONOCROMATICO WIRELESS, DCP-1617NW",
+    "informacoes": [
+        "Marca: Brother",
+        "Modelo: DCP-1617NW",
+        "Tempo de Impressão da Primeira Página: Menos de 10 segundos",
+        "Tecnologia de Impressão: Laser monocromático",
+        "Memória Padrão: 32 MB",
+        "Velocidade em Preto: Até 20 ppm",
+        "Resolução em dpi: Até 2400 x 600 dpi",
+        "Capacidade da Bandeja de Papel: 150 folhas",
+        "Interface de Rede Embutida: Wireless e Ethernet",
+        "Emulação: GDI",
+        "Volume de Ciclo Mensal: 10000 páginas",
+        "Resolução de Cópia: 600 x 600 dpi",
+        "Opções de Cópia: Impressão N em 1, impressão de pôsteres, cabeçalho e rodapé, impressão de marca d'água, impressão duplex manual, impressão de folhetos",
+        "Velocidade da Cópia em Preto: Até 20 ppm",
+        "Ampliação / Redução: 25% - 400%",
+        "Agrupamento de Cópias (2 em 1): Sim",
+        "Tamanho do Vidro de Exposição: 21,6 x 29,7 cm (A4)",
+        "Cópia Duplex Automática: Manual",
+        "ADF: 10 folhas",
+        "Resolução Interpolada: Até 19200 x 19200 dpi",
+        "Digitalização Color e Mono: Sim",
+        "Resolução Óptica do Scanner: Até 600 x 1200 dpi",
+        "Digitaliza para: Arquivo, Imagem e E-mail",
+        "Dimensões: 38,5 x 34 x 25,5 cm",
+        "Velocidade do Processador: 200 MHz",
+        "Modo Toner Save: Sim",
+        "Capacidade de Saída do Papel: 50 folhas",
+        "Interface: USB 2.0 de alta velocidade, Wireless e Ethernet <br> Duplex <br> Manual"
+    ], 
+    "avaliacao": 4,
+    "preco": "1752.93",
+    "precoAtual": "1489.90",
+    "imagem": [
+        "img//produtos/brother1.jpg",
+        "img//produtos/brother2.jpg",
+        "img//produtos/brother3.jpg"
+    ]
+},
+{ "id": 31,
+    "nome": "Impresora 3D",
+    "categoria": "impressoras",
+    "descricao": "IMPRESSORA 3D VINIK CREATI.V, 31398",
+    "informacoes": [
+        "Marca: Vinik",
+        "Modelo: 31398",
+        "Filamentos compatíveis: PLA e derivados",
+        "Quantidade de extrusoras: 01",
+        "Resolução de impressão: 0.1mm",
+        "Dimensões da impressão: 85 x 80 x 94 mm",
+        "Velocidade de impressão: 20-60 mm/s",
+        "Diâmetro do filamento: 1.75mm (±0.07mm)",
+        "Alimentação de energia: 100-240V~/ 50W",
+        "Tipos de arquivo suportados: STL / OBJ / DAE / gcode",
+        "Conexões: Cabo USB / Cabo USB tipo B / cartão SD",
+        "Softwares compatíveis: Createbot/Cura/Slic3r/Simplify3D/Repetier-host",
+        "Sistemas operacionais compatíveis: Windows e Linux",
+        "Tamanho da impressora: 188 x 188 x 230 mm",
+        "Visor: Touchscreen LCD"
+    ],
+    "avaliacao": 4,
+    "preco": "1931.76",
+    "precoAtual": "1542.90",
+    "imagem": [
+        "img//produtos/impressora3d1.jpg",
+        "img//produtos/impressora3d2.jpg",
+        "img//produtos/impressora3d3.jpg"
+    ]
+},
+{ "id": 32,
+    "nome": "SSD Kingston 240GB",
+    "categoria": "outros",
+    "descricao": "SSD KINGSTON A400, 240GB, 2.5, SATA III 6GB/S, LEITURA 500MB/S, GRAVACAO 350MB/S, SA400S37/240G",
+    "informacoes": [
+        "Marca: Kingston",
+        "Modelo: SA400S37/240G",
+        "Formato: 2.5",
+        "Interface: SATA 3.0 (6Gb/s)",
+        "Capacidade: 240GB",
+        "Controlador: 2Ch³",
+        "NAND: TLC",
+        "Velocidade de Leitura: 500 MB/s",
+        "Velocidade de Gravação: 350 MB/s",
+        "Temperatura de armazenamento: -40°C a 85°C",
+        "Temperatura de operação: 0°C a 70°C",
+        "Dimensões: 100 x 69,9 x 7 mm"
+    ],
+    "avaliacao": 4,
+    "preco": "235.18",
+    "precoAtual": "199.90",
+    "imagem": [
+        "img//produtos/kingston2401.jpg",
+        "img//produtos/kingston2402.jpg",
+        "img//produtos/kingston2403.jpg"
+    ]
+},
+{ "id": 33,
+    "nome": "Fonte DUEX Dx 500",
+    "categoria": "outros",
+    "descricao": "FONTE DUEX DX 500, 500W, 80 PLUS BRONZE, PRETO, DX-500FSE",
+    "informacoes": [
+        "Marca: Duex",
+        "Modelo: DX 500FSE",
+        "Potência: 500W",
+        "Tipo: ATX12V",
+        "PFC: Ativo",
+        "Frequência de entrada: 50/60 Hz",
+        "Corrente de entrada: 5 amps",
+        "Voltagem de entrada: 115~240 Volts",
+        "Eficiência: 80 Plus Bronze",
+        "Conectores: 1 x 20+4 Pinos (com rede) <br> 1 x Auxiliar ATX 12V (4+4) <br> 2 x PCIE (6+2) <br> 4 x SATA <br> 2 x Molex (IDE)"
+    ],
+    "avaliacao": 4,
+    "preco": "199.99",
+    "precoAtual": "169.99",
+    "imagem": [
+        "img//produtos/fonte1.jpg"
+    ]
+},
+{ "id": 34,
+    "nome": "Memoria Vulcan 8GB",
+    "categoria": "outros",
+    "descricao": "MEMORIA TEAM GROUP T-FORCE VULCAN, 8GB (1X8), DDR4, 3200MHZ, C16, VERMELHA, TLPRD48G3200HC16F01",
+    "informacoes": [
+        "Marca: Team Group",
+        "Modelo: TLPRD48G3200HC16F01",
+        "Capacidade: 8 GB (1 x 8 GB)",
+        "Frequência: 3200 MHz",
+        "Tipo de memória: DDR4",
+        "Latência: CL16-20-20-40",
+        "Largura de banda: 25.600 MB/s (PC4 25600)",
+        "Tensão: 1,35 V",
+        "Dissipador de calor: Alumínio",
+        "Conteúdo da embalagem: 1 x Memória",
+        "Dimensões: 32 x 140 x 7 mm"
+    ],
+    "avaliacao": 4,
+    "preco": "152.93",
+    "precoAtual": "129.99",
+    "imagem": [
+        "img//produtos/vulcan1.jpg",
+        "img//produtos/vulcan2.jpg"
+    ]
+},
+{ "id": 35,
+    "nome": "Cabo Extensor  ",
+    "categoria": "outros",
+    "descricao": "CABO EXTENSOR PREMIUM 24P PS100, RGB, 240MM, BRANCO, PCH-PS100-24PRGBWHT",
+    "informacoes": [
+        "Marca: Pichau",
+        "Modelo: PCH-PS100-24PRGBWHT",
+        "Comprimento: 24.5 cm",
+        "Calibre do fio: 18AWG",
+        "Tipo de cabo: 24 pinos ATX",
+        "Cor: Branco",
+        "Conectores: 1 x 24 pinos",
+        "Quantidade de clipes para cabos: 2 peças x 24 pinos",
+        "Dimensões: 25.7 x 6 x 1.8 cm",
+        "Controlador incluído: Não",
+        "Conector RGB: 3-Pinos 5V ARGB",
+        "Quantidade de LEDs: 24",
+        "Compatibilidade com fonte de alimentação (PSU): Universal",
+        "Conteúdo da embalagem: 1 x Cabo extensor de 24 pinos <br> 2 x Organizadores de 24 pinos"
+    ],
+    "avaliacao": 4,
+    "preco": "130.58",
+    "precoAtual": "110.99",
+    "imagem": [
+        "img//produtos/caboExtensor1.jpg",
+        "img//produtos/caboExtensor2.jpg",
+        "img//produtos/caboExtensor3.jpg"
+    ]
+},
+{ "id": 36  ,
+    "nome": "Placa de Video MAncer 8GB",
+    "categoria": "outros",
+    "descricao": "PLACA DE VIDEO MANCER RX 5500 XT STREAKY, 8GB, GDDR6, 128-BIT, MCR-RX5500XT-STK",
+    "informacoes": [
+        "Marca: Mancer",
+        "Modelo: MCR-RX5500XT-STK",
+        "GPU: AMD RADEON RX 5500 XT",
+        "Barramento: PCI express 4.0",
+        "Frequência: 1717 MHz",
+        "Stream processors: 1408",
+        "Tamanho de memória: 8GB",
+        "Tipo de memória: GDDR6",
+        "Frequência da memória: 1750 MHz",
+        "Interface da memória: 128-bit",
+        "Entradas: 3 x DisplayPort <br> 1 x HDMI",
+        "Conector: 8Pin",
+        "Conteúdo da embalagem: 1 x Placa de video <br> 1 x Certificado de garantia <br> 1 x Mini chave de fenda",
+        "Dimensões: 219 x 114 x 49 mm"
+    ],
+    "avaliacao": 4,
+    "preco": "1117.64",
+    "precoAtual": "949.99",
+    "imagem": [
+        "img//produtos/placaVideo1.jpg",
+        "img//produtos/placaVideo2.jpg",
+        "img//produtos/placaVideo3.jpg"
     ]
 }
 ],
