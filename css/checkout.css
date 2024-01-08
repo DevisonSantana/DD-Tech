@@ -8,7 +8,7 @@ h1
     width: 320px;
     height: 50px;
     margin: 58px;
-    margin-top: -41px;
+    margin-top: -25px;
     margin-left: -1px;
     font-size: 29px;
 }
@@ -33,7 +33,15 @@ h4{
 
    
 
-
+   
+}
+#container{
+    display: flex;
+    width: 83%;
+    justify-content: space-around;
+    margin-left: 36px;
+    padding: 63px;
+    
 }
 h5{
     margin-left: 15px;
@@ -86,6 +94,8 @@ h5{
     
 }
 #navegacao{
+    padding-left: 191px;
+    
     
 }
 .imagem1{
@@ -99,6 +109,7 @@ h5{
     height: 100px;
     width: 400px;
     margin-top: 15px;
+    padding: 25px;
 
 }
 #text2{
@@ -106,32 +117,31 @@ h5{
     height: 100px;
     width: 400px;
     margin-top: 15px;
+    padding: 25px;
+    text-align: center;
 }
 .caixa{
     background-color: rgb(238, 233, 233);
-    position: absolute;
-    right: 200px;
-    transform: translate(48%, 50%);
     padding: 40px;
-    top: -62px;
-    margin: -50px;
-    width: 294px;
-    height: 642px
-    
-    
-
-
+    width: fit-content;
+    height: 102%;
+    margin-right: 271px;
 }
+
+    
+    
+
+
+
 #main{
     background-color: white;
-    margin: 45px;
-    width: 1022px;
-    padding: 52px;
-    margin-left: 65px;
+    margin-left: 102px;
+    width: 1008px;
+    padding: 21px;
+}
    
    
 
-}
 .button{
     position:relative;
     right: 40px;
@@ -174,11 +184,11 @@ h5{
     
     
 }
-#menu{
-    
-    margin-top: 20px;
-    margin: 2;
+#menu {
+    margin-left: -593px;
+    margin-top: 435px
 }
+
     
 
 #segundo{
@@ -278,8 +288,10 @@ h5{
     
 }
 #tabela1{
-    align-items: center;
-    display: flex;
+    justify-content: center;
+    box-sizing: 800;
+    width: 400px;
+    text-align: center;
 }
 
 .inicio{
@@ -330,9 +342,33 @@ h5{
     border: 1px solid #ccc;
     margin: 0 5px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 600px) {
     #main{
         zoom: .3;
+
+    }
+    #container{
+        flex-direction: column;
     }
     
 }
+.button-container {
+    display: flex;
+  }
+  
+  .arrow-button {
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .up {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  
+  .down {
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  }
