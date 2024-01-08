@@ -99,11 +99,9 @@
                     <tr class="tproduto">
                         <td> <img src="https://via.placeholder.com/360x360" alt="$placeholder" class="table-img"> </td>
                     <td>Você não tem produtos no carrinho</td>
+                    <td>R$ 0,00</td>
                     <td>0</td>
-                    <td>
-                        <input type="number" id="quantidade" min="1" max="100"  value="0">
-                    </td>
-                    <td>0</td>
+                    <td>R$ 0,00</td>
                     <td>
                         <button class="table-btn">X</button>
                     </td>
@@ -147,13 +145,13 @@
                 <div class="opcao-entrega">
                     <p>Taxa Padrão</p>
                     <div>
-                        <input type="radio" name="opcao-entrega">
+                        <input type="radio" name="opcao-entrega" id="entrega-destino" value="casa">
                         <label for="entrega-destino">Preço pode variar de acordo com o Item/Destino</label>
                     </div>
                     <p>Retirar na loja</p>
                     <div>
-                        <input type="radio" name="opcao-entrega" value="casa">
-                        <label for="entrega-em-casa">Rua JavaScript, 123 - Bairro HTML - SP</label>
+                        <input type="radio" name="opcao-entrega" id="retirar-na-loja" value="loja">
+                        <label for="retirar-na-loja">Rua JavaScript, 123 - Bairro HTML - SP</label>
                     </div>
                 </div>
                 <div class="Cupom">

@@ -28,7 +28,7 @@ function passarProdutosRecuperados(produtoRecuperado){
                     <td><a href="#"></a>${res.nome}</td>
                     <td>${parseFloat(res.precoAtual).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
                     <td>
-                        <input type="number" id="quantidade" min="1" max="100"  value="${evt.QtdadeItem}">
+                        ${evt.QtdadeItem}
                     </td>
                     <td>${parseFloat(res.precoAtual * evt.QtdadeItem).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
                     <td>
@@ -102,40 +102,68 @@ aplicarDesconto.addEventListener('click', ()=>{
 
 })
 
-// função para aplicar taxa de envio
+/*
+Função para aplicar taxa de envio
+Sempre que o país de destino for modificado o valor da taxa aumenta ou diminui dinamicamente
+O valor das taxa são iguais a zero quando a opção retirar na loja está marcada
+Caso contrario a taxa não será aplicada devidamente
+*/
 
-taxaPorPais.addEventListener('change', ()=>{
+let entregaDestino = document.getElementById('entrega-destino')
+let retirarNaLoja = document.getElementById('retirar-na-loja')
+let localEntrega;
+
+entregaDestino.addEventListener('click', (e)=>{
+    localEntrega = e.target.value
+    atualizaSubtotalETotalNaPagina()
+    return localEntrega
+})
+retirarNaLoja.addEventListener('click', (e)=>{
+    localEntrega = e.target.value
+    atualizaSubtotalETotalNaPagina()
+    return localEntrega
+})
+
+taxaPorPais.addEventListener('change', atualizaSubtotalETotalNaPagina)
+
+function atualizaSubtotalETotalNaPagina(){
     subtotal.innerText = (valorTotal).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
     precoTotal.innerText = "Preço Total: " + (valorTotal + verificaPais()).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-})
+}
 
 function verificaPais(){
     let taxa = document.getElementById('taxa')
     let envio = document.getElementById('envio')
-    let recuperados = localStorage.getItem('itemCarrinho')
-    recuperados = JSON.parse(recuperados)
     let valorDaTaxa = 0;
     let valorDeEnvio = 0;
+    let recuperados = localStorage.getItem('itemCarrinho')
+    recuperados = JSON.parse(recuperados)
+
     if(recuperados != null){
-        if(taxaPorPais.value == 'brasil'){
-            valorDaTaxa = 0.10
-            valorDeEnvio = 22.48
-            adicionaTaxaEEnvioNaPagina()
-        } else if(taxaPorPais.value == 'canada'){
-            valorDaTaxa = 28.64
-            valorDeEnvio = 50.99
-            adicionaTaxaEEnvioNaPagina()
+        if (localEntrega == 'casa') {
+            if(taxaPorPais.value == 'brasil'){
+                valorDaTaxa = 0.10
+                valorDeEnvio = 22.48
+                adicionaTaxaEEnvioNaPagina()
+            } else if(taxaPorPais.value == 'canada'){
+                valorDaTaxa = 28.64
+                valorDeEnvio = 50.99
+                adicionaTaxaEEnvioNaPagina()
+            } else {
+                valorDaTaxa = 21.97
+                valorDeEnvio = 49.01
+                adicionaTaxaEEnvioNaPagina()
+            }    
         } else {
-            valorDaTaxa = 21.97
-            valorDeEnvio = 49.01
+            valorDaTaxa = 0
+            valorDeEnvio = 0
             adicionaTaxaEEnvioNaPagina()
         }
-
+        
         function adicionaTaxaEEnvioNaPagina(){
             taxa.innerText = (valorDaTaxa).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
             envio.innerText = (valorDeEnvio).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
         }
     }
-
     return valorDaTaxa + valorDeEnvio;
 }
