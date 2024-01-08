@@ -94,7 +94,7 @@ h5{
     
 }
 #navegacao{
-    padding-left: 191px;
+    padding-left: 131px;
     
     
 }
@@ -135,7 +135,8 @@ h5{
 
 #main{
     background-color: white;
-    margin-left: 102px;
+    margin-left: 69px;
+    margin-right: 18px;
     width: 1008px;
     padding: 21px;
 }
@@ -185,8 +186,9 @@ h5{
     
 }
 #menu {
-    margin-left: -593px;
-    margin-top: 435px
+    margin-left: -520px;
+    margin-top: 435px;
+    margin-right: -46px;
 }
 
     
@@ -287,7 +289,7 @@ h5{
     padding: 10px
     
 }
-#tabela1{
+.tabela1{
     justify-content: center;
     box-sizing: 800;
     width: 400px;
