@@ -77,7 +77,7 @@ async function fetchProfileDataCadastro() {
                 sessionStorage.setItem('token', token)
                 console.log(token);
 
-                // window.location.href = 'usuario.html'
+                window.location.href = 'usuario.html'
                 emailInput.classList.add('correct')
                 emailInput.classList.remove('error')
                 emailHelper.classList.remove('visible')

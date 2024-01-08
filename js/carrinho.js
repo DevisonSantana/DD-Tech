@@ -4,6 +4,8 @@ let precoTotal = document.getElementById('precoTotal')
 let valorTotal = 0;
 let indice = 0
 let item = []
+let taxaPorPais = document.getElementById('pais')
+
 botao_pagamento.addEventListener('click', ()=>{
     
     window.location.href = 'checkout.html'
@@ -13,7 +15,8 @@ function passarProdutosRecuperados(produtoRecuperado){
     let bodyTabela = document.getElementById('bodyTabela')
     let recuperados = localStorage.getItem('itemCarrinho')
     recuperados = JSON.parse(recuperados)
-    bodyTabela.innerHTML = '';
+    if(recuperados != null){
+        bodyTabela.innerHTML = '';
         recuperados.map((evt) => {
             produtoRecuperado.map((res) => {
                 if(res.nome === evt.Nome){
@@ -33,15 +36,17 @@ function passarProdutosRecuperados(produtoRecuperado){
                     </td>
                     </tr> 
                     `
-
                     valorTotal += res.precoAtual * evt.QtdadeItem
                     subtotal.innerText = valorTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-                    precoTotal.innerText = "Preço Total " + (valorTotal + 21).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+                    precoTotal.innerText = "Preço Total: " + (valorTotal + verificaPais()).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+                    
                 }
             })
         })
-        excluirItem()
+    }
+    excluirItem()
 }
+
 // excluir item
 function excluirItem(){
     let excluir = [...document.getElementsByClassName('excluir')]
@@ -78,18 +83,12 @@ async function fetchProfileData() {
     return profileData
 }
 
-
-
-
-
-
 // Chama a função para buscar os dados da api e pasar por parametro para as demais funcoes
 (async () => {
     const profileData = await fetchProfileData()
     passarProdutosRecuperados(profileData.produtos)
     
 })()
-
 
 // aplicar desconto
 let aplicarDesconto = document.getElementById('aplicarDesconto')
@@ -98,7 +97,45 @@ aplicarDesconto.addEventListener('click', ()=>{
     if(cupomDesconto === 'alvinhu10'){
         let totalComDesconto = valorTotal - (valorTotal * 0.10)
         subtotal.innerText = (totalComDesconto).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-        precoTotal.innerText = "Preço Total " + (totalComDesconto + 21).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+        precoTotal.innerText = "Preço Total: " + (totalComDesconto + verificaPais()).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
     }
 
 })
+
+// função para aplicar taxa de envio
+
+taxaPorPais.addEventListener('change', ()=>{
+    subtotal.innerText = (valorTotal).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+    precoTotal.innerText = "Preço Total: " + (valorTotal + verificaPais()).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+})
+
+function verificaPais(){
+    let taxa = document.getElementById('taxa')
+    let envio = document.getElementById('envio')
+    let recuperados = localStorage.getItem('itemCarrinho')
+    recuperados = JSON.parse(recuperados)
+    let valorDaTaxa = 0;
+    let valorDeEnvio = 0;
+    if(recuperados != null){
+        if(taxaPorPais.value == 'brasil'){
+            valorDaTaxa = 0.10
+            valorDeEnvio = 22.48
+            adicionaTaxaEEnvioNaPagina()
+        } else if(taxaPorPais.value == 'canada'){
+            valorDaTaxa = 28.64
+            valorDeEnvio = 50.99
+            adicionaTaxaEEnvioNaPagina()
+        } else {
+            valorDaTaxa = 21.97
+            valorDeEnvio = 49.01
+            adicionaTaxaEEnvioNaPagina()
+        }
+
+        function adicionaTaxaEEnvioNaPagina(){
+            taxa.innerText = (valorDaTaxa).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+            envio.innerText = (valorDeEnvio).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+        }
+    }
+
+    return valorDaTaxa + valorDeEnvio;
+}
