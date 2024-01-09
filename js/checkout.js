@@ -7,12 +7,14 @@ let btnAdicionarProduto01 = document.getElementById("adicionar"); // Botão adic
 let btnSubtrairProduto01 = document.getElementById("subtrair");
 let qtdProduto01 = document.getElementById("quantidade");
 
-let valorProduto01 = 5.000
+let valorProduto01 = 8000.00
+
+
 
 // Objeto-01
 let subtotalInfo = {
     quantidade: 1,
-    valor: 5.000,
+    valor: 8000.00,
 };
 
 // Definir a manipulação de elementos (funções)
@@ -56,50 +58,51 @@ btnSubtrairProduto01.addEventListener("click", subtrairUm);
 
 // Segundo produto
 // Captura de elementos do DOM
-let valorProduto02 = document.getElementById("teste"); // Valor Subtotal
+let valorProduto02 = document.getElementById("valorFinal"); // Valor Subtotal
 let btnAdicionarProduto02 = document.getElementById("adicionar2"); // button +
 let btnSubtrairProduto02 = document.getElementById("subtrair2");
 let quantidade02 = document.getElementById("quantidade02");
 
-console.log(valorProduto02)
+let valorProduto03 = 10000.00; // Corrigido o valor do produto para 10000.00
+let valorProduto02Exibicao = 10000.00; // Corrigido o valor inicial do produto para 0.00
+valorProduto02.innerText = valorProduto02Exibicao.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }); // Atualizado o valor inicial no DOM
 
 // Objeto-02
-let subtotalInfo02 =  {
+let subtotalInfo02 = {
     quantidade: 1,
-    valor: 55.00,
+    valor: 0.00,
 };
 
-subtotalInfo02.va
-
-let valorProduto03 = 0
-valorProduto02.value = valorProduto03;
-
-console.log(valorProduto03)
-
-valorProduto02.innerText = subtotalInfo02.valor
-
-console.log(subtotalInfo02.valor)
+// Captura do elemento DOM para o valor final
+let valorFinal = document.getElementById("valorFinal");
 
 // Definir a manipulação dos elementos capturados (funções)
 function atualizarSubtotal02() {
     quantidade02.innerText = subtotalInfo02.quantidade;
-    valorProduto02.innerText = (subtotalInfo02.valor).toLocaleString('pt-br', {style:'currency', currency:'BRL'});
+    valorProduto02.innerText = (subtotalInfo02.valor).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+}
+
+function atualizarValorFinal() {
+    valorFinal.innerText = (subtotalInfo02.valor + subtotalInfo02.quantidade + valorProduto03).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
 }
 
 function adicionarUmm() {
     quantidade02.value = Number(quantidade02.value) + 1;
-    subtotalInfo02.valor = subtotalInfo02.valor + 55.00;
-    subtotalInfo02.quantidade = subtotalInfo02.quantidade + 1;
+    subtotalInfo02.valor = subtotalInfo02.valor + valorProduto03; // Adição do valor do produto à quantidade
+    subtotalInfo02.quantidade = Number(quantidade02.value);
     atualizarSubtotal02();
+    atualizarValorFinal();
 }
 
 function subtrairUmm() {
-    if (subtotalInfo02.quantidade > 0) {
+    if (subtotalInfo02.quantidade > 1) {
         quantidade02.value = Number(quantidade02.value) - 1;
-        subtotalInfo02.valor = subtotalInfo02.valor - 55.00;
-        subtotalInfo02.quantidade = subtotalInfo02.quantidade - 1;
-        atualizarSubtotal02();
+        subtotalInfo02.valor = subtotalInfo02.valor - valorProduto03; // Adição do valor do produto à quantidade
+        subtotalInfo02.quantidade = Number(quantidade02.value);
     }
+    // Se a quantidade for 1, não subtraia o valor, apenas atualize a exibição
+    atualizarSubtotal02();
+    atualizarValorFinal();
 }
 
 // Definir quando devem ser manipulados os elementos (eventos)
