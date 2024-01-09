@@ -186,9 +186,9 @@ h5{
     
 }
 #menu {
-    margin-left: -520px;
+     margin-left: -520px;
     margin-top: 435px;
-    margin-right: -46px;
+    margin-right: -98px;
 }
 
     
@@ -218,6 +218,17 @@ h5{
     font-family: Arial, Helvetica, sans-serif;
     color: blue;
 }
+a{
+    text-decoration: none;
+
+}
+.table-btn{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
 #comprando{
     float:right;
     width: 30%;
@@ -227,6 +238,8 @@ h5{
     font-family: Arial, Helvetica, sans-serif;
     color:grey;
     background-color:white;
+    text-decoration: none;
+    
 }
 #esvaziar{
     float:right;
@@ -354,6 +367,8 @@ h5{
     }
     
 }
+
+
 .button-container {
     display: flex;
   }
