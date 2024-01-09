@@ -15,7 +15,12 @@ function addClick(){
         })
     });
     }
+// favoritar
 
+function favoritar(){
+    let favoritar = document.getElementById('favoritar')
+    favoritar.innerHTML = '<div id="favoritar" class="favoritado"> &#9829</div>'
+}
 
 // produto inserido dinamicamente
 function produtoDinamico(produtoEspecifico){
@@ -28,12 +33,14 @@ function produtoDinamico(produtoEspecifico){
     imgPai.innerHTML = `
     <img src="${produtoEspecifico.imagem[0]}" alt="dell inspiron" id="imgBig">
     <div id="imgFilho">
-    <img src="${produtoEspecifico.imagem[0]}" alt="${produtoEspecifico.nome}" class="imgmMini">
-    <img src="${produtoEspecifico.imagem[1]}" alt="${produtoEspecifico.nome}" class="imgmMini">
-    <img src="${produtoEspecifico.imagem[2]}" alt="${produtoEspecifico.nome}" class="imgmMini">
-        
+    ${produtoEspecifico.imagem.map((res) => 
+         `
+    <img src="${res}" alt="${produtoEspecifico.nome}" class="imgmMini">
     `
-
+        ).join("")} 
+    </div>
+    `
+    console.log(produtoEspecifico.imagem)
     descricaoProduto.innerText = produtoEspecifico.descricao
     // adicionar click para mudar imagem pai
     addClick()
