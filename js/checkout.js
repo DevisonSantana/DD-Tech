@@ -64,6 +64,7 @@ function subtrairUm() {
 btnAdicionarProduto01.addEventListener("click", adicionarUm);
 btnSubtrairProduto01.addEventListener("click", subtrairUm);
 
+
 // Segundo produto
 // Captura de elementos do DOM
 let valorProduto02 = document.getElementById("valorFinal"); // Valor Subtotal
@@ -108,6 +109,9 @@ function subtrairUmm() {
         subtotalInfo02.valor = subtotalInfo02.quantidade * valorProduto03;
         atualizarSubtotal02();
     }
+}
+function atualizarCarrinho(){
+    window.location.reload();
 }
 
 // Definir quando devem ser manipulados os elementos (eventos)
