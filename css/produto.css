@@ -29,6 +29,7 @@ main{
     margin: auto;
     display: flex;
     justify-content: space-evenly;
+    gap: 10%;
 }
 #details div:first-child{
     background-image: linear-gradient(175deg, #e3e3e3 80%, #fff);
@@ -41,11 +42,11 @@ main{
 }
 
 #details Img{
-    max-width: 60%;
+    max-width: 300px;
     display: flex;
 }
 #imgPai{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +64,7 @@ main{
 }
 #imgBig:hover{
     cursor: zoom-in;
-    scale: 2.7;
+    scale: 1.7;
     margin-bottom: 150px;
 }
 
@@ -142,7 +143,9 @@ main{
         margin-top: 10%;
         margin-bottom: 60px;
     }
-    
+    #details Img{
+        max-width: 100%;
+    }
 }
 @media screen and (max-width: 600px) {
     #details{
