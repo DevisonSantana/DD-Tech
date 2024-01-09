@@ -16,7 +16,6 @@ let subtotalInfo = {
 
 // Captura do elemento DOM para o valorSubtotal_01
 let valorSubtotal_01 = document.getElementById("valorSubtotal01");
-console.log(valorSubtotal_01);
 
 // Função para calcular o valorSubtotal_01
 function calcularValorSubtotal01() {
@@ -24,6 +23,9 @@ function calcularValorSubtotal01() {
     let valorProduto02Float = parseFloat(valorProduto02.innerText.replace('R$', '').replace('.', '').replace(',', '.'));
     let valorSubtotalFloat = valorSomaFloat + valorProduto02Float;
     valorSubtotal_01.innerText = valorSubtotalFloat.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+
+    // Replicar os valores dinamicamente para o valorSubtotal_02
+    valorSubtotal_02.innerText = valorSubtotal_01.innerText;
 }
 
 // Definir a manipulação dos elementos capturados (funções)
@@ -82,8 +84,8 @@ let subtotalInfo02 = {
 // Captura do elemento DOM para o valor final
 let valorFinal = document.getElementById("valorFinal");
 
-// Captura do elemento DOM para o valorSubtotal_01
-valorSubtotal_01 = document.getElementById("valorSubtotal01");
+// Captura do elemento DOM para o valorSubtotal_02
+let valorSubtotal_02 = document.getElementById("valorSubtotal02");
 
 // Definir a manipulação dos elementos capturados (funções)
 function atualizarSubtotal02() {

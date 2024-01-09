@@ -115,6 +115,9 @@
                             </div>
                         </td>
                         <td id="soma"> R$ 8.000,00</td>
+                        <td>
+                        <button class="table-btn">X</button>
+                    </td>
                     </tr>
                     <!-- Repita essa estrutura para cada produto -->
                     <tr>
@@ -139,14 +142,17 @@
                             </div>
                         </td>
                         <td class="tabela1" id="valorFinal"> R$ 10.000,00</td>
+                        <td>
+                            <button class="table-btn">X</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         
             <hr>
-            <button type="submit" id="atualizar">Atualizar carrinho</button>
+            <button type="button" id="atualizar" onclick="atualizarCarrinho()">Atualizar carrinho</button>
             <div id="opcoes">
-                <button type="submit" id="comprando">Continuar comprando</button>
+                <button type="submit" id="comprando"> <a href="index.html">Continuar comprando</a>  </button>
                 <button type="submit" id="esvaziar">Esvaziar carrinho</button>
             </div>
         </main>
@@ -182,7 +188,7 @@
                     </div>
                     <div id="total1">
                         <p id="total2">Preço Total</p>
-                        <p>18.200,00</p>
+                        <p id="valorSubtotal02">18.200,00</p>
                     </div>
                 </div>
             </div>
