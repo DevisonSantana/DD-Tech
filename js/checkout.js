@@ -83,7 +83,7 @@ function atualizarSubtotal02() {
 }
 
 function atualizarValorFinal() {
-    valorFinal.innerText = (subtotalInfo02.valor + subtotalInfo02.quantidade + valorProduto03).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+    valorFinal.innerText = (subtotalInfo02.valor + subtotalInfo02.quantidade * valorProduto03).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
 }
 
 function adicionarUmm() {
@@ -97,7 +97,7 @@ function adicionarUmm() {
 function subtrairUmm() {
     if (subtotalInfo02.quantidade > 1) {
         quantidade02.value = Number(quantidade02.value) - 1;
-        subtotalInfo02.valor = subtotalInfo02.valor - valorProduto03; // Adição do valor do produto à quantidade
+        subtotalInfo02.valor = subtotalInfo02.valor + valorProduto03; // Adição do valor do produto à quantidade
         subtotalInfo02.quantidade = Number(quantidade02.value);
     }
     // Se a quantidade for 1, não subtraia o valor, apenas atualize a exibição
