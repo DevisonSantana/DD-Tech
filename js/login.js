@@ -154,3 +154,58 @@ async function fetchProfileDataCadastro() {
         }
     })
 })()
+
+
+/* BACKUP EMERGENCIA JAVASCRIPT CARRINHO
+
+let item = []
+function passarProdutosRecuperados(produtoRecuperado){
+    let bodyTabela = document.querySelector('table tbody')
+    console.log(bodyTabela)
+    let recuperados = localStorage.getItem('itemCarrinho')
+    recuperados = JSON.parse(recuperados)
+    bodyTabela.innerHTML= ''
+    recuperados.map((evt) => {
+        produtoRecuperado.map((res) => {
+            if(res.nome === evt.Nome){
+                let novo = {Nome: res.nome, QtdadeItem: evt.QtdadeItem}
+                item.push(novo)
+                bodyTabela.innerHTML += `
+                    <tr class="tabela1">
+                        <td>
+                            <div class="lista">
+                                <img src="${res.imagem[0]}" alt="${res.categoria}" class="imagem1">
+                                <p id="text1">${res.nome}</p>
+                            </div>
+                        </td>
+                        <td class="tabela1" >${parseFloat(res.precoAtual).toLocaleString('pt-br', {style: 'currency', currency: 'brl'})}</td>
+                        <td>
+                            <div class="quantity-container">
+                                <div class="button-container">
+                                ${evt.QtdadeItem}
+                                  </div>
+                            </div>
+                        </td>
+                        <td id="soma">${parseFloat(res.precoAtual * evt.QtdadeItem).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
+                    </tr>
+                `
+            }
+        })
+    })
+}
+
+async function fetchProfileData() {
+    const url = 'https://raw.githubusercontent.com/DevisonSantana/DD-Tech/main/data/produtos.json';
+    const response = await fetch(url)
+    const profileData = await response.json()
+    return profileData
+}
+
+// Chama a função para buscar os dados da api e pasar por parametro para as demais funcoes
+(async () => {
+    const profileData = await fetchProfileData()
+    passarProdutosRecuperados(profileData.produtos)
+    
+})()
+
+*/
