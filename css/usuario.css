@@ -164,7 +164,34 @@ h5{
     text-align: center;
     
 }
-
+.estrelasAvaliacao:hover{
+   cursor: pointer;
+}
+.fecharModalSup{
+    display: flex;
+    width: 100%;
+    text-align: end;
+    justify-content: end;
+    margin-top: -5%;
+    margin-right: -5%;
+}
+.fecharModalSup button{
+    border: none;
+    background-color: #35363500;
+    cursor: pointer;
+    font-size: xx-large;
+}
+.tableAcompanhar thead{
+    font-size: small;
+}
+.tableAcompanhar tbody{
+    height: 60px;
+    border: 1px solid black !important;
+    border-collapse: collapse;
+}
+.imdTd{
+    width: 25%;
+}
 
 /*Secao cadastro*/
 
@@ -256,9 +283,9 @@ zoom: .9;
 /*Secao cartoes*/
 #sectionCartoes{
     display: none;
-    width: 90%;
+    width: 100%;
     align-items: center;
-
+    justify-content: center;
 }
 .cartoesCadastrados{
     width: 50%;
@@ -269,7 +296,10 @@ zoom: .9;
     gap: 11px;
     font-size: 1.1rem;
 }
-
+#cartao{
+    width: 100%;
+    display: contents;
+}
 .cartoesCadastrados label{
     display: inline-block;
     width: 80px;
@@ -294,7 +324,10 @@ zoom: .9;
     width: fit-content;
     margin: auto;
 }
-
+.alterarDadosCartao{
+    
+    margin: auto;
+}
 /*Secao Perguntas Frequentes*/
 
 #sectionPerguntas{
