@@ -16,6 +16,7 @@ btnCart.addEventListener('click', ()=>{
     btnCart.style.display = 'none'
 })
 btndados.addEventListener('click', () => {
+    
     let senhacartao = document.getElementById('senhacartao').value
     console.log(senhacartao)
         if(senhacartao ==  usuario.senha){
@@ -37,11 +38,11 @@ btndados.addEventListener('click', () => {
                 <label>Nome</label>
                 <input type="text" placeholder="${res.nomeCartao}" disabled >
             </div>
-            <div><button class="alterarDadosCartao" id="${res.id}" onclick="alterarDadosCartao()">Alterar Dados</button><button class="alterarDadosCartao" id="${res.id}" onclick="confirmarAlteração(id)">Confirmar Alteração</button><button class="alterarDadosCartao" id="${res.id}" onclick="cancelarAlteração()">Cancelar</button></div>
+            <div class="divRow"><button class="alterarDadosCartao" id="${res.id}" onclick="alterarDadosCartao()">Alterar Dados</button></div>
             </fieldset>
             `
 
-
+//<button class="alterarDadosCartao" id="${res.id}" onclick="confirmarAlteração(id)">Confirmar Alteração</button><button class="alterarDadosCartao" id="${res.id}" onclick="cancelarAlteração()">Cancelar</button>
             })
         }
     })
@@ -78,8 +79,11 @@ function ativarDisplay(indice) {
 }
 
 
-
 //Modal
+
+function carregarBotoesPedido(){
+
+
 const listAtributs = document.getElementById("atributs");
 var buttonProducts = [...document.getElementsByClassName("button")]
 
@@ -91,7 +95,6 @@ var arrayListAtributs = [
 buttonProducts.map((e) => {
     e.addEventListener("click", (evt) => {
         var numAtribut = evt.target.value
-        console.log(numAtribut)
         passarAtributs(numAtribut)
         MudarDisplayAtributs()
     })
@@ -108,54 +111,84 @@ function MudarDisplayAtributs() {
 
 listAtributs.addEventListener("click", (e) => {
 
-    if (e.target.nodeName == 'DIV' || e.target.nodeName == 'H2' || e.target.nodeName == "TEXTAREA" || e.target.nodeName == "IMG" || e.target.nodeName == "BUTTON"){}
+    if (e.target.nodeName == 'DIV' || e.target.nodeName == 'H2' || e.target.nodeName == "TEXTAREA" || e.target.nodeName == "IMG" || e.target.nodeName == "LABEL" || e.target.nodeName == "SELECT"){}
     else MudarDisplayAtributs()
     
 
 })
-
 function passarAtributs(numAtributo) {
     if(numAtributo == 0) var atributos = avaliar();
     else if(numAtributo == 1) var atributos = acompanhar()
     else if(numAtributo == 2) var atributos = trocaDevolucao()
-    listAtributs.innerHTML = atributos
-    
+listAtributs.innerHTML = atributos
+clicarEstrelas()
 }
+
+
+}
+
 
 function avaliar() {
     const div = `
    <section id="listAtributs" class="atributos" >
    <div id="avaliarModal">
+   <div class="fecharModalSup"><button>X</button></div>
    <h2>Avaliar</h2>
    <textarea name="comenarioAdd" id="comenarioAdd" cols="70" rows="4" placeholder="Comentário"></textarea>
    <div>
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="" id="0">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="" id="1">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="" id="2">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="" id="3">
+   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="" id="4">
    </div>
    <button type="button">Enviar</button>
    </div>
     </section>  `
 
+    
     return div
 }
 
 function acompanhar() {
     const div = `
-   <section id="listAtributs" class="atributos" >
+   <section id="listAtributs" class="atributos tableAcompanhar" >
    <div id="avaliarModal">
+   <div class="fecharModalSup"><button>X</button></div>
    <h2>Acompanhar</h2>
-   <textarea name="comenarioAdd" id="comenarioAdd" cols="70" rows="4" placeholder="Comentário"></textarea>
-   <div>
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   </div>
-   <button type="button">Enviar</button>
+   <table class="ultimosPedidos" >
+   <thead >
+   <tr class="headTable">
+       <th  class="descricaoPedidos">
+       Produto
+       </th >
+       <th >
+       
+       </th >
+       <th  class="descricaoPedidos">
+       Previsao
+       </th >
+       <th  class="precoAtual">Codigo de rastreio</td>
+       
+   </tr>
+   </thead>
+   <tbody>
+   <tr>
+       <td class="descricaoPedidos">
+       Inspiron
+       </td>
+       <td class="imdTd">
+       <img src="img/produtos/dell1.jpg" alt="inspiron">
+       </td>
+       <td class="descricaoPedidos">
+       27/01/2024
+       </td>
+       <td class="precoAtual">#lkk5678686ff</td>
+       
+   </tr>
+   </tbody>
+   </table>
+   <button type="button">Fechar</button>
    </div>
     </section>  `
 
@@ -165,20 +198,52 @@ function trocaDevolucao() {
     const div = `
    <section id="listAtributs" class="atributos" >
    <div id="avaliarModal">
+   <div class="fecharModalSup"><button>X</button></div>
    <h2>Troca ou Devolução</h2>
+   <label>Nos diga o motivo da troca ou devolução do produto</label>
    <textarea name="comenarioAdd" id="comenarioAdd" cols="70" rows="4" placeholder="Comentário"></textarea>
    <div>
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
-   <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="">
+   <select name="trocaDevolucao" id="trocaDevolucao">
+   <option value="" selected disabled>--selecione--</option>
+   <option value="troca">Troca</option>
+   <option value="devolucao">Devolucao</option>
+</select>
    </div>
    <button type="button">Enviar</button>
    </div>
     </section>  `
 
     return div
+}
+
+// funcao para a avaliacao pelas estrelas
+function clicarEstrelas(){
+    let estrelaVazia = [...document.getElementsByClassName('estrelasAvaliacao')]
+    estrelaVazia.map((evt) => {
+        evt.addEventListener('click', (res) =>{
+            let id = res.target.id;
+            console.log(res.target.classList)
+            if(res.target.classList != 'estrelasAvaliacao amarela' )
+                alterarCorAmarelo(res.target.id)
+            else
+            alterarCorBranco(res.target.id)
+        })
+    })
+    
+    function alterarCorAmarelo(indice){
+        for(let i = indice; i >= 0 ; i--){
+            estrelaVazia[i].setAttribute('src', 'img/estrelaAmarela.png' )
+            estrelaVazia[i].classList.add('amarela')
+            
+        }
+    }
+    function alterarCorBranco(indice){
+        for(let i = (Number(indice)+ 1); i <= 4 ; i++){
+            estrelaVazia[i].setAttribute('src', 'img/estrelaVazia.png' )
+            estrelaVazia[i].classList.remove('amarela')
+            
+        }
+    }
 }
 
 // recebe os dados do usuario que vem do banco de dados e inseri na pagina
@@ -188,6 +253,7 @@ let nomeUser = document.getElementById('nomeUser')
 let cardProdutos = document.getElementById('cardProdutos')
 
 function carregarUsuario(usuario, produtoRecuperado){
+    
     nomeUser.innerText = usuario.nomeSocial
     for(let i= 0; i< produtoRecuperado.length; i++){
         cardProdutos.innerHTML += `
@@ -197,7 +263,7 @@ function carregarUsuario(usuario, produtoRecuperado){
             ${produtoRecuperado[i].nome}
             </td>
             <td>
-            <img src="${produtoRecuperado[i].imagem[1]}" alt="${produtoRecuperado[i].nome}">
+            <img src="${produtoRecuperado[i].imagem[0]}" alt="${produtoRecuperado[i].nome}">
             </td>
             <td class="descricaoPedidos">
             ${vendas[i].data}
@@ -212,6 +278,7 @@ function carregarUsuario(usuario, produtoRecuperado){
         </table>
     `      
 }
+carregarBotoesPedido()
 }
 
 //carregar endereço dinamicamente
