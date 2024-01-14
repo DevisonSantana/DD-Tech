@@ -9,6 +9,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//Ex_diplay.png"
     ]
@@ -21,6 +22,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/charlie.png"
     ]
@@ -33,6 +35,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/bravo.png"
     ]
@@ -45,6 +48,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": true,
     "imagem": [
         "img//produtos/alpha.png"
     ]
@@ -57,6 +61,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/zulu.png"
     ]
@@ -69,6 +74,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/delta.png"
     ]
@@ -81,6 +87,7 @@
     "avaliacao": 5,
     "preco": "2300.00",
     "precoAtual": "1999.00",
+    "oferta": true,
     "informacoes": [
         "Processador - 12ª geração Intel® Core™ i3-1215U",
         "Memória 8GB DDR4",
@@ -91,7 +98,11 @@
     "imagem": [
         "img//produtos/dell1.jpg",
         "img//produtos/dell2.jpg",
-        "img//produtos/dell3.jpg"
+        "img//produtos/dell3.jpg",
+        "img//produtos/dell4.jpg",
+        "img//produtos/dell5.jpg",
+        "img//produtos/dell6.jpg",
+        "img//produtos/dell7.jpg"
     ]
 },
 {
@@ -102,6 +113,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/note1.png"
     ]
@@ -114,6 +126,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/note2.png"
     ]
@@ -126,6 +139,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/note3.png"
     ]
@@ -138,6 +152,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/note4.png"
     ]
@@ -150,6 +165,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/note5.png"
     ]
@@ -162,6 +178,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/desktop1.png"
     ]
@@ -174,6 +191,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/desktop2.png"
     ]
@@ -186,6 +204,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/desktop3.png"
     ]
@@ -196,8 +215,9 @@
     "categoria": "desktops",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
-    "preco": "499.00",
+    "preco": "799.00",
     "precoAtual": "499.00",
+    "oferta": true,
     "imagem": [
         "img//produtos/desktop4.png"
     ]
@@ -210,6 +230,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/desktop5.png"
     ]
@@ -222,6 +243,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/msi1.png"
     ]
@@ -234,6 +256,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/msi2.png"
     ]
@@ -244,8 +267,9 @@
     "categoria": "monitores",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
-    "preco": "499.00",
+    "preco": "849.00",
     "precoAtual": "499.00",
+    "oferta": true,
     "imagem": [
         "img//produtos/msi3.png"
     ]
@@ -258,6 +282,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/msi4.png"
     ]
@@ -269,6 +294,7 @@
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
+    "oferta": false,
     "imagem": [
         "img//produtos/msi5.png"
     ]
@@ -289,6 +315,7 @@
     "avaliacao": 4,
     "preco": "77.99",
     "precoAtual": "65.90",
+    "oferta": true,
     "imagem": [
         "img//produtos/caboRede1.jpg"
     ]
@@ -309,6 +336,7 @@
     "avaliacao": 4,
     "preco": "129.00",
     "precoAtual": "109.00",
+    "oferta": true,
     "imagem": [
         "img//produtos/gigabit1.jpg",
         "img//produtos/gigabit2.jpg",
@@ -343,6 +371,7 @@
     "avaliacao": 4,
     "preco": "129.00",
     "precoAtual": "109.00",
+    "oferta": true,
     "imagem": [
         "img//produtos/placaDeRede1.jpg"
     ]
@@ -382,6 +411,7 @@
     "avaliacao": 4,
     "preco": "470.00",
     "precoAtual": "399.00",
+    "oferta": true,
     "imagem": [
         "img//produtos/cadeiraGamer1.jpg",
         "img//produtos/cadeiraGamer2.jpg",
@@ -408,6 +438,7 @@
     "avaliacao": 4,
     "preco": "3946.90",
     "precoAtual": "3354.75",
+    "oferta": true,
     "imagem": [
         "img//produtos/mancer1.jpg",
         "img//produtos/mancer2.jpg",
@@ -436,6 +467,7 @@
     "avaliacao": 4,
     "preco": "44, 99",
     "precoAtual": "37.90",
+    "oferta": true,
     "imagem": [
         "img//produtos/microfoneGamer1.jpg",
         "img//produtos/microfoneGamer2.jpg",
@@ -461,6 +493,7 @@
     "avaliacao": 4,
     "preco": "1058.81",
     "precoAtual": "899.99",
+    "oferta": true,
     "imagem": [
         "img//produtos/mesaGamer1.jpg",
         "img//produtos/mesaGamer2.jpg",
@@ -481,6 +514,7 @@
     "avaliacao": 4,
     "preco": "1117.63",
     "precoAtual": "949.99",
+    "oferta": true,
     "imagem": [
         "img//produtos/hpSmart1.jpg",
         "img//produtos/hpSmart2.jpg",
@@ -524,6 +558,7 @@
     "avaliacao": 4,
     "preco": "1752.93",
     "precoAtual": "1489.90",
+    "oferta": true,
     "imagem": [
         "img//produtos/brother1.jpg",
         "img//produtos/brother2.jpg",
@@ -554,6 +589,7 @@
     "avaliacao": 4,
     "preco": "1931.76",
     "precoAtual": "1542.90",
+    "oferta": true,
     "imagem": [
         "img//produtos/impressora3d1.jpg",
         "img//produtos/impressora3d2.jpg",
@@ -581,6 +617,7 @@
     "avaliacao": 4,
     "preco": "235.18",
     "precoAtual": "199.90",
+    "oferta": true,
     "imagem": [
         "img//produtos/kingston2401.jpg",
         "img//produtos/kingston2402.jpg",
@@ -606,6 +643,7 @@
     "avaliacao": 4,
     "preco": "199.99",
     "precoAtual": "169.99",
+    "oferta": true,
     "imagem": [
         "img//produtos/fonte1.jpg"
     ]
@@ -630,6 +668,7 @@
     "avaliacao": 4,
     "preco": "152.93",
     "precoAtual": "129.99",
+    "oferta": true,
     "imagem": [
         "img//produtos/vulcan1.jpg",
         "img//produtos/vulcan2.jpg"
@@ -658,6 +697,7 @@
     "avaliacao": 4,
     "preco": "130.58",
     "precoAtual": "110.99",
+    "oferta": true,
     "imagem": [
         "img//produtos/caboExtensor1.jpg",
         "img//produtos/caboExtensor2.jpg",
@@ -687,6 +727,7 @@
     "avaliacao": 4,
     "preco": "1117.64",
     "precoAtual": "949.99",
+    "oferta": true,
     "imagem": [
         "img//produtos/placaVideo1.jpg",
         "img//produtos/placaVideo2.jpg",
