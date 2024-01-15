@@ -274,7 +274,7 @@ zoom: .9;
     align-items: start;
     width: 100%;
 }
-.divAlterarEndereco{
+.alterar{
     width: 100%;
     display: flex;
     justify-content: end;
