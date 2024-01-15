@@ -7,9 +7,24 @@ let item = []
 let taxaPorPais = document.getElementById('pais')
 
 botao_pagamento.addEventListener('click', ()=>{
+    let token = sessionStorage.getItem('token')
+    if(!token){
+        window.location.href = 'login.html'
     
-    window.location.href = 'checkout.html'
-})
+        console.log(token)
+    }
+    else{
+        
+        //let opcaoEntrega = document.querySelector('input[name="opcao-entrega"]:checked').value
+      //  if(opcaoEntrega){
+            window.location.href = 'checkout.html'
+       // }
+      //  else{
+     //       alert("Escolha uma opção de entrega")
+            
+     //   }
+    }
+    })
 
 function passarProdutosRecuperados(produtoRecuperado){
     let bodyTabela = document.getElementById('bodyTabela')
@@ -69,6 +84,7 @@ let btnEsvaziarCarrinho = document.getElementById('btnEsvaziarCarrinho')
 btnEsvaziarCarrinho.addEventListener('click', () => {
     localStorage.clear('itemCarrinho')
     window.location.reload();
+    
 })
 
 function atualizarCarrinho(){
