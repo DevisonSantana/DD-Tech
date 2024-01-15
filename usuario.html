@@ -168,7 +168,7 @@
             <label for="">E-mail</label>
             <div class="divRow">
                 <input type="email" id="emailCadastrado" placeholder="deividson@gmail.com" disabled>
-                <span class="span">alterar</span>
+                <span class="span" id="0">alterar</span>
             </div>
             <div class="divRow">
                 <input type="checkbox" name="receberEmails" id="receberEmails" checked>
@@ -177,7 +177,7 @@
             <label for="senha">Senha</label>
             <div class="divRow">
                 <input  type="password" id="senhaCadastrada" placeholder="*******" disabled>
-                <span class="span">alterar</span>
+                <span class="span" id="2">alterar</span>
             </div>
             </fieldset>
 
@@ -214,6 +214,9 @@
 
             <label for="telefone">Telefone</label>
             <input type="number" id="telefoneCadastrado" placeholder="04/04/1990">
+            <div id="alterarCadastro" class="alterar">
+                <button class="btnAlterar">Alterar</button>
+            </div>
         </fieldset>
     </form>
 </section>
@@ -252,8 +255,8 @@
                 <label>País</label>
                 <input type="text" id="paisCadastrado" placeholder="Brasil" disabled >
             </div>
-            <div class="divAlterarEndereco">
-                <button class="btnAlterar">Alterar</button>
+            <div  class="alterar">
+                <button class="btnAlterar" id="AlterarEndereco" >Alterar</button>
             </div>
             </fieldset>
     </div>
