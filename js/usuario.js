@@ -44,11 +44,22 @@ btndados.addEventListener('click', () => {
 
 //<button class="alterarDadosCartao" id="${res.id}" onclick="confirmarAlteração(id)">Confirmar Alteração</button><button class="alterarDadosCartao" id="${res.id}" onclick="cancelarAlteração()">Cancelar</button>
             })
+            if(cartoes.toString() == ''){
+                cartao.innerHTML = 'Você ainda não possui cartões cadastrados.'
+            }
+        }
+        else{
+            cartao.innerHTML += 'senha inválida, Você será redirecionado a pagina inicial'
+            setTimeout(pageInicial, 1000) 
         }
     })
 
-}
 
+}
+function pageInicial(){
+    sessionStorage.removeItem('token')
+    window.location.href = 'index.html'
+}
 
 //funcao para ocultar todos os sections
 
@@ -123,11 +134,31 @@ function passarAtributs(numAtributo) {
 listAtributs.innerHTML = atributos
 clicarEstrelas()
 }
-
-
 }
 
+// alterar cadastro
 
+let inputs = document.querySelectorAll('#formCadastro input')
+let span = [...document.getElementsByClassName('span')]
+span.map((evt) =>{
+    evt.addEventListener('click', (res) => {
+        inputs[Number(res.target.id)].disabled = false
+        inputs[Number(res.target.id)].value =  inputs[Number(res.target.id)].placeholder
+
+    })
+})
+let inputsEndereco = document.querySelectorAll('#enderecosCadastrados input')
+let AlterarEndereco = document.getElementById('AlterarEndereco')
+AlterarEndereco.addEventListener('click', () => {
+    for(let i = 0; i < inputsEndereco.length; i++) {
+        inputsEndereco[i].disabled = false
+        inputsEndereco[i].value = inputsEndereco[i].placeholder
+
+    }
+    AlterarEndereco.innerHTML = '<button class="btnAlterar" id="confirmarMudancaEndereco">confirmar</button>'
+})      
+
+console.log(inputsEndereco)
 function avaliar() {
     const div = `
    <section id="listAtributs" class="atributos" >
@@ -253,7 +284,7 @@ let nomeUser = document.getElementById('nomeUser')
 let cardProdutos = document.getElementById('cardProdutos')
 
 function carregarUsuario(usuario, produtoRecuperado){
-    
+
     nomeUser.innerText = usuario.nomeSocial
     for(let i= 0; i< produtoRecuperado.length; i++){
         cardProdutos.innerHTML += `
@@ -307,7 +338,6 @@ function carregarEnderecoCadastrado(dados){
     let estadoCadastrado = document.getElementById('estadoCadastrado').placeholder = dados.estado
     let paisCadastrado = document.getElementById('paisCadastrado').placeholder = dados.pais
 
-
 }
 
 
@@ -334,12 +364,26 @@ async function fetchProfileDataProdutos() {
     return profileData
 }
 (async () => {
+    // Token a ser decodificado
+    const tokenToDecode = VerificarToken;
+    // Decodificação do token
+    const decodedToken = KJUR.jws.JWS.parse(tokenToDecode);
+
+    
+    
     const profileDataCadastro = await fetchProfileDataCadastro()
     const profileDataVendas = await fetchProfileDataVendas()
     const profileDataProdutos = await fetchProfileDataProdutos()
+
+    let user;
+    profileDataCadastro.cadastro.map((res) => {
+        if(res.nome == decodedToken.payloadObj.username){
+            user = Number(res.id)
+        }
+    })
     let produtoRecuperado = [];
     profileDataVendas.vendas.map((res) => {
-        if(res.cliente == profileDataCadastro.cadastro[4].id){
+        if(res.cliente == user){
             vendas.push(res)
             profileDataProdutos.produtos.map((prod) =>{
                 if(prod.id == res.produto)
@@ -347,11 +391,11 @@ async function fetchProfileDataProdutos() {
             })  
         }
     })
-    carregarUsuario(profileDataCadastro.cadastro[2], produtoRecuperado)
-    carregarEnderecoCadastrado(profileDataCadastro.cadastro[2])
+    carregarUsuario(profileDataCadastro.cadastro[user -1], produtoRecuperado)
+    carregarEnderecoCadastrado(profileDataCadastro.cadastro[user -1])
     let cartoesUsuario = [];
     profileDataCadastro.cartoes.map((res) => {
-        if(res.usuario == profileDataCadastro.cadastro[2].id)
+        if(res.usuario == user.id)
             cartoesUsuario.push(res)
     })
     carregarCartao(profileDataCadastro.cadastro[2], cartoesUsuario)

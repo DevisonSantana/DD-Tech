@@ -77,13 +77,15 @@ async function fetchProfileDataCadastro() {
                 sessionStorage.setItem('token', token)
                 console.log(token);
 
-                window.location.href = 'usuario.html'
                 emailInput.classList.add('correct')
                 emailInput.classList.remove('error')
                 emailHelper.classList.remove('visible')
                 senhaInput.classList.add('correct')
                 senhaInput.classList.remove('error')
                 senhaHelper.classList.remove('visible')
+                 // Voltar a página com JS
+                window.history.back()
+                window.history.go(-1)
                 break
             }
 
