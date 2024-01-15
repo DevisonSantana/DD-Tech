@@ -4,6 +4,30 @@ let lupa = document.getElementById('lupa')
 let inputLupa = document.getElementById('divLupa')
 let exitLupa = document.getElementById('exitLupa')
 let produtoDigitado = '';
+let caminhoFotoPerfil = 'login.html'
+let divLogado = document.getElementById('divLogado')
+let fotoPerfil = document.getElementById('fotoPerfil')
+let logout = document.getElementById('logout')
+
+
+// verificar se existe e recuperar token
+ const tokenToDecode = sessionStorage.getItem('token');
+  if(tokenToDecode){
+      // Decodificação do token
+      const decodedToken = KJUR.jws.JWS.parse(tokenToDecode);
+      fotoPerfil.style.filter = 'grayscale(0)'
+      fotoPerfil.addEventListener('click', () => divLogado.style.display = 'flex')
+  }
+  else{
+    fotoPerfil.style.filter = 'grayscale(.9)'
+   fotoPerfil.addEventListener('click', () => window.location.href = caminhoFotoPerfil)
+  }
+
+// logout
+logout.addEventListener('click', () => {
+    sessionStorage.removeItem('token')
+    window.location.href = 'index.html'
+})
 
 exitLupa
 //Menu Hamburguer
@@ -60,8 +84,9 @@ let itensCabecalho = [... document.querySelectorAll('#parte2 > li')]
 let itensCabecalhoMobile = [... document.querySelectorAll('#parte22 > li')]
 itensCabecalho.map((res) =>{
     res.addEventListener('click', (evt) =>{
-        if(evt.target.innerText.toLowerCase() == 'outros'){
+        if(evt.target.innerText.toLowerCase() == 'outros produtos'){
             procurarProduto('outros')
+            
         }
         else if(evt.target.innerText.toLowerCase() == 'notebooks'){
             procurarProduto('note')
@@ -90,10 +115,9 @@ itensCabecalhoMobile.map((res) =>{
         }
     })
 })
+
 // buscar ofertas
-function buscaOferats(){
-    procurarProduto('oferta')
-}
+let buscarOfertas = document.getElementById('buscarOfertas').addEventListener('click', () =>  procurarProduto('oferta'))
 
 // busca de produtos pela lupa
 let produtoProcurado = document.getElementById('inputLupa')
@@ -177,11 +201,16 @@ async function fetchProfileData() {
 
 async function procurarProduto(nomeProduto) {
     
+    let produtosEncontrados;
     const profileData = await fetchProfileData()
     var produto = new Produto()
     produto = profileData.produtos
-    
-    let produtosEncontrados = produto.filter(produto => produto.nome.toLowerCase().includes(nomeProduto.toLowerCase()) || produto.descricao.toLowerCase().includes(nomeProduto.toLowerCase()) || produto.categoria.toLowerCase().includes(nomeProduto.toLowerCase()));
+    if(nomeProduto === 'oferta'){    
+        produtosEncontrados = produto.filter(produto => produto.oferta.toString().includes('true'))
+    }
+    else{
+        produtosEncontrados = produto.filter(produto => produto.nome.toLowerCase().includes(nomeProduto.toLowerCase()) || produto.descricao.toLowerCase().includes(nomeProduto.toLowerCase()) || produto.categoria.toLowerCase().includes(nomeProduto.toLowerCase()));
+    }
 
     if(produtosEncontrados.length > 0){
         containerEncontrados.innerHTML = ''
