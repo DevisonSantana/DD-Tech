@@ -233,3 +233,27 @@ function AcessarProdutoPage(produtoEspecifico){
     sessionStorage.setItem("nomeProduto", produtoEspecifico)
     window.location.href = `produto.html`
     }
+
+    // Modal
+
+    function Modal(titulo, mensagem, botaoConfirmar) {
+        const div = `
+       <section id="listAtributs" class="atributos" >
+       <div id="avaliarModal">
+       <div class="fecharModalSup"><button>X</button></div>
+       <h2>Avaliar</h2>
+       <textarea name="comenarioAdd" id="comenarioAdd" cols="70" rows="4" placeholder="Comentário"></textarea>
+       <div>
+       <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="" id="0">
+       <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="" id="1">
+       <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="" id="2">
+       <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="" id="3">
+       <img class="estrelasAvaliacao" src="img/estrelaVazia.png" alt="" id="4">
+       </div>
+       <button type="button">Enviar</button>
+       </div>
+        </section>  `
+    
+        
+        return div
+    }

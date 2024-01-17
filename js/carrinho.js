@@ -15,14 +15,9 @@ botao_pagamento.addEventListener('click', ()=>{
     }
     else{
         
-        //let opcaoEntrega = document.querySelector('input[name="opcao-entrega"]:checked').value
-      //  if(opcaoEntrega){
-            window.location.href = 'checkout.html'
-       // }
-      //  else{
-     //       alert("Escolha uma opção de entrega")
-            
-     //   }
+      
+        window.location.href = 'checkout.html'
+    
     }
     })
 
@@ -37,8 +32,12 @@ function passarProdutosRecuperados(produtoRecuperado){
                 if(res.nome === evt.Nome){
                     let novo = {Nome: res.nome, QtdadeItem: evt.QtdadeItem}
                     item.push(novo)
+                    valorTotal += res.precoAtual * evt.QtdadeItem
+                    subtotal.innerText = valorTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+                    precoTotal.innerText = "Preço Total: " + (valorTotal + verificaPais()).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
                     bodyTabela.innerHTML += `
                     <tr class="tproduto">
+                    <td><input type="checkbox" value="${res.precoAtual * evt.QtdadeItem}" name="produtoSeleconado" id="produtoSeleconado" class="produtoSeleconado" checked></td>
                         <td> <img src="${res.imagem[0]}" alt="${res.categoria}" class="table-img"> </td>
                     <td><a href="#"></a>${res.nome}</td>
                     <td>${parseFloat(res.precoAtual).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
@@ -51,15 +50,36 @@ function passarProdutosRecuperados(produtoRecuperado){
                     </td>
                     </tr> 
                     `
-                    valorTotal += res.precoAtual * evt.QtdadeItem
-                    subtotal.innerText = valorTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-                    precoTotal.innerText = "Preço Total: " + (valorTotal + verificaPais()).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
                     
                 }
             })
         })
+        Verificar()
     }
     excluirItem()
+}
+// verificar quais itens estao selecionados
+let total = 0
+function Verificar(){
+    let produtoSeleconado = [...document.getElementsByClassName('produtoSeleconado')]
+    produtoSeleconado.map((evt) => {
+        evt.addEventListener("change", () => {
+            total = 0
+            produtoSeleconado.map((sel) => {
+                
+                if(sel.checked){
+                    
+                    total += Number(sel.value)
+                    
+                }
+                
+            })
+            subtotal.innerText = total.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+            precoTotal.innerText = "Preço Total: " + (total + verificaPais()).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+
+        })
+    })
+
 }
 
 // excluir item
@@ -111,7 +131,7 @@ let aplicarDesconto = document.getElementById('aplicarDesconto')
 aplicarDesconto.addEventListener('click', ()=>{
     let cupomDesconto = document.getElementById('cupomDesconto').value
     if(cupomDesconto === 'alvinhu10'){
-        let totalComDesconto = valorTotal - (valorTotal * 0.10)
+        let totalComDesconto = total - (total * 0.10)
         subtotal.innerText = (totalComDesconto).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
         precoTotal.innerText = "Preço Total: " + (totalComDesconto + verificaPais()).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
     }
@@ -143,8 +163,8 @@ retirarNaLoja.addEventListener('click', (e)=>{
 taxaPorPais.addEventListener('change', atualizaSubtotalETotalNaPagina)
 
 function atualizaSubtotalETotalNaPagina(){
-    subtotal.innerText = (valorTotal).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-    precoTotal.innerText = "Preço Total: " + (valorTotal + verificaPais()).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+    subtotal.innerText = (total).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+    precoTotal.innerText = "Preço Total: " + (total + verificaPais()).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 }
 
 function verificaPais(){

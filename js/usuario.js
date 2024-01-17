@@ -1,4 +1,3 @@
-// mudar a secçao ao clicar no menu lateral
 var menuLateral = [...document.getElementsByClassName("menuLateral")]
 var section = [...document.getElementsByTagName("section")]
 var indiceMenu;
@@ -158,7 +157,6 @@ AlterarEndereco.addEventListener('click', () => {
     AlterarEndereco.innerHTML = '<button class="btnAlterar" id="confirmarMudancaEndereco">confirmar</button>'
 })      
 
-console.log(inputsEndereco)
 function avaliar() {
     const div = `
    <section id="listAtributs" class="atributos" >
