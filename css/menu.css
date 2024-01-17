@@ -199,7 +199,7 @@ header img{
 }
 
 #parte1{
-    width: 10%;
+    width: 100%;
     margin: 0 5%;
 }
 #parte22 a{
@@ -374,6 +374,58 @@ height: 15px;
     border: 1px solid rgba(65, 63, 63, 0.39);
     box-shadow: 1px 1px 1px #000 ;
     cursor: pointer;
+}
+
+/*modal*/
+#listAtributs{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 1px;
+    width: 100%;
+    height: 700px;
+    padding: 100px;
+    background-color: #f0f0f054;
+    z-index: 100;
+}
+#avaliarModal{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: #d8d5d5;
+    padding: 1%;
+    padding-bottom: 5%;
+    border: #fff solid 5px;
+    transform: translateY(-140vh);
+   
+    transition: all 2s ease-in-out;
+
+}
+.fecharModalSup{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+#listAtributs button{
+    cursor: pointer;
+    padding: 0 3%;
+    width: max-content;
+}
+.fecharModalSup button{
+    border-radius: 81%;
+    font-size: x-large;
+    padding: 1%;
+    width: 40px;
+}
+
+.btnModal{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
 }
 @media screen and (max-width: 950px) {
     header{

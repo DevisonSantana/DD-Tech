@@ -571,7 +571,6 @@ textarea{
         border: #000 solid 1px;
     }
     nav{
-         /* transform: translateX(-100px); */
         transition: all 1s;
     }
     .containerProducts {
@@ -583,9 +582,12 @@ textarea{
 
     #secaoPrincipal{
         position: absolute;
+        width: 90% !important;
         left: 100px;
-         top: 32%; 
-        background-color: #fff;
+        top: 35%;
+        zoom: .5; 
+        background-color: #ffffff00;
+        margin-bottom: 2%;
     }
     #sectionInicial{
         background-color: #fff;
@@ -621,8 +623,8 @@ textarea{
     .lblPrivac{
         width: fit-content;
     }
-    .ultimosPedidos{
-      
+    textarea{
+      zoom: .5;
         
     
     }
@@ -652,6 +654,11 @@ textarea{
     .button{
         zoom: .8;
     }
+    #secaoPrincipal{
+        left: 50px;
+        top: 40%;
+        font-size: smaller;
+    }
 }
 
 @media screen and (max-width: 401px){
@@ -665,5 +672,7 @@ textarea{
         zoom: .6;
         margin-left: -10%;
     }
-    
+    #secaoPrincipal{
+        zoom: .4;
+    }
 }
