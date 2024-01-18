@@ -1,11 +1,9 @@
 <!-- Esse README é provisório criado apenas para auxiliar mostrando instruções do Git para não familiarizados -->
 
-# 🍾🥂🎆FELIZ ANO NOVOOOO!!! 🎆🥂🍾
-## QUE ESSE 2024 SEJA UM ANO INCRIVEL E SEM BUGS 💀
-
 # Projeto DD-Tech 💻
 
-> Obs: Site em desenvolvimento na branch ``Dev``
+Link para o site:
+> [Ecommerce](https://devisonsantana.github.io/DD-Tech/)
 
 ## Instruções para colaborações 📝
 
