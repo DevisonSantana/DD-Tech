@@ -110,8 +110,8 @@ function subtrairUmm() {
         atualizarSubtotal02();
     }
 }
-function atualizarCarrinho(){
-    window.location.reload();
+function retornarCarrinho(){
+    window.history.back();
 }
 
 // Definir quando devem ser manipulados os elementos (eventos)
