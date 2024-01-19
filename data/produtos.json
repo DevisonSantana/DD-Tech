@@ -16,54 +16,81 @@
 },
 {
     "id": 2,
-    "nome": "Charlie",
+    "nome": "Barra De Led Rítmica Rgb",
     "categoria": "personalize",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Barra De Led Rítmica Rgb Com 32 Led Ideal Para Setup Gamer - Knup...",
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "49.00",
+    "precoAtual": "49.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/charlie.png"
+        "img//produtos/barra.png",
+        "img//produtos/barra2.png",
+        "img//produtos/barra3.png"
     ]
 },
 {
     "id": 3,
-    "nome": "Bravo",
+    "nome": "Fita Led Usb Rgb",
     "categoria": "personalize",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Fita Led Usb Rgb 16 Cores Para Tv, Pc Gamer 5050 5m - PIENING...",
+    "informacoes": [
+        "Baixíssimo consumo (até 95% de economia)",
+        "Longa vida útil, chegando em até 50.000 horas",
+        "Possui 16 cores diferentes, com cores vivas e intensas",
+        "Controles na fita com vários modos: Flash, Strobo, Fade, Smooth",
+        "Não transmite calor",
+        "ITENS INCLUSOS: 01 Rolo 5 metros Fita LED ULTRA RGB 5050 <br> 01 Cabo controlador USB de 21cm <br> 01 Controle"
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "79.90",
+    "precoAtual": "79.90",
     "oferta": false,
     "imagem": [
-        "img//produtos/bravo.png"
+        "img//produtos/led1.png",
+        "img//produtos/led2.png",
+        "img//produtos/led3.png"
     ]
 },
 {
     "id": 4,
-    "nome": "Alpha",
+    "nome": "Intel® Core i9 10900F",
     "categoria": "personalize",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Intel® Core i9 10900F-LGA 1200-2.8GHz(Turbo 5.2GHz)-Cache 20MB-10ª Geração...",
+    "informacoes": [
+        "Intel® Core i9 10900F",
+        "Modelo: BX8070110900F",
+        "Litografia: 14 nm",
+        "Soquetes suportados: FCLGA1200",
+        "Número de Núcleos: 10",
+        "Número de threads: 20"
+    ],
     "avaliacao": 4,
-    "preco": "999.00",
-    "precoAtual": "499.00",
+    "preco": "2899.00",
+    "precoAtual": "2499.90",
     "oferta": true,
     "imagem": [
-        "img//produtos/alpha.png"
+        "img//produtos/core9.png"
     ]
 },
 {
     "id": 5,
-    "nome": "Zulu",
+    "nome": "Intel Core i5",
     "categoria": "personalize",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Processador Intel Core i5-14400F...",
+    "informacoes": [
+        "Processador Intel Core i5-14400F",
+        "10-Core",
+        "16-Threads",
+        "3.5GHz (4.7GHz Turbo)",
+        "Cache 20MB"
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "1499.00",
+    "precoAtual": "1499.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/zulu.png"
+        "img//produtos/inteli5.png"
     ]
 },
 {
@@ -98,201 +125,369 @@
     "imagem": [
         "img//produtos/dell1.jpg",
         "img//produtos/dell2.jpg",
-        "img//produtos/dell3.jpg"
+        "img//produtos/dell3.jpg",
+        "img//produtos/dell4.jpg",
+        "img//produtos/dell5.jpg",
+        "img//produtos/dell6.jpg",
+        "img//produtos/dell7.jpg"
     ]
 },
 {
     "id": 8,
-    "nome": "notebook1",
+    "nome": "Notebook Asus Pro 15",
     "categoria": "notebook",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Notebook Gamer Asus Pro 15 Intel Core i9-11900H, 16GB RAM...",
+    "informacoes": [
+        "15 Intel Core i9-11900H",
+        "16GB RAM",
+        "GeForce RTX3050",
+        "SSD 512GB",
+        "15.6 Full HD",
+        "Windows 11",
+        "Azul - K6502HC-LP095W"
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "8999.99",
+    "precoAtual": "8999.99",
     "oferta": false,
     "imagem": [
-        "img//produtos/note1.png"
+        "img//produtos/notebooks/asus1.png",
+        "img//produtos/notebooks/asus2.png",
+        "img//produtos/notebooks/asus3.png"
     ]
 },
 {
     "id": 9,
-    "nome": "notebook2",
+    "nome": "Notebook Acer A315-24p-r611",
     "categoria": "notebook",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Notebook Acer A315-24p-r611 R5 8gb 256gb Ssd 15.6'' W11h Cor Prateado...",
+    "informacoes": [
+        "Processador: AMD Ryzen 5 AMD Ryzen™ 5 7520U",
+        "Sistema operacional: Windows 11 Home",
+        "Capacidade de disco SSD: 256 GB",
+        "Processador AMD Ryzen 5.",
+        "Memória RAM de 8GB.",
+        "Tela LED de 15.6",
+        "Resolução de 1366x768 px.",
+        "Placa de vídeo AMD RadeonTM Graphics."
+    ],
     "avaliacao": 4,
     "preco": "499.00",
     "precoAtual": "499.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/note2.png"
+        "img//produtos/notebooks/acer.png",
+        "img//produtos/notebooks/acer2.png",
+        "img//produtos/notebooks/acer3.png"
     ]
 },
 {
     "id": 10,
-    "nome": "notebook3",
+    "nome": "Notebook Lenovo",
     "categoria": "notebook",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Notebook Lenovo Core I3-1115g4 8gb 256gbssd 15 W11...",
+    "informacoes": [
+        "Processador: Intel Core I3-1115g4",
+        "Sistema operacional: Windows 10 ",
+        "Capacidade de disco SSD: 256 GB",
+        "Memória RAM de 8GB.",
+        "Tela LED de 15.6",
+        "Anti Reflexo",
+        "Resolução de 1366x768 px.",
+        "Placa de vídeo Intel Graphics."
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "2219.00",
+    "precoAtual": "2219.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/note3.png"
+        "img//produtos/notebooks/lenovo1.png",
+        "img//produtos/notebooks/lenovo2.png",
+        "img//produtos/notebooks/lenovo3.png"
     ]
 },
 {
     "id": 11,
-    "nome": "notebook4",
+    "nome": "Notebook Vaio Fe15",
     "categoria": "notebook",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Notebook Vaio Fe15 Full Hd I5-1235u 8gb Ssd 256gb Windows 11 Home...",
+    "informacoes": [
+        "Processador: Intel Core I5-1115g4",
+        "Sistema operacional: Windows 11 ",
+        "Capacidade de disco SSD: 256 GB",
+        "Memória RAM de 8GB.",
+        "Tela LED de 15.6",
+        "Anti Reflexo",
+        "Resolução de 1366x768 px.",
+        "Placa de vídeo Intel Graphics."
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "2499.00",
+    "precoAtual": "2499.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/note4.png"
+        "img//produtos/notebooks/vaio1.png",
+        "img//produtos/notebooks/vaio2.png",
+        "img//produtos/notebooks/vaio3.png"
     ]
 },
 {
     "id": 12,
-    "nome": "notebook5",
+    "nome": "Notebook Hp 256 G9",
     "categoria": "notebook",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Notebook Hp 256 G9 Intel Core I5 8gb 256gb Ssd 15,6 Windows Cor Preto...",
+    "informacoes": [
+        "Processador: Intel Core I9-1115g4",
+        "Sistema operacional: Windows 11 ",
+        "Capacidade de disco SSD: 256 GB",
+        "Memória RAM de 8GB.",
+        "Tela LED de 15.6",
+        "Anti Reflexo",
+        "Resolução de 1366x768 px.",
+        "Placa de vídeo Intel Graphics."
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "3999.00",
+    "precoAtual": "3999.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/note5.png"
+        "img//produtos/notebooks/hp1.png",
+        "img//produtos/notebooks/hp2.png",
+        "img//produtos/notebooks/hp3.png"
     ]
 },
 {
     "id": 13,
-    "nome": "desktop1",
+    "nome": "MPG Gugnir 110R White",
     "categoria": "desktops",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "MSI MPG Gugnir 110R White...",
+    "informacoes": [
+        "Dimensões: 430 x 215 x 450 mm",
+        "Peso: 7.9 kg / 17.4 lbs",
+        "Taxa de atualização: 165 Hz",
+        "Peso: 5.4 kg / 9.0 kg ; 11.9 lbs / 19.84 lbs",
+        "Portas E/S: 2 x USB 3.2 Gen 1 Tipo A (5Gbps) <br> 1 x USB 3.2 Gen 2x2 Tipo C (20Gbps) <br> 1 x saída de áudio <br> 1 x entrada Mic",
+        "Fonte de Alimentação: ATX <br> 80 x 215 x 450 mm"
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "1033.99",
+    "precoAtual": "1033.99",
     "oferta": false,
     "imagem": [
-        "img//produtos/desktop1.png"
+        "img//produtos/desktop/GUNGNIR1.png",
+        "img//produtos/monitores/GUNGNIR2.png",
+        "img//produtos/monitores/GUNGNIR3.png"
     ]
 },
 {
     "id": 14,
-    "nome": "desktop2",
+    "nome": "Desktop Slim Intel",
     "categoria": "desktops",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Desktop Slim Intel Core I5 6ª Geração 8GB RAM SSD 120GB...",
+    "informacoes": [
+        "Dimensões: 430 x 215 x 450 mm",
+        "Peso: 7.9 kg / 17.4 lbs",
+        "Taxa de atualização: 165 Hz",
+        "Peso: 5.4 kg / 9.0 kg ; 11.9 lbs / 19.84 lbs",
+        "Portas E/S: 2 x USB 3.2 Gen 1 Tipo A (5Gbps) <br> 1 x USB 3.2 Gen 2x2 Tipo C (20Gbps) <br> 1 x saída de áudio <br> 1 x entrada Mic",
+        "Fonte de Alimentação: ATX <br> 80 x 215 x 450 mm"
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "1308.75",
+    "precoAtual": "1308.75",
     "oferta": false,
     "imagem": [
-        "img//produtos/desktop2.png"
+        "img//produtos/desktop/Slim1.png",
+        "img//produtos/monitores/Slim2.png",
+        "img//produtos/monitores/Slim3.png"
     ]
 },
 {
     "id": 15,
-    "nome": "desktop3",
+    "nome": "Desktop Dell + Monitor",
     "categoria": "desktops",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Desktop Dell 3070 I5 8500 8gb Ssd 240gb + Monitor...",
+    "informacoes": [
+        "Dimensões: 430 x 215 x 450 mm",
+        "Peso: 7.9 kg / 17.4 lbs",
+        "Taxa de atualização: 165 Hz",
+        "Peso: 5.4 kg / 9.0 kg ; 11.9 lbs / 19.84 lbs",
+        "Portas E/S: 2 x USB 3.2 Gen 1 Tipo A (5Gbps) <br> 1 x USB 3.2 Gen 2x2 Tipo C (20Gbps) <br> 1 x saída de áudio <br> 1 x entrada Mic",
+        "Fonte de Alimentação: ATX <br> 80 x 215 x 450 mm"
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "1499.00",
+    "precoAtual": "1499.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/desktop3.png"
+        "img//produtos/desktop/Dell30701.png",
+        "img//produtos/monitores/Dell30702.png",
+        "img//produtos/monitores/Dell30703.png"
     ]
 },
 {
     "id": 16,
-    "nome": "desktop4",
+    "nome": "Cpu Intel Core I5 + SSD 240Gb",
     "categoria": "desktops",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Cpu Intel Core I5 + Ssd 240gb, 8gb Memória Ram...",
+    "informacoes": [
+        "Dimensões: 430 x 215 x 450 mm",
+        "Peso: 7.9 kg / 17.4 lbs",
+        "Taxa de atualização: 165 Hz",
+        "Peso: 5.4 kg / 9.0 kg ; 11.9 lbs / 19.84 lbs",
+        "Portas E/S: 2 x USB 3.2 Gen 1 Tipo A (5Gbps) <br> 1 x USB 3.2 Gen 2x2 Tipo C (20Gbps) <br> 1 x saída de áudio <br> 1 x entrada Mic",
+        "Fonte de Alimentação: ATX <br> 80 x 215 x 450 mm"
+    ],
     "avaliacao": 4,
-    "preco": "799.00",
-    "precoAtual": "499.00",
+    "preco": "899.00",
+    "precoAtual": "799.00",
     "oferta": true,
     "imagem": [
-        "img//produtos/desktop4.png"
+        "img//produtos/desktop/cpu1.png",
+        "img//produtos/monitores/cpu2.png",
+        "img//produtos/monitores/cpu3.png"
     ]
 },
 {
     "id": 17,
-    "nome": "desktop5",
+    "nome": "MPG SEKIRA 500G",
     "categoria": "desktops",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "MSI MPG SEKIRA 500G...",
+    "informacoes": [
+        "Dimensões: 430 x 215 x 450 mm",
+        "Peso: 7.9 kg / 17.4 lbs",
+        "Taxa de atualização: 165 Hz",
+        "Peso: 5.4 kg / 9.0 kg ; 11.9 lbs / 19.84 lbs",
+        "Portas E/S: 2 x USB 3.2 Gen 1 Tipo A (5Gbps) <br> 1 x USB 3.2 Gen 2x2 Tipo C (20Gbps) <br> 1 x saída de áudio <br> 1 x entrada Mic",
+        "Fonte de Alimentação: ATX <br> 80 x 215 x 450 mm"
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "1499.00",
+    "precoAtual": "1499.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/desktop5.png"
+        "img//produtos/desktop/SEKIRA1.png",
+        "img//produtos/monitores/SEKIRA2.png",
+        "img//produtos/monitores/SEKIRA3.png"
     ]
 },
 {
     "id": 18,
-    "nome": "msi1",
+    "nome": "Optix G27C4",
     "categoria": "monitores",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Monitor MSI Optix G27C4...",
+       "informacoes": [
+        "Tamanho do Painel: 27\" (69 cm)",
+        "Resolução Painel: 1920 x 1080 (FHD)",
+        "Taxa de atualização: 165 Hz",
+        "Peso: 5.4 kg / 9.0 kg ; 11.9 lbs / 19.84 lbs",
+        "Portas: 1x DP(1.2a) <br> 2x HDMI™ (1.4b) <br> 1 x saída fones de ouvido",
+        "Entrada de energia: 100~240V, 50~60Hz",
+        "Nota: Display Port: 1920 x 1080 (até 165Hz) <br> HDMI™: 1920 x 1080 (até 144Hz)"
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "799.00",
+    "precoAtual": "799.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/msi1.png"
+        "img//produtos/monitores/Optix.png",
+        "img//produtos/monitores/Optix2.png",
+        "img//produtos/monitores/Optix3.png"
     ]
 },
 {
     "id": 19,
-    "nome": "msi2",
+    "nome": "Optix G274RW",
     "categoria": "monitores",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Monitor MSI Optix G274RW...",
+       "informacoes": [
+        "Tamanho do Painel: 27\" (69 cm)",
+        "Resolução Painel: 1920 x 1080 (FHD)",
+        "Taxa de atualização: 165 Hz",
+        "Peso: 5.4 kg / 9.0 kg ; 11.9 lbs / 19.84 lbs",
+        "Portas: 1x DP(1.2a) <br> 2x HDMI™ (1.4b) <br> 1 x saída fones de ouvido",
+        "Entrada de energia: 100~240V, 50~60Hz",
+        "Nota: Display Port: 1920 x 1080 (até 165Hz) <br> HDMI™: 1920 x 1080 (até 144Hz)"
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "999.00",
+    "precoAtual": "999.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/msi2.png"
+        "img//produtos/monitores/G274RW1.png",
+        "img//produtos/monitores/G274RW2.png",
+        "img//produtos/monitores/G274RW3.png"
     ]
 },
 {
     "id": 20,
-    "nome": "msi3",
+    "nome": "Optix MAG274R2",
     "categoria": "monitores",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Monitor MSI Optix MAG274R2...",
+       "informacoes": [
+        "Tamanho do Painel: 27\" (69 cm)",
+        "Resolução Painel: 1920 x 1080 (FHD)",
+        "Taxa de atualização: 165 Hz",
+        "Peso: 5.4 kg / 9.0 kg ; 11.9 lbs / 19.84 lbs",
+        "Portas: 1x DP(1.2a) <br> 2x HDMI™ (1.4b) <br> 1 x saída fones de ouvido",
+        "Entrada de energia: 100~240V, 50~60Hz",
+        "Nota: Display Port: 1920 x 1080 (até 165Hz) <br> HDMI™: 1920 x 1080 (até 144Hz)"
+    ],
     "avaliacao": 4,
     "preco": "849.00",
     "precoAtual": "499.00",
     "oferta": true,
     "imagem": [
-        "img//produtos/msi3.png"
+        "img//produtos/monitores/MAG274R21.png",
+        "img//produtos/monitores/MAG274R22.png",
+        "img//produtos/monitores/MAG274R23.png"
     ]
 },
 {
     "id": 21,
-    "nome": "msi4",
+    "nome": "G32CQ4 E2",
     "categoria": "monitores",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Monitor MSI G32CQ4 E2...",
+       "informacoes": [
+        "Tamanho do Painel: 27\" (69 cm)",
+        "Resolução Painel: 1920 x 1080 (FHD)",
+        "Taxa de atualização: 165 Hz",
+        "Peso: 5.4 kg / 9.0 kg ; 11.9 lbs / 19.84 lbs",
+        "Portas: 1x DP(1.2a) <br> 2x HDMI™ (1.4b) <br> 1 x saída fones de ouvido",
+        "Entrada de energia: 100~240V, 50~60Hz",
+        "Nota: Display Port: 1920 x 1080 (até 165Hz) <br> HDMI™: 1920 x 1080 (até 144Hz)"
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "699.00",
+    "precoAtual": "699.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/msi4.png"
+        "img//produtos/monitores/G32CQ41.png",
+        "img//produtos/monitores/G32CQ42.png",
+        "img//produtos/monitores/G32CQ43.png"
     ]
 },
 { "id": 22,
-    "nome": "msi5",
+    "nome": "Optix G24C6P",
     "categoria": "monitores",
-    "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+    "descricao": "Monitor MSI Optix G24C6P...",
+       "informacoes": [
+        "Tamanho do Painel: 27\" (69 cm)",
+        "Resolução Painel: 1920 x 1080 (FHD)",
+        "Taxa de atualização: 165 Hz",
+        "Peso: 5.4 kg / 9.0 kg ; 11.9 lbs / 19.84 lbs",
+        "Portas: 1x DP(1.2a) <br> 2x HDMI™ (1.4b) <br> 1 x saída fones de ouvido",
+        "Entrada de energia: 100~240V, 50~60Hz",
+        "Nota: Display Port: 1920 x 1080 (até 165Hz) <br> HDMI™: 1920 x 1080 (até 144Hz)"
+    ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "999.00",
+    "precoAtual": "999.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/msi5.png"
+        "img//produtos/monitores/G24C6P1.png",
+        "img//produtos/monitores/G24C6P2.png",
+        "img//produtos/monitores/G24C6P3.png"
     ]
 },
 { "id": 23,
