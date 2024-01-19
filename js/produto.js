@@ -26,8 +26,8 @@ function favoritar(){
 function produtoDinamico(produtoEspecifico){
 
     const produtoInfo = document.getElementById('informacoes-do-produto')
-    produtoInfo.innerHTML = '<li><h2>Informações</h2></li>'
     if (produtoEspecifico.informacoes != null) {
+        produtoInfo.innerHTML = '<li><h2>Informações</h2></li>'
         for (let i = 0; i < 7; i++) {
             const element = produtoEspecifico.informacoes[i];
             produtoInfo.innerHTML += `<li>${element}</li>`
