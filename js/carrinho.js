@@ -49,7 +49,7 @@ function passarProdutosRecuperados(produtoRecuperado){
                     </td>
                     <td class="tableTotalItem" id="${cont}">${parseFloat(res.precoAtual * evt.QtdadeItem).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
                     <td>
-                        <button class="table-btn excluir" id=${indice++}>X</button>
+                        <button class="table-btn excluir" id=${cont}>X</button>
                     </td>
                     </tr> 
                     `
@@ -138,7 +138,7 @@ function excluirItem(){
         evt.addEventListener('click',(res) => {
             item.splice(res.target.id, 1)
             atualizarCarrinhoSessionStorage()
-            
+            window.location.reload()
         })
     })
 
@@ -191,7 +191,6 @@ function atualizarCarrinhoSessionStorage(){
     localStorage.setItem("itemCarrinho", jsonAux)
     let itensRecuper = localStorage.getItem("itemCarrinho")
     let itemProntoParaUso = JSON.parse(itensRecuper)
-   console.log(itemProntoParaUso)
 
 }
 // esvaziar carrinho
@@ -315,3 +314,8 @@ function RetornarTotal(){
             }       
             return totali
 }
+
+function atualizarPagina(){
+    window.location.reload();
+}
+
