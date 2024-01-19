@@ -9,15 +9,11 @@ let taxaPorPais = document.getElementById('pais')
 botao_pagamento.addEventListener('click', ()=>{
     let token = sessionStorage.getItem('token')
     if(!token){
-        window.location.href = 'login.html'
-    
-        console.log(token)
+        window.location.href = 'login.html'    
     }
     else{
-        
-      
+
         window.location.href = 'checkout.html'
-    
     }
     })
 
@@ -44,8 +40,9 @@ function passarProdutosRecuperados(produtoRecuperado){
                     <td class="tableNome"><a href=""></a>${res.nome}</td>
                     <td class="tablePrecoItem">${parseFloat(res.precoAtual).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
                     <td class="tdQtdade">
+                    <div class="tdQtdadeDiv">
                     <button id="${cont}">-</button><input type="number" name="quantidadeItem" id="${cont}" class="quantidadeItem" value="${evt.QtdadeItem}" required onkeyup="atualizarCarrinho()"><button id="${cont}">+</button>
-                    
+                    </div>
                     </td>
                     <td class="tableTotalItem" id="${cont}">${parseFloat(res.precoAtual * evt.QtdadeItem).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
                     <td>
@@ -138,6 +135,9 @@ function excluirItem(){
         evt.addEventListener('click',(res) => {
             item.splice(res.target.id, 1)
             atualizarCarrinhoSessionStorage()
+            console.log(item)
+            if(item.length < 1)
+                localStorage.removeItem("itemCarrinho")
             window.location.reload()
         })
     })
