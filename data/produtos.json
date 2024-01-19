@@ -24,9 +24,9 @@
     "precoAtual": "49.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/barra.png",
-        "img//produtos/barra2.png",
-        "img//produtos/barra3.png"
+        "img//produtos/barra.webp",
+        "img//produtos/barra2.webp",
+        "img//produtos/barra3.webp"
     ]
 },
 {
@@ -47,9 +47,9 @@
     "precoAtual": "79.90",
     "oferta": false,
     "imagem": [
-        "img//produtos/led1.png",
-        "img//produtos/led2.png",
-        "img//produtos/led3.png"
+        "img//produtos/rgb1.webp",
+        "img//produtos/rgb2.webp",
+        "img//produtos/rgb3.webp"
     ]
 },
 {
@@ -70,7 +70,7 @@
     "precoAtual": "2499.90",
     "oferta": true,
     "imagem": [
-        "img//produtos/core9.png"
+        "img//produtos/core9.webp"
     ]
 },
 {
@@ -90,7 +90,7 @@
     "precoAtual": "1499.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/inteli5.png"
+        "img//produtos/inteli5.jpg"
     ]
 },
 {
@@ -151,9 +151,9 @@
     "precoAtual": "8999.99",
     "oferta": false,
     "imagem": [
-        "img//produtos/notebooks/asus1.png",
-        "img//produtos/notebooks/asus2.png",
-        "img//produtos/notebooks/asus3.png"
+        "img//produtos/notebooks/asus1.jpg",
+        "img//produtos/notebooks/asus2.jpg",
+        "img//produtos/notebooks/asus3.jpg"
     ]
 },
 {
@@ -176,9 +176,9 @@
     "precoAtual": "499.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/notebooks/acer.png",
-        "img//produtos/notebooks/acer2.png",
-        "img//produtos/notebooks/acer3.png"
+        "img//produtos/notebooks/acer.webp",
+        "img//produtos/notebooks/acer2.webp",
+        "img//produtos/notebooks/acer3.webp"
     ]
 },
 {
@@ -201,9 +201,9 @@
     "precoAtual": "2219.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/notebooks/lenovo1.png",
-        "img//produtos/notebooks/lenovo2.png",
-        "img//produtos/notebooks/lenovo3.png"
+        "img//produtos/notebooks/lenovo1.webp",
+        "img//produtos/notebooks/lenovo2.webp",
+        "img//produtos/notebooks/lenovo3.webp"
     ]
 },
 {
@@ -226,9 +226,9 @@
     "precoAtual": "2499.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/notebooks/vaio1.png",
-        "img//produtos/notebooks/vaio2.png",
-        "img//produtos/notebooks/vaio3.png"
+        "img//produtos/notebooks/vaio1.webp",
+        "img//produtos/notebooks/vaio2.webp",
+        "img//produtos/notebooks/vaio3.webp"
     ]
 },
 {
@@ -251,9 +251,9 @@
     "precoAtual": "3999.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/notebooks/hp1.png",
-        "img//produtos/notebooks/hp2.png",
-        "img//produtos/notebooks/hp3.png"
+        "img//produtos/notebooks/hp1.webp",
+        "img//produtos/notebooks/hp2.webp",
+        "img//produtos/notebooks/hp3.webp"
     ]
 },
 {
@@ -297,9 +297,9 @@
     "precoAtual": "1308.75",
     "oferta": false,
     "imagem": [
-        "img//produtos/desktop/Slim1.png",
-        "img//produtos/monitores/Slim2.png",
-        "img//produtos/monitores/Slim3.png"
+        "img//produtos/desktop/Slim1.webp",
+        "img//produtos/monitores/Slim2.jpg",
+        "img//produtos/monitores/Slim3.jpg"
     ]
 },
 {
@@ -320,9 +320,9 @@
     "precoAtual": "1499.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/desktop/Dell30701.png",
-        "img//produtos/monitores/Dell30702.png",
-        "img//produtos/monitores/Dell30703.png"
+        "img//produtos/desktop/Dell30701.webp",
+        "img//produtos/monitores/Dell30702.webp",
+        "img//produtos/monitores/Dell30703.webp"
     ]
 },
 {
@@ -343,9 +343,9 @@
     "precoAtual": "799.00",
     "oferta": true,
     "imagem": [
-        "img//produtos/desktop/cpu1.png",
-        "img//produtos/monitores/cpu2.png",
-        "img//produtos/monitores/cpu3.png"
+        "img//produtos/desktop/cpu1.webp",
+        "img//produtos/monitores/cpu2.webp",
+        "img//produtos/monitores/cpu3.webp"
     ]
 },
 {
@@ -390,7 +390,7 @@
     "precoAtual": "799.00",
     "oferta": false,
     "imagem": [
-        "img//produtos/monitores/Optix.png",
+        "img//produtos/monitores/Optix1.png",
         "img//produtos/monitores/Optix2.png",
         "img//produtos/monitores/Optix3.png"
     ]
