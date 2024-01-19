@@ -40,7 +40,6 @@ function produtoDinamico(produtoEspecifico){
         ).join("")} 
     </div>
     `
-    console.log(produtoEspecifico.imagem)
     descricaoProduto.innerText = produtoEspecifico.descricao
     // adicionar click para mudar imagem pai
     addClick()
@@ -92,9 +91,6 @@ let produtoEspec = new Produto();
 // Inserir no carrinho
 let item = []
 
-
-
-
 let itensRecuperados = localStorage.getItem("itemCarrinho")
 if (itensRecuperados) {
     item = JSON.parse(itensRecuperados);
@@ -105,10 +101,19 @@ let  btncomprar = document.getElementById('btnComprar')
 let btnAdicionar = document.getElementById('btnAdicionar')
 
 btncomprar.addEventListener('click', () =>{
-    //item.none = produtoEspec.nome
-    //localStorage.setItem("itemCompra", item)
+    AlterarCarrinho()
+    window.location.href = 'carrinho.html'
 })
-btnAdicionar.addEventListener('click', () =>{
+btnAdicionar.addEventListener('click', () => {
+    AlterarCarrinho()
+    ModalAdiciobadoCarrinho("Obaaa!!!", `O item <strong> ${(item[Number(item.length) - 1].Nome).toUpperCase()}</strong> foi adicionado ao carrinho`, "Continuar comprando", "Ir para o Carrinho")
+    MudarDisplayAtributs()
+    let avaliarModal = document.getElementById('avaliarModal')
+    avaliarModal.style.transitionDelay = '2s'
+    avaliarModal.style.transform = 'translateY(00vh)'
+})
+
+function AlterarCarrinho(){
     const novo1 = {Nome: produtoEspec.nome, QtdadeItem: inputQuantidade.value}
     item.push(novo1) 
     let jsonAux = JSON.stringify(item)
@@ -118,11 +123,51 @@ btnAdicionar.addEventListener('click', () =>{
     let itemProntoParaUso = JSON.parse(itensRecuper)
     let carrinhoQtdade = document.getElementById('carrinhoQtdade')
     let quantidade = 0;
-    if(itemProntoParaUso){ //estava com .length
+    if(itemProntoParaUso){ 
     item.map((res) => {
         quantidade += parseInt(res.QtdadeItem)
     })}
     carrinhoQtdade.innerText = quantidade
     carrinhoQtdade.style.display = 'block'
+}
+//Modal
+const ModalAtributs = document.getElementById("ModalGeral");
+
+var currentListAtributs = 1
+var arrayListAtributs = [
+    "none",
+    "flex"
+]
+
+function MudarDisplayAtributs() {
+    if (currentListAtributs == arrayListAtributs.length) {
+        currentListAtributs = 0
+    }
+    ModalAtributs.style.display = arrayListAtributs[currentListAtributs]
+    currentListAtributs++
+
+}
+ModalAtributs.addEventListener("click", (e) => {
+
+    if (e.target.nodeName == 'DIV' || e.target.nodeName == 'H2' || e.target.nodeName == "P" ){}
+    else MudarDisplayAtributs()
+    
+
 })
 
+
+function ModalAdiciobadoCarrinho(titulo, mensagem, botaoConfirmar, botaoSecond) {
+    ModalAtributs.innerHTML = `
+   
+   <div id="avaliarModal">
+   <div class="fecharModalSup"><button>X</button></div>
+   <h2>${titulo}</h2>
+   <p>${mensagem}</p>
+   <div class="btnModal">
+   <a href="carrinho.html"><button type="button">${botaoSecond}</button></a>
+   <a href="index.html"><button type="button"> ${botaoConfirmar}</button></a>
+   </div>
+   </div>
+      `
+
+}

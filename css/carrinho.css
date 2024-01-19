@@ -13,23 +13,22 @@ main{
     gap: 13%;
     padding: 5%;
 }
-#primeiraSection{
-width: 350%;
-}
+    #primeiraSection{
+    width: 350%;
+    }
 .carrinho {
     padding: 20px 0 30px 0;
 }
 
 .tabela-items {
     border-collapse: collapse;
-
+    width: 100%;
 }
 
 .tproduto {
     border-bottom: 1px solid #000;
     border-top: 1px solid #000;
     padding: 25px 0;
-    /* display: table-cell; */
 }
 
 .table-btn{
@@ -40,11 +39,17 @@ width: 350%;
 }
 .table-img{
     max-width: 114px;
+    margin-top: 10px;
 }
 .table-btn img {
     width: 70%; 
 }
 
+.tdQtdadeDiv{
+    display: flex;
+    align-items: center; 
+    height: 100px;
+}
 .tabela-items td, 
 table.tabela-items th {
     padding: 10px 10px;
@@ -161,7 +166,17 @@ form input, form select {
     text-decoration: none;
 }
 
-
+.tdQtdade{
+    display: flex !important;
+    gap: 10%;
+    margin: auto 10px;
+    /* padding-top: 35%; */
+}
+.tdQtdade input{
+    text-align: center;
+    max-width: 30px; 
+    margin: 0 5%;
+}
 
 
 @media screen and (max-width: 768px) {

@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/menu.js" defer></script>
-    <script src="js/carrinho.js" defer></script>
-    </head>
+
+    <title>Sobre</title>
+</head>
 <body>
-    <!-- Inicio do Cabeçalho  -->
+     <!-- Inicio do Cabeçalho  -->
 
 <header>
     <div id="icones-sociais">
@@ -26,7 +23,7 @@
         </a>
     </div>
     <nav class="header">
-        <a href="index.html"><img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo"></a> 
+       <a href="index.html"><img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo"></a> 
         <ul id="parte2">
             <li>Notebooks</li>
             <li>Desktops</li>
@@ -72,116 +69,70 @@
     </div>
 </header>
     
-
+    
 </header>
-    <!-- Fim do cabeçalho -->
 
-    <!-- Mostra caminho da pagina -->
     <nav id="navegacao">
-        <span><a href="index.html">Início</a></span>
-        <span class="spn-blue">›</span>
-        <span><a href="carrinho.html">Carrinho</a></span>
-    </nav>
+    <span><a href="index.html">Início</a></span>
+    <span class="spn-blue">›</span>
+    <span><a href="sobre.html">Sobre Nós</a></span>
+</nav>
 
-    <!-- Inicio da descrição e Preço do produto -->
+
+<!-- Fim do Header -->
+   
+    <h1>Quem Somos</h1>
     <main>
-        <section id="primeiraSection">
-           
-            <h2 class="carrinho">Carrinho de compras</h2>
-            <table class="tabela-items">
-                <thead>
-                    <tr class="thead">
-                        <th></th>
-                        <th>Item</th>
-                        <th>Preço</th>
-                        <th>Qtd</th>
-                        <th>Subtotal</th> 
-                    </tr>
-                </thead>
-                <tbody id="bodyTabela">
-                    <tr class="tproduto">
-                        <td> <img src="https://via.placeholder.com/360x360" alt="$placeholder" class="table-img"> </td>
-                    <td>Você não tem produtos no carrinho</td>
-                    <td>R$ 0,00</td>
-                    <td>0</td>
-                    <td>R$ 0,00</td>
-                    </tr> 
-                </tbody>
-            </table>
-            <section class="section-btn">
-                <div>
-                    <button type="button"><a href="index.html">Continuar comprando</a></button>
-                    <button type="button" id="btnEsvaziarCarrinho">Esvaziar carrinho</button>
-                </div>
-                <div>
-                    <button type="button" onclick="atualizarPagina()">Atualizar</button>
-                </div>
-            </section>
-        </section>
-        <!-- Fim da Descrição e Preço do produto -->
-
-        <!-- Inicio do Resumo da Compra, Envio e Cupom -->
-
-        <section id="bloco" class="fundo-azul">
-            <div id="conteudo">
-                <h3 class="titulo-resumo-compra">Resumo da Compra</h3>
-                <div class="taxa-envio">
-                    <p>Taxa Estimada de Envio</p>
-                </div>
-            </div>
-            <form>
-                <p id="form-resumo">Insira o seu destino para obter uma estimativa de envio</p>
-                <label for="pais">Selecione o país de destino *</label>
-                    <select id="pais">
-                        <option value="brasil">Brasil</option>
-                        <option value="eua">Estados Unidos</option>
-                        <option value="canada">Canadá</option>
-                    </select>
-                    <label for="">Estado/Cidade *</label>
-                    <input type="text" required>
-                    <label for="">CEP *</label>
-                    <input type="number" required>        
-                <div class="opcao-entrega">
-                    <p>Taxa Padrão</p>
-                    <div>
-                        <input type="radio" name="opcao-entrega" id="entrega-destino" value="casa">
-                        <label for="entrega-destino">Preço pode variar de acordo com o Item/Destino</label>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tempora non ducimus nesciunt accusamus sed cum harum facere est error, nostrum deleniti pariatur cupiditate quia amet nam, voluptatibus aut similique.</p>
+        <section>
+            <div>
+            <figure><img src="img/integrantes/deividson.jpg" alt="">
+            <figcaption>
+                <h3>Deividson</h3>
+                 <dd>Desenvolvedor .Net | Front-end | 1x AWS Certified</dd>
+                <div class="links">
+                    <a href="">Linkedin</a>
+                    <a href="">GitHub</a>
                     </div>
-                    <p>Retirar na loja</p>
-                    <div>
-                        <input type="radio" name="opcao-entrega"  id="retirar-na-loja" value="loja">
-                        <label for="retirar-na-loja">Rua JavaScript, 123 - Bairro HTML - SP</label>
-                    </div>
+            </figcaption>
+            </figure>
+        
+            <figure><img src="img/integrantes/devison.jpg" alt="">
+            <figcaption>
+                <h3>Devison</h3>
+                <dd>Desenvolvedor Lua | Python | Front-end</dd>
+                <div class="links">
+                <a href="">Linkedin</a>
+                <a href="">GitHub</a>
                 </div>
-                <div class="Cupom">
-                    <h4>Cupom de Desconto</h4>
-                    <input id="cupomDesconto"  type="text" placeholder="Cupom de Desconto" method="post">
-                    <button type="button" id="aplicarDesconto" class="aplicar-desconto" >
-                        Aplicar Desconto
-                    </button>
+            </figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure><img src="img/integrantes/emerson.jpg" alt="">
+            <figcaption>
+                <h3>Emerson</h3>
+                <dd>Desenvolvedor .Net | Front-end | 1x AWS Certified</dd>
+                <div class="links">
+                    <a href="">Linkedin</a>
+                    <a href="">GitHub</a>
                 </div>
-                <h4>Subtotal: <span id="subtotal">R$ 0,00</span></h4>
-                <h4>Envio: <span id="envio">R$ 0,00</span></h4>
-                <p>Preço pode variar de acordo com o Item/Destino</p>
-                <h4>Taxa: <span id="taxa">R$ 0,00</span></h4>
-                <h4 id="precoTotal">Preço Total: R$ 0,00</h4>
-                <button  class="botao-pagamento">
-                    Ir para Pagamento
-                </button>
-            </form>
-            <button class="botao-pagamento-paypal" id="irPagamento">
-                Pagamento com <img src="img/logos/cartao-pagamento-paypal.png">
-            </button>
-            <button class="alterar-endereco">
-                <a href="">Alterar endereço de entrega</a> 
-            </button>
+            </figcaption>
+            </figure>
+       
+            <figure><img src="img/integrantes/gabriel.jpg" alt="">
+            <figcaption>
+                <h3>Gabriel</h3>
+                <dd>CyberSecurity | Front-end</dd>
+                <div class="links lastLink">
+                    <a href="">Linkedin</a>
+                    <a href="">GitHub</a>
+                </div>
+            </figcaption>
+            </figure>
+        </div>
         </section>
-        <script src=""></script>
-        <!-- Fim do Resumo da Compra -->  
-
     </main>
-
-    <!--Inicio de footer-->
 
     <footer id="footer">
         <div class="div-news">
@@ -274,8 +225,7 @@
             <span class="copyright">Copyright&copy;2023</span>
             </div>
         </div>
-    </footer>    
-    <script src="js/produtoModel.js"></script>
+    </footer>  
     <script src="https://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js"></script>
 
 </body>

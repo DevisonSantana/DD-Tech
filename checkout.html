@@ -24,7 +24,7 @@
             </a>
         </div>
         <nav class="header">
-            <img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo">
+            <a href="index.html"><img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo"></a> 
             <ul id="parte2">
                 <li>Notebooks</li>
                 <li>Desktops</li>
@@ -35,7 +35,7 @@
             </ul>
             
             <ul class="nav-items">
-                <li><button onclick="buscaOferats()">Ofertas</button></li>
+                <li><button id="buscarOfertas">Ofertas</button></li>
                 <li><a href="#"><img src="img/lupa.png" alt="Lupa" id="lupa"></a></li>
                 <div id="divLupa">
                     <input type="text" name="inputLupa" id="inputLupa" placeholder="Qual produto você precisa">
@@ -43,7 +43,11 @@
                 </div>
                 <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
                 <div id="carrinhoQtdade">0</div>
-                <li><a href="usuario.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
+                <li><img src="img/foto_perfil.png" alt="Foto de Perfil" id="fotoPerfil"></li>
+                <menu id="divLogado">
+                    <li><a href="usuario.html">Perfil</a></li>
+                    <li id="logout">Logout</li>
+                </menu>
             </ul>
             <div id="divHamburguer"><img src="img/Menu32.png" alt=""></div>
         </nav>
@@ -80,10 +84,11 @@
         <main id="main">
             <h1>Checkout de compra</h1>
         
-            <table>
+            <table id="tabelaProdutos">
                 <thead id="foco">
                     <tr>
                         <th>Item</th>
+                        <th>Nome</th>
                         <th>Preço</th>
                         <th>Qtd</th>
                         <th>Subtotal</th>
@@ -93,9 +98,13 @@
                     <tr class="tabela1">
                         <td>
                             <div class="lista">
+                    
                                 <img src="img/Ex_diplay5.png" alt="Imagem do produto" class="imagem1">
-                                <p id="text1">MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming Keyboard e Mouse com 3 anos de garantia</p>
+                                
                             </div>
+                        </td>
+                        <td>
+                            <p id="text1">MSI +</p>
                         </td>
                         <hr>
                         <br>
@@ -104,9 +113,8 @@
                             <div class="quantity-container">
 
                                 <div class="button-container">
-                                    <input type="number" id="quantidade" min="1"  max="99" value="1">
-                                    <button class="arrow-button up" id="adicionar"></button>
-                                    <button class="arrow-button down" id="subtrair"></button>
+                                    <input type="number" id="quantidade" disabled value="1">
+                                    
 
                                   </div>
                                 
@@ -115,91 +123,130 @@
                             </div>
                         </td>
                         <td id="soma"> R$ 8.000,00</td>
-                        <td>
-                            <button class="table-btn excluir" data-produto="produto1">X</button> <!-- Adicione a classe 'excluir' e um atributo 'data-produto' com o ID do produto -->
-                    </td>
+                        
                     </tr>
-                    <!-- Repita essa estrutura para cada produto -->
-                    <tr>
-                        <td>
-                            <div class="lista">
-                                <img src="img/Ex_diplay4.png" alt="Imagem do produto" class="imagem2">
-                                <p id="text2">MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, Windows 10 home, Gaming Keyboard and Mouse 3 years Warranty</p>
-                            </div>
-                        </td>
-                        <td class="tabela1" id="valorDoSegundoProduto"> R$ 10.000,00</td>
-                        <td>
-                            <div class="quantity-container">
-
-                                <div class="button-container">
-                                    <input type="number" id="quantidade02" min="1" max="100" value="1">
-                                    <button class="arrow-button up" id="adicionar2"></button>
-                                    <button class="arrow-button down"id="subtrair2"></button>
-                                  </div>
-                                
-                                
-                                
-                            </div>
-                        </td>
-                        <td class="tabela1" id="valorFinal"> R$ 10.000,00</td>
-                        <td>
-                            <button class="table-btn">X</button>
-                        </td>
-                    </tr>
+                    
+                        
                 </tbody>
             </table>
         
             <hr>
-            <button type="button" id="atualizar" onclick="atualizarCarrinho()">Atualizar carrinho</button>
+            <button type="button" id="atualizar" onclick="retornarCarrinho()">Retornar ao carrinho</button>
             <div id="opcoes">
                 <button type="submit" id="comprando"> <a href="index.html">Continuar comprando</a>  </button>
-                <button type="submit" id="esvaziar">Esvaziar carrinho</button>
+                
             </div>
         </main>
 
         <div class="caixa">
             <div class="inicio">
-                <h2 class="primeiro">Resumo da compra</h2>
-                <br>
-                <h3 id="segundo">Taxas Estimadas de Envio</h3>
+                <h2 class="primeiro">Finalizar compra</h2>
                 
-                <h4>Insira o seu destino para obter uma estimativa de Envio</h4>
-                <h4 id="cupom">Cupom de desconto</h4>
-                <hr>
-                <br>
-                <br>
-            </div>
-            
-            <div id="subtotal1">
+                <h3 id="segundo">Pagamento</h3>
+                <div id="opcaoesPagamento">
+
+                    <label for="pix" > <input type="radio" name="opcaoesPagamento" id="">PIX</label>
+                    <label for="cartao"> <input type="radio" name="opcaoesPagamento" id="">Cartão de crédito</label>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><input type="radio" name="credito" id="1x"></td>
+                                <td>1x S/ juros</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="credito" id="2x"></td>
+                                <td>2x S/ juros</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="credito" id="3x"></td>
+                                <td>3x S/ juros</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="credito" id="4x"></td>
+                                <td>4x S/ juros</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="credito" id="5x"></td>
+                                <td>5x S/ juros</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="credito" id="6x"></td>
+                                <td>6x S/ juros</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="credito" id="7x"></td>
+                                <td>7x S/ juros</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="credito" id="8x"></td>
+                                <td>8x S/ juros</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="credito" id="9x"></td>
+                                <td>9x S/ juros</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="credito" id="10x"></td>
+                                <td>10x S/ juros</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="credito" id="11x"></td>
+                                <td>11x S/ juros</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="credito" id="12x"></td>
+                                <td>12x S/ juros</td>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                
+                
+                
                 <div id="subtotal">
+                    <div id="subtotal1">
                     <p>Subtotal</p>
-                    <p id="valorSubtotal01">R$ 18.00,00</p>
-                </div>
-                <div>
-                    <div id="envio">
-                        <p>Envio</p>
-                        <p>R$ 120.00</p>
-                    </div>
-                    <p id="local">Preço pode variar de acordo com o Item/Destino</p>
-                    
-                    <div id="taxa">
-                        <p>Taxa</p>
-                        <p>R$ 150.00</p>
-                    </div>
-                    <div id="total1">
-                        <p id="total2">Preço Total</p>
-                        <p id="valorSubtotal02">18.200,00</p>
+                        <p id="valorSubtotal01">R$ 18.00,00</p>
                     </div>
                 </div>
+            </div>
+            <div>
+                <div id="envio">
+                    <p>Envio</p>
+                    <p>R$ 120.00</p>
+                </div>
+                
+                
+                <div id="taxa">
+                    <p>Taxa</p>
+                    <p>R$ 150.00</p>
+                </div>
+                <div id="total1">
+                    <p id="total2">Preço Total</p>
+                    <p id="valorSubtotal02">18.200,00</p>
+                </div>
+            </div>
+            <div id="menu">
+                <button type="submit" class="button" id="botao1">Continuar compra</button>
+                <button type="submit" class="button" id="botao2">
+                    <a href="checkout.html">Pagamento com <img src="img/logos/cartao-pagamento-paypal.png"></a></button>
+                <button type="submit" class="button" id="botao3"> Alterar endereço de entrega</button>
             </div>
         </div>
 
-        <div id="menu">
-            <button type="submit" class="button" id="botao1">Continuar compra</button>
-            <button type="submit" class="button" id="botao2">
-                <a href="checkout.html">Pagamento com <img src="img/logos/cartao-pagamento-paypal.png"></a></button>
-            <button type="submit" class="button" id="botao3"> Alterar endereço de entrega</button>
-        </div>
     </div>
     <!--Inicio de footer-->
 
@@ -219,7 +266,7 @@
             <div>
                 <h4>Informação</h4>
                 <ul>
-                    <li><a href="">Sobre nós</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
                     <li><a href="">Política de Privacidade</a></li>
                     <li><a href="">Procurar</a></li>
                     <li><a href="">Termos</a></li>
@@ -296,5 +343,7 @@
     </footer>
     <script src="js/produtoModel.js"></script>
     <script src="js/menu.js" defer></script>
+    <script src="https://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js"></script>
+
 </body>
 </html>

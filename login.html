@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/login.css">
     <script src="js/login.js" defer></script>
     <script src="js/menu.js" defer></script>
+    <script src="js/produtoModel.js"></script>
+
 </head>
 <body>
    <!-- Inicio do Cabeçalho  -->
@@ -25,7 +27,7 @@
         </a>
     </div>
     <nav class="header">
-        <img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo">
+        <a href="index.html"><img id="parte1" src="img/logos/logo-shop-cabecalho.png" alt="Logo"></a> 
         <ul id="parte2">
             <li>Notebooks</li>
             <li>Desktops</li>
@@ -36,7 +38,7 @@
         </ul>
         
         <ul class="nav-items">
-            <li><button onclick="buscaOferats()">Ofertas</button></li>
+            <li><button id="buscarOfertas">Ofertas</button></li>
             <li><a href="#"><img src="img/lupa.png" alt="Lupa" id="lupa"></i></a></li>
             <div id="divLupa">
                 <input type="text" name="inputLupa" id="inputLupa" placeholder="Qual produto você precisa">
@@ -44,7 +46,11 @@
             </div>
             <li><a href="carrinho.html"><img src="img/carrinho.png" alt="Carrinho de Compras"></a></li>
             <div id="carrinhoQtdade">0</div>
-            <li><a href="usuario.html"><img src="img/foto_perfil.png" alt="Foto de Perfil"></a></li>
+            <li><img src="img/foto_perfil.png" alt="Foto de Perfil" id="fotoPerfil"></li>
+                <menu id="divLogado">
+                    <li><a href="usuario.html">Perfil</a></li>
+                    <li id="logout">Logout</li>
+                </menu>
         </ul>
         <div id="divHamburguer"><img src="img/Menu32.png" alt=""></div>
         </nav>

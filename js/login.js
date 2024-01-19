@@ -76,13 +76,15 @@ async function fetchProfileDataCadastro() {
                 const token = KJUR.jws.JWS.sign("HS256", JSON.stringify(header), JSON.stringify(payload), secretKey);
                 sessionStorage.setItem('token', token)
 
-                window.location.href = 'usuario.html'
                 emailInput.classList.add('correct')
                 emailInput.classList.remove('error')
                 emailHelper.classList.remove('visible')
                 senhaInput.classList.add('correct')
                 senhaInput.classList.remove('error')
                 senhaHelper.classList.remove('visible')
+                // Voltar a página com JS
+                window.history.back()
+                //window.history.go(-1)
                 break
             }
 

@@ -1,0 +1,52 @@
+body, main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    margin: 20px auto;
+}
+p{
+    width: 70%;
+    margin: 20px auto;
+}
+ section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+section div{
+    display: flex;
+    justify-content: center;
+}
+figure, figcaption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    max-height: 300px;
+}
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lastLink{
+    margin-top: 5px;
+}
+img:hover{
+    transform: skew(2deg, 2deg);
+    transition: all .5s;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+    margin: 4% 0;
+}
+dd{
+    margin: auto;
+}
+a:visited{
+    color: black;
+}

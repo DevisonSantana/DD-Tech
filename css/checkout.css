@@ -51,7 +51,7 @@ h5{
 }
 #subtotal{
     
-    margin: -20px;
+    
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -59,7 +59,7 @@ h5{
 #envio{
     display: flex;
     justify-content: space-between;
-    margin: -20px;
+    
     display: flex;
     justify-content: space-between;
     padding: 10px
@@ -68,9 +68,6 @@ h5{
     
 }
 #total1{
-    display: flex;
-    
-    margin: -20px;
     display: flex;
     justify-content: space-between;
     padding: 10px
@@ -107,7 +104,7 @@ h5{
 #text1{
     
     height: 100px;
-    width: 400px;
+    
     margin-top: 15px;
     padding: 25px;
 
@@ -124,7 +121,6 @@ h5{
     background-color: rgb(238, 233, 233);
     padding: 40px;
     width: fit-content;
-    height: 102%;
     margin-right: 271px;
 }
 
@@ -137,7 +133,7 @@ h5{
     background-color: white;
     margin-left: 69px;
     margin-right: 18px;
-    width: 1008px;
+    width: 100%;
     padding: 21px;
 }
    
@@ -186,9 +182,7 @@ h5{
     
 }
 #menu {
-     margin-left: -520px;
-    margin-top: 435px;
-    margin-right: -98px;
+    
 }
 
     
@@ -305,14 +299,20 @@ a{
 .tabela1{
     justify-content: center;
     box-sizing: 800;
-    width: 400px;
     text-align: center;
+
+}
+#tabelaProdutos{
+    width: 100%;
+}
+#opcaoesPagamento{
+    display: flex;
+    flex-direction: column;
 }
 
 .inicio{
     margin: -25px;
-    height: 290px;
-    width: 209px;
+    
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -328,12 +328,8 @@ a{
     margin-left: 513px;
     width: 49px;
 }
-.lista{
-    display: flex;
-    justify-content: space-between;
 
 
-}
 #lista2{
     
     display: flex;
@@ -372,8 +368,13 @@ a{
 .button-container {
     display: flex;
   }
+#quantidade{
+    width: 30px;
+    text-align: center;
+}
+
   
-  .arrow-button {
+.arrow-button {
     width: 20px;
     height: 20px;
     background-color: #3498db;
