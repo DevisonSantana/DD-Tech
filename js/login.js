@@ -83,9 +83,9 @@ async function fetchProfileDataCadastro() {
                 senhaInput.classList.add('correct')
                 senhaInput.classList.remove('error')
                 senhaHelper.classList.remove('visible')
-                 // Voltar a página com JS
+                // Voltar a página com JS
                 window.history.back()
-                window.history.go(-1)
+                //window.history.go(-1)
                 break
             }
 

@@ -131,7 +131,8 @@ function AlterarCarrinho(){
     carrinhoQtdade.style.display = 'block'
 }
 //Modal
-const listAtributs = document.getElementById("atributs");
+const ModalAtributs = document.getElementById("ModalGeral");
+
 var currentListAtributs = 1
 var arrayListAtributs = [
     "none",
@@ -142,11 +143,11 @@ function MudarDisplayAtributs() {
     if (currentListAtributs == arrayListAtributs.length) {
         currentListAtributs = 0
     }
-    listAtributs.style.display = arrayListAtributs[currentListAtributs]
+    ModalAtributs.style.display = arrayListAtributs[currentListAtributs]
     currentListAtributs++
 
 }
-listAtributs.addEventListener("click", (e) => {
+ModalAtributs.addEventListener("click", (e) => {
 
     if (e.target.nodeName == 'DIV' || e.target.nodeName == 'H2' || e.target.nodeName == "P" ){}
     else MudarDisplayAtributs()
@@ -156,8 +157,8 @@ listAtributs.addEventListener("click", (e) => {
 
 
 function ModalAdiciobadoCarrinho(titulo, mensagem, botaoConfirmar, botaoSecond) {
-    listAtributs.innerHTML = `
-   <section id="listAtributs" class="atributos" >
+    ModalAtributs.innerHTML = `
+   
    <div id="avaliarModal">
    <div class="fecharModalSup"><button>X</button></div>
    <h2>${titulo}</h2>
@@ -167,6 +168,6 @@ function ModalAdiciobadoCarrinho(titulo, mensagem, botaoConfirmar, botaoSecond) 
    <a href="index.html"><button type="button"> ${botaoConfirmar}</button></a>
    </div>
    </div>
-    </section>  `
+      `
 
 }

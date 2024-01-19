@@ -238,7 +238,7 @@ function AcessarProdutoPage(produtoEspecifico){
 
     function Modal(titulo, mensagem, botaoConfirmar) {
         const div = `
-       <section id="listAtributs" class="atributos" >
+       <section id="ModalGeral" class="ModalGeral" >
        <div id="avaliarModal">
        <div class="fecharModalSup"><button>X</button></div>
        <h2>Avaliar</h2>
