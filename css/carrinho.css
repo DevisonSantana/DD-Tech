@@ -45,6 +45,12 @@ main{
     width: 70%; 
 }
 
+.tdQtdadeDiv{
+    display: flex;
+    align-items: center; 
+    height: 100px;
+}
+.tabela-items td, 
 table.tabela-items th {
     padding: 10px 10px;
 }
@@ -163,12 +169,13 @@ form input, form select {
 .tdQtdade{
     display: flex !important;
     gap: 10%;
-    margin: auto 10px ;
-    padding-top: 35%;
+    margin: auto 10px;
+    /* padding-top: 35%; */
 }
 .tdQtdade input{
     text-align: center;
     max-width: 30px; 
+    margin: 0 5%;
 }
 
 
