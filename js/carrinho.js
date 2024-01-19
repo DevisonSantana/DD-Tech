@@ -29,7 +29,16 @@ function passarProdutosRecuperados(produtoRecuperado){
                 if(res.nome === evt.Nome){
                     let novo = {Nome: res.nome, QtdadeItem: evt.QtdadeItem}
                     item.push(novo)
-                    
+                    let tableHeader = document.querySelector('.thead')
+                    console.log(tableHeader)
+                    tableHeader.innerHTML = `
+                        <th></th>
+                        <th></th>
+                        <th>Item</th>
+                        <th>Preço</th>
+                        <th>Qtd</th>
+                        <th>Subtotal</th> 
+                    `
                     valorTotal += res.precoAtual * evt.QtdadeItem
                     subtotal.innerText = valorTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
                     precoTotal.innerText = "Preço Total: " + (valorTotal + verificaPais()).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
