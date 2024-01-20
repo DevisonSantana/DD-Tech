@@ -38,7 +38,7 @@ dadosProdutos.map(res =>{
                 var avaliacao = "img//estrelas4.png"
             }
             let picture = `
-            <picture class="containerNovos" id="${res.nome}" onclick="AcessarProdutoPage(id)">
+            <picture class="containerNovos novosProdutos" id="${res.nome}" onclick="AcessarProdutoPage(id)">
                         <img src="${res.imagem[0]}" alt="novo produto" >
                         <figcaption>
                             <div class="avaliacao">
@@ -46,7 +46,7 @@ dadosProdutos.map(res =>{
                                 <span>Reviews (${res.avaliacao})</span>
                             </div>
                             <p class="descricao">
-                                ${res.descricao}
+                                ${(res.descricao).substr(0,90)}...
                             </p>
                             <em class="precoAntigo">R$ ${res.preco}</em>
                             <h6 class="precoAtual">R$ ${res.precoAtual}</h6>
@@ -72,8 +72,8 @@ if(res.categoria.toLowerCase() === 'personalize'){
                         <p class="descricao">
                             ${res.descricao}
                         </p>
-                        <em class="precoAntigo">R$ ${res.preco}</em>
-                        <h6 class="precoAtual">R$ ${res.precoAtual}</h6>
+                        <em class="precoAntigo"> ${res.preco}.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})</em>
+                        <h6 class="precoAtual"> ${res.precoAtual}.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})</h6>
                     </figcaption>
                 </picture>
         `
