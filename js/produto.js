@@ -146,8 +146,7 @@ function AlterarCarrinho(){
     carrinhoQtdade.style.display = 'block'
 }
 //Modal
-const ModalAtributs = document.getElementById("ModalGeral");
-
+let ModalAtribut = document.getElementById("ModalGeral");
 var currentListAtributs = 1
 var arrayListAtributs = [
     "none",
