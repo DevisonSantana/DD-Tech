@@ -137,6 +137,57 @@
             "bandeira": "visa",
             "validade": "05/25",
             "digitoSeguranca": "123" 
+        }, {
+            "id": 1,
+            "usuario": 5,
+            "numeroCartao": "8945547867349045",
+            "nomeCartao": "DEVISON GIT",
+            "bandeira": "visa",
+            "validade": "03/27",
+            "digitoSeguranca": "123" 
+        },
+        {
+            "id": 2,
+            "usuario": 5,
+            "numeroCartao": "1784389546730912",
+            "nomeCartao": "DEVISON GIT",
+            "bandeira": "dinners",
+            "validade": "05/24",
+            "digitoSeguranca": "144" 
+        }, {
+            "id": 1,
+            "usuario": 5,
+            "numeroCartao": "8945547867349045",
+            "nomeCartao": "EMERSON PENELLI",
+            "bandeira": "visa",
+            "validade": "03/27",
+            "digitoSeguranca": "123" 
+        },
+        {
+            "id": 2,
+            "usuario": 5,
+            "numeroCartao": "1784389546730912",
+            "nomeCartao": "EMERSON PENELLI",
+            "bandeira": "dinners",
+            "validade": "05/24",
+            "digitoSeguranca": "144" 
+        }, {
+            "id": 1,
+            "usuario": 5,
+            "numeroCartao": "8945547867349045",
+            "nomeCartao": "GABRIEL ELLIOT",
+            "bandeira": "visa",
+            "validade": "03/27",
+            "digitoSeguranca": "123" 
+        },
+        {
+            "id": 2,
+            "usuario": 5,
+            "numeroCartao": "1784389546730912",
+            "nomeCartao": "GABRIEL ELLIOT",
+            "bandeira": "dinners",
+            "validade": "05/24",
+            "digitoSeguranca": "144" 
         }
     ]
 }

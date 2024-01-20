@@ -33,7 +33,7 @@ function carregarProdutos(dadosProdutos){
     let contagem = 1
 // Carregar secao de novos
 dadosProdutos.map(res =>{
-    if(res.categoria.toLowerCase() === 'tablet'){
+    if(res.categoria.toLowerCase() === 'novos   '){
         for(cont = 1; cont <= 7; cont++){
         if(res.avaliacao == 4){
                 var avaliacao = "img//estrelas4.png"

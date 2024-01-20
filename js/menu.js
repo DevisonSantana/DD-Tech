@@ -318,7 +318,6 @@ function GerarModal(titulo, mensagem, botaoConfirmar, botaoSecond) {
 // input do footer
 
 let inputButtom = document.querySelector('.div-news button')
-console.log(inputButtom)
 inputButtom.addEventListener('click', () => {
     let inputFooter = document.querySelector('.div-news input').value
     if (!inputFooter == ''){

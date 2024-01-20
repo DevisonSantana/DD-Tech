@@ -35,7 +35,7 @@ a:checked {
     overflow-x: hidden;
     overflow-y: hidden;
     scroll-behavior: smooth;
-    z-index: -;
+    z-index: -1;
 }
 
 .banner_img {

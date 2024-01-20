@@ -125,11 +125,7 @@
     "imagem": [
         "img//produtos/dell1.jpg",
         "img//produtos/dell2.jpg",
-        "img//produtos/dell3.jpg",
-        "img//produtos/dell4.jpg",
-        "img//produtos/dell5.jpg",
-        "img//produtos/dell6.jpg",
-        "img//produtos/dell7.jpg"
+        "img//produtos/dell3.jpg"
     ]
 },
 {
@@ -665,32 +661,6 @@
         "img//produtos/microfoneGamer3.jpg"
     ]
 },
-{ "id": 35,
-    "nome": "Mesa Gamer",
-    "categoria": "gamer",
-    "descricao": "MESA GAMER MANCER BEHOLDER, 136CM, RGB, PRETO, MCR-BHR-RGB",
-    "informacoes": [
-        "Marca: Mancer",
-        "Modelo: MCR-BHR-RGB",
-        "Material: MDF e Melamina, Plástico, Metal, Vidro temperado",
-        "Dimensões: 136 x 60 x 75 cm",
-        "Tamanho do tampo da mesa: 135 x 60 x 1,8 cm",
-        "Peso suportado: 75 Kg",
-        "Altura: 75 cm",
-        "Iluminação ambiente: Luz de LED em modo breathing com gradiente multicolorido",
-        "Cor: Preto e Preto fosco",
-        "Notas: *Acompanha suporte para copo e headset."
-    ],
-    "avaliacao": 4,
-    "preco": "1058.81",
-    "precoAtual": "899.99",
-    "oferta": true,
-    "imagem": [
-        "img//produtos/mesaGamer1.jpg",
-        "img//produtos/mesaGamer2.jpg",
-        "img//produtos/mesaGamer3.jpg"
-    ]
-},
 { "id": 29,
     "nome": "Hp Smart Tank 581",
     "categoria": "impressoras",
@@ -924,6 +894,227 @@
         "img//produtos/placaVideo2.jpg",
         "img//produtos/placaVideo3.jpg"
     ]
+},
+{ "id": 37,
+"nome": "Mesa Gamer",
+"categoria": "gamer",
+"descricao": "MESA GAMER MANCER BEHOLDER, 136CM, RGB, PRETO, MCR-BHR-RGB",
+"informacoes": [
+    "Marca: Mancer",
+    "Modelo: MCR-BHR-RGB",
+    "Material: MDF e Melamina, Plástico, Metal, Vidro temperado",
+    "Dimensões: 136 x 60 x 75 cm",
+    "Tamanho do tampo da mesa: 135 x 60 x 1,8 cm",
+    "Peso suportado: 75 Kg",
+    "Altura: 75 cm",
+    "Iluminação ambiente: Luz de LED em modo breathing com gradiente multicolorido",
+    "Cor: Preto e Preto fosco",
+    "Notas: *Acompanha suporte para copo e headset."
+],
+"avaliacao": 4,
+"preco": "1058.81",
+"precoAtual": "899.99",
+"oferta": true,
+"imagem": [
+    "img//produtos/mesaGamer1.jpg",
+    "img//produtos/mesaGamer2.jpg",
+    "img//produtos/mesaGamer3.jpg"
+]
+},
+{ "id": 37,
+"nome": "Mesa Gamer",
+"categoria": "gamer",
+"descricao": "MESA GAMER MANCER BEHOLDER, 136CM, RGB, PRETO, MCR-BHR-RGB",
+"informacoes": [
+    "Marca: Mancer",
+    "Modelo: MCR-BHR-RGB",
+    "Material: MDF e Melamina, Plástico, Metal, Vidro temperado",
+    "Dimensões: 136 x 60 x 75 cm",
+    "Tamanho do tampo da mesa: 135 x 60 x 1,8 cm",
+    "Peso suportado: 75 Kg",
+    "Altura: 75 cm",
+    "Iluminação ambiente: Luz de LED em modo breathing com gradiente multicolorido",
+    "Cor: Preto e Preto fosco",
+    "Notas: *Acompanha suporte para copo e headset."
+],
+"avaliacao": 4,
+"preco": "1058.81",
+"precoAtual": "899.99",
+"oferta": true,
+"imagem": [
+    "img//produtos/mesaGamer1.jpg",
+    "img//produtos/mesaGamer2.jpg",
+    "img//produtos/mesaGamer3.jpg"
+]
+},
+{ "id": 38,
+"nome": "PLACA DE VIDEO PNY GEFORCE RTX 6000",
+"categoria": "novos",
+"descricao": "PLACA DE VIDEO PNY GEFORCE RTX 6000 ADA GENERATION, 48GB, GDDR6, 384-BIT, VCNRTX6000ADA-PB",
+"informacoes": [
+    "Marca: PNY",
+    "Modelo: VCNRTX6000ADA-PB",
+    "Arquitetura: NVIDIA Ada Lovelace",
+    "Tamanho do processo: 76.3 bilhões",
+    "Núcleos de processamento paralelo CUDA: 18176",
+    "Memória GPU: 48 GB GDDR6 com ECC",
+    "Tamanho da matriz: 608.4 mm"
+],
+"avaliacao": 4,
+"preco": "54959.99",
+"precoAtual": "54599.99",
+"oferta": true,
+"imagem": [
+    "img//produtos/novos/nvidea1.jpg",
+    "img//produtos/novos/nvidea2.jpg",
+    "img//produtos/novos/nvidea3.jpg"
+]
+},
+{ "id": 39,
+"nome": "COMPUTADOR GAMER COOLER MASTER",
+"categoria": "novos",
+"descricao": "COMPUTADOR GAMER COOLER MASTER COOLING X, AMD RYZEN 9 7950X3D, GEFORCE RTX 4080 16GB, 64GB DDR5, SSD M.2 4TB, LIQUID COOLER + FONTE COOLER MASTER V850",
+"informacoes": [
+    "Marca: Cooler Master",
+    "Modelo: PC-Cooling-X-43102",
+    "Processador: AMD Ryzen 9 7950X3D",
+    "Placa de Vídeo: GeForce RTX 4080 16GB",
+    "Placa Mãe: AMD B650 DDR5",
+    "Memória: 2X MEMÓRIA 32GB DDR5 5600Mhz",
+    "Armazenamento: 2X SSD M.2 2TB"
+],
+"avaliacao": 4,
+"preco": "57959.99",
+"precoAtual": "55599.99",
+"oferta": false,
+"imagem": [
+    "img//produtos/novos/master1.png",
+    "img//produtos/novos/master2.png",
+    "img//produtos/novos/master3.png"
+]
+},
+{ "id": 40,
+"nome": "PROCESSADOR AMD RYZEN",
+"categoria": "novos",
+"descricao": "PROCESSADOR AMD RYZEN THREADRIPPER PRO 7985WX, 64-CORE, 128-THREADS, 3.2GHZ (5.1GHZ TURBO), CACHE 320MB, STR5, 100-100000454WOF",
+"informacoes": [
+    "Marca: AMD",
+    "Modelo: 100-100000454WOF",
+    "Soquete: sTR5",
+    "Núcleos: 64",
+    "Threads: 128",
+    "Frequência base: 3.2 GHz",
+    "Tipo de memória: DDR5"
+],
+"avaliacao": 4,
+"preco": "53999.99",
+"precoAtual": "53999.99",
+"oferta": false,
+"imagem": [
+    "img//produtos/novos/amd1.jpg",
+    "img//produtos/novos/amd2.jpg"
+]
+},
+{ "id": 41,
+"nome": "KIT TECLADO E MOUSE",
+"categoria": "novos",
+"descricao": "KIT TECLADO E MOUSE CORSAIR K55 PRO + HARPOON PRO, RGB, ABNT2, 12000 DPI, CH-9226865-BR",
+"informacoes": [
+    "Marca: Corsair",
+    "Modelo: CH-9226865-BR",
+    "Teclado Gamer K55 RGB PRO: Iluminação: RGB<br>Layout do teclado: BR<br>Conectividade: Com fio",
+    "Mouse Harpoon RGB PRO: Botões Programáveis: 6<br>DPI: 6.000 DPI<br>Conectividade: Com fio"
+],
+"avaliacao": 4,
+"preco": "542.99",
+"precoAtual": "542.99",
+"oferta": false,
+"imagem": [
+    "img//produtos/novos/corsair1.jpg",
+    "img//produtos/novos/corsair2.jpg"
+]
+},
+{ "id": 42,
+"nome": "KIT UPGRADE",
+"categoria": "novos",
+"descricao": "KIT UPGRADE, AMD ATHLON 3000G, B450M DDR4, 8GB DDR4",
+"informacoes": [
+    "Modelo: YD3000C6FHBOX",
+    "Soquete: AM4",
+    "Núcleos: 2",
+    "Threads: 4",
+    "Frequência: 3.5 GHz",
+    "TDP: 35W"
+],
+"avaliacao": 4,
+"preco": "899.99",
+"precoAtual": "829.99",
+"oferta": true,
+"imagem": [
+    "img//produtos/novos/upgrade1.jpg"
+]
+},
+{ "id": 43,
+"nome": "OCULOS DE REALIDADE VIRTUAL",
+"categoria": "novos",
+"descricao": "OCULOS DE REALIDADE VIRTUAL HTC VIVE COSMOS ELITE HEADSET, PRETO, 99HASF006-00",
+"informacoes": [
+    "Marca: HTC",
+    "Modelo: 99HASF006-00",
+    "Tela: Dual 3.4\" diagonal",
+    "Resolução: 1440 x 1700 pixels por olho (2880 x 1700 pixels combinados)",
+    "Taxa de atualização: 90 Hz",
+    "Campo de visão: Máximo 110 graus",
+    "Áudio: Fone de ouvido estéreo"
+],
+"avaliacao": 4,
+"preco": "9159.99",
+"precoAtual": "9159.99",
+"oferta": false,
+"imagem": [
+    "img//produtos/novos/oculos1.jpg",
+    "img//produtos/novos/oculos2.jpg",
+    "img//produtos/novos/oculos3.jpg"
+]
+},
+{ "id": 44,
+"nome": "KIT RACE",
+"categoria": "novos",
+"descricao": "KIT RACE THRUSTMASTER FERRARI 599XX EVO EDITION, PC, PS4, XBOX ONE, FERRARI599XX-EVOEDITION",
+"informacoes": [
+    "Marca: Thrustmaster",
+    "Modelo: FERRARI599XX-EVOEDITION",
+    "Características: Controladores analíticos de 50 mm dos altifalantes<br>Almofadas em material viscoelástico<br>Microfone amovível e ajustáve",
+    "Tamanho : 30 cm de diâmetro para uma maior imersão nos jogos",
+    "Compatibilidade multiplataform: PS3™, PS4™ / Xbox One® / PC (Windows® 10, 8, 7)"
+],
+"avaliacao": 4,
+"preco": "999.99",
+"precoAtual": "999.99",
+"oferta": false,
+"imagem": [
+    "img//produtos/novos/race1.jpg",
+    "img//produtos/novos/race2.jpg",
+    "img//produtos/novos/race3.jpg"
+]
+},
+{ "id": 45,
+"nome": "PEDAL THRUSTMASTER",
+"categoria": "novos",
+"descricao": "PEDAL THRUSTMASTER T3PA SHIFTER ADD-ON, PC, PS3, PS4 E XBOX ONE, T3PA-SHIFTER",
+"informacoes": [
+    "Marca: Thrustmaster",
+    "Modelo: T3PA Shifter",
+    "Características: Pedais e estrutura interna 100% metálicos<br>Totalmente ajustáveis<br>​​Inclui opcional Mod de freio de borracha cônica<br>3 pedais com ajuste de espaçamento ajustável (3 posições)<br>3 pedais com ajuste de ângulo ajustável (2 posições)<br>Pedal do acelerador com ajuste de altura ajustável (2 posições)"
+],
+"avaliacao": 4,
+"preco": "799.99",
+"precoAtual": "799.99",
+"oferta": false,
+"imagem": [
+    "img//produtos/novos/pedal1.jpg",
+    "img//produtos/novos/pedal2.jpg"
+]
 }
 ],
 "banner": [
