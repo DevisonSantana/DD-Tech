@@ -275,8 +275,8 @@
     "oferta": false,
     "imagem": [
         "img//produtos/desktop/GUNGNIR1.png",
-        "img//produtos/monitores/GUNGNIR2.png",
-        "img//produtos/monitores/GUNGNIR3.png"
+        "img//produtos/desktop/GUNGNIR2.png",
+        "img//produtos/desktop/GUNGNIR3.png"
     ]
 },
 {
@@ -298,8 +298,8 @@
     "oferta": false,
     "imagem": [
         "img//produtos/desktop/Slim1.webp",
-        "img//produtos/monitores/Slim2.jpg",
-        "img//produtos/monitores/Slim3.jpg"
+        "img//produtos/desktop/Slim2.jpg",
+        "img//produtos/desktop/Slim3.jpg"
     ]
 },
 {
@@ -321,8 +321,8 @@
     "oferta": false,
     "imagem": [
         "img//produtos/desktop/Dell30701.webp",
-        "img//produtos/monitores/Dell30702.webp",
-        "img//produtos/monitores/Dell30703.webp"
+        "img//produtos/desktop/Dell30702.webp",
+        "img//produtos/desktop/Dell30703.webp"
     ]
 },
 {
@@ -344,8 +344,8 @@
     "oferta": true,
     "imagem": [
         "img//produtos/desktop/cpu1.webp",
-        "img//produtos/monitores/cpu2.webp",
-        "img//produtos/monitores/cpu3.webp"
+        "img//produtos/desktop/cpu2.webp",
+        "img//produtos/desktop/cpu3.webp"
     ]
 },
 {
@@ -367,8 +367,8 @@
     "oferta": false,
     "imagem": [
         "img//produtos/desktop/SEKIRA1.png",
-        "img//produtos/monitores/SEKIRA2.png",
-        "img//produtos/monitores/SEKIRA3.png"
+        "img//produtos/desktop/SEKIRA2.png",
+        "img//produtos/desktop/SEKIRA3.png"
     ]
 },
 {

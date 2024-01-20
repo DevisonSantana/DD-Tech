@@ -81,6 +81,7 @@ function passarProdutosRecuperados(produtoRecuperado){
 // verificar quais itens estao selecionados
 let total = 0
 function Verificar(){
+
     let produtoSeleconado = [...document.getElementsByClassName('produtoSeleconado')]
     produtoSeleconado.map((evt) => {
         evt.addEventListener("change", () => {
@@ -94,8 +95,10 @@ function Verificar(){
                 
             })
             atualizaSubtotalETotalNaPagina()
+            atualizarCarrinho()
         })
     })
+    atualizarCarrinho()
 }
 
 // aumentar ou dimunir itens pelos botoes
@@ -165,19 +168,27 @@ function atualizarCarrinho(){
     let tableTotalItem = [...document.getElementsByClassName('tableTotalItem')]
     total = 0
     item = []
-    for(let i = 0; i < tproduto.length; i++){
+    carrinhoAtualizar = {
+        Produtos: [],
+        Valoresfinais: {}
+    }
         
-        
-        let tot = (parseFloat(tdQtdade[i].value) * parseFloat(tablePrecoItem[i].innerText.slice(3).replace(/\./g, '').replace(',', '.')))     
-        total += tot      
-        tableTotalItem[i].innerText = tot.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})    
-        const alterado = {Imagem: tableImg[i].src, Nome: tableNome[i].innerText, Qtdade: tdQtdade[i].value, PrecoItem: tablePrecoItem[i].innerText.slice(3), PrecoTotalItem: tot}
-        carrinhoAtualizar.Produtos.push(alterado) 
 
-        
-        const novo1 = {Nome: tableNome[i].innerText, QtdadeItem: tdQtdade[i].value}
-        item.push(novo1) 
-        
+    for(let i = 0; i < tproduto.length; i++){
+        console.log(produtoSeleconado[i]);
+        if(produtoSeleconado[i].checked){
+
+            let tot = (parseFloat(tdQtdade[i].value) * parseFloat(tablePrecoItem[i].innerText.slice(3).replace(/\./g, '').replace(',', '.')))     
+            total += tot      
+            tableTotalItem[i].innerText = tot.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})    
+            const alterado = {Imagem: tableImg[i].src, Nome: tableNome[i].innerText, Qtdade: tdQtdade[i].value, PrecoItem: tablePrecoItem[i].innerText.slice(3), PrecoTotalItem: tot}
+            carrinhoAtualizar.Produtos.push(alterado) 
+    
+            
+            const novo1 = {Nome: tableNome[i].innerText, QtdadeItem: tdQtdade[i].value}
+            item.push(novo1) 
+            
+        }
     }   
     atualizaSubtotalETotalNaPagina()
         const valoresfinais = {subTotal: subtotal.innerText, precoTotal: precoTotal.innerText}

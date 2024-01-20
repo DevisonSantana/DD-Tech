@@ -30,7 +30,11 @@ function produtoDinamico(produtoEspecifico){
         produtoInfo.innerHTML = '<li><h2>Informações</h2></li>'
         for (let i = 0; i < 7; i++) {
             const element = produtoEspecifico.informacoes[i];
-            produtoInfo.innerHTML += `<li>${element}</li>`
+            if (element == undefined) {
+                break
+            } else {
+                produtoInfo.innerHTML += `<li>${element}</li>`
+            }
         }    
     }
 
@@ -39,6 +43,7 @@ function produtoDinamico(produtoEspecifico){
     <em>${produtoEspecifico.preco}</em>
     <h2>${ produtoEspecifico.precoAtual}</h2>
     `
+
     imgPai.innerHTML = `
     <img src="${produtoEspecifico.imagem[0]}" alt="dell inspiron" id="imgBig">
     <div id="imgFilho">
@@ -49,6 +54,7 @@ function produtoDinamico(produtoEspecifico){
         ).join("")} 
     </div>
     `
+    
     descricaoProduto.innerText = produtoEspecifico.descricao
     // adicionar click para mudar imagem pai
     addClick()
