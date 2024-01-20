@@ -257,3 +257,73 @@ function AcessarProdutoPage(produtoEspecifico){
         
         return div
     }
+
+    //Modal
+const ModalAtributs = document.getElementById("ModalGeral");
+console.log(ModalAtributs)
+var currentListAtributs = 1
+var arrayListAtributs = [
+    "none",
+    "flex"
+]
+
+function MudarDisplayAtributs() {
+    if (currentListAtributs == arrayListAtributs.length) {
+        currentListAtributs = 0
+    }
+    ModalAtributs.style.display = arrayListAtributs[currentListAtributs]
+    currentListAtributs++
+
+}
+ModalAtributs.addEventListener("click", (e) => {
+
+    if (e.target.nodeName == 'DIV' || e.target.nodeName == 'H2' || e.target.nodeName == "P" ){}
+    else MudarDisplayAtributs()
+    
+
+})
+
+
+function GerarModal(titulo, mensagem, botaoConfirmar, botaoSecond) {
+    ModalAtributs.innerHTML = `
+   
+   <div id="avaliarModal">
+   <div class="fecharModalSup"><button>X</button></div>
+   <h2>${titulo}</h2>
+   <p>${mensagem}</p>
+   <div class="btnModal">
+   <a href="carrinho.html"><button type="button">${botaoSecond}</button></a>
+   <a href="index.html"><button type="button"> ${botaoConfirmar}</button></a>
+   </div>
+   </div>
+      `
+
+}
+
+
+// input do footer
+
+let inputButtom = document.querySelector('.div-news button')
+console.log(inputButtom)
+inputButtom.addEventListener('click', () => {
+    let inputFooter = document.querySelector('.div-news input').value
+    if (!inputFooter == ''){
+        console.log("teste3")
+        GerarModal('Sucesso', "E-mail cadastrado com sucesso!", "Voltar", "")
+        setTimeout(() => {
+            MudarDisplayAtributs();
+        }, 0);
+        
+
+        setTimeout(() => {
+            efeitoModal();
+        }, 10);
+        
+    }
+})
+function efeitoModal(){
+    let avaliarModal = document.getElementById('avaliarModal');
+           
+        avaliarModal.style.transform = 'translateY(-100px)';
+
+}
