@@ -33,8 +33,7 @@ function carregarProdutos(dadosProdutos){
     let contagem = 1
 // Carregar secao de novos
 dadosProdutos.map(res =>{
-    if(res.categoria.toLowerCase() === 'novos   '){
-        for(cont = 1; cont <= 7; cont++){
+    if(res.categoria.toLowerCase() == "novos"){
         if(res.avaliacao == 4){
                 var avaliacao = "img//estrelas4.png"
             }
@@ -55,7 +54,6 @@ dadosProdutos.map(res =>{
                     </picture>
             `
             products_img.innerHTML += picture
-        }
     }
 // Inserção dinamicamente dos produtos por categoria
 
