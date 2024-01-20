@@ -72,8 +72,8 @@ if(res.categoria.toLowerCase() === 'personalize'){
                         <p class="descricao">
                             ${res.descricao}
                         </p>
-                        <em class="precoAntigo"> ${res.preco}.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})</em>
-                        <h6 class="precoAtual"> ${res.precoAtual}.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})</h6>
+                        <em class="precoAntigo"> ${res.preco}</em>
+                        <h6 class="precoAtual"> ${res.precoAtual}</h6>
                     </figcaption>
                 </picture>
         `
