@@ -260,7 +260,6 @@ function AcessarProdutoPage(produtoEspecifico){
 
     //Modal
 const ModalAtributs = document.getElementById("ModalGeral");
-console.log(ModalAtributs)
 var currentListAtributs = 1
 var arrayListAtributs = [
     "none",
@@ -285,19 +284,34 @@ ModalAtributs.addEventListener("click", (e) => {
 
 
 function GerarModal(titulo, mensagem, botaoConfirmar, botaoSecond) {
-    ModalAtributs.innerHTML = `
+    if(botaoSecond == ''){
+        ModalAtributs.innerHTML = `
    
    <div id="avaliarModal">
    <div class="fecharModalSup"><button>X</button></div>
    <h2>${titulo}</h2>
    <p>${mensagem}</p>
    <div class="btnModal">
-   <a href="carrinho.html"><button type="button">${botaoSecond}</button></a>
-   <a href="index.html"><button type="button"> ${botaoConfirmar}</button></a>
+    <button type="button"> ${botaoConfirmar}</button>
    </div>
    </div>
       `
+    }
+    else{
 
+        ModalAtributs.innerHTML = `
+        
+        <div id="avaliarModal">
+        <div class="fecharModalSup"><button>X</button></div>
+        <h2>${titulo}</h2>
+        <p>${mensagem}</p>
+        <div class="btnModal">
+        <a href="carrinho.html"><button type="button">${botaoSecond}</button></a>
+        <button type="button"> ${botaoConfirmar}</button>
+        </div>
+        </div>
+        `
+    }
 }
 
 

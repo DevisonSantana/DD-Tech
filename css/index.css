@@ -35,10 +35,12 @@ a:checked {
     overflow-x: hidden;
     overflow-y: hidden;
     scroll-behavior: smooth;
+    z-index: -;
 }
 
 .banner_img {
     width: 80vw;
+    z-index: -;
 }
 
 #banner>img {

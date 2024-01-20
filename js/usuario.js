@@ -95,10 +95,10 @@ function carregarBotoesPedido(){
 
 
 const listAtributs = document.getElementById("atributs");
-var buttonProducts = [...document.getElementsByClassName("button")]
+let buttonProducts = [...document.getElementsByClassName("button")]
 
-var currentListAtributs = 1
-var arrayListAtributs = [
+let currentListAtributs = 1
+let arrayListAtributs = [
     "none",
     "flex"
 ]
@@ -107,10 +107,21 @@ buttonProducts.map((e) => {
         var numAtribut = evt.target.value
         passarAtributs(numAtribut)
         MudarDisplayAtributs()
+        setTimeout(() => {
+            efeitoModal();
+        }, 10);
     })
 });
 
+function efeitoModal(){
+    let avaliarModal = document.getElementById('avaliarModal');
+           
+        avaliarModal.style.transform = 'translateY(-100px)';
+
+}
+
 function MudarDisplayAtributs() {
+
     if (currentListAtributs == arrayListAtributs.length) {
         currentListAtributs = 0
     }
@@ -136,6 +147,15 @@ clicarEstrelas()
 }
 
 // alterar cadastro
+let btnAlterarCadastro = document.querySelector('#alterarCadastro button')
+
+btnAlterarCadastro.addEventListener('click', (botao) => {
+    botao.preventDefault()
+    ModalAdiciobadoCarrinho("Sucesso", "Seua Cadastro foi Alterado", "Voltar", "")
+    MudarDisplayAtrib()
+
+})
+// alterar cadastro
 
 let inputs = document.querySelectorAll('#formCadastro input')
 let span = [...document.getElementsByClassName('span')]
@@ -154,8 +174,15 @@ AlterarEndereco.addEventListener('click', () => {
         inputsEndereco[i].value = inputsEndereco[i].placeholder
 
     }
-    AlterarEndereco.innerHTML = '<button class="btnAlterar" id="confirmarMudancaEndereco">confirmar</button>'
-})      
+    AlterarEndereco.innerHTML = '<button class="btnAlterar" id="confirmarMudancaEndereco" onclick="mudarEndereco()">confirmar</button>'
+})   
+
+function mudarEndereco(){
+    console.log("testou")
+    ModalAdiciobadoCarrinho("Sucesso", "Seu Endereço foi Alterado", "Voltar", "")
+    MudarDisplayAtrib()
+}
+
 
 function avaliar() {
     const div = `
@@ -197,7 +224,7 @@ function acompanhar() {
        <th  class="descricaoPedidos">
        Previsao
        </th >
-       <th  class="precoAtual">Codigo de rastreio</td>
+       <th  class="precoAtual">Codigo de rastreiamento</td>
        
    </tr>
    </thead>
@@ -338,6 +365,66 @@ function carregarEnderecoCadastrado(dados){
 
 }
 
+//Modal
+let ModalAtrib = document.getElementById("ModalGeral");
+
+
+function MudarDisplayAtrib() {
+    ModalAtrib.style.display = 'none'
+    if (ModalAtrib.style.display == 'none') {
+        ModalAtrib.style.display = 'flex'
+    }
+   
+
+}
+ModalAtrib.addEventListener("click", (e) => {
+
+    if (e.target.nodeName == 'DIV' || e.target.nodeName == 'H2' || e.target.nodeName == "P" ){}
+    else MudarDisplayAtrib()
+    
+})
+
+
+function ModalAdiciobadoCarrinho(titulo, mensagem, botaoConfirmar, botaoSecond) {
+    if(botaoSecond == ''){
+        ModalAtrib.innerHTML = `
+   
+   <div id="avaliarModal">
+   <div class="fecharModalSup"><button>X</button></div>
+   <h2>${titulo}</h2>
+   <p>${mensagem}</p>
+   <div class="btnModal">
+   <button type="button"> ${botaoConfirmar}</button>
+   </div>
+   </div>
+      `
+    }
+    else{
+
+        ModalAtrib.innerHTML = `
+        
+        <div id="avaliarModal">
+        <div class="fecharModalSup"><button>X</button></div>
+        <h2>${titulo}</h2>
+        <p>${mensagem}</p>
+        <div class="btnModal">
+        <a href="carrinho.html"><button type="button">${botaoSecond}</button></a>
+        <button type="button"> ${botaoConfirmar}</button>
+        </div>
+        </div>
+        `
+    }
+    setTimeout(() => {
+        efeitoModal();
+    }, 10);
+}
+function efeitoModal(){
+    let avaliarModal = document.getElementById('avaliarModal');
+           
+        avaliarModal.style.transform = 'translateY(-100px)';
+
+}
+
 
 
 // recebe cadastros do banco
@@ -398,3 +485,4 @@ async function fetchProfileDataProdutos() {
     })
     carregarCartao(profileDataCadastro.cadastro[2], cartoesUsuario)
 })()
+

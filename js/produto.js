@@ -122,7 +122,7 @@ btncomprar.addEventListener('click', () =>{
 btnAdicionar.addEventListener('click', () => {
     AlterarCarrinho()
     ModalAdiciobadoCarrinho("Obaaa!!!", `O item <strong> ${(item[Number(item.length) - 1].Nome).toUpperCase()}</strong> foi adicionado ao carrinho`, "Continuar comprando", "Ir para o Carrinho")
-    MudarDisplayAtributs()
+    MudarDisplayAtr()
     let avaliarModal = document.getElementById('avaliarModal')
     avaliarModal.style.transitionDelay = '2s'
     avaliarModal.style.transform = 'translateY(00vh)'
@@ -147,41 +147,58 @@ function AlterarCarrinho(){
 }
 //Modal
 let ModalAtribut = document.getElementById("ModalGeral");
-var currentListAtributs = 1
-var arrayListAtributs = [
+let currentListAtribut = 1
+let arrayListAtribut = [
     "none",
     "flex"
 ]
 
-function MudarDisplayAtributs() {
-    if (currentListAtributs == arrayListAtributs.length) {
-        currentListAtributs = 0
+function MudarDisplayAtr() {
+    if (currentListAtribut == arrayListAtribut.length) {
+        currentListAtribut = 0
     }
-    ModalAtributs.style.display = arrayListAtributs[currentListAtributs]
-    currentListAtributs++
+    ModalAtribut.style.display = arrayListAtribut[currentListAtribut]
+    currentListAtribut++
+    console.log(currentListAtribut)
 
 }
-ModalAtributs.addEventListener("click", (e) => {
+ModalAtribut.addEventListener("click", (e) => {
 
     if (e.target.nodeName == 'DIV' || e.target.nodeName == 'H2' || e.target.nodeName == "P" ){}
-    else MudarDisplayAtributs()
+    else MudarDisplayAtr()
     
 
 })
 
 
 function ModalAdiciobadoCarrinho(titulo, mensagem, botaoConfirmar, botaoSecond) {
-    ModalAtributs.innerHTML = `
+    if(botaoSecond == ''){
+        ModalAtribut.innerHTML = `
    
    <div id="avaliarModal">
    <div class="fecharModalSup"><button>X</button></div>
    <h2>${titulo}</h2>
    <p>${mensagem}</p>
    <div class="btnModal">
-   <a href="carrinho.html"><button type="button">${botaoSecond}</button></a>
    <a href="index.html"><button type="button"> ${botaoConfirmar}</button></a>
    </div>
    </div>
       `
+    }
+    else{
+
+        ModalAtribut.innerHTML = `
+        
+        <div id="avaliarModal">
+        <div class="fecharModalSup"><button>X</button></div>
+        <h2>${titulo}</h2>
+        <p>${mensagem}</p>
+        <div class="btnModal">
+        <a href="carrinho.html"><button type="button">${botaoSecond}</button></a>
+        <a href="index.html"><button type="button"> ${botaoConfirmar}</button></a>
+        </div>
+        </div>
+        `
+    }
 
 }

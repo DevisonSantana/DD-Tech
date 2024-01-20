@@ -48,8 +48,8 @@
 }
 .footer-start div {
     font-size: .7rem;
-    height: 15rem;
-    width: 10rem;
+    height: fit-content;
+    width: fit-content;
 }
 .footer-start div ul {
     display: flex;

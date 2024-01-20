@@ -264,7 +264,7 @@ header img{
     flex-direction: column !important;
     position: absolute;
     width: 100px;
-    z-index: 10;
+    z-index: 11;
     margin-top: 45px;
     top: -10px;
     right: -50px;
@@ -280,6 +280,7 @@ header img{
     padding: 10%;
     margin-left: 20px !important;
     text-align: center;
+    z-index: auto;
 }
 #divLogado li:hover{
     color: #000;
@@ -406,8 +407,7 @@ height: 15px;
     z-index: 1000;
     margin: auto;
     transform: translateY(-500px);
-    transition: all 0.5s ; /* Adiciona uma transição na propriedade transform */
-
+    transition: all 0.5s; /* Adiciona uma transição na propriedade transform */
   }
 
 .fecharModalSup{
@@ -427,7 +427,7 @@ height: 15px;
     width: 40px;
 }
 .btnModal{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
