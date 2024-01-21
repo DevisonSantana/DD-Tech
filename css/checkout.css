@@ -18,9 +18,9 @@ h1 {
 
 .caixa{
     background-color: #F5F7FF;
-    padding: 40px;
-    width: fit-content;
-     
+    padding: 42px;
+    width: 26%;
+    margin-left: -33px;
 }
 
 #main{
@@ -30,13 +30,27 @@ h1 {
     width: 100%;
     padding: 21px;
 }
+#elemento1{
+    background-color: red;
+    padding-left: 10%;
+}
 
 #main table {
     border-collapse: collapse;
 }
+#tabela{
+    
+    
+    
+}
+tr{
+    
+    
+}
+
 
 #main table tbody td {
-    padding: 10px;
+    padding-left: 75px;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }

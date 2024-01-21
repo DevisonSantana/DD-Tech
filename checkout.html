@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/checkout.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/checkout.js" defer></script>
 </head>
@@ -83,22 +83,24 @@
         <main id="main">
             
             <h1>Checkout de compra</h1>
-        
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Nome</th>
-                        <th>Preço</th>
-                        <th>Qtd</th>
-                        <th>Subtotal</th>
-                    </tr>
-                </thead>
-                
-                <tbody id="table-body">
+            
+            <div id="tabela">
+                <table>
+                    <thead>
+                        <tr id="elemento1">
+                            <th></th>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th>Qtd</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
                     
-                </tbody>
-            </table>
+                    <tbody id="table-body">
+                        
+                    </tbody>
+                </table>
+            </div>  
 
             <button type="button" id="atualizar" onclick="retornarCarrinho()">Retornar ao carrinho</button>
             <div id="opcoes">
@@ -119,64 +121,64 @@
                 <table>
                     <tbody>
                         <tr>
-                            <td><input type="radio" name="credito" id="1x"></td>
-                            <td>1x S/ juros</td>
-                            <td>100</td>
+                            <td><input type="radio" name="credito"></td>
+                            <td></td>
+                            <td id="1x">100</td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="credito" id="2x"></td>
-                            <td>2x S/ juros</td>
-                            <td>100</td>
+                            <td><input type="radio" name="credito"></td>
+                            <td></td>
+                            <td id="2x">100</td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="credito" id="3x"></td>
-                            <td>3x S/ juros</td>
-                            <td>100</td>
+                            <td><input type="radio" name="credito"></td>
+                            <td></td>
+                            <td id="3x">100</td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="credito" id="4x"></td>
-                            <td>4x S/ juros</td>
-                            <td>100</td>
+                            <td><input type="radio" name="credito"></td>
+                            <td></td>
+                            <td id="4x">100</td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="credito" id="5x"></td>
-                            <td>5x S/ juros</td>
-                            <td>100</td>
+                            <td><input type="radio" name="credito" ></td>
+                            <td></td>
+                            <td id="5x">100</td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="credito" id="6x"></td>
-                            <td>6x S/ juros</td>
-                            <td>100</td>
+                            <td><input type="radio" name="credito" ></td>
+                            <td></td>
+                            <td id="6x">100</td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="credito" id="7x"></td>
-                            <td>7x S/ juros</td>
-                            <td>100</td>
+                            <td><input type="radio" name="credito" ></td>
+                            <td></td>
+                            <td id="7x">100</td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="credito" id="8x"></td>
-                            <td>8x S/ juros</td>
-                            <td>100</td>
+                            <td><input type="radio" name="credito" ></td>
+                            <td></td>
+                            <td id="8x">100</td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="credito" id="9x"></td>
-                            <td>9x S/ juros</td>
-                            <td>100</td>
+                            <td><input type="radio" name="credito" ></td>
+                            <td></td>
+                            <td id="9x">100</td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="credito" id="10x"></td>
-                            <td>10x S/ juros</td>
-                            <td>100</td>
+                            <td><input type="radio" name="credito" ></td>
+                            <td></td>
+                            <td id="10x">100</td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="credito" id="11x"></td>
-                            <td>11x S/ juros</td>
-                            <td>100</td>
+                            <td><input type="radio" name="credito" ></td>
+                            <td></td>
+                            <td id="11x">100</td>
                         </tr>
                         <tr>
-                            <td><input type="radio" name="credito" id="12x"></td>
-                            <td>12x S/ juros</td>
-                            <td>100</td>
+                            <td><input type="radio" name="credito" ></td>
+                            <td></td>
+                            <td id="12x">100</td>
                         </tr>
                     </tbody>
                 </table>
@@ -185,7 +187,7 @@
         
             
             <div>
-                <p>Subtotal <span>$ 18.00,00</span></p>
+                <p id="subtotal1">subtotal R$ 18.00,00</p>
             </div>
 
             <div>
@@ -197,7 +199,7 @@
             </div>
 
             <div>
-                <p>Preço Total: <span>R$ 10.000,00</span></p>
+                <p id="precoTotal">Preço Total:R$ 10.000,00</p>
             </div>
 
             <div id="menu">
