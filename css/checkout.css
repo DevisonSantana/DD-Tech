@@ -30,9 +30,10 @@ h1 {
     width: 100%;
     padding: 21px;
 }
-#elemento1{
+
+#elemento2{
     background-color: red;
-    padding-left: 10%;
+
 }
 
 #main table {

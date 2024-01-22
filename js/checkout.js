@@ -12,17 +12,24 @@ const tabelaProduto = document.getElementById("table-body");
 
 carrinhoItem.map((e) => {
     console.log(e.Imagem);
-    tabelaProduto.innerHTML += 
-    `<tr>
-        <td>
-            <img src="${e.Imagem}" alt="${e.Nome}" width= 114px>
-        </td>
+
+    // Convertendo e.PrecoItem para número e formatando com 2 casas decimais
+    const precoItemFormatado = parseFloat(e.PrecoItem).toLocaleString('pt-br', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    // Convertendo e.PrecoTotalItem para número e formatando com 2 casas decimais
+    const precoTotalItemFormatado = parseFloat(e.PrecoTotalItem).toLocaleString('pt-br', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    tabelaProduto.innerHTML +=
+        `<tr>
+        <td><img src="${e.Imagem}" alt="${e.Nome}" width= 114px></td>
         <td>${e.Nome}</td>
-        <td>R$ ${e.PrecoItem}</td>
+        <td>R$ ${precoItemFormatado}</td>
         <td>${e.Qtdade}</td>
-        <td>${(e.PrecoTotalItem).toLocaleString('pt-br', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+        <td>R$ ${precoTotalItemFormatado}</td>
     </tr>`;
 });
+
+
 
 let subtotal1 = document.getElementById("subtotal1");
 subtotal1.textContent = `Subtotal: R$ ${subTotal.toLocaleString('pt-br', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
