@@ -191,20 +191,32 @@ function atualizarCarrinho(){
         }
     }   
     atualizaSubtotalETotalNaPagina()
-        const valoresfinais = {subTotal: subtotal.innerText, precoTotal: precoTotal.innerText}
-        carrinhoAtualizar.Valoresfinais = valoresfinais
+    atualizarValoresFinais()   
+    salvarCarrinhoFinal()
 
 
-        let jsonAux = JSON.stringify(carrinhoAtualizar)
+
+        
+    
+    
+}
+function salvarCarrinhoFinal(){
+    let jsonAux = JSON.stringify(carrinhoAtualizar)
         localStorage.clear("carrinhoFinal")
         sessionStorage.setItem("carrinhoFinal", jsonAux)
         //let itensRecuperCarrinhoFinal = localStorage.getItem("carrinhoFinal")
     //window.location.reload();
     atualizarCarrinhoSessionStorage()
-    
-    
 }
-
+function atualizarValoresFinais(){
+    let taxaAtual = document.getElementById("taxa").textContent
+        let envioAtual = document.getElementById("envio").innerText
+        console.log(taxaAtual)
+        console.log(envioAtual)
+        const valoresfinais = {subTotal: subtotal.innerText, precoTotal: precoTotal.innerText, taxa: taxaAtual, envio: envioAtual}
+        carrinhoAtualizar.Valoresfinais = valoresfinais
+        salvarCarrinhoFinal()
+}
 function atualizarCarrinhoSessionStorage(){
     let jsonAux = JSON.stringify(item)
     localStorage.clear("itemCarrinho")
@@ -296,24 +308,30 @@ function verificaPais(){
                 valorDaTaxa = 0.10
                 valorDeEnvio = 22.48
                 adicionaTaxaEEnvioNaPagina()
+                    
             } else if(taxaPorPais.value == 'canada'){
                 valorDaTaxa = 28.64
                 valorDeEnvio = 50.99
                 adicionaTaxaEEnvioNaPagina()
+                
             } else {
                 valorDaTaxa = 21.97
                 valorDeEnvio = 49.01
                 adicionaTaxaEEnvioNaPagina()
+                
             }    
         } else {
             valorDaTaxa = 0
             valorDeEnvio = 0
             adicionaTaxaEEnvioNaPagina()
+            
         }
         
         function adicionaTaxaEEnvioNaPagina(){
             taxa.innerText = (valorDaTaxa).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
             envio.innerText = (valorDeEnvio).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+            atualizarValoresFinais() 
+
         }
     }
     return valorDaTaxa + valorDeEnvio;

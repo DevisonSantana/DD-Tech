@@ -116,9 +116,9 @@
             <h3>Pagamento</h3>
             <div id="opcoesPagamento">
 
-                <label for="pix" > <input type="radio" name="opcoesPagamento" id="">PIX</label>
-                <label for="cartao"> <input type="radio" name="opcoesPagamento" id="">Cartão de crédito</label>
-                <table>
+                <label for="pix" > <input type="radio" name="opcoesPagamento" id="pix">PIX</label>
+                <label for="cartao"> <input type="radio" name="opcoesPagamento" id="cartao">Cartão de crédito</label>
+                <table id="tabelaCartao">
                     <tbody>
                         <tr>
                             <td><input type="radio" name="credito"></td>
@@ -182,6 +182,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <div id="cartoes">
+                    <label for="">Escolha seu Cartão</label>
+                    <div><input type="radio" name="cartaoEscolhido" id="1"><span>Visa: </span><span>5502</span></div>
+                    <div><input type="radio" name="cartaoEscolhido" id="2"><span>Mastercard: </span><span>5502</span></div>
+                </div>
             </div>
             
         
@@ -191,11 +196,11 @@
             </div>
 
             <div>
-                <p>Envio: <span>R$ 100,00</span></p>
+                <p>Envio: <span id="envio">R$ 100,00</span></p>
             </div>
 
             <div>
-                <p>Taxa: <span>R$ 10,00</span></p>
+                <p>Taxa: <span id="taxa">R$ 10,00</span></p>
             </div>
 
             <div>

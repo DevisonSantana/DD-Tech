@@ -1,6 +1,6 @@
 let carrinhoItem = sessionStorage.getItem('carrinhoFinal');
 carrinhoItem = JSON.parse(carrinhoItem);
-console.log(carrinhoItem);
+console.log(carrinhoItem.Valoresfinais.envio);
 
 let valoresFinais = carrinhoItem.Valoresfinais || {};
 let subTotalString = valoresFinais.subTotal || '0';
@@ -32,6 +32,21 @@ console.log(subtotal1);
 let precoTotal1 = document.getElementById("precoTotal");
 precoTotal1.textContent = `Preço Total: R$ ${subTotal.toLocaleString('pt-br', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
 
+
+let envioFinal = document.getElementById("envio")
+console.log(envioFinal)
+envioFinal.innerText = valoresFinais.envio
+
+
+
+let taxa = document.getElementById("taxa")
+taxa.textContent = valoresFinais.taxa
+
+console.log(taxa)
+
+let somaTotal = 0
+
+
 // Cartão de crédito x1 a x12
 for (let i = 1; i <= 12; i++) {
     let parcela = document.getElementById(`${i}x`);
@@ -51,7 +66,30 @@ for (let i = 1; i <= 12; i++) {
 // Atribuir o mesmo valor de precoTotal1 ao elemento com ID "1x"
 let x1 = document.getElementById("1x");
 if (x1) {
-    x1.textContent = `1x de R$${subTotal.toLocaleString('pt-br', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    x1.textContent = `1x de R$  ${subTotal.toLocaleString('pt-br', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
     console.log(x1);
 }
+
+let opcaoDePagamentoPix = document.getElementById("pix")
+let opcaoDePagamentocartao = document.getElementById("cartao")
+let tabelaCartao = document.getElementById("tabelaCartao")
+let cartoes = document.getElementById("cartoes")
+opcaoDePagamentoPix.addEventListener('change', ()=> {
+    if (opcaoDePagamentoPix.checked){
+        console.log("opcaoDePagamentoPix")
+        tabelaCartao.style.display = "none"
+        cartoes.style.display = "none"
+    
+    }
+
+})
+opcaoDePagamentocartao.addEventListener('change', ()=> {
+    if (opcaoDePagamentocartao.checked){
+        console.log("opcaoDePagamentocartao")
+    tabelaCartao.style.display = "table"
+    cartoes.style.display = "block"}
+
+})
+
+
 
