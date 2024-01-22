@@ -21,22 +21,40 @@ botao_pagamento.addEventListener('click', (evt)=>{
         var spanEstado = document.getElementById('spanEstado');
         var spanCep = document.getElementById('spanCep');
         var spanEntrega = document.getElementById('spanEntrega');
+        var spanBtn = document.getElementById('spanBtn');
 
         // Exemplo: Validar se os campos não estão vazios
         if (pais === '') {
-            spanPais.style.display = 'block'
+            spanBtn.style.display = 'block'
+            setTimeout(() => { window.scrollTo({ top: 300, behavior: 'smooth'});; }, 500);
+            setTimeout(() => {spanPais.style.display = 'block'; }, 1200);
+            setTimeout(() => {spanPais.style.display = 'none'; }, 2800);
+            setTimeout(() => {spanBtn.style.display = 'none'; }, 5800);
+
             return false;
         }
         else if (estadoCidade === '') {
-            spanEstado.style.display = 'block'
+            spanBtn.style.display = 'block'
+            setTimeout(() => { window.scrollTo({ top: 300, behavior: 'smooth'});; }, 500);
+            setTimeout(() => {spanEstado.style.display = 'block'; }, 1200);
+            setTimeout(() => {spanEstado.style.display = 'none'; }, 2800);
+            setTimeout(() => {spanBtn.style.display = 'none'; }, 5800);
             return false;
         }
         else if (cep == '') {
-            spanCep.style.display = 'block'
+            spanBtn.style.display = 'block'
+            setTimeout(() => { window.scrollTo({ top: 300, behavior: 'smooth'});; }, 500);
+            setTimeout(() => {spanCep.style.display = 'block'; }, 1200);
+            setTimeout(() => {spanCep.style.display = 'none'; }, 2800);
+            setTimeout(() => {spanBtn.style.display = 'none'; }, 5800);
             return false;
         }
         else if (!opcaoEntregaSelecionada) {
-            spanEntrega.style.display = 'block'
+            spanBtn.style.display = 'block'
+            setTimeout(() => { window.scrollTo({ top: 300, behavior: 'smooth'});; }, 500);
+            setTimeout(() => {spanEntrega.style.display = 'block'; }, 1200);
+            setTimeout(() => {spanEntrega.style.display = 'none'; }, 2800);
+            setTimeout(() => {spanBtn.style.display = 'none'; }, 5800);
             return false;
         }
         else{
