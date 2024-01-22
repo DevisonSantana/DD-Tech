@@ -227,7 +227,7 @@ function atualizarCarrinho(){
             let tot = (parseFloat(tdQtdade[i].value) * parseFloat(tablePrecoItem[i].innerText.replace(/\./g, '').replace(',', '.')))     
             total += tot      
             tableTotalItem[i].innerText = tot.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})    
-            const alterado = {Imagem: tableImg[i].src, Nome: tableNome[i].innerText, Qtdade: tdQtdade[i].value, PrecoItem: tablePrecoItem[i].innerText.slice(3), PrecoTotalItem: tot}
+            const alterado = {Imagem: tableImg[i].src, Nome: tableNome[i].innerText, Qtdade: tdQtdade[i].value, PrecoItem: tablePrecoItem[i].innerText, PrecoTotalItem: tot}
             carrinhoAtualizar.Produtos.push(alterado) 
     
             const novo1 = {Nome: tableNome[i].innerText, QtdadeItem: tdQtdade[i].value}

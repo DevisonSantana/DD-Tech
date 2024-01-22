@@ -6,7 +6,7 @@ let valoresFinais = carrinhoItem.Valoresfinais || {};
 let subTotalString = valoresFinais.subTotal || '0';
 let subTotal = parseFloat(subTotalString.replace(/[^\d,.-]/g, '').replace('.', '').replace(',', '.')) || 0;
 carrinhoItem = carrinhoItem.Produtos;
-console.log(subTotal);
+console.log(carrinhoItem);
 
 const tabelaProduto = document.getElementById("table-body");
 
