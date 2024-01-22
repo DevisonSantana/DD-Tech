@@ -7,8 +7,8 @@
     "categoria": "tablet",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "499,00",
+    "precoAtual": "499,00",
     "oferta": false,
     "imagem": [
         "img//Ex_diplay.png"
@@ -20,8 +20,8 @@
     "categoria": "personalize",
     "descricao": "Barra De Led Rítmica Rgb Com 32 Led Ideal Para Setup Gamer - Knup...",
     "avaliacao": 4,
-    "preco": "49.00",
-    "precoAtual": "49.00",
+    "preco": "49,00",
+    "precoAtual": "49,00",
     "oferta": false,
     "imagem": [
         "img//produtos/barra1.webp",
@@ -43,8 +43,8 @@
         "ITENS INCLUSOS: 01 Rolo 5 metros Fita LED ULTRA RGB 5050 <br> 01 Cabo controlador USB de 21cm <br> 01 Controle"
     ],
     "avaliacao": 4,
-    "preco": "79.90",
-    "precoAtual": "79.90",
+    "preco": "79,90",
+    "precoAtual": "79,90",
     "oferta": false,
     "imagem": [
         "img//produtos/rgb1.webp",
@@ -66,8 +66,8 @@
         "Número de threads: 20"
     ],
     "avaliacao": 4,
-    "preco": "2899.00",
-    "precoAtual": "2499.90",
+    "preco": "2.899,00",
+    "precoAtual": "2.499,90",
     "oferta": true,
     "imagem": [
         "img//produtos/core9.webp"
@@ -86,8 +86,8 @@
         "Cache 20MB"
     ],
     "avaliacao": 4,
-    "preco": "1499.00",
-    "precoAtual": "1499.00",
+    "preco": "1.499,00",
+    "precoAtual": "1.499,00",
     "oferta": false,
     "imagem": [
         "img//produtos/inteli5.jpg"
@@ -99,8 +99,8 @@
     "categoria": "personalize",
     "descricao": "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "499,00",
+    "precoAtual": "499,00",
     "oferta": false,
     "imagem": [
         "img//produtos/delta.png"
@@ -112,8 +112,8 @@
     "categoria": "notebook",
     "descricao": "Desfrute de um desempenho ágil, porém silencioso, com processadores Intel® Core™ de 11ª geração combinados com SSD PCIe. Conte também com configurações disponíveis com placa de vídeo integrada Intel® Iris Xe. Beneficie-se das teclas grandes e de um touchpad espaçoso que facilita a navegação do conteúdo. O software ComfortView é uma solução com certificação TUV Rheinland que reduz as emissões de luz azul prejudicial para proporcional conforto visual durante tempos longos de visualização. Além disso, as elegantes bordas estreitas em três lados incluem uma tela Full HD opcional.",
     "avaliacao": 5,
-    "preco": "2300.00",
-    "precoAtual": "1999.00",
+    "preco": "2.300,00",
+    "precoAtual": "1.999,00",
     "oferta": true,
     "informacoes": [
         "Processador - 12ª geração Intel® Core™ i3-1215U",
@@ -143,8 +143,8 @@
         "Azul - K6502HC-LP095W"
     ],
     "avaliacao": 4,
-    "preco": "8999.99",
-    "precoAtual": "8999.99",
+    "preco": "8.999,99",
+    "precoAtual": "8.999,99",
     "oferta": false,
     "imagem": [
         "img//produtos/notebooks/asus1.jpg",
@@ -168,8 +168,8 @@
         "Placa de vídeo AMD RadeonTM Graphics."
     ],
     "avaliacao": 4,
-    "preco": "499.00",
-    "precoAtual": "499.00",
+    "preco": "4.99,00",
+    "precoAtual": "4.99,00",
     "oferta": false,
     "imagem": [
         "img//produtos/notebooks/acer1.webp",
@@ -193,8 +193,8 @@
         "Placa de vídeo Intel Graphics."
     ],
     "avaliacao": 4,
-    "preco": "2219.00",
-    "precoAtual": "2219.00",
+    "preco": "2.219,00",
+    "precoAtual": "2.219,00",
     "oferta": false,
     "imagem": [
         "img//produtos/notebooks/lenovo1.webp",
@@ -218,8 +218,8 @@
         "Placa de vídeo Intel Graphics."
     ],
     "avaliacao": 4,
-    "preco": "2499.00",
-    "precoAtual": "2499.00",
+    "preco": "2.499,00",
+    "precoAtual": "2.499,00",
     "oferta": false,
     "imagem": [
         "img//produtos/notebooks/vaio1.webp",
@@ -243,8 +243,8 @@
         "Placa de vídeo Intel Graphics."
     ],
     "avaliacao": 4,
-    "preco": "3999.00",
-    "precoAtual": "3999.00",
+    "preco": "3.999,00",
+    "precoAtual": "3.999,00",
     "oferta": false,
     "imagem": [
         "img//produtos/notebooks/hp1.webp",
@@ -266,8 +266,8 @@
         "Fonte de Alimentação: ATX <br> 80 x 215 x 450 mm"
     ],
     "avaliacao": 4,
-    "preco": "1033.99",
-    "precoAtual": "1033.99",
+    "preco": "1.033,99",
+    "precoAtual": "1.033,99",
     "oferta": false,
     "imagem": [
         "img//produtos/desktop/GUNGNIR1.png",
@@ -289,8 +289,8 @@
         "Fonte de Alimentação: ATX <br> 80 x 215 x 450 mm"
     ],
     "avaliacao": 4,
-    "preco": "1308.75",
-    "precoAtual": "1308.75",
+    "preco": "1.308,75",
+    "precoAtual": "1.308,75",
     "oferta": false,
     "imagem": [
         "img//produtos/desktop/Slim1.webp",
@@ -312,8 +312,8 @@
         "Fonte de Alimentação: ATX <br> 80 x 215 x 450 mm"
     ],
     "avaliacao": 4,
-    "preco": "1499.00",
-    "precoAtual": "1499.00",
+    "preco": "1.499,00",
+    "precoAtual": "1.499,00",
     "oferta": false,
     "imagem": [
         "img//produtos/desktop/Dell30701.webp",
@@ -335,8 +335,8 @@
         "Fonte de Alimentação: ATX <br> 80 x 215 x 450 mm"
     ],
     "avaliacao": 4,
-    "preco": "899.00",
-    "precoAtual": "799.00",
+    "preco": "899,00",
+    "precoAtual": "799,00",
     "oferta": true,
     "imagem": [
         "img//produtos/desktop/cpu1.webp",
@@ -358,8 +358,8 @@
         "Fonte de Alimentação: ATX <br> 80 x 215 x 450 mm"
     ],
     "avaliacao": 4,
-    "preco": "1499.00",
-    "precoAtual": "1499.00",
+    "preco": "1.499,00",
+    "precoAtual": "1.499,00",
     "oferta": false,
     "imagem": [
         "img//produtos/desktop/SEKIRA1.png",
@@ -382,8 +382,8 @@
         "Nota: Display Port: 1920 x 1080 (até 165Hz) <br> HDMI™: 1920 x 1080 (até 144Hz)"
     ],
     "avaliacao": 4,
-    "preco": "799.00",
-    "precoAtual": "799.00",
+    "preco": "799,00",
+    "precoAtual": "799,00",
     "oferta": false,
     "imagem": [
         "img//produtos/monitores/Optix1.png",
@@ -406,8 +406,8 @@
         "Nota: Display Port: 1920 x 1080 (até 165Hz) <br> HDMI™: 1920 x 1080 (até 144Hz)"
     ],
     "avaliacao": 4,
-    "preco": "999.00",
-    "precoAtual": "999.00",
+    "preco": "999,00",
+    "precoAtual": "999,00",
     "oferta": false,
     "imagem": [
         "img//produtos/monitores/G274RW1.png",
@@ -430,8 +430,8 @@
         "Nota: Display Port: 1920 x 1080 (até 165Hz) <br> HDMI™: 1920 x 1080 (até 144Hz)"
     ],
     "avaliacao": 4,
-    "preco": "849.00",
-    "precoAtual": "499.00",
+    "preco": "849,00",
+    "precoAtual": "499,00",
     "oferta": true,
     "imagem": [
         "img//produtos/monitores/MAG274R21.png",
@@ -454,8 +454,8 @@
         "Nota: Display Port: 1920 x 1080 (até 165Hz) <br> HDMI™: 1920 x 1080 (até 144Hz)"
     ],
     "avaliacao": 4,
-    "preco": "699.00",
-    "precoAtual": "699.00",
+    "preco": "699,00",
+    "precoAtual": "699,00",
     "oferta": false,
     "imagem": [
         "img//produtos/monitores/G32CQ41.png",
@@ -477,8 +477,8 @@
         "Nota: Display Port: 1920 x 1080 (até 165Hz) <br> HDMI™: 1920 x 1080 (até 144Hz)"
     ],
     "avaliacao": 4,
-    "preco": "999.00",
-    "precoAtual": "999.00",
+    "preco": "999,00",
+    "precoAtual": "999,00",
     "oferta": false,
     "imagem": [
         "img//produtos/monitores/G24C6P1.png",
@@ -500,8 +500,8 @@
         "RJ45: O padrão Registered jack (RJ) especifica o RJ45 como um conector físico e seus cabos de rede. Tal padrão é utilizado para a conexão de informações entre computadores para uma rede."
     ],
     "avaliacao": 4,
-    "preco": "77.99",
-    "precoAtual": "65.90",
+    "preco": "77,99",
+    "precoAtual": "65,90",
     "oferta": true,
     "imagem": [
         "img//produtos/caboRede1.jpg"
@@ -521,8 +521,8 @@
         "Sistemas Suportados: Windows XP/Vista/7/8/8.1, Mac OS X 10.5/10.6/10.7/10.8/10.9/10.10/ ou sistema baseado em Linux"
     ],
     "avaliacao": 4,
-    "preco": "129.00",
-    "precoAtual": "109.00",
+    "preco": "129,00",
+    "precoAtual": "109,00",
     "oferta": true,
     "imagem": [
         "img//produtos/gigabit1.jpg",
@@ -556,8 +556,8 @@
         "Dimensões: 78.5 x 120.8 x 21.5 mm"
     ],
     "avaliacao": 4,
-    "preco": "129.00",
-    "precoAtual": "109.00",
+    "preco": "129,00",
+    "precoAtual": "109,00",
     "oferta": true,
     "imagem": [
         "img//produtos/placaDeRede1.jpg"
@@ -596,8 +596,8 @@
         "Conteúdo da embalagem: 1 x Cadeira (Necessita Montagem) <br> 1 x Kit de chave e parafusos <br> 1 x Manual de montagem"
     ],
     "avaliacao": 4,
-    "preco": "470.00",
-    "precoAtual": "399.00",
+    "preco": "470,00",
+    "precoAtual": "399,00",
     "oferta": true,
     "imagem": [
         "img//produtos/cadeiraGamer1.jpg",
@@ -623,8 +623,8 @@
         "Kit Periféricos: 1 x Combo Gamer Mancer ORC 4x1, Teclado ABNT2, Mouse 3600DPI, Mousepad Pequeno, Headset Drivers 50mm, Rainbow, MRC-ORC-RBW01"
     ],
     "avaliacao": 4,
-    "preco": "3946.90",
-    "precoAtual": "3354.75",
+    "preco": "3.946,90",
+    "precoAtual": "3.354,75",
     "oferta": true,
     "imagem": [
         "img//produtos/mancer1.jpg",
@@ -652,8 +652,8 @@
         "Som: Estéreo"
     ],
     "avaliacao": 4,
-    "preco": "44, 99",
-    "precoAtual": "37.90",
+    "preco": "44,99",
+    "precoAtual": "37,90",
     "oferta": true,
     "imagem": [
         "img//produtos/microfoneGamer1.jpg",
@@ -673,8 +673,8 @@
         "Funções da impressora: Impressão. cópia. digitalização"
     ],
     "avaliacao": 4,
-    "preco": "1117.63",
-    "precoAtual": "949.99",
+    "preco": "1.117,63",
+    "precoAtual": "949,99",
     "oferta": true,
     "imagem": [
         "img//produtos/hpSmart1.jpg",
@@ -717,8 +717,8 @@
         "Interface: USB 2.0 de alta velocidade, Wireless e Ethernet <br> Duplex <br> Manual"
     ], 
     "avaliacao": 4,
-    "preco": "1752.93",
-    "precoAtual": "1489.90",
+    "preco": "1.752,93",
+    "precoAtual": "1.489,90",
     "oferta": true,
     "imagem": [
         "img//produtos/brother1.jpg",
@@ -748,8 +748,8 @@
         "Visor: Touchscreen LCD"
     ],
     "avaliacao": 4,
-    "preco": "1931.76",
-    "precoAtual": "1542.90",
+    "preco": "1.931,76",
+    "precoAtual": "1.542,90",
     "oferta": true,
     "imagem": [
         "img//produtos/impressora3d1.jpg",
@@ -776,8 +776,8 @@
         "Dimensões: 100 x 69,9 x 7 mm"
     ],
     "avaliacao": 4,
-    "preco": "235.18",
-    "precoAtual": "199.90",
+    "preco": "235,18",
+    "precoAtual": "199,90",
     "oferta": true,
     "imagem": [
         "img//produtos/kingston2401.jpg",
@@ -802,8 +802,8 @@
         "Conectores: 1 x 20+4 Pinos (com rede) <br> 1 x Auxiliar ATX 12V (4+4) <br> 2 x PCIE (6+2) <br> 4 x SATA <br> 2 x Molex (IDE)"
     ],
     "avaliacao": 4,
-    "preco": "199.99",
-    "precoAtual": "169.99",
+    "preco": "199,99",
+    "precoAtual": "169,99",
     "oferta": true,
     "imagem": [
         "img//produtos/fonte1.jpg"
@@ -827,8 +827,8 @@
         "Dimensões: 32 x 140 x 7 mm"
     ],
     "avaliacao": 4,
-    "preco": "152.93",
-    "precoAtual": "129.99",
+    "preco": "152,93",
+    "precoAtual": "129,99",
     "oferta": true,
     "imagem": [
         "img//produtos/vulcan1.jpg",
@@ -856,8 +856,8 @@
         "Conteúdo da embalagem: 1 x Cabo extensor de 24 pinos <br> 2 x Organizadores de 24 pinos"
     ],
     "avaliacao": 4,
-    "preco": "130.58",
-    "precoAtual": "110.99",
+    "preco": "130,58",
+    "precoAtual": "110,99",
     "oferta": true,
     "imagem": [
         "img//produtos/caboExtensor1.jpg",
@@ -886,8 +886,8 @@
         "Dimensões: 219 x 114 x 49 mm"
     ],
     "avaliacao": 4,
-    "preco": "1117.64",
-    "precoAtual": "949.99",
+    "preco": "1.117,64",
+    "precoAtual": "949,99",
     "oferta": true,
     "imagem": [
         "img//produtos/placaVideo1.jpg",
@@ -912,8 +912,8 @@
     "Notas: *Acompanha suporte para copo e headset."
 ],
 "avaliacao": 4,
-"preco": "1058.81",
-"precoAtual": "899.99",
+"preco": "1.058,81",
+"precoAtual": ".899,99",
 "oferta": true,
 "imagem": [
     "img//produtos/mesaGamer1.jpg",
@@ -938,8 +938,8 @@
     "Notas: *Acompanha suporte para copo e headset."
 ],
 "avaliacao": 4,
-"preco": "1058.81",
-"precoAtual": "899.99",
+"preco": "1.058,81",
+"precoAtual": "899,99",
 "oferta": true,
 "imagem": [
     "img//produtos/mesaGamer1.jpg",
@@ -1089,8 +1089,8 @@
     "Compatibilidade multiplataform: PS3™, PS4™ / Xbox One® / PC (Windows® 10, 8, 7)"
 ],
 "avaliacao": 4,
-"preco": "999.99",
-"precoAtual": "999.99",
+"preco": "999,99",
+"precoAtual": "999,99",
 "oferta": false,
 "imagem": [
     "img//produtos/novos/race1.jpg",
@@ -1108,8 +1108,8 @@
     "Características: Pedais e estrutura interna 100% metálicos<br>Totalmente ajustáveis<br>​​Inclui opcional Mod de freio de borracha cônica<br>3 pedais com ajuste de espaçamento ajustável (3 posições)<br>3 pedais com ajuste de ângulo ajustável (2 posições)<br>Pedal do acelerador com ajuste de altura ajustável (2 posições)"
 ],
 "avaliacao": 4,
-"preco": "799.99",
-"precoAtual": "799.99",
+"preco": "799,99",
+"precoAtual": "799,99",
 "oferta": false,
 "imagem": [
     "img//produtos/novos/pedal1.jpg",
