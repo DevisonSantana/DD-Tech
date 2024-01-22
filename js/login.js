@@ -86,7 +86,7 @@ async function fetchProfileDataCadastro() {
                 fotoPerfil.style.filter = 'grayscale(0)'
                 fotoPerfil.addEventListener('click', () => divLogado.style.display = 'flex')
                 // Voltar a página com JS
-                window.history.back()
+                window.location.href = document.referrer
                 //window.history.go(-1)
                 break
             }

@@ -6,16 +6,43 @@ let indice = 0
 let item = []
 let taxaPorPais = document.getElementById('pais')
 
-botao_pagamento.addEventListener('click', ()=>{
+botao_pagamento.addEventListener('click', (evt)=>{
     let token = sessionStorage.getItem('token')
     if(!token){
         window.location.href = 'login.html'    
     }
     else{
+        evt.preventDefault()
+        var pais = document.getElementById('pais').value;
+        var estadoCidade = document.getElementById('estadoCidade').value;
+        var cep = document.getElementById('cep').value;
+        var opcaoEntregaSelecionada = document.querySelector('input[name="opcao-entrega"]:checked');
+        var spanPais = document.getElementById('spanPais');
+        var spanEstado = document.getElementById('spanEstado');
+        var spanCep = document.getElementById('spanCep');
+        var spanEntrega = document.getElementById('spanEntrega');
 
-        window.location.href = 'checkout.html'
-    }
-    })
+        // Exemplo: Validar se os campos não estão vazios
+        if (pais === '') {
+            spanPais.style.display = 'block'
+            return false;
+        }
+        else if (estadoCidade === '') {
+            spanEstado.style.display = 'block'
+            return false;
+        }
+        else if (cep == '') {
+            spanCep.style.display = 'block'
+            return false;
+        }
+        else if (!opcaoEntregaSelecionada) {
+            spanEntrega.style.display = 'block'
+            return false;
+        }
+        else{
+            window.location.href = 'checkout.html'
+        }
+    }})
 
 function passarProdutosRecuperados(produtoRecuperado){
     let bodyTabela = document.getElementById('bodyTabela')
@@ -39,7 +66,8 @@ function passarProdutosRecuperados(produtoRecuperado){
                         <th>Qtd</th>
                         <th>Subtotal</th> 
                     `
-                    valorTotal += res.precoAtual * evt.QtdadeItem
+                    valorTotal1 =  parseFloat(res.precoAtual.replace(/\./g, '').replace(',', '.')) * evt.QtdadeItem
+                    console.log(valorTotal + " //  " + evt.QtdadeItem)
                     subtotal.innerText = valorTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
                     precoTotal.innerText = "Preço Total: " + (valorTotal + verificaPais()).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
                     bodyTabela.innerHTML += `
@@ -47,13 +75,13 @@ function passarProdutosRecuperados(produtoRecuperado){
                     <td><input type="checkbox" value="${res.precoAtual * evt.QtdadeItem}" name="produtoSeleconado" id="produtoSeleconado" class="produtoSeleconado" checked></td>
                     <td> <img src="${res.imagem[0]}" alt="${res.categoria}" class="table-img"> </td>
                     <td class="tableNome"><a href=""></a>${res.nome}</td>
-                    <td class="tablePrecoItem">${parseFloat(res.precoAtual).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
+                    <td class="tablePrecoItem"> ${(res.precoAtual).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
                     <td class="tdQtdade">
                     <div class="tdQtdadeDiv">
                     <button id="${cont}">-</button><input type="number" name="quantidadeItem" id="${cont}" class="quantidadeItem" value="${evt.QtdadeItem}" required onkeyup="atualizarCarrinho()"><button id="${cont}">+</button>
                     </div>
                     </td>
-                    <td class="tableTotalItem" id="${cont}">${parseFloat(res.precoAtual * evt.QtdadeItem).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
+                    <td class="tableTotalItem" id="${cont}">R$ ${valorTotal1}</td>
                     <td>
                         <button class="table-btn excluir" id=${cont}>X</button>
                     </td>
@@ -178,34 +206,24 @@ function atualizarCarrinho(){
         console.log(produtoSeleconado[i]);
         if(produtoSeleconado[i].checked){
 
-            let tot = (parseFloat(tdQtdade[i].value) * parseFloat(tablePrecoItem[i].innerText.slice(3).replace(/\./g, '').replace(',', '.')))     
+            let tot = (parseFloat(tdQtdade[i].value) * parseFloat(tablePrecoItem[i].innerText.replace(/\./g, '').replace(',', '.')))     
             total += tot      
             tableTotalItem[i].innerText = tot.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})    
             const alterado = {Imagem: tableImg[i].src, Nome: tableNome[i].innerText, Qtdade: tdQtdade[i].value, PrecoItem: tablePrecoItem[i].innerText.slice(3), PrecoTotalItem: tot}
             carrinhoAtualizar.Produtos.push(alterado) 
     
-            
             const novo1 = {Nome: tableNome[i].innerText, QtdadeItem: tdQtdade[i].value}
             item.push(novo1) 
-            
         }
     }   
     atualizaSubtotalETotalNaPagina()
     atualizarValoresFinais()   
     salvarCarrinhoFinal()
-
-
-
-        
-    
-    
 }
 function salvarCarrinhoFinal(){
     let jsonAux = JSON.stringify(carrinhoAtualizar)
         localStorage.clear("carrinhoFinal")
         sessionStorage.setItem("carrinhoFinal", jsonAux)
-        //let itensRecuperCarrinhoFinal = localStorage.getItem("carrinhoFinal")
-    //window.location.reload();
     atualizarCarrinhoSessionStorage()
 }
 function atualizarValoresFinais(){

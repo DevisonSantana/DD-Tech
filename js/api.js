@@ -72,8 +72,8 @@ if(res.categoria.toLowerCase() === 'personalize'){
                         <p class="descricao">
                             ${res.descricao}
                         </p>
-                        <em class="precoAntigo"> ${res.preco}</em>
-                        <h6 class="precoAtual"> ${res.precoAtual}</h6>
+                        <em class="precoAntigo">R$ ${res.preco}</em>
+                        <h6 class="precoAtual">R$ ${res.precoAtual}</h6>
                     </figcaption>
                 </picture>
         `

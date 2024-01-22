@@ -133,14 +133,19 @@
                 <p id="form-resumo">Insira o seu destino para obter uma estimativa de envio</p>
                 <label for="pais">Selecione o país de destino *</label>
                     <select id="pais">
+                        <option value="" selected disabled>--selecione--</option>
                         <option value="brasil">Brasil</option>
                         <option value="eua">Estados Unidos</option>
                         <option value="canada">Canadá</option>
                     </select>
+                    <span id="spanPais" class="error">Seleção Obrigatoria!</span>
                     <label for="">Estado/Cidade *</label>
-                    <input type="text" required>
+                    <input id="estadoCidade" type="text" required>
+                    <span id="spanEstado" class="error">Campo Obrigatorio!</span>
                     <label for="">CEP *</label>
-                    <input type="number" required>        
+                    <input id="cep" type="number" required>  
+                    <span id="spanCep" class="error">Campo Obrigatorio!</span>
+      
                 <div class="opcao-entrega">
                     <p>Taxa Padrão</p>
                     <div>
@@ -152,6 +157,7 @@
                         <input type="radio" name="opcao-entrega"  id="retirar-na-loja" value="loja">
                         <label for="retirar-na-loja">Rua JavaScript, 123 - Bairro HTML - SP</label>
                     </div>
+                    <span id="spanEntrega" class="error">Seleção Obrigatoria!</span>
                 </div>
                 <div class="Cupom">
                     <h4>Cupom de Desconto</h4>
