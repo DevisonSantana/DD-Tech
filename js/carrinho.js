@@ -75,7 +75,7 @@ function passarProdutosRecuperados(produtoRecuperado){
                     <td><input type="checkbox" value="${res.precoAtual * evt.QtdadeItem}" name="produtoSeleconado" id="produtoSeleconado" class="produtoSeleconado" checked></td>
                     <td> <img src="${res.imagem[0]}" alt="${res.categoria}" class="table-img"> </td>
                     <td class="tableNome"><a href=""></a>${res.nome}</td>
-                    <td class="tablePrecoItem"> ${(res.precoAtual).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
+                    <td class="tablePrecoItem"><span>R$</span><span class="tbPrecoItem">${(res.precoAtual)}</span> </td>
                     <td class="tdQtdade">
                     <div class="tdQtdadeDiv">
                     <button id="${cont}">-</button><input type="number" name="quantidadeItem" id="${cont}" class="quantidadeItem" value="${evt.QtdadeItem}" required onkeyup="atualizarCarrinho()"><button id="${cont}">+</button>
@@ -192,7 +192,7 @@ function atualizarCarrinho(){
     let tableImg = [...document.getElementsByClassName('table-img')]
     let tableNome = [...document.getElementsByClassName('tableNome')]
     let tdQtdade = [...document.querySelectorAll('.tdQtdade input')]
-    let tablePrecoItem = [...document.getElementsByClassName('tablePrecoItem')]
+    let tablePrecoItem = [...document.getElementsByClassName('tbPrecoItem')]
     let tableTotalItem = [...document.getElementsByClassName('tableTotalItem')]
     total = 0
     item = []
