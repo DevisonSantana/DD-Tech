@@ -14,7 +14,11 @@ carrinhoItem.map((e) => {
     console.log(e.Imagem);
 
     // Convertendo e.PrecoItem para número e formatando com 2 casas decimais
-    const precoItemFormatado = parseFloat(e.PrecoItem).toLocaleString('pt-br', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const precoItemFormatado = (e.PrecoItem).
+    
+    
+    
+    toLocaleString('pt-br', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
     // Convertendo e.PrecoTotalItem para número e formatando com 2 casas decimais
     const precoTotalItemFormatado = parseFloat(e.PrecoTotalItem).toLocaleString('pt-br', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -23,11 +27,12 @@ carrinhoItem.map((e) => {
         `<tr>
         <td><img src="${e.Imagem}" alt="${e.Nome}" width= 114px></td>
         <td>${e.Nome}</td>
-        <td>R$ ${precoItemFormatado}</td>
+        <td>R$${precoItemFormatado}</td>
         <td>${e.Qtdade}</td>
-        <td>R$ ${precoTotalItemFormatado}</td>
+        <td>R$${precoTotalItemFormatado}</td>
     </tr>`;
 });
+
 
 
 
