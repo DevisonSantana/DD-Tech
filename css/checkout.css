@@ -31,8 +31,9 @@ h1 {
     padding: 21px;
 }
 
-#elemento2{
-    background-color: red;
+#element{
+    
+    text-align: end;
 
 }
 
@@ -120,6 +121,25 @@ tr{
 a {
     text-decoration: none;
 }
+#precoTotal{
+    
+    margin-top: 10px;
+}
+#taxa1{
+    
+    margin-top: 10px;
+}
+#envio1{
+    margin-top: 10px;
+}
+#subtotal1{
+    margin-top: 10px;
+}
+#tabelaCinza{
+    background-color: #f1ecec;
+    padding: 5px;
+}
+
 
 #comprando{
     float:right;
