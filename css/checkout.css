@@ -133,11 +133,14 @@ a {
     margin-top: 10px;
 }
 #subtotal1{
-    margin-top: 10px;
+    margin-top: 0px;
 }
 #tabelaCinza{
     background-color: #f1ecec;
-    padding: 5px;
+    margin: -18px;
+    padding-top: 26px;
+    padding-bottom: 16px;
+    text-align: center;
 }
 
 
