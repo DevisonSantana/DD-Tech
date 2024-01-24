@@ -194,8 +194,10 @@ function excluirItem(){
             item.splice(res.target.id, 1)
             atualizarCarrinhoSessionStorage()
             console.log(item)
-            if(item.length < 1)
+            if(item.length < 1){
+                sessionStorage.removeItem("carrinhoFinal")
                 localStorage.removeItem("itemCarrinho")
+            }
             window.location.reload()
         })
     })
@@ -264,6 +266,7 @@ function atualizarCarrinhoSessionStorage(){
 // esvaziar carrinho
 let btnEsvaziarCarrinho = document.getElementById('btnEsvaziarCarrinho')
 btnEsvaziarCarrinho.addEventListener('click', () => {
+    sessionStorage.clear('carrinhoFinal')
     localStorage.clear('itemCarrinho')
     window.location.reload();
     
