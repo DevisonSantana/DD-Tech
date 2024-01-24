@@ -39,24 +39,25 @@ carrinhoItem.map((e) => {
 let subtotal1 = document.getElementById("subtotal1");
 subtotal1.textContent = `Subtotal: R$ ${subTotal.toLocaleString('pt-br', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
 
-console.log(subtotal1);
-
 let precoTotal1 = document.getElementById("precoTotal");
-precoTotal1.textContent = `Preço Total: R$ ${subTotal.toLocaleString('pt-br', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
 
+let envioNumero = valoresFinais.envio ? parseFloat(valoresFinais.envio.slice(3).replace(',', '.')) || 0 : 0;
+let taxaNumero = valoresFinais.taxa ? parseFloat(valoresFinais.taxa.slice(3).replace(',', '.')) || 0 : 0;
 
-let envioFinal = document.getElementById("envio")
-console.log(envioFinal)
-envioFinal.innerText = valoresFinais.envio
+let total = subTotal + envioNumero + taxaNumero;
 
+precoTotal1.textContent = `Preço Total: R$ ${total.toLocaleString('pt-br', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
 
+let envioFinal = document.getElementById("envio");
+envioFinal.innerText = valoresFinais.envio;
 
-let taxa = document.getElementById("taxa")
-taxa.textContent = valoresFinais.taxa
+let taxa = document.getElementById("taxa");
+taxa.textContent = valoresFinais.taxa;
 
-console.log(taxa)
+console.log(taxa);
 
-let somaTotal = 0
+let somaTotal = 0;
+
 
 
 // Cartão de crédito x1 a x12

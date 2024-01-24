@@ -137,10 +137,12 @@ a {
 }
 #tabelaCinza{
     background-color: #f1ecec;
-    margin: -18px;
-    padding-top: 26px;
-    padding-bottom: 16px;
+    margin: -6px;
+    padding-top: 14px;
+    padding-bottom: 3px;
     text-align: center;
+    border-radius: 15%;
+    
 }
 
 
