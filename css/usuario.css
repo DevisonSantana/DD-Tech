@@ -97,6 +97,7 @@ h5{
 }
 .comentario textarea{
     width: 100%;
+    height: 250px;
     margin-top: 20px;
     font-size: 2rem;
 }
@@ -448,6 +449,7 @@ input[type=range]{
 #aparecer{
     background-color: #b1b1b1;
     position: absolute;
+    width: fit-content;
     margin-top: 35px;
     left: 1px;
     height: 30px;
@@ -481,7 +483,7 @@ input[type=range]{
 }
 #avaliarModal{
     display: flex;
-    /* width: 70%; */
+    width: 70%;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -496,7 +498,7 @@ input[type=range]{
 }
 textarea{
     padding: 1%;
-    
+    width: 100%;
 }
 .estrelasAvaliacao{
     max-width: 20px;
@@ -598,12 +600,19 @@ textarea{
    
     #sectionCadastro{
         margin-left: 51px;
+        margin-top: -30px;
+        justify-content: center;
+        align-items: center;
     }
     fieldset, .divColum {
         border: 1px dotted #000;
-        width: 261px;
         padding: 10px;
         margin: 3%;
+        zoom: 2.3;
+        width: 400px;
+    }
+    #novoEnd{
+        zoom: 3;
     }
     .enderecosCadastrados div{
         display: flex;
@@ -680,7 +689,7 @@ textarea{
     }
     #secaoPrincipal{
         left: 50px;
-        top: 40%;
+        top: 300px;
         font-size: smaller;
     }
 }
