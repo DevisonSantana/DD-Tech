@@ -1,5 +1,6 @@
 main{
     display: flex;
+    
     width: 100%;
     gap: 100px;
     margin-top: 50px;
@@ -27,14 +28,18 @@ h5{
 /*Barra lateral*/
 #nav{
     display: flex;
+    gap: 10px;
+    background-color: #b1b1b1;
+    position: relative;
+    z-index: 1000;
+    height: fit-content;
+    padding-right: 15px;
 }
 .nav{
-    background-color: #b1b1b1;
     display: flex;
     flex-direction: column;
     align-items: end;
-    height: 85%;
-    margin-top: 10px;
+    height: fit-content;
 }
 .nav ul{
     display: flex;
@@ -42,7 +47,7 @@ h5{
     align-items: end;
     position: relative;
     bottom: 10px;
-    height: auto;
+    height: fit-content;
 }
 .nav li{
     list-style: none;
@@ -404,7 +409,6 @@ input[type=range]{
 #sectionPreferencias{
     display: none;
     width: 92%;
-    display: flex;
     flex-direction: column;
     gap: 20px;
 }
@@ -477,7 +481,7 @@ input[type=range]{
 }
 #avaliarModal{
     display: flex;
-    width: 70%;
+    /* width: 70%; */
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -515,7 +519,7 @@ textarea{
 
 }
 .ultimosPedidos{
-    font-size: .5rem;
+    font-size: .5rem; 
 }
 .ultimosPedidos img{
     width: 60px;
@@ -541,28 +545,19 @@ textarea{
         position: relative;
         z-index: 100;
         left: -551px;
-        height: 550px;
+        height: 580px;
+        margin-top: -20px;
+        padding-right: 4%;
     }
-    #columns{
-        display: flex;
-        position: relative;
-        justify-content: center;
-        z-index: -10;
-        background-color: #b1b1b1;
-        height: 85%;
-    }
+   
     
     .column img{
         width: 50px;
         height: 200%;
         justify-content: start;
-
     }
-    
     #columns{
-        justify-content: start;
         display: flex;
-        flex-direction: column;
     }
     #img{
         width: 30px !important;
@@ -574,8 +569,12 @@ textarea{
     nav{
         transition: all 1s;
     }
+    .ultimosPedidos td{
+        width: none;
+        zoom: 2.5;
+    }
     .containerProducts {
-        zoom: .8;
+        zoom: 1;
     }
     #formCadastro{
         margin-left: -30px;
@@ -596,9 +595,7 @@ textarea{
     #sectionInicial{
         zoom: .8;
     }
-    #sectionPedidos{
-        margin-right: 10%;
-    }
+   
     #sectionCadastro{
         margin-left: 51px;
     }
@@ -625,9 +622,20 @@ textarea{
         width: fit-content;
     }
     textarea{
-      zoom: .5;
-        
+        width: 80%;
+        height: 50px;
+    }
     
+    .ultimosPedidos{
+        width: 90%;
+        zoom: .3;
+    }
+    .ultimosPedidos td, .ultimosPedidos th{
+        zoom: 4.3;
+    }
+    #avaliarModal{
+        width: 111%;
+        margin: auto;
     }
 }
 
@@ -641,7 +649,7 @@ textarea{
         flex-wrap: wrap;
     }
     .containerProducts {
-        zoom: .6;
+        zoom: 1;
     }
 }
 @media screen and (max-width: 522px){
@@ -649,8 +657,23 @@ textarea{
         /* transform: translateX(-100px); */
         transition: all 1s;
     }
-    .ultimosPedidos img{
-        zoom: .6;
+    #cardProdutos{
+        background-color: #fff;
+
+    }
+    #avaliarModal{
+        /* scale: 1.2; */
+    }
+    #avaliarModal h2{
+        font-size: 1.2rem;
+    }
+    .ultimosPedidos{
+        width: 90%;
+        zoom: .3;
+    }
+    .ultimosPedidos td, .ultimosPedidos th{
+        zoom: 8.1;
+        margin: 3px;
     }
     .button{
         zoom: .8;
@@ -663,15 +686,18 @@ textarea{
 }
 
 @media screen and (max-width: 401px){
+    .fecharModalSup h2{
+        font-size: .3rem;
+    }
     .ultimosPedidos{
-        zoom: .8;
-        margin-left: -11%;
         font-size: .4;
     }
-    
+    .ultimosPedidos td{
+        width: none;
+    }
     .containerProducts{
-        zoom: .6;
-        margin-left: -10%;
+        zoom: 1.5;
+        
     }
     #secaoPrincipal{
         zoom: .4;

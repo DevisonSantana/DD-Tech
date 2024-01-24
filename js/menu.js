@@ -6,8 +6,9 @@ let exitLupa = document.getElementById('exitLupa')
 let produtoDigitado = '';
 let caminhoFotoPerfil = 'login.html'
 let divLogado = document.getElementById('divLogado')
-let fotoPerfil = document.getElementById('fotoPerfil')
 let logout = document.getElementById('logout')
+let btnLogin = document.getElementById('btnLogin')
+let fotoPerfil = document.getElementById('fotoPerfil')
 
 
 // verificar se existe e recuperar token
@@ -15,13 +16,15 @@ let logout = document.getElementById('logout')
   if(tokenToDecode){
       // Decodificação do token
       const decodedToken = KJUR.jws.JWS.parse(tokenToDecode);
-      fotoPerfil.style.filter = 'grayscale(0)'
-      fotoPerfil.addEventListener('click', () => divLogado.style.display = 'flex')
-  }
-  else{
-    fotoPerfil.style.filter = 'grayscale(.9)'
-   fotoPerfil.addEventListener('click', () => window.location.href = caminhoFotoPerfil)
-  }
+      //troca da imagem 
+        fotoPerfil.setAttribute('src', 'img/foto_perfil.png')
+        fotoPerfil.addEventListener('click', ()=> divLogado.style.display = 'flex')
+    }
+    else{
+        fotoPerfil.addEventListener('click', () => window.location.href = caminhoFotoPerfil)
+    }
+    
+
 
 // logout
 logout.addEventListener('click', () => {
@@ -38,10 +41,16 @@ divHamburguer.addEventListener('click', ()=>{
         parte22.style.display = 'flex' 
         parte22.style.height = 'fit-content'
         parte22.style.width = 'fit-content'
+       setTimeout(() => {
+        parte22.style.transform = 'translateX(0px)'
+       }, 10)
     }
     else if(parte22.style.display == 'flex'){
-        parte22.style.display = 'none'
+        
+        parte22.style.transform = 'translateX(300px)'
+        setTimeout( () => {  parte22.style.display = 'none'}, 300)
     }
+
     
 })
 
@@ -113,6 +122,8 @@ itensCabecalhoMobile.map((res) =>{
         else{
             procurarProduto(evt.target.innerText.toLowerCase())
         }
+        parte22.style.transform = 'translateX(300px)'
+        setTimeout( () => {  parte22.style.display = 'none'}, 300)
     })
 })
 

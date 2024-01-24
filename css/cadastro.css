@@ -89,3 +89,8 @@ input, select {
     background-color: #BBCCBB;
     color: #206620;
 }
+@media screen and (max-width: 700px) {
+    form{
+        margin: auto;
+    }
+}

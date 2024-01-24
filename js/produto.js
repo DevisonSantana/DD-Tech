@@ -19,7 +19,17 @@ function addClick(){
 
 function favoritar(){
     let favoritar = document.getElementById('favoritar')
-    favoritar.innerHTML = '<div id="favoritar" class="favoritado"> &#9829</div>'
+    const tokenToDecode = sessionStorage.getItem('token');
+    if(tokenToDecode){
+        favoritar.innerHTML = '<div id="favoritar" class="favoritado"> &#9829</div>'
+    }
+    else{
+        ModalAdiciobadoCarrinho("Atencão", "Você precisa estar logado para favoritar", "Cadastrar", "Logar")
+        MudarDisplayAtr()
+        let avaliarModal = document.getElementById('avaliarModal')
+        setTimeout(()=> { avaliarModal.style.transform = 'translateY(00px)'}, 10)
+       
+    }
 }
 
 // produto inserido dinamicamente
@@ -184,7 +194,23 @@ function ModalAdiciobadoCarrinho(titulo, mensagem, botaoConfirmar, botaoSecond) 
    </div>
    </div>
       `
+      
     }
+    else if(botaoSecond == 'Logar'){
+        ModalAtribut.innerHTML = `
+   
+   <div id="avaliarModal">
+   <div class="fecharModalSup"><button>X</button></div>
+   <h2>${titulo}</h2>
+   <p>${mensagem}</p>
+   <div class="btnModal">
+   <a href="cadastro.html"><button type="button"> ${botaoConfirmar}</button></a>
+   <a href="login.html"><button type="button"> ${botaoConfirmar}</button></a>
+   </div>
+   </div>
+      `
+    }
+
     else{
 
         ModalAtribut.innerHTML = `
@@ -199,6 +225,7 @@ function ModalAdiciobadoCarrinho(titulo, mensagem, botaoConfirmar, botaoSecond) 
         </div>
         </div>
         `
+        
     }
-
+   
 }

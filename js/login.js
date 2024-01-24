@@ -83,8 +83,8 @@ async function fetchProfileDataCadastro() {
                 senhaInput.classList.remove('error')
                 senhaHelper.classList.remove('visible')
                 // alterar a foto do perfil
-                fotoPerfil.style.filter = 'grayscale(0)'
-                fotoPerfil.addEventListener('click', () => divLogado.style.display = 'flex')
+                let fotoPerfil = document.getElementById('fotoPerfil')
+                fotoPerfil.setAttribute('src', 'img/foto_perfil.png')
                 // Voltar a página com JS
                 window.location.href = document.referrer
                 //window.history.go(-1)

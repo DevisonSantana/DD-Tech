@@ -107,4 +107,18 @@ function VoltarComentario1() {
     Comentario2.style.backgroundColor = "#978d8d"
     Comentario3.style.backgroundColor = "#978d8d"
 }
-
+let verMaisBtn;
+let position = 2
+function vermaisPr(newId){
+    let products = [...document.getElementsByClassName('containerProc')]
+    position++
+    if(position < 6){
+        products[newId].children[position].style.display = 'flex'
+    }
+    else if(position == 6) {
+        products[newId].children[position].style.display = 'flex'
+        verMaisBtn = [...document.getElementsByClassName('VerMaisPrd')];
+        verMaisBtn[newId].style.display = 'none'
+        position = 2
+    }
+}

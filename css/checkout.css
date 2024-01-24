@@ -9,17 +9,16 @@ h1 {
 
 #container{
     display: flex;
-    width: 83%;
+    /* width: 83%; */
     justify-content: space-around;
     margin-left: 36px;
     padding: 63px;
-    
 }
 
 .caixa{
     background-color: #F5F7FF;
     padding: 42px;
-    width: 26%;
+    width: 37%;
     margin-left: -33px;
 }
 
@@ -46,14 +45,8 @@ h1 {
     
     
 }
-tr{
-    
-    
-}
-
-
 #main table tbody td {
-    padding-left: 75px;
+    /* padding-left: 75px; */
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }
@@ -74,7 +67,6 @@ tr{
     right: 10px;
     border-radius: 30px;    
 }
-
 #botao1{
     display: flex;
     justify-content: center;
@@ -93,12 +85,10 @@ tr{
     color: grey;
     width: 112%;
 }
-
 #botao2 {
     background-color: #FFB800;
     border: #FFB800;
 }
-
 #botao2 a {
     text-decoration: none;
 }
@@ -141,11 +131,8 @@ a {
     padding-top: 14px;
     padding-bottom: 3px;
     text-align: center;
-    border-radius: 15%;
-    
+    border-radius: 15%; 
 }
-
-
 #comprando{
     float:right;
     width: 30%;
@@ -156,18 +143,14 @@ a {
     color:grey;
     background-color:white;
     text-decoration: none;
-    
 }
-
  #opcoes{
     color: black;
     display: flex;
     align-items:center;    
     padding: 0px;
-    border-radius: 30px;
-  
+    border-radius: 30px; 
 }
-
 #atualizar{
     float:right;
     width: 20%;
@@ -178,23 +161,47 @@ a {
     color: white;
     background-color: black;
 }
-
 #opcoesPagamento{
     display: flex;
     flex-direction: column;
 }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+    h1{
+        margin: 30px 0;
+    }
     #main{
-        zoom: .3;
-
+        zoom: .5;
+        margin: 0;
+        padding: 0;
+    }
+    #main td{
+        margin: 0;
     }
     #container{
         flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        margin: 0 auto;
     }
-    
+    .caixa{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #tabelaCinza{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 0 7%;
+        text-align: center;
+    }
 }
-
+    
   .up {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }

@@ -34,7 +34,6 @@ main{
 #details div:first-child{
     background-image: linear-gradient(175deg, #e3e3e3 80%, #fff);
     padding: 4% 5%;
-    margin-right: 10%;
     width: 8;
 }
 #details li{
@@ -155,9 +154,15 @@ main{
     }
     #details div:first-child{
         padding: 6% 10%;
+        margin: auto;
     }
     #imgBig:hover{
-        scale: 4;
-        margin-top: 50%;
+        margin: 0;
+        scale: none;
+    }
+}
+@media screen and (max-width: 450px){
+    #details div:first-child{
+        zoom: .8;
     }
 }

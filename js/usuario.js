@@ -64,10 +64,14 @@ function pageInicial(){
 
 menuLateral.map((element) => {
     element.addEventListener("click", (event) => {
+        let nav = document.getElementById('nav');
+        let apaImg = document.getElementById('imgRigth');
         indiceMenu = event.target.value
         ocultarSection()
         ativarDisplay(indiceMenu)
-        
+        if(apaImg.style.display = 'flex'){
+            nav.style.transform = 'translateX(-550px)';
+        }
 
     })
 })

@@ -81,7 +81,7 @@ if(res.categoria.toLowerCase() === 'personalize'){
 
 
     }
-
+    
     if(res.categoria.toLowerCase() === 'notebook'){
         
         if(res.avaliacao == 4 || res.avaliacao == 5){

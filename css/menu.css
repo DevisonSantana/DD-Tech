@@ -7,7 +7,6 @@
 
 body{
     display: flex;
-    /* flex-direction: column; */
     align-content: center;
     flex-wrap: wrap;
     width: 100%;
@@ -18,7 +17,6 @@ header{
     flex-direction: column;
     width: -webkit-fill-available;
     border-bottom: 1px solid black;
-    padding-bottom: 10px;
 }
 
 header img{
@@ -50,8 +48,14 @@ header img{
 .header ul, menu{
     display: flex;
 }
-#fotoPerfil{
-    filter: grayscale(.8);
+.btnLogin{
+    border: #000 solid 1px;
+    padding: 2%;
+    box-shadow: 2px 2px 2px ;
+    border-radius: 15px;
+}
+#btnLogin:hover{
+    border-color: #007bff;
 }
 .header a{
     color: black;
@@ -82,9 +86,10 @@ header img{
     text-decoration: underline;
     color: #0156ff;
 }
-
+#fotoPerfil{
+    width: 40px;
+}
 #navegacao{
-
     margin: 3% 0% 0 8%;
 }
 
@@ -223,6 +228,7 @@ header img{
     text-align: center;
     border-bottom: #fff dotted 1px;
     transition: all 2s;
+    color: #fff;
 }
 #divHamburguer{
     display: none;
@@ -307,13 +313,14 @@ height: 15px;
 
 #carrinhoQtdade{
     text-align: center;
-    display: none;
+    /* display: none; */
     width: 25px;
     border-radius: 50%;
     border: 1px solid black;
     position: relative;
-    right: 10px; 
+    right: 20px;
     top: 10px;
+    padding: 0 5px;
 }
 #containerEncontrados{
     display: flex;
@@ -440,7 +447,7 @@ height: 15px;
         margin: 0 4px;
     }
     #carrinhoQtdade{
-        padding: 3px;
+        right: 5px;
     }
 }
 @media screen and (max-width: 720px) {
@@ -472,7 +479,17 @@ height: 15px;
         }
         #parte22{
             display: none;
+            zoom: 1.5;
+            margin-top: -38px;            
+            transform: translateX(300px);
+            transition: all .5s;
         }
+        .parte22.active {
+            display: flex;
+            height: fit-content;
+            width: fit-content;
+            transform: translateX(0);
+          }
         #divHamburguer{
             display: block;
         }

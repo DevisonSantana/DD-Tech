@@ -10,10 +10,6 @@ main {
     margin: 2% auto;
 }
 
-section {
-    /* margin: 3% 0; */
-}
-
 a {
     color: #fff;
     text-decoration: none;
@@ -40,7 +36,7 @@ a:checked {
 
 .banner_img {
     width: 80vw;
-    z-index: -;
+    z-index: -1;
 }
 
 #banner>img {
@@ -80,8 +76,8 @@ a:checked {
 }
 
 .seta_products {
-    
     margin-top: 70px;
+    zoom: normal;
 }
 
 
@@ -215,14 +211,8 @@ figcaption {
     align-items: center;
 }
 
-#marcaZip{
-display: flex;
-justify-content: center;
-}
-#marcaZip img{
-max-width: 50%;
-margin-bottom: 5%;
-}
+#marcaZip{display: flex;justify-content: center;margin-top: 1;}
+#marcaZip img{max-width: 50%;/* margin-bottom: 5%; */}
 #marcas li {
     list-style: none;
 }
@@ -237,12 +227,12 @@ margin-bottom: 5%;
 }
 
 .details_div {
-
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 2% 0;
-    padding-left: 3%;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+margin: 2%;
+padding-left: 3%;
+justify-content: space-evenly;
 }
 
 .details_div picture {
@@ -386,14 +376,27 @@ button[name=products]{
 
 @media screen and (max-width: 890px) {
 .containerProc{
-    justify-content: start;
+    justify-content: center;
+    gap: 30px;
 }
-
+.details_div figure:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)){
+    display: none;
+}
 
 @media screen and (max-width: 720px) {
     
-   
-
+    main{
+        width: 98vw;
+    }
+    .seta_products{
+        zoom: 2;
+        z-index: 100;
+        position: relative;
+    }
+     #products_img{
+        margin: 0 10%;
+        gap: 5%;
+    }
     button[name=products]{
         display: block;
     }
@@ -401,32 +404,33 @@ button[name=products]{
         display: flex;
         align-items: center;
         justify-content: end;
+        order: 10;
+        height: fit-content;
     }
-   
-    .containerProc picture:not(:nth-child(1)):not(:nth-child(2)) {
+    .containerProc picture:first-child{
+        zoom: 5;
+    }
+    .containerProc picture:not(:nth-child(1)):not(:nth-child(3)) {
         display: none;
     }
     .containerProc{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 10% 0;
+        margin: 15% 0;
+        padding: 5px ;
+    }
+   
     
-    }
-    button[name=products] {
-        margin-top: 20px;
-    }
     
-    #products_img{
-        height: 300px;
-    }
     .capa_products {
         margin: 0;
         height: 130px;
     }
     .capa_products>img {
         height: 125px;
-        width: 160%;
+        width: 228%;
+        opacity: .9;
     }
     .destaque {
         justify-content: space-around;
@@ -457,6 +461,9 @@ button[name=products]{
     .details_p{
         width: 100%;
     }
+    .details_div figure:not(:nth-child(1)):not(:nth-child(3)){
+        display: none;
+    }
     #citacao button{
         font-size: .5rem;
     }
@@ -480,9 +487,7 @@ button[name=products]{
 }
 
 @media screen and (min-width: 1500px){
-.seta_products{
-    display: none;
-}
+
 #novosProdutos{
     display: flex;
     flex-direction: column;
