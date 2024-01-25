@@ -13,22 +13,25 @@ const CONFIG = {
 const PROXIMITY = 10;
 
 const UPDATE = (event) => {
-  // obtendo o ângulo com base no ponto central do card e na posição do ponteiro do mouse
+  // Verificar se a largura da tela é menor que 600 pixels
+  if (window.innerWidth < 600) {
+    return; // Sair da função se a tela for menor que 600 pixels
+  }
+
   for (const CARD of CARDS) {
-    // Verificando o card em relação à proximidade do ponteiro do mouse e atualizando
     const CARD_BOUNDS = CARD.getBoundingClientRect();
-    // Obtendo a distância entre o ponteiro do mouse e os limites externos do card
+
     if (
       event?.x > CARD_BOUNDS.left - CONFIG.proximity &&
       event?.x < CARD_BOUNDS.left + CARD_BOUNDS.width + CONFIG.proximity &&
       event?.y > CARD_BOUNDS.top - CONFIG.proximity &&
       event?.y < CARD_BOUNDS.top + CARD_BOUNDS.height + CONFIG.proximity
     ) {
-      // Se estiver próximo, defina a opacidade ativa
       CARD.style.setProperty("--active", 1);
     } else {
       CARD.style.setProperty("--active", CONFIG.opacity);
     }
+
     const CARD_CENTER = [
       CARD_BOUNDS.left + CARD_BOUNDS.width * 0.5,
       CARD_BOUNDS.top + CARD_BOUNDS.height * 0.5,

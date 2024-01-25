@@ -119,7 +119,7 @@ body {
   /* gap: calc(var(--gap) * 1px); */
   margin: 0 auto;
   justify-content: center;
-  place-items: center;
+  /* place-items: center; */
   position: relative;
   padding: 2rem;
   touch-action: none;
@@ -280,4 +280,27 @@ article h2 {
   justify-content: center;
   gap: 10%;
   margin: 10px auto;
+  
+}
+@media screen and (max-width: 600px) {
+  article{
+    zoom: .8;
+    margin: 3%;
+    position: relative;
+    z-index: 10000;
+  }
+  .container{
+    touch-action: auto;
+    --gap: 0 !important;
+    --blur: 0 !important;
+    --spread: 0 !important;
+  }
+  article::after{
+    filter: none;
+  }
+  #somos{
+    color: white;
+    padding: 2%;
+    text-align: center;
+  }
 }
