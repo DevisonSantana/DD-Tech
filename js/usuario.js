@@ -19,9 +19,9 @@ btndados.addEventListener('click', () => {
     let senhacartao = document.getElementById('senhacartao').value
     console.log(senhacartao)
         if(senhacartao ==  usuario.senha){
-            console.log()
-               cartao.innerHTML = ''
+            cartao.innerHTML = ''
                cartoes.map((res) => {
+                console.log(res)
                 cartao.innerHTML += `
                 <fieldset class="cartoesCadastrados">
                 <legend>Cartao final <span class="spanCartao">${res.numeroCartao.substr(12,15)}</span></legend>
@@ -64,14 +64,10 @@ function pageInicial(){
 
 menuLateral.map((element) => {
     element.addEventListener("click", (event) => {
-        let nav = document.getElementById('nav');
-        let apaImg = document.getElementById('imgRigth');
         indiceMenu = event.target.value
         ocultarSection()
         ativarDisplay(indiceMenu)
-        if(apaImg.style.display = 'flex'){
-            nav.style.transform = 'translateX(-550px)';
-        }
+        
 
     })
 })
@@ -80,18 +76,42 @@ function ocultarSection() {
     section.forEach(element => {
         
         let apaImg = document.getElementById('imgRigth');
-
+        
         element.style.display = 'none'
-
+        
         apaImg.style.display = 'flex'
-
+        
     });
 }
 
 function ativarDisplay(indice) {
+    let apaImg = document.getElementById('nav');
     section[indice].style.display = 'flex'
+    console.log(apaImg.style)
+    console.log(apaImg.style.webkitTransform)
+    if(apaImg.style.webkitTransform === "translateX(550px)"){
+        
+        //apaImg.style.webkitTransform === "translateX(-50px)"
+        moverMenuLateral()
+    }
 }
 
+let nav = document.getElementById('nav');
+let apaImg = document.getElementById('imgRigth');
+let cont = 1
+
+function moverMenuLateral(){
+    if (cont === 0){
+        cont++
+        nav.style.transform = 'translateX(-50px)';
+        apaImg.style.display = 'flex'
+    }
+    else if(cont == 1){
+        nav.style.transform = 'translateX(550px)';
+        cont = 0
+        apaImg.style.display = 'none'
+    }
+}
 
 //Modal
 
@@ -216,7 +236,7 @@ function acompanhar() {
    <div id="avaliarModal">
    <div class="fecharModalSup"><button>X</button></div>
    <h2>Acompanhar</h2>
-   <table class="ultimosPedidos" >
+   <table class="ultimosPedidos ultimosPed" >
    <thead >
    <tr class="headTable">
        <th  class="descricaoPedidos">
@@ -314,7 +334,7 @@ let cardProdutos = document.getElementById('cardProdutos')
 
 function carregarUsuario(usuario, produtoRecuperado){
 
-    nomeUser.innerText = usuario.nomeSocial
+    nomeUser.innerText = usuario.nome
     for(let i= 0; i< produtoRecuperado.length; i++){
         cardProdutos.innerHTML += `
         <table class="ultimosPedidos">
@@ -484,9 +504,11 @@ async function fetchProfileDataProdutos() {
     carregarEnderecoCadastrado(profileDataCadastro.cadastro[user -1])
     let cartoesUsuario = [];
     profileDataCadastro.cartoes.map((res) => {
-        if(res.usuario == user.id)
+        console.log(res.usuario + "---" + user)
+        if(res.usuario == user)
             cartoesUsuario.push(res)
     })
-    carregarCartao(profileDataCadastro.cadastro[2], cartoesUsuario)
+    carregarCartao(profileDataCadastro.cadastro[user -1], cartoesUsuario)
+    console.log(cartoesUsuario)
 })()
 

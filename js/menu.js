@@ -83,9 +83,16 @@ if(itensR){
         itemProntoParaUso.map((res) => {
             quantidade += parseInt(res.QtdadeItem)
         })
-        carrinhoQtdade.innerText = quantidade
-        carrinhoQtdade.style.display = 'block'
+        console.log(itemProntoParaUso.length)
+        if(itemProntoParaUso.length > 0){
+            carrinhoQtdade.innerText = quantidade
+            carrinhoQtdade.style.display = 'block'
+
+        }
     }
+}
+else{
+    carrinhoQtdade.style.display = 'none'
 }
 
 //busca de produto pelo cabecalho
