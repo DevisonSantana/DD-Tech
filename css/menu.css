@@ -33,6 +33,8 @@ header img{
 }
 #icones-sociais img{
     max-width: 21px;
+    filter: invert();
+    opacity: .8;
 }
 
 .header{

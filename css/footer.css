@@ -85,6 +85,14 @@
     width: 1rem;
     height: auto;
 }
+.footer-end .redes-sociais {
+    filter: invert();
+}
+.footer-end .cartoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
 @media screen and (max-width: 600px) {
     .div-news input{
         width: 10rem;
@@ -94,5 +102,14 @@
 @media screen and (max-width: 350px) {
     .div-news input{
         zoom: .7;
+    } 
+}
+@media screen and (max-width: 410px) {
+    .footer-end {
+        flex-direction: column;
+        gap: 0;
+    }
+    .footer-end img {
+        justify-content: space-around;
     }
 }

@@ -272,7 +272,7 @@ data {
 }
 
 #citacao {
-    background-color: #e1dede;
+    background-color: #F5F7FF;
     padding: 5% 10%;
     height: fit-content;
 }
@@ -316,14 +316,18 @@ blockquote span {
 }
 
 #citacao button {
-    background-color: #e1dede;
+    background-color: transparent;
     border-radius: 20px;
     width: 30%;
     height: fit-content;
-    color: blue;
-    border: blue solid 2px;
+    color: #0156ff;
+    border: #0156ff solid 2px;
 }
 
+#citacao button a {
+    color: #0156ff;
+    font-weight: bold;
+}
 
 #footer_citacao {
     display: flex;
