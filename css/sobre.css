@@ -62,7 +62,10 @@ article{
     flex-direction: column;
     gap: 20px
 }
-
+#somos h5{
+  text-align: center;
+  width: 100%
+}
 
 @import "normalize.css";
 @font-face {
@@ -243,22 +246,12 @@ article::after {
   font-weight: 50;
 }
 
-
-
-
-
 article h2 {
   margin: 0;
   padding: 1rem 0;
   font-weight: 100;
   font-size: 1.5rem;
 }
-
-
-
-
-
-
 
 .badge svg {
   width: 16px;
@@ -291,9 +284,7 @@ article h2 {
   }
   .container{
     touch-action: auto;
-    --gap: 0 !important;
-    --blur: 0 !important;
-    --spread: 0 !important;
+
   }
   article::after{
     filter: none;
