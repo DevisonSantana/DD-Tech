@@ -730,6 +730,7 @@ textarea{
     #secaoPrincipal{
         font-size: smaller;
         margin-top: 0px;
+        margin-left: -35%;
     }
 }
 
@@ -744,13 +745,19 @@ textarea{
         width: none;
     }
     .containerProducts{
-        zoom: 1.5;
+        zoom: 1.3;
         
     }
     #secaoPrincipal{
         zoom: .4;
+        margin-left: -40%;
     }
     .ultimosPed{
         zoom: .1 !important;
+    }
+}
+@media screen and (max-width: 350px){
+    #secaoPrincipal{
+        margin-left: -50%;
     }
 }
