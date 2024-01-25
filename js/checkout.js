@@ -86,7 +86,10 @@ let opcaoDePagamentoPix = document.getElementById("pix")
 let opcaoDePagamentocartao = document.getElementById("cartao")
 let tabelaCartao = document.getElementById("tabelaCartao")
 let cartoes = document.getElementById("cartoes")
+let pagamentoFinal = ""
+
 opcaoDePagamentoPix.addEventListener('change', ()=> {
+     pagamentoFinal = ""
     if (opcaoDePagamentoPix.checked){
         console.log("opcaoDePagamentoPix")
         tabelaCartao.style.display = "none"
@@ -98,7 +101,6 @@ opcaoDePagamentoPix.addEventListener('change', ()=> {
 
 })
 
-let pagamentoFinal = ""
 
 function gerarCodigoPix() {
     var caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -127,6 +129,7 @@ let auxiliar;
         
  })})
 opcaoDePagamentocartao.addEventListener('change', ()=> {
+    pagamentoFinal = ""
     if (opcaoDePagamentocartao.checked){
         console.log("opcaoDePagamentocartao")
     tabelaCartao.style.display = "table"
@@ -137,8 +140,8 @@ let botaoFinalizar = document.getElementById("botao1")
 let erroFinal = document.getElementById("erroFinal")
 botaoFinalizar.addEventListener('click', function(){
     if (pagamentoFinal != ""){
-        abrirModal("Sucesso", `pagamento selecionado: ${pagamentoFinal}`, "Fechar"  )
-        MudarDisplayAtributs()
+        abrirModal("Sucesso", `<br> ${pagamentoFinal}`, "Fechar"  )
+        MudarDisplayModal()
         let modalFinal = document.getElementById("avaliarModal")
         setTimeout(() => {
             modalFinal.style.transform = "translateY(0px)"
@@ -153,39 +156,40 @@ botaoFinalizar.addEventListener('click', function(){
 
 
 //Modal
-const modalGerado = document.getElementById("ModalGeral");
+const modalFinal = document.getElementById("ModalGeral");
 var currentListAtributs = 1
 var arrayListAtributs = [
     "none",
     "flex"
 ]
 
-modalGerado.addEventListener("click", (e) => {
+modalFinal.addEventListener("click", (e) => {
     
     if (e.target.nodeName == 'DIV' ||  e.target.nodeName == 'H2' || e.target.nodeName == "P" )
-    {console.log("Teste")}  else {console.log('teste2'); MudarDisplayAtributs()
-    modalGerado.style.display = "none"
+    {console.log("Teste")}  else if (e.target.nodeName == 'BUTTON') { MudarDisplayModal()
+    //modalFinal.style.display = "none"
 
 } 
     
     
 })
 
-function MudarDisplayAtributs() {
-
+function MudarDisplayModal() {
+    
     if (currentListAtributs == arrayListAtributs.length) {
         currentListAtributs = 0
     }
-
-    modalGerado.style.display = arrayListAtributs[currentListAtributs]
+    
+    modalFinal.style.display = arrayListAtributs[currentListAtributs]
     currentListAtributs++
+    console.log(modalFinal.style.display);
 
 }
 
 function abrirModal(titulo, mensagem, botaoConfirmar) {
-  modalGerado.innerHTML = `
+  modalFinal.innerHTML = `
   <div id="avaliarModal">
-  <div class="fecharModalSup"><button>X</button></div>
+  <div class="fecharModalSup"></div>
   <h2>${titulo}</h2>
   <p>${mensagem}</p>
   <div class="btnModal">

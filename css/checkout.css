@@ -31,7 +31,7 @@ h1 {
 #main{
     background-color: white;
     margin-left: 4px;
-    margin-right: 19px;
+    /* margin-right: 19px; */
     width: 100%;
     padding: 21px;
 }
@@ -140,7 +140,8 @@ a {
     border-radius: 10%; 
 }
 #avaliarModal{
-    width: 80%;
+    width: 50%;
+    text-align: center;
 }
 #comprando{
     float:right;
