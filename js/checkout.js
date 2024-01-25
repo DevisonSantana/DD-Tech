@@ -76,7 +76,6 @@ for (let i = 1; i <= 12; i++) {
 }
 
 // Atribuir o mesmo valor de precoTotal1 ao elemento com ID "1x"
-// Atribuir o mesmo valor de precoTotal1 ao elemento com ID "1x"
 let x1 = document.getElementById("1x");
 if (x1) {
     x1.textContent = `1x de R$  ${subTotal.toLocaleString('pt-br', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
@@ -92,10 +91,41 @@ opcaoDePagamentoPix.addEventListener('change', ()=> {
         console.log("opcaoDePagamentoPix")
         tabelaCartao.style.display = "none"
         cartoes.style.display = "none"
+        gerarCodigoPix();
+
     
     }
 
 })
+
+let pagamentoFinal = ""
+
+function gerarCodigoPix() {
+    var caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var codigoAleatorio = '';
+
+    for (var i = 0; i < 64; i++) {
+      var indice = Math.floor(Math.random() * caracteres.length);
+      codigoAleatorio += caracteres.charAt(indice);
+    }
+    console.log(codigoAleatorio)
+    pagamentoFinal = `Pagamento Pix Codigo: ${codigoAleatorio}`
+  }
+ let parcelas = document.querySelectorAll("input[name='credito']")
+let auxiliar;
+ parcelas.forEach((element) =>{
+    element.addEventListener('change', ()=>{
+        let parcela = document.getElementById(`${element.value}`);
+        console.log(parcela.textContent)
+        auxiliar = parcela.textContent
+ })})
+ let cartaoEscolhido = document.querySelectorAll("input[name='cartaoEscolhido']")
+ cartaoEscolhido.forEach((element)=>{
+    element.addEventListener('change', function(){
+        console.log(element.value)
+        pagamentoFinal = `Pagamento no cartão ${element.value}, ${auxiliar}`
+        
+ })})
 opcaoDePagamentocartao.addEventListener('change', ()=> {
     if (opcaoDePagamentocartao.checked){
         console.log("opcaoDePagamentocartao")
@@ -103,6 +133,66 @@ opcaoDePagamentocartao.addEventListener('change', ()=> {
     cartoes.style.display = "block"}
 
 })
+let botaoFinalizar = document.getElementById("botao1")
+let erroFinal = document.getElementById("erroFinal")
+botaoFinalizar.addEventListener('click', function(){
+    if (pagamentoFinal != ""){
+        abrirModal("Sucesso", `pagamento selecionado: ${pagamentoFinal}`, "Fechar"  )
+        MudarDisplayAtributs()
+        let modalFinal = document.getElementById("avaliarModal")
+        setTimeout(() => {
+            modalFinal.style.transform = "translateY(0px)"
+            
+        }, 10);
+
+    }else{
+        erroFinal.style.display="block"        
+    }
+})
+
+
+
+//Modal
+const modalGerado = document.getElementById("ModalGeral");
+var currentListAtributs = 1
+var arrayListAtributs = [
+    "none",
+    "flex"
+]
+
+modalGerado.addEventListener("click", (e) => {
+    
+    if (e.target.nodeName == 'DIV' ||  e.target.nodeName == 'H2' || e.target.nodeName == "P" )
+    {console.log("Teste")}  else {console.log('teste2'); MudarDisplayAtributs()
+    modalGerado.style.display = "none"
+
+} 
+    
+    
+})
+
+function MudarDisplayAtributs() {
+
+    if (currentListAtributs == arrayListAtributs.length) {
+        currentListAtributs = 0
+    }
+
+    modalGerado.style.display = arrayListAtributs[currentListAtributs]
+    currentListAtributs++
+
+}
+
+function abrirModal(titulo, mensagem, botaoConfirmar) {
+  modalGerado.innerHTML = `
+  <div id="avaliarModal">
+  <div class="fecharModalSup"><button>X</button></div>
+  <h2>${titulo}</h2>
+  <p>${mensagem}</p>
+  <div class="btnModal">
+  <a href="index.html"><button type="button"> ${botaoConfirmar}</button></a>
+  </div>
+  </div>`
+}
 
 
 

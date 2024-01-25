@@ -9,10 +9,9 @@ h1 {
 
 #container{
     display: flex;
-    /* width: 83%; */
     justify-content: space-around;
-    margin-left: 36px;
     padding: 63px;
+    margin-top: 50px;
 }
 
 .caixa{
@@ -21,11 +20,18 @@ h1 {
     width: 37%;
     margin-left: -33px;
 }
+#navegacao{
+    margin-right: 10px;
+}
+#erroFinal{
+    color: red;
+    display: none;
+}
 
 #main{
     background-color: white;
-    margin-left: 69px;
-    margin-right: 18px;
+    margin-left: 4px;
+    margin-right: 19px;
     width: 100%;
     padding: 21px;
 }
@@ -131,7 +137,10 @@ a {
     padding-top: 14px;
     padding-bottom: 3px;
     text-align: center;
-    border-radius: 15%; 
+    border-radius: 10%; 
+}
+#avaliarModal{
+    width: 80%;
 }
 #comprando{
     float:right;
