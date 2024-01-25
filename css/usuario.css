@@ -31,7 +31,6 @@ h5{
     gap: 10px;
     background-color: #b1b1b1;
     position: relative;
-    z-index: 1000;
     height: fit-content;
     padding-right: 15px;
 }
@@ -113,6 +112,7 @@ h5{
 #sectionPedidos{
     display: none;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     width: 100%;
 }
@@ -302,6 +302,7 @@ zoom: .9;
     flex-direction: column;
     gap: 11px;
     font-size: 1.1rem;
+     /* zoom: 1.5; */ 
 }
 #cartao{
     width: 100%;
@@ -449,7 +450,8 @@ input[type=range]{
 #aparecer{
     background-color: #b1b1b1;
     position: absolute;
-    width: fit-content;
+    width: 30px;
+    padding: 5px 0;
     margin-top: 35px;
     left: 1px;
     height: 30px;
@@ -459,8 +461,11 @@ input[type=range]{
 }
 #aparecer img{
     
-    width: 30px;
-    height: 50%;
+width: 30px;
+    
+/* height: 50%; */
+    
+margin-right: 32px;
 }
 
 #imgRigth{
@@ -483,6 +488,7 @@ input[type=range]{
 }
 #avaliarModal{
     display: flex;
+    position: absolute;
     width: 70%;
     flex-direction: column;
     align-items: center;
@@ -535,8 +541,19 @@ textarea{
 
 
 @media screen and (max-width: 630px) {
+   
+    #aparecer{
+        left: 0px;
+        bottom: 50px;
+    }
+    
+    #secionPrivacidade{
+        margin-top: 20px;
+    }
     #aparecer{
         display: flex;
+        position: relative;
+        z-index: 10;
     }
     
     #imgRigth{
@@ -544,9 +561,9 @@ textarea{
     }
    
     #nav{
-        position: relative;
+        position: absolute;
         z-index: 100;
-        left: -551px;
+        left: -550px;
         height: 580px;
         margin-top: -20px;
         padding-right: 4%;
@@ -583,13 +600,16 @@ textarea{
     }
 
     #secaoPrincipal{
-        position: absolute;
+        position: relative;
         width: 90% !important;
         left: 100px;
-        top: 35%;
-        zoom: .5; 
+        margin-left: -30%;
+        zoom: .5;
         background-color: #ffffff00;
         margin-bottom: 2%;
+    }
+    #cardProdutos{
+        background-color: #fff;
     }
     #sectionInicial{
         background-color: #fff;
@@ -597,10 +617,12 @@ textarea{
     #sectionInicial{
         zoom: .8;
     }
-   
+    #sectionPedidos{
+        margin-left: 20%;
+    }
     #sectionCadastro{
         margin-left: 51px;
-        margin-top: -30px;
+        margin-top: -20px;
         justify-content: center;
         align-items: center;
     }
@@ -608,8 +630,13 @@ textarea{
         border: 1px dotted #000;
         padding: 10px;
         margin: 3%;
-        zoom: 2.3;
+        margin-left: -30px;
+        zoom: 1.5;
         width: 400px;
+    }
+    .enderecosCadastrados{
+        max-width: 500px;
+        margin-left: -30px;
     }
     #novoEnd{
         zoom: 3;
@@ -617,11 +644,15 @@ textarea{
     .enderecosCadastrados div{
         display: flex;
         flex-direction: column;
-        zoom: 1.5;
+        zoom: 2.1;
+        width: 100%;
     }
     .comentario{
         margin-top: 20px;
 
+    }
+    .comentario textarea{
+        margin-left: 5%;
     }
     .cartoesCadastrados .divColum {
         width: fit-content;
@@ -629,6 +660,8 @@ textarea{
     
     .lblPrivac{
         width: fit-content;
+        zoom: .6;
+        margin: auto;
     }
     textarea{
         width: 80%;
@@ -643,7 +676,7 @@ textarea{
         zoom: 4.3;
     }
     #avaliarModal{
-        width: 111%;
+        zoom: .6;
         margin: auto;
     }
 }
@@ -659,6 +692,13 @@ textarea{
     }
     .containerProducts {
         zoom: 1;
+    }
+    .ultimosPed{
+        zoom: .2 !important;
+    }
+    .comentario textarea{
+        margin-left: 0;
+        width: 90%;
     }
 }
 @media screen and (max-width: 522px){
@@ -677,7 +717,7 @@ textarea{
         font-size: 1.2rem;
     }
     .ultimosPedidos{
-        width: 90%;
+        /* width: 90%; */
         zoom: .3;
     }
     .ultimosPedidos td, .ultimosPedidos th{
@@ -688,9 +728,8 @@ textarea{
         zoom: .8;
     }
     #secaoPrincipal{
-        left: 50px;
-        top: 300px;
         font-size: smaller;
+        margin-top: 0px;
     }
 }
 
@@ -710,5 +749,8 @@ textarea{
     }
     #secaoPrincipal{
         zoom: .4;
+    }
+    .ultimosPed{
+        zoom: .1 !important;
     }
 }
