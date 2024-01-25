@@ -5,45 +5,17 @@
 Link para o site:
 > [Ecommerce](https://devisonsantana.github.io/DD-Tech/)
 
-## Instruções para colaborações 📝
+###Somos um grupo de 4 desenvolvedor: Deividson, Devison, Emerso e Gabriel.
 
-### Para clonar apenas a Branch especifica de Dev.
-
-> Esse comando Git clonará **apenas** a Branch ```Dev```.
-
-```$ git clone https://github.com/DevisonSantana/DD-Tech.git --branch Dev```
-
-```$ git commit -m 'insira seu commit aqui'```
-
-```$ git push origin Dev```
-
-### Para clonar todas as Branchs do projeto (main, Dev).
-
-Esse comando clonará todas as Branchs do projeto, você precisa mudar para Branch **```Dev```** para fazer alterações no projeto.
-
-```$ git clone https://github.com/DevisonSantana/DD-Tech.git```
-
-```$ git checkout Dev```
-
-```$ git commit -m 'insira seu commit aqui para branch Dev'```
-
-```$ git push origin Dev```
-
-### Pull Request
-
-Outra forma é pelo Fork do proprio GitHub, que clona todo o repositório para você.
-
-> Obs: No momento em que você faz o Fork o GitHub pergunta se você gostaria de copiar apenas Branch ```main``` ou todas as branchs.
-
-Após fazer todas alterações no projeto, pode nos enviar com a opção **Pull Request** em seu GitHub.
-
-## Sprints
-
-A cada fim de Sprint daremos ```git merge``` para a entrega de projeto, desse jeito fica mais organizado para alterarmos o que quisermos.
+<p>Este é um projeto do curso Talento cloud da Proz, onde foram mais de 3 meses estudndo front-end e colocando nossos conhecimentos em prática.
+<br>
+Desenvolvemos este e-commerce, em sua totalidade utilizando somente HTML, CSS e JAVASCRIPT,<br>
+Trabalhamos conceitos de semântica no html, diferentes layouts, funções, eventos e requisições a api no Javascript.</p>
+Você pode simular todo processo de uma compra dentro eccomerce, que esta preparado para ser utilizado de forma comercial com pequenos ajustes. 
 
 ## Membros Colaboradores
 
-- Deividson
-- Devison
-- Emerson
-- Gabriel
+- [Deividson](https://github.com/DeividsonOmedio)
+- [Devison](https://github.com/DevisonSantana/)
+- [Emerson](https://github.com/EmersonPenelli)
+- [Gabriel](https://github.com/Anbuyyy9)
