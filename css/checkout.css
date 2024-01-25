@@ -8,6 +8,7 @@ h1 {
 }
 
 #container{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 63px;
@@ -17,12 +18,12 @@ h1 {
 .caixa{
     background-color: #F5F7FF;
     padding: 42px;
-    width: 37%;
-    margin-left: -33px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-#navegacao{
-    margin-right: 10px;
-}
+
 #erroFinal{
     color: red;
     display: none;
@@ -30,8 +31,6 @@ h1 {
 
 #main{
     background-color: white;
-    margin-left: 4px;
-    /* margin-right: 19px; */
     width: 100%;
     padding: 21px;
 }
@@ -44,6 +43,7 @@ h1 {
 
 #main table {
     border-collapse: collapse;
+    width: 100%;
 }
 #tabelaCartao, #cartoes{
     display: none;
