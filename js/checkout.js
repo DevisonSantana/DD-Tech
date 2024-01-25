@@ -111,11 +111,12 @@ function gerarCodigoPix() {
       codigoAleatorio += caracteres.charAt(indice);
     }
     console.log(codigoAleatorio)
-    pagamentoFinal = `Pagamento Pix Codigo: ${codigoAleatorio}`
+    pagamentoFinal = `Pagamento Pix Codigo: ${codigoAleatorio}  <br><br> Valor Total: ${total.toLocaleString('pt-br', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`
   }
  let parcelas = document.querySelectorAll("input[name='credito']")
-let auxiliar;
+let auxiliar = "";
  parcelas.forEach((element) =>{
+    auxiliar = ""
     element.addEventListener('change', ()=>{
         let parcela = document.getElementById(`${element.value}`);
         console.log(parcela.textContent)
@@ -125,7 +126,9 @@ let auxiliar;
  cartaoEscolhido.forEach((element)=>{
     element.addEventListener('change', function(){
         console.log(element.value)
-        pagamentoFinal = `Pagamento no cartão ${element.value}, ${auxiliar}`
+        if (auxiliar != ""){
+            pagamentoFinal = `Pagamento no cartão ${element.value}, ${auxiliar} <br><br> Valor Total: ${total.toLocaleString('pt-br', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`
+        }
         
  })})
 opcaoDePagamentocartao.addEventListener('change', ()=> {
@@ -191,7 +194,7 @@ function abrirModal(titulo, mensagem, botaoConfirmar) {
   <div id="avaliarModal">
   <div class="fecharModalSup"></div>
   <h2>${titulo}</h2>
-  <p>${mensagem}</p>
+  <p id="pModal">${mensagem}</p>
   <div class="btnModal">
   <a href="index.html"><button type="button"> ${botaoConfirmar}</button></a>
   </div>
