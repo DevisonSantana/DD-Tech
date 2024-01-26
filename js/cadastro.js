@@ -1,6 +1,6 @@
 // BOTÃO DE RETORNO PARA LOGIN
-let btnLogin = document.querySelector('main div button')
-btnLogin.addEventListener('click', (e)=>{
+let btnLoginPage = document.querySelector('main div button')
+btnLoginPage.addEventListener('click', (e)=>{
     e.preventDefault()
     window.location.href = 'login.html'
 })
