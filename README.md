@@ -5,6 +5,9 @@
 Link para o site:
 > [Ecommerce](https://devisonsantana.github.io/DD-Tech/)
 
+Video Pitch
+> [Video](https://youtu.be/0ZCKI0gLT8Q)
+
 ### Somos um grupo de 4 desenvolvedor: Deividson, Devison, Emerso e Gabriel.
 
 <p>Este é um projeto do curso Talento cloud da Proz, onde foram mais de 3 meses estudndo front-end e colocando nossos conhecimentos em prática.
